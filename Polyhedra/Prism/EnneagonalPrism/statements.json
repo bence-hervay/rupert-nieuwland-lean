@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Prism.EnneagonalPrism.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Prism.EnneagonalPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Prism.EnneagonalPrism.polyhedron Nieuwland.Prism.EnneagonalPrism.system Nieuwland.Prism.EnneagonalPrism.layout"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Prism.EnneagonalPrism.system"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Prism.EnneagonalPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Prism.EnneagonalPrism.system Nieuwland.Prism.EnneagonalPrism.layout Nieuwland.Prism.EnneagonalPrism.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Prism.EnneagonalPrism.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Prism.EnneagonalPrism.theta_isRoot",
+   "type": "Nieuwland.polyEval [-1/3, 0, 2, 0, -3, 0, 1] Nieuwland.Prism.EnneagonalPrism.theta = 0 \u2227 (1.4619022000815436261163772066831 : \u211d) \u2264 Nieuwland.Prism.EnneagonalPrism.theta \u2227 Nieuwland.Prism.EnneagonalPrism.theta \u2264 (1.4619022000815436261163772066832 : \u211d)"
+  }
+ ]
+}

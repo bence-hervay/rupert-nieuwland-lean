@@ -1,0 +1,42 @@
+{
+ "solid": "johnson/pentagonal-orthobicupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 2590,
+   "sha256": "986d0624c9815b1daa04ce2ce60d68aa2b390f93ddeba420c4928b7784886640",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalOrthobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3919,
+   "sha256": "c0c0ee85486e16d73efab53be55fcf6a0ef10a06c99bec43002a3ca469c7b8bd",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalOrthobicupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 9144,
+   "sha256": "2b6b34b8a43bb2b4c2831408bcb184f688722c2bb8ab102cd2939a0498e325e1",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1548,
+   "sha256": "f36dd33f2cb00cbc22f4d4ed8e3f278e4a38890f1ef2e63ebca1110ea4383a06",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalOrthobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

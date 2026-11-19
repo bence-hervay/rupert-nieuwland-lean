@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Johnson.TrigyrateRhombicosidodecahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.TrigyrateRhombicosidodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Platonic.Dodecahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Platonic.Dodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Platonic.Dodecahedron.polyhedron Nieuwland.Platonic.Dodecahedron.system Nieuwland.Platonic.Dodecahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Platonic.Dodecahedron.system"
+  },
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Platonic.Dodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Platonic.Dodecahedron.system Nieuwland.Platonic.Dodecahedron.layout Nieuwland.Platonic.Dodecahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Platonic.Dodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Platonic.Dodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

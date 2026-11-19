@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Johnson.ParagyrateDiminishedRhombicosidodecahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.ParagyrateDiminishedRhombicosidodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

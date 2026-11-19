@@ -1,0 +1,22 @@
+{
+ "top": "Polyhedra.Other.Tom7Candidate231Ideal.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.Tom7Candidate231Ideal.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Other.Tom7Candidate231Ideal.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.Tom7Candidate231Ideal.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Other.Tom7Candidate231Ideal.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Other.Tom7Candidate231Ideal.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.Tom7Candidate231Ideal.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.Tom7Candidate231Ideal.theta_isRoot",
+   "type": "Nieuwland.polyEval [5/16, 0, -5/4, 0, 1] Nieuwland.Other.Tom7Candidate231Ideal.theta = 0 \u2227 (0.9510565162951535721164393333793 : \u211d) \u2264 Nieuwland.Other.Tom7Candidate231Ideal.theta \u2227 Nieuwland.Other.Tom7Candidate231Ideal.theta \u2264 (0.9510565162951535721164393333794 : \u211d)"
+  }
+ ]
+}

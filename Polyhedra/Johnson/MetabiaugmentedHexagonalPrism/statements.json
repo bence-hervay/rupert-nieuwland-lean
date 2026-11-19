@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Johnson.MetabiaugmentedHexagonalPrism.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.polyhedron Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.system Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.system Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.layout Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.theta_isRoot",
+   "type": "Nieuwland.polyEval [1/256, 0, -5/8, 0, 1] Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.theta = 0 \u2227 (0.7865660924854930855822837664288 : \u211d) \u2264 Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.theta \u2227 Nieuwland.Johnson.MetabiaugmentedHexagonalPrism.theta \u2264 (0.7865660924854930855822837664289 : \u211d)"
+  }
+ ]
+}

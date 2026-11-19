@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Catalan.PentagonalIcositetrahedronLaevo.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.polyhedron Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.system Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.layout"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.system"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.system Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.layout Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.theta_isRoot",
+   "type": "Nieuwland.polyEval [-1, -1, -3, 1] Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.theta = 0 \u2227 (3.382975767906237494122708536455 : \u211d) \u2264 Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.theta \u2227 Nieuwland.Catalan.PentagonalIcositetrahedronLaevo.theta \u2264 (3.3829757679062374941227085364551 : \u211d)"
+  }
+ ]
+}

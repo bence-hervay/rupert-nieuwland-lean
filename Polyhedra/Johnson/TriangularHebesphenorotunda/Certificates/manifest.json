@@ -1,0 +1,41 @@
+{
+ "solid": "johnson/triangular-hebesphenorotunda",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 50611,
+   "sha256": "a1acbf0ce6221780c2f052a8130b6f04a6729831c8568554a414b419319469b9",
+   "imports": [
+    "Polyhedra.Johnson.TriangularHebesphenorotunda.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3728,
+   "sha256": "6153921dbdb5e9d1d2a923dbacb90104fac7f22f4f13de38dabbbbd28822f9d9",
+   "imports": [
+    "Polyhedra.Johnson.TriangularHebesphenorotunda.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 6342,
+   "sha256": "20785821dc7d00fceccda55b066ba5926964c57134196b0d9283f0c505497a51",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1535,
+   "sha256": "9967f32c021a6d19f1559eefd70023fc10910198887c9c72d648b4b18862b0e2",
+   "imports": [
+    "Polyhedra.Johnson.TriangularHebesphenorotunda.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

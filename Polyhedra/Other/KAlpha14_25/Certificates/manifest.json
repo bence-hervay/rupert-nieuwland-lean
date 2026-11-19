@@ -1,0 +1,352 @@
+{
+ "solid": "k-alpha/14-25",
+ "pieces": [
+  {
+   "file": "Chunk0.lean",
+   "bytes": 680694,
+   "sha256": "bf16379e4656709f358641ab6238c0d9c9bb368268f4360ccb754b69c2328e51",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims0",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims1",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk1.lean",
+   "bytes": 22631,
+   "sha256": "708f738adccc86c0f736777fb5af8b46b68674a9eacb3ecbf7e4ab5a7455daf4",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk10.lean",
+   "bytes": 46741,
+   "sha256": "cffb57c92bd8f480762cf6c45cdaedc80808ecae2fe85d6b2489446cdc2c5023",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk11.lean",
+   "bytes": 54924,
+   "sha256": "0737adce4fd40d1fe8ac09942a82201f5b07df704e749b2b51879ae2847e8ab3",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk2.lean",
+   "bytes": 26657,
+   "sha256": "cfadda73fc59aa743a6ba2073241adc66f23f2b7583d170bdd5ab0d2b69ef03b",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk3.lean",
+   "bytes": 22383,
+   "sha256": "2d7ade6e35b6af2e112e7bed35ffa03ac0f0e3bd1ddc099edd42ef000afb7f11",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk4.lean",
+   "bytes": 51665,
+   "sha256": "861835a6e21908f7ac29a0d8b4a1adcefba4e3237f9faa712f723fd2ece025f9",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk5.lean",
+   "bytes": 5886,
+   "sha256": "0d276d3fc1097097a1c3f85efdc0fa80b38eb940ed857d41829b526792d3e3b1",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk6.lean",
+   "bytes": 5214,
+   "sha256": "4d9299156a3d2628b9aa5a0b1d4ca3fe765b3512b4750497188220436be831be",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk7.lean",
+   "bytes": 5898,
+   "sha256": "598a9d082201cb309e18789325a509b734867398468b40bf9e108af96ecff077",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk8.lean",
+   "bytes": 4828361,
+   "sha256": "23b6194a295aaf08fa098a7f9a3b2b8be3d62c99228c2d61ca9f1dbd039f0600",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims2",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims3",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims4",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims5",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims6",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims7",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims8",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims9",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims10",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims11",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims12",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims13",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims14",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims15",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims16",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims17",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims18",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims19",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims20",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims21",
+    "Polyhedra.Other.KAlpha14_25.Certificates.Claims22",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk9.lean",
+   "bytes": 52254,
+   "sha256": "d96a5ecad8ff603badd92289867f0b1ecb44d3d4c95df76eecdb8ba99d4d9303",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims0.lean",
+   "bytes": 629112,
+   "sha256": "698b18ec60d092db80a1f726b0499e73416e24a2a4b468cff404a054980e9f3b",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims1.lean",
+   "bytes": 173267,
+   "sha256": "c858f6a69d1e8b50d98db9b2a43b7c44367b57e29eec32330dcc3d4842f92127",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims10.lean",
+   "bytes": 632023,
+   "sha256": "b50af6038b550b6194ae521b2b2efbf791be12d9faae8588ea4b30a2279ee73d",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims11.lean",
+   "bytes": 608286,
+   "sha256": "ff6f988b7861a54afa9328fcdf6969f42d85a830ff17a8b4dfb113dfeb015633",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims12.lean",
+   "bytes": 469204,
+   "sha256": "4e4fd76cb6e9aed451ace4f8e7fd735bd7a1eb5e3ee85a33fcfd35b8b1abffe6",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims13.lean",
+   "bytes": 487852,
+   "sha256": "c0dec00bd1240d1328575e96a853b193dcbed46e90ef91a01a585fc553681a5e",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims14.lean",
+   "bytes": 560596,
+   "sha256": "b99b1206008dd6e7228db5778e7ee179f52d552a37c656723998f44e498e9358",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims15.lean",
+   "bytes": 234420,
+   "sha256": "eb68504c216a177a3a85d317098013c3653c41f1984b14655c770e195b89bc14",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims16.lean",
+   "bytes": 661616,
+   "sha256": "072f70ad1fdff41ed50e34513a4ce5a94673d18246b1ff16450ae04b144cc095",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims17.lean",
+   "bytes": 625562,
+   "sha256": "3f496464cc7c15ff72b81f2e0e7ec8bb999bb7108b4ca63a199292fcef7386e3",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims18.lean",
+   "bytes": 239934,
+   "sha256": "e2ff4390f088fc3aae1945fe904fcb6438a5c602067974f11aa67a23c6a1af38",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19.lean",
+   "bytes": 721117,
+   "sha256": "4f941f753c177592bf9f35b73a9f28e9d2b9d9f803daf162dce5c36f07e5663c",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims2.lean",
+   "bytes": 576641,
+   "sha256": "99aa613d57aceec30d821a5e913099e4dec8a36eee9bab5fa0bfafcea802d922",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims20.lean",
+   "bytes": 607643,
+   "sha256": "03c91d2a16e86d6cbb851654b28876783926a170ce41da3b0f04bcee64498084",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims21.lean",
+   "bytes": 639074,
+   "sha256": "11f2e82296f3e279ece267fc501705d94bc4f1d290d438e8bd8c0f24826432cd",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims22.lean",
+   "bytes": 59587,
+   "sha256": "060d638e724712b75153939c65d44f9a821e0c1af85d567b52813e6b4b319933",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims3.lean",
+   "bytes": 365032,
+   "sha256": "b252f743b6afeb0f814983f7f2f3d600fbfbcbee9e46e0f418472213586af88d",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims4.lean",
+   "bytes": 643107,
+   "sha256": "41ebd5885c8e95b3b1c6ac9b082bf722204d27bfa307ffc166909cdfd82d143c",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims5.lean",
+   "bytes": 559223,
+   "sha256": "8b3a1e9ce27f3f5834c0ade7b850ee313371b25bfdb03d2dcf101bfb78805ee3",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims6.lean",
+   "bytes": 395393,
+   "sha256": "958dd64509a6c9cc91de724e833f0d04a3758cf5e5ca2cb27be7fdc069cecca2",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims7.lean",
+   "bytes": 570508,
+   "sha256": "137e945f22d5941b258a48e044f4efbee18685ed59524aef17c2b2fd9447bad1",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims8.lean",
+   "bytes": 411705,
+   "sha256": "eb0c6e3a42670b963e8506a592dcfd387b7a05814e9efa04dd7bbe920b477174",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims9.lean",
+   "bytes": 609899,
+   "sha256": "e2eb90e355dcc1537e191c6c9c57f9770ac86ef129a60b414ca9744655cd0528",
+   "imports": [
+    "Polyhedra.Other.KAlpha14_25.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 13184,
+   "sha256": "70527ebe22fddf912dea24852e59142982a53ebca474db8199fcf2e582267916",
+   "imports": [
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  }
+ ]
+}

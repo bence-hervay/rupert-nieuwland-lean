@@ -1,0 +1,201 @@
+{
+ "solid": "johnson/parabiaugmented-hexagonal-prism",
+ "pieces": [
+  {
+   "file": "Root0.lean",
+   "bytes": 2363346,
+   "sha256": "5659cb43b1df24d75d26ebae2687ab31238833f914039fe6e3b813d27bd0b30a",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root1.lean",
+   "bytes": 606606,
+   "sha256": "1e933cddb700b5914f97268e741d6e7178c216fc5533d4b6fc502c7f943f273c",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root10.lean",
+   "bytes": 1239453,
+   "sha256": "b2b26271a41f01fbd92a7048ccea6674552b0b8b522d42f212abb47cb6deb16a",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root11.lean",
+   "bytes": 986593,
+   "sha256": "94f119dd68c3ede74d8bfc81c25c9b0d88bc50add0157c151150fcc08e2cef05",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root2.lean",
+   "bytes": 399544,
+   "sha256": "bac2550411076613a660bcc618213b3a94a40fc7d6c093015d3f6f4fe1601c0e",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root3.lean",
+   "bytes": 382531,
+   "sha256": "e5223e08876a1da9c0a162a6392311046c500806fff05b60408181d34de469f3",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4.lean",
+   "bytes": 2017,
+   "sha256": "b6ad6ed989631e390a0d637e6b9be243429f3d337bab63a888b42eddbd3f0164",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root4P0",
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root4P1",
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root4P2",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root4P0.lean",
+   "bytes": 1054402,
+   "sha256": "fe3ff1f6a9c768fb7ed765d3ebd5c83d9d41694981a39710bfeb800823b3a7e2",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P1.lean",
+   "bytes": 2236250,
+   "sha256": "9fc27d64a9d2d977d0ebf68012145d7f789a2c78e0185fe1193e0987d5569b11",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P2.lean",
+   "bytes": 607595,
+   "sha256": "6e1dd296f6af0774e08df76552fa2e398cc1d93a138fcfa8d3b74428ed7ca71d",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root5.lean",
+   "bytes": 515040,
+   "sha256": "722c75d0d41d39090186be092851bc3d4f1161aea0c65d9c9a621745d7431b8c",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root6.lean",
+   "bytes": 505122,
+   "sha256": "ea2455a3b4085eeef9bd7aeebccd8bc34e0482bde1154cc42ed42715dfc85c8e",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root7.lean",
+   "bytes": 716854,
+   "sha256": "953c549251a8cc448bd7dffe79a68c56104e5656e6b1219e7ed600d9d1d4c931",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8.lean",
+   "bytes": 2191,
+   "sha256": "ea1cae816314023cdc7912247c3da9e7f4c1efbf6f74762fb455eb5d668ea800",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root8P0",
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root8P1",
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root8P2",
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Root8P3",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root8P0.lean",
+   "bytes": 2266118,
+   "sha256": "48c1fe67d928d49c9258581c7f25d6e74166df98ce6364cc3034e4f3a89eb2c8",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P1.lean",
+   "bytes": 1044773,
+   "sha256": "7eb8024280d60e9527e20381d85eaa74e8b8f591df506950234317173bcc71e6",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P2.lean",
+   "bytes": 906930,
+   "sha256": "84b39047a2e19fdc1673117e0f919eab80ed0281f754efe1d18c7b0d197825d5",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P3.lean",
+   "bytes": 2000684,
+   "sha256": "ddbf4cea245e7d052e6e163ad7377e3b91a925fa52f6309df60efe6bdb410579",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root9.lean",
+   "bytes": 1087200,
+   "sha256": "7c91f408caa250973b9b9b2a84778b23c5f1bd8d766d0e84f0431ea0cf208986",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 14013,
+   "sha256": "a7c902094efca9523cd83a91b703e9ce337e6e488093af1fb73fa0faab6c541a",
+   "imports": [
+    "Modules.Nieuwland.Settled",
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Touch.lean",
+   "bytes": 171587,
+   "sha256": "e6743d4327209355d8c60192843c359ce6bf6eeaacb76c33defeb0a1440f9f12",
+   "imports": [
+    "Polyhedra.Johnson.ParabiaugmentedHexagonalPrism.Certificates.Shared",
+    "Modules.Root.Assembly"
+   ]
+  }
+ ]
+}

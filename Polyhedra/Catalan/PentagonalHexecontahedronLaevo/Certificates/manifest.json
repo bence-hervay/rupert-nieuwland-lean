@@ -1,0 +1,322 @@
+{
+ "solid": "catalan/pentagonal-hexecontahedron-laevo",
+ "pieces": [
+  {
+   "file": "Chunk0.lean",
+   "bytes": 2466,
+   "sha256": "f5ba6f6eaa27852c9304269c52b08af5d6282047efff3c98f2c2f03e65d2c2db",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk1.lean",
+   "bytes": 3144,
+   "sha256": "ab98797c4d3d6c2e8061d51c53885243cc546b7cd217076e09b709abbed13c23",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk10.lean",
+   "bytes": 2415672,
+   "sha256": "ccf19d359aa4792fe2cd4ae54bc742a5566f694a2a21226b0e70e2254b7dae2c",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims6",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk11.lean",
+   "bytes": 3677117,
+   "sha256": "422cf9752dcbd9dc20e7a2c735ffd48d54a3c31d020a1cf6e2c7a48683ed4489",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims4",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims5",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims7",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims8",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims9",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims10",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk12.lean",
+   "bytes": 2631607,
+   "sha256": "31de0d15f5e14539631feb6edec91bdd01335c70a66e3bfa8f3e0ade040b3858",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims11",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims12",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk13.lean",
+   "bytes": 2540121,
+   "sha256": "8b987ef70754b2856dd1640e3676475818423d48c92ebf83e47e844f879be212",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims13",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims14",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk14.lean",
+   "bytes": 5172,
+   "sha256": "e2790d0aedbf92ca84bf0dcd6acc79f2fa644e07bcfea1637862b3aced8049f0",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk15.lean",
+   "bytes": 3366,
+   "sha256": "96b237e2e29adf87c0a77f4edd7b60c7d65449aabcdb14f9605e76eaf3ce68e7",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk16.lean",
+   "bytes": 5174,
+   "sha256": "b90d86afc38e0b9fd41fefcf4aece5d2273658a16058bf6552ddd90f80272c78",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk2.lean",
+   "bytes": 3258,
+   "sha256": "8a2b87abe7ad8140f9a042705a093e3f568a378b69b4ac469b8a45679a7de4ff",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk3.lean",
+   "bytes": 3261,
+   "sha256": "2e29e2377ad29f971639f05cef2c2a2155d02ee23554b2103bb7e87e07afd7aa",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk4.lean",
+   "bytes": 5678,
+   "sha256": "4daaaa8ee00160d3c0ba27d65d425e8c9dd01a830a08e1fefad3520fff1be590",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk5.lean",
+   "bytes": 4286,
+   "sha256": "cc94ae94c2e896f87d4771c0bf129c5075b2636ffe20fa5c257bcab531c955e7",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk6.lean",
+   "bytes": 3374,
+   "sha256": "08959ed7a8e5dd7442ae755174559c70d0356fa3c508b7dcea5c31ebe8efd9f0",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk7.lean",
+   "bytes": 4284,
+   "sha256": "112e3377c8585b26228d5acb2acc3da79d4b7606b693da7daec01bfb53d75171",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk8.lean",
+   "bytes": 1976458,
+   "sha256": "b47f8ceb395a36279c21e4418a23e349325608514312189bae3d80ec917882dc",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims0",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims1",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk9.lean",
+   "bytes": 2566859,
+   "sha256": "208436aceaef00afaca84a435586bd95287025fc397aedae81814877e6ac1712",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims0",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims1",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims2",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims3",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims4",
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Claims5",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims0.lean",
+   "bytes": 62145,
+   "sha256": "df47484a77e0ccd033d3c8a006dde4e4ad0c2c3d4c7119f305e4cdce14200f4c",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims1.lean",
+   "bytes": 89428,
+   "sha256": "f8aadde5c142e0c7de873cbd07f8aafeb2caef11aa65ae54bcea3ad992e66675",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims10.lean",
+   "bytes": 22391,
+   "sha256": "cd07c3233835cc02452b1fb27f7c74e0a86c8ed322050ba8bd03342c25e3cc2c",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims11.lean",
+   "bytes": 75174,
+   "sha256": "dd00c2ba820882b00e67141e2307049c99489807da5155968f01acae1f31e49e",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims12.lean",
+   "bytes": 40991,
+   "sha256": "755268865a5ceb98c9f6914f06b9ee7105c54ef144ae6ed57d9112246fd6e011",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims13.lean",
+   "bytes": 19157,
+   "sha256": "44447bd06f9dc88db665c736bf2095f7f1e000e8860312f8e51fcdc85ce0e1b8",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims14.lean",
+   "bytes": 39927,
+   "sha256": "ba2799a33016c7822728aa69f52fe8aa375735e300a4dcab51fa90a59ce56e95",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims2.lean",
+   "bytes": 52130,
+   "sha256": "b1aed7a770fe8dad0f45236ca102e88e9f5ee66952c93ca164214d721e3ae48f",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims3.lean",
+   "bytes": 66133,
+   "sha256": "1a76266e8bbe59a37f7309afb0f7a2225ad13cee9723ffe8a0db83eeeb25d0cf",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims4.lean",
+   "bytes": 41442,
+   "sha256": "c49cc2c817b0f3f5a7166308d4031399ad1cff5cd5f6171e728cd603378fd865",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims5.lean",
+   "bytes": 53142,
+   "sha256": "9892966d1de9b8b32e3789bc7396c2f011325a8d6240356d8493edd67ee5f806",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims6.lean",
+   "bytes": 41989,
+   "sha256": "57ffa7218a4713547218832a3ee370d4301b6814831ce7cb056511ba84a497b1",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims7.lean",
+   "bytes": 52073,
+   "sha256": "f45ec94f6214e2d8fc8c7b10cb01cacae920797a3ed8216925cdaa936156956a",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims8.lean",
+   "bytes": 72125,
+   "sha256": "c486b3adbc02b013176d546dbedf72fa0c3703e272cc126b70ee2cc21f6a575a",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims9.lean",
+   "bytes": 40166,
+   "sha256": "7f40bcba8dd7fbd44606694f4ba4fe240fef0a7a4c9ee5c98fad36a960976e05",
+   "imports": [
+    "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 107929,
+   "sha256": "f4fe8800b023687f9552cddd2e431949689a091991ffee89b3108228e2acd692",
+   "imports": [
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  }
+ ]
+}

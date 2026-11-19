@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.PentagonalRotunda.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.PentagonalRotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.PentagonalRotunda.polyhedron Nieuwland.Johnson.PentagonalRotunda.system Nieuwland.Johnson.PentagonalRotunda.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.PentagonalRotunda.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.PentagonalRotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.PentagonalRotunda.system Nieuwland.Johnson.PentagonalRotunda.layout Nieuwland.Johnson.PentagonalRotunda.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalRotunda.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.PentagonalRotunda.polyhedron)).Nonempty"
+  }
+ ]
+}

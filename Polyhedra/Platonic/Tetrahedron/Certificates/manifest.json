@@ -1,0 +1,6263 @@
+{
+ "solid": "platonic/tetrahedron",
+ "pieces": [
+  {
+   "file": "Claim0.lean",
+   "bytes": 573899,
+   "sha256": "18728e50de281645d23d17f2f7ebc77ec9c9985de867c506ff8f81d6f0a3a50d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim1.lean",
+   "bytes": 590555,
+   "sha256": "336fcc637060927f29c8838b32d96efa44839301bdafd82429a7e3ce096d9f4b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim10.lean",
+   "bytes": 453542,
+   "sha256": "aa3cc3656c20ec878780f2aad919937dc36e21996ac034181f5ca6f44c654731",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim11.lean",
+   "bytes": 1011064,
+   "sha256": "3bd5a2fc2fe4eecbe50f2019311a13bc8b7513b8a259218e2e4e98dbcbf31b2d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim12.lean",
+   "bytes": 23165063,
+   "sha256": "ef9e0121012ab7fea48f5568aa1b3e02700b72d525a0a94e0f980fad35f969dc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim13.lean",
+   "bytes": 8492082,
+   "sha256": "e920cbf316c742d822ce822b52707ad9220517c96506a9505a649a173e7eb3ad",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim14.lean",
+   "bytes": 870068,
+   "sha256": "14c5c91b99199a50f854e99c3f7c669d46dc8013a0cd3cf2661f4b9ce6adc570",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim15.lean",
+   "bytes": 1096472,
+   "sha256": "563414a946de59589f0b27cdf5687a2ad239c7206111cf8fc3a4e4d5c369e361",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim16.lean",
+   "bytes": 1136417,
+   "sha256": "f006ba7e3a904167185d73aeddf33ea58fd440d5ea753ca274d636a09ab5174d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim17.lean",
+   "bytes": 8526611,
+   "sha256": "156f7deb2ab70e087e8759f0c61097fa79c5676d67edbfc53be4b52a8697e175",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim2.lean",
+   "bytes": 22131513,
+   "sha256": "44b49b7c00eb17c716c40e3abd408576b9e76b0ed4dd662461d65508f794a7e5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim3.lean",
+   "bytes": 472066,
+   "sha256": "0aeed9e2c871c7fce017f31d114c44e16af08c27d84de8e1aff5835343422a2a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim4.lean",
+   "bytes": 30016784,
+   "sha256": "39cbad024cf8bd949390b69adc141c522c5ba60b930c512f95a5fecacbde085e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim5.lean",
+   "bytes": 1452403,
+   "sha256": "9f6bdb112318c2fd1a588c6e27fb4533aff9d0a7b79b57f9a7fba3268b3df990",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim6.lean",
+   "bytes": 1083462,
+   "sha256": "85e1cf4f1c4679d0fde9be60dc5ea813068a904f9b82ebb027fc02f487d99f71",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim7.lean",
+   "bytes": 1562466,
+   "sha256": "615204e61eec90a4cedd0b4655963e6e91e563a95696b6cf77fc6927fcb1873f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim8.lean",
+   "bytes": 866255,
+   "sha256": "14fdfcdc8bc1148181cedaa609c3340b213eb64d7b2d0cbcf60cae6c73c48f24",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim9.lean",
+   "bytes": 28884437,
+   "sha256": "98e22249f9c1599393a871351e24ec5b745cc64518eb2ea47c1fb6aac34cabf3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 2277,
+   "sha256": "0b3b19a850b918e81aa4ac12f9dd63e95792da1ae72dd976d6270beb115c919a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Exact"
+   ]
+  },
+  {
+   "file": "Root0.lean",
+   "bytes": 7684,
+   "sha256": "854a16b2fb5bfa76d4fbccc43220612fb70eec28b7abf806cb58517345bf78ef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P0",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P1",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P2",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P3",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P4",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P5",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P6",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P7",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P8",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P9",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P10",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P11",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P12",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P13",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P14",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P15",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P16",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P17",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P18",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P19",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P20",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P21",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P22",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P23",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P24",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P25",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P26",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P27",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P28",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P29",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P30",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P31",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P32",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P33",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P34",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P35",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P36",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P37",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root0P38",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root0P0.lean",
+   "bytes": 179173,
+   "sha256": "c53a8ab8f08927a1187ef7c60d91bffc3f5d1a8ee53995c06ecd86c254ace6ef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P1.lean",
+   "bytes": 468575,
+   "sha256": "d6c870731e0369a28e767a8153a51f0667980584a34d60cecdb234eca67dd339",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P10.lean",
+   "bytes": 2696631,
+   "sha256": "45a859bd8bbca4345f205a81a26dc9f54c8ed014b23cd5ef10aa05c2439e7cd2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P11.lean",
+   "bytes": 1528,
+   "sha256": "6a14b5cad18f5b1b0c7812a06c2510fd2883a615e56e0132f7c2837dd80f96f3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P12.lean",
+   "bytes": 1657,
+   "sha256": "6bcc30459288e625dea8dff3f8dafa2bc7da6ed325229150bbd1248b749f1642",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P13.lean",
+   "bytes": 1398,
+   "sha256": "c2eb7d61bd89482e47e0a83abdbccb378502cb1b263899376b5891d15420805f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P14.lean",
+   "bytes": 19792,
+   "sha256": "7abff6def1db852c40d98edce1f915e07951634039d19e5016dfdcb8db30f4ec",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P15.lean",
+   "bytes": 492893,
+   "sha256": "c3b0f02539ab62ed48cf3c06cf713aa31c4f2452be05ac0d90f050f227e7f28e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P16.lean",
+   "bytes": 1849037,
+   "sha256": "00fef42daa51f434166ab03fa9c3a09374add6cc36a22e5c7d5e6ff89f847f45",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P17.lean",
+   "bytes": 248208,
+   "sha256": "88a8840889d9c6bae00314c91fb3da18e6c128d8aebb200e928922be8e5696df",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P18.lean",
+   "bytes": 127816,
+   "sha256": "aa4d72f14913bb4767158df82858e1d8d8f68d284460a0321df95cfa15b259ad",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P19.lean",
+   "bytes": 596136,
+   "sha256": "259f37a7b7ff7395e34399e5e2237560ea65d62aaae88ad66c2481d6986259d6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P2.lean",
+   "bytes": 2845535,
+   "sha256": "37f015320a625064fe56060b560b3e50295e10f20ea04d72a9a74aa065e5ca07",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P20.lean",
+   "bytes": 15824,
+   "sha256": "1b6f1d39e5e76b756886ffc3d04eb6b41332fb567fecaf1da51a1bc2e4114381",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P21.lean",
+   "bytes": 35168,
+   "sha256": "bb6486494f0b455e4f1cc9fa560a98ff199dc11f176b2399f5e67176b9a94b39",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P22.lean",
+   "bytes": 1245071,
+   "sha256": "ed3016363e91cec89a7eeef453d91a9602a55b17193035149a305d93f2d5e6b3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P23.lean",
+   "bytes": 1951078,
+   "sha256": "6c912bddde7cb3a363ea30544a1c6bd68b4530f6bafe8531c37df3bb80eb71a5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P24.lean",
+   "bytes": 2433,
+   "sha256": "3ebd18f6f01198b482b1ce75a9e3ac2ffca7dc4b7fcd9f52b8e53f303ced2c65",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P25.lean",
+   "bytes": 1403,
+   "sha256": "11536b4c1210a3f923ed5ab9610d0efc764fa740d8a4815840760613fe13d653",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P26.lean",
+   "bytes": 3904,
+   "sha256": "dbe8174238232c248520add88dfb4b3d0353fc5e8cfc3b2222b2da38024910a7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P27.lean",
+   "bytes": 11352,
+   "sha256": "905812de98b5c209f62d5fa5cf6c6754d09951047c16b7da533bd5db1098db94",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P28.lean",
+   "bytes": 2786,
+   "sha256": "f1c8dd449cf397bd713562971c2a209110a1753eff33f73ef4587b3b865de99b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P29.lean",
+   "bytes": 318095,
+   "sha256": "74543e6d2f8f69a8c49e10453d09d3686ccd42396ca270cef203fc6fe0709342",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P3.lean",
+   "bytes": 21411,
+   "sha256": "e32483f7d88e2b877f4f9f895c52791f2441fee386eb9160c440cb1b26e4fa89",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P30.lean",
+   "bytes": 16546,
+   "sha256": "e496ca35624cad2578830f334a8d9c2d7b1ae8a9af5602f10e74d7e42131cbe8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P31.lean",
+   "bytes": 1646,
+   "sha256": "b17cd613430bc17d4d3489a536fed72634ee35cde5d3b44e52f825c89fd8a1f9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P32.lean",
+   "bytes": 53576,
+   "sha256": "2928ce5040d19336c90872e5dabad33f9ac5bbea8a851af557f35da8663bcb68",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P33.lean",
+   "bytes": 1398,
+   "sha256": "2c70b13ef7b27df7d43e565b00b5ee310c99426ca73f746dfbe93ab7b3387caf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P34.lean",
+   "bytes": 1464,
+   "sha256": "887dca1bf0e365d5e1a26c37b5b32f55d37339cd53234b7dd1d7ea9b0f521374",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P35.lean",
+   "bytes": 2103,
+   "sha256": "5a4a44578abeb1a04fc75e4a18732f60e3df3e87ec289b195c8147f887cc119f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P36.lean",
+   "bytes": 1595,
+   "sha256": "0318f6c1a28fef47bfe91c75e0794cfc6aab6c7755e1b1331a8e21482cf0f81c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P37.lean",
+   "bytes": 1397,
+   "sha256": "4b988a0f9ed8274887995855cd0f8c719620883d55752efd6539a7c3c1df98a3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P38.lean",
+   "bytes": 1397,
+   "sha256": "fc7f3e1fdd6b5c184397013c91858e9852dbdde77d31cbe18e7af8822a4021ad",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P4.lean",
+   "bytes": 2276528,
+   "sha256": "c7b31a7915f54ed4cf0935157ca69be6fe28aaec33e443b3f1218803fe4abe33",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P5.lean",
+   "bytes": 1542295,
+   "sha256": "19b26ac9d557afe86e2c3e66799fad0560c80e36d18ce47606c9c70c916863cd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P6.lean",
+   "bytes": 1818697,
+   "sha256": "06d4f3a470e469a08f03cb0a4b8c9fc48bcfab7167cea7ccd720d68dddddcecf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P7.lean",
+   "bytes": 390885,
+   "sha256": "742ca6ef896805406a575b6cc81dc37b935bc32ada51a10b774e9290f4dca183",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P8.lean",
+   "bytes": 2517,
+   "sha256": "17a46cf11b4b8417a9c7b47036d0c71ac363c646b77b725e5ccb882df56e4c46",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P9.lean",
+   "bytes": 970958,
+   "sha256": "d1571fef107ce53dc8220de10bb5e40272c9dc1cd2b94691b0a011013d1d2e80",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root1.lean",
+   "bytes": 8307,
+   "sha256": "eb1128b18d303ed36408045f4418fc37a46d91f599a1a1fb62684fade6db4a5f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root10.lean",
+   "bytes": 16436,
+   "sha256": "ff6ffe8b9eb9b2ef21ead2f88874608e37b6aa2993b103386c97c96466a249c2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root11.lean",
+   "bytes": 15570,
+   "sha256": "0ec117235865ed19d9c2116ca77062842cb0a946ce5035aaf4a53ea2b088fb51",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root2.lean",
+   "bytes": 9272,
+   "sha256": "94bfabe8f4bc91a6f1fd4fdcaefdf4ee7b0acf2e74ea6c88fd8f9f5220b6033f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root3.lean",
+   "bytes": 8373,
+   "sha256": "99be16adb1b51f57bc93a244a690112ecfa12cad94be224318f7b2d4ead76f28",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4.lean",
+   "bytes": 1409886,
+   "sha256": "3883d2d8db61d7ddd5d908a706c8794f60c020947b9384c6994e1bd41ce1be2b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root5.lean",
+   "bytes": 2713,
+   "sha256": "e88736a21c6f662b5d4d3a1cde344a3579d6cd54a95c689c147b73b8d82b74b0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root6.lean",
+   "bytes": 2360,
+   "sha256": "ad0baf5fed57d2f9b0c859adedae339dd01a13b8b2906457cbfb441f38456715",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root7.lean",
+   "bytes": 2388,
+   "sha256": "654feed44d222715e36dbc79400ea5ed6934c72d22a5d2d4daa4807126b37129",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8.lean",
+   "bytes": 92262,
+   "sha256": "2a8efb4552cd7a9a1f82e9917b42039db1e39ff5e203b34128f5a95eb53fe268",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P0",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P1",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P2",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P3",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P4",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P5",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P6",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P7",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P8",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P9",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P10",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P11",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P12",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P13",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P14",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P15",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P16",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P17",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P18",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P19",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P20",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P21",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P22",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P23",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P24",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P25",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P26",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P27",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P28",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P29",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P30",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P31",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P32",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P33",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P34",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P35",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P36",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P37",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P38",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P39",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P40",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P41",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P42",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P43",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P44",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P45",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P46",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P47",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P48",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P49",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P50",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P51",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P52",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P53",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P54",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P55",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P56",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P57",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P58",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P59",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P60",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P61",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P62",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P63",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P64",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P65",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P66",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P67",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P68",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P69",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P70",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P71",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P72",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P73",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P74",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P75",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P76",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P77",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P78",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P79",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P80",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P81",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P82",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P83",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P84",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P85",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P86",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P87",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P88",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P89",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P90",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P91",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P92",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P93",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P94",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P95",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P96",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P97",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P98",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P99",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P100",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P101",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P102",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P103",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P104",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P105",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P106",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P107",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P108",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P109",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P110",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P111",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P112",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P113",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P114",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P115",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P116",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P117",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P118",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P119",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P120",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P121",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P122",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P123",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P124",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P125",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P126",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P127",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P128",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P129",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P130",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P131",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P132",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P133",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P134",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P135",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P136",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P137",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P138",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P139",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P140",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P141",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P142",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P143",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P144",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P145",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P146",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P147",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P148",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P149",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P150",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P151",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P152",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P153",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P154",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P155",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P156",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P157",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P158",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P159",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P160",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P161",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P162",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P163",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P164",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P165",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P166",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P167",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P168",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P169",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P170",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P171",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P172",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P173",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P174",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P175",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P176",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P177",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P178",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P179",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P180",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P181",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P182",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P183",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P184",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P185",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P186",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P187",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P188",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P189",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P190",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P191",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P192",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P193",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P194",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P195",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P196",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P197",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P198",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P199",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P200",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P201",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P202",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P203",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P204",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P205",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P206",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P207",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P208",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P209",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P210",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P211",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P212",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P213",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P214",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P215",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P216",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P217",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P218",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P219",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P220",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P221",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P222",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P223",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P224",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P225",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P226",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P227",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P228",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P229",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P230",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P231",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P232",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P233",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P234",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P235",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P236",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P237",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P238",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P239",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P240",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P241",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P242",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P243",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P244",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P245",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P246",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P247",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P248",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P249",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P250",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P251",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P252",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P253",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P254",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P255",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P256",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P257",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P258",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P259",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P260",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P261",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P262",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P263",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P264",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P265",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P266",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P267",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P268",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P269",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P270",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P271",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P272",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P273",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P274",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P275",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P276",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P277",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P278",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P279",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P280",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P281",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P282",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P283",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P284",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P285",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P286",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P287",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P288",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P289",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P290",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P291",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P292",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P293",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P294",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P295",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P296",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P297",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P298",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P299",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P300",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P301",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P302",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P303",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P304",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P305",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P306",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P307",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P308",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P309",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P310",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P311",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P312",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P313",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P314",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P315",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P316",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P317",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P318",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P319",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P320",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P321",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P322",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P323",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P324",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P325",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P326",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P327",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P328",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P329",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P330",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P331",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P332",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P333",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P334",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P335",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P336",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P337",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P338",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P339",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P340",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P341",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P342",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P343",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P344",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P345",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P346",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P347",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P348",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P349",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P350",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P351",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P352",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P353",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P354",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P355",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P356",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P357",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P358",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P359",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P360",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P361",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P362",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P363",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P364",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P365",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P366",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P367",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P368",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P369",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P370",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P371",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P372",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P373",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P374",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P375",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P376",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P377",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P378",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P379",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P380",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P381",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P382",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P383",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P384",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P385",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P386",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P387",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P388",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P389",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P390",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P391",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P392",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P393",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P394",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P395",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P396",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P397",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P398",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P399",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P400",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P401",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P402",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P403",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P404",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P405",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P406",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P407",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P408",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P409",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P410",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P411",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P412",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P413",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P414",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P415",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P416",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P417",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P418",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P419",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P420",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P421",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P422",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P423",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P424",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P425",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P426",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P427",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P428",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P429",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P430",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P431",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P432",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P433",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P434",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P435",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P436",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P437",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P438",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P439",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P440",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P441",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P442",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P443",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P444",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P445",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P446",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P447",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P448",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P449",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P450",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P451",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P452",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P453",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P454",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P455",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P456",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P457",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P458",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P459",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P460",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P461",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P462",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P463",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P464",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P465",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P466",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P467",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P468",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P469",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P470",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P471",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P472",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P473",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P474",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P475",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P476",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P477",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P478",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P479",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P480",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P481",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P482",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P483",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P484",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P485",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P486",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P487",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P488",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P489",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P490",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P491",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P492",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P493",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P494",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P495",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P496",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P497",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P498",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P499",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P500",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P501",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P502",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P503",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P504",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P505",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P506",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P507",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P508",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P509",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P510",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P511",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P512",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P513",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P514",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P515",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P516",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P517",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P518",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P519",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P520",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P521",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P522",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P523",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P524",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P525",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P526",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P527",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P528",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P529",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P530",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P531",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P532",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P533",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P534",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P535",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P536",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P537",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P538",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P539",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P540",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P541",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P542",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P543",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P544",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P545",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P546",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P547",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P548",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P549",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P550",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P551",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P552",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P553",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P554",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P555",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P556",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P557",
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Root8P558",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root8P0.lean",
+   "bytes": 3466,
+   "sha256": "ee62b1d3d85eef1c86041422c829b189b1381c8302cd238e42e6c378a812ee9e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P1.lean",
+   "bytes": 2350,
+   "sha256": "69ce98c3406c8ba89372fae0b10f0da8c21dfb240024d5c6755d336a88a04e2a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P10.lean",
+   "bytes": 1724532,
+   "sha256": "89cd19e953b6c308238053cafb38f564a73314668c3fb86708a190d02d7fa209",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P100.lean",
+   "bytes": 26107,
+   "sha256": "1b2fc0a0a88fff8bbab0699ec7fe5113021a00ee15b92de8608b05bd0c06225a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P101.lean",
+   "bytes": 438666,
+   "sha256": "b9dfe406bd463ff001f2adae35831e62557c3f42a6a918508f36e88406a08c31",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P102.lean",
+   "bytes": 2627250,
+   "sha256": "ea8e4fdb03d56cb2767fe91b07bdbd1007b1db34314db36ccf64ead35b2d049a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P103.lean",
+   "bytes": 236536,
+   "sha256": "82556c3deeb70b5e03bceb2baf46c01bc4f633b167b173e508860a431725ffe9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P104.lean",
+   "bytes": 1185189,
+   "sha256": "fabd3696a718e7e5eadcc98ebcb9cba81351cb0bef07da7268e98de9b2617004",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P105.lean",
+   "bytes": 5835,
+   "sha256": "a397466535ef6d11a19643cb7ab239ca0d7a72e777ca1f4a33567af5ee53f5b8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P106.lean",
+   "bytes": 128133,
+   "sha256": "6b593becf386bb79a2b940873c8ef3ccfb2ad423de13691f876401bb61c3c8bf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P107.lean",
+   "bytes": 2632718,
+   "sha256": "25299dafdd13493460439688ba2e57da6e2688961e32aa8f147b63d05486c559",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P108.lean",
+   "bytes": 387544,
+   "sha256": "1517dfac9f5a7347d89edbc938b24b2c41138749be74a7e21f31be556ecf80aa",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P109.lean",
+   "bytes": 2348664,
+   "sha256": "0741c1c604d8eb373d197b30120ece24f8de851eef3caad1f5ef08cf4cc1c2ac",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P11.lean",
+   "bytes": 515624,
+   "sha256": "95e2b35b630d530817b257ab4831119cb77e82d5a3d0fb21ed2fce6b89b8a2d6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P110.lean",
+   "bytes": 34109,
+   "sha256": "7febebd682eaf33785c9be4ad19966dde51091d065bdf0a0cd0a42bb2370faf4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P111.lean",
+   "bytes": 250237,
+   "sha256": "79fca31e34115a4b0ae29b4aebcccd0ba71d7d3f9f831e091b815415ab800adc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P112.lean",
+   "bytes": 449335,
+   "sha256": "7e8a04959de5969c13af138a083866fa6f9800eb3265ed53df9ce33e304a1dd4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P113.lean",
+   "bytes": 2841922,
+   "sha256": "fd3b25a1806660f2165f683a38e966fca0ffe4fcdf3a39b9ddf6004205886483",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P114.lean",
+   "bytes": 2792010,
+   "sha256": "ca273b4f9c83c51f32de92a6e49128ee015bee9dfe9557270d3efc29ccecb322",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P115.lean",
+   "bytes": 407795,
+   "sha256": "e3b63ff770bc460624f2d4eee5b129bdfbb1fc46ff392e79e65657b2ab75a507",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P116.lean",
+   "bytes": 995343,
+   "sha256": "a082c95ea2865a189cadfda0b4f86db1cb6e7cf3be4aa13ca08096f5f04cae87",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P117.lean",
+   "bytes": 934034,
+   "sha256": "e2e1149e7c32841b9c89ed996015e8cffab9a5b110658046e162f73698e2f889",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P118.lean",
+   "bytes": 2369893,
+   "sha256": "0178bc1336851ffc375f0ab9f96a797bc208965a744fac97537ac108158d33df",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P119.lean",
+   "bytes": 732008,
+   "sha256": "9374ce83d0ff8e8b0f12f9760dc27c28aba99ec8c65ab5c8c0ad2eecf2343d3a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P12.lean",
+   "bytes": 1604759,
+   "sha256": "31d8adec11611c22b994a10719926aa44f3eb164d717aa437fea0241a65455dd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P120.lean",
+   "bytes": 3000955,
+   "sha256": "b6485017d6cf8b0406ad657242be050a3684196f3e600f98b4e9ee15a9eb123d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P121.lean",
+   "bytes": 98393,
+   "sha256": "2191f7484fcfa291d46ccda6f2531520d0d199626ed9c7b1dd60b1a167d5d286",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P122.lean",
+   "bytes": 2260117,
+   "sha256": "801eb6fc04bdb837ae7f69ae177ec1e7d7a7372efeaef01aa43c93cf8fe189d9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P123.lean",
+   "bytes": 362508,
+   "sha256": "dc27e24e027bf08033db0d59529845f2bffe4828f0b14416ee3946088d6b392b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P124.lean",
+   "bytes": 513760,
+   "sha256": "4c73485218e0333770d2e46cf07d3a00b502d461c7711c03a5bb2b96fa8a7655",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P125.lean",
+   "bytes": 475852,
+   "sha256": "0c529f49821ae62eb9098fae063c065bd4d33484255e1f30586e7470ce2bc3cd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P126.lean",
+   "bytes": 87621,
+   "sha256": "988922ccc97f319b9d783f493df92e5f22de2e79104d0e4639f498dd6f8eb543",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P127.lean",
+   "bytes": 909868,
+   "sha256": "456c5d2489652f2b0fdee751aceeef6e1457827f0641461d93dce0dead78ceba",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P128.lean",
+   "bytes": 1525,
+   "sha256": "94645e714fc12b19796f93971efaaab89a084ef487f00b7314da39fec3735e19",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P129.lean",
+   "bytes": 265347,
+   "sha256": "5cb8ac2cde55fc40917ebacb299e5fc212461f8084cedc6c7fca53b67eccac85",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P13.lean",
+   "bytes": 2504415,
+   "sha256": "2b623347d2df53c1ccd157c8d4ab29005d8061a470e9de544080a61e5c85f753",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P130.lean",
+   "bytes": 10464,
+   "sha256": "b428b040545e6b0f53f088bfe70747281c8226d2a4b949efe8c850d28837eacb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P131.lean",
+   "bytes": 245873,
+   "sha256": "3857acaaab4b7eb50b1feb92cdbefea404f0a653d7d7ef7bedcfeb82040c1f87",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P132.lean",
+   "bytes": 2050,
+   "sha256": "8cd41e2f0fecf0b58ae3250f8434d0b89fee779bf929d802235ac4497091b624",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P133.lean",
+   "bytes": 1461083,
+   "sha256": "872e7949108c8e692a81156b76d55276527f93b9d1a70bc6c74a6733d5997342",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P134.lean",
+   "bytes": 1728084,
+   "sha256": "8c44db1ffe31a0ce2a61402213dd422c19a11f716aa88d7989bb55e165980583",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P135.lean",
+   "bytes": 2700,
+   "sha256": "1b2c59fc492fd40c181a9401a5ab70b544c642783524429990226f3abb7dae40",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P136.lean",
+   "bytes": 8188,
+   "sha256": "8ceac181dd9f8a57df055c1fa729980e3f0107ebffad0af9c8dfdc604745d922",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P137.lean",
+   "bytes": 191718,
+   "sha256": "6c062046d3c964745cf295f20b9f46a6eb3b6c360f6ddff1ef3e11fbb016b45e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P138.lean",
+   "bytes": 2537959,
+   "sha256": "68c4a0793a7fe17ef2b3bfde6bc22e126b16715df8f86b4658202b33eafa3935",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P139.lean",
+   "bytes": 578473,
+   "sha256": "d26e3620edb25283c739de053e55f21e3f43e7fd5e0b60d9af70bda0951c3fc4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P14.lean",
+   "bytes": 1548038,
+   "sha256": "a7bbd2c93c85a2e05fc402e06725b44a33dc570eb86ac61ff133482e78370b0e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P140.lean",
+   "bytes": 2878043,
+   "sha256": "c95de0549308375f32f63217aa4898764f2b432cf41616bd6807e85948873ea5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P141.lean",
+   "bytes": 4385,
+   "sha256": "5a7d6e139dda1f3b7fbfe5e3aeb25de3eef6341f2a46def9d47d6719757fbfd6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P142.lean",
+   "bytes": 2998759,
+   "sha256": "4e348d040a8b53894ab414e504fad54bf2f1a793d2aeb2acd3501d19914ac400",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P143.lean",
+   "bytes": 55530,
+   "sha256": "d34685e7f67ad8e6a872d26fcbdb3f6ab5db3e84fc00902505738e1c6e0606be",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P144.lean",
+   "bytes": 5191,
+   "sha256": "c9a686c191dc36a6bd91444ad53227388ceca2e3fc7e32cf3b8d84586f87ed7a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P145.lean",
+   "bytes": 2175,
+   "sha256": "94a067efd0e3e239c5a7ef0f108de5ff64c965c83e8f59883169dc8f50cb4e49",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P146.lean",
+   "bytes": 294098,
+   "sha256": "b459e4c869d999d9de19bc12d616645dc51d89d7e71f91578b1c240c946e918f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P147.lean",
+   "bytes": 2262571,
+   "sha256": "0d51ca68b0d912f1dde3eee37b9555ca184954c8ed70fe0a47f3a7b29244550e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P148.lean",
+   "bytes": 11540,
+   "sha256": "6881e236c1d02b8b2234d8639d28425a5c50eb3e477b6d4e0ddfa97ab59c583e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P149.lean",
+   "bytes": 293903,
+   "sha256": "e6be114554b390cc1346c7c38140132cfdfca8fbcf0d5a5d04558efcd22ada22",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P15.lean",
+   "bytes": 2568071,
+   "sha256": "44db3edafb37d52dbeb19a0702ae8ccbb54614a228bf1da5f4f7751b69ee3ec6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P150.lean",
+   "bytes": 529075,
+   "sha256": "f2b6ce5c8370b692c10ec57f4e004c12cd5feaf247628b60efa9805c752dfa45",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P151.lean",
+   "bytes": 119010,
+   "sha256": "3c7b4c25992bbc6d580897b16e1e1d73e2ea7b7f8d363cd23bf4d63ab489d152",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P152.lean",
+   "bytes": 2375945,
+   "sha256": "cb0acc2b751603112af0e7aee187e71a43c145716327c68bebaf3a618d1c414e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P153.lean",
+   "bytes": 2836786,
+   "sha256": "95bc5e0afe61a7116ee552bb44050fc5ae693f5888ffa30456a54e3b7490d8b7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P154.lean",
+   "bytes": 138945,
+   "sha256": "49dbda243d611bb6ad09bd6b8d9ad08449a15d4622623b56c63fafa7301386e9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P155.lean",
+   "bytes": 1618868,
+   "sha256": "f58b47ab10067148e6fda5d590fca8561f2bd85e2fb0e6b94c050d09ee529422",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P156.lean",
+   "bytes": 1523575,
+   "sha256": "adc69b82fb2f984c6fcb2a61e2b395de530a6c25c1a6ea026a7dd30dd5bf985c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P157.lean",
+   "bytes": 172092,
+   "sha256": "f9d9b9ffcd783fc49b3d7aa89040676420cf74fe52f7b17bb1def4ad04f9e6d0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P158.lean",
+   "bytes": 1561731,
+   "sha256": "d6812724afda379c83dc5d8b7c3f3809c6c68fce66cf6d7b77d7e55eb8b5925c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P159.lean",
+   "bytes": 1487170,
+   "sha256": "6cb07cfccf8bc304ede840b0ab58e240519c3dda295794d2e955eff09ac75eb3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P16.lean",
+   "bytes": 274443,
+   "sha256": "8b7518b8905401fccd115d98d74b37ee00d1cecb4bc9e11e95df06a5ff573efb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P160.lean",
+   "bytes": 2975799,
+   "sha256": "7a19ee81814f6ea8b05ee7dcb2b7385f17250ad713aa23de1a773860d72ff268",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P161.lean",
+   "bytes": 2471528,
+   "sha256": "7fb5ea9d9608cd1aaef0e3a06a622dda7ef251d5f2ddf910a6a3d2edf657458e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P162.lean",
+   "bytes": 5425,
+   "sha256": "69864bcab56badabbc5324ce2cbd02a6f23ba73f385fcf8d04fe8bd74c5a3f15",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P163.lean",
+   "bytes": 2968,
+   "sha256": "019afecb4dc0bf4adadc5458151bac6afef54c298fd665049af819ba71a30637",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P164.lean",
+   "bytes": 3388,
+   "sha256": "183dbf65104e92af248378f94e2bafc900296cd60218c874bf47c2b953ce95c5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P165.lean",
+   "bytes": 96805,
+   "sha256": "5fb6d82d78dbb5f531799062d7168f4a85a878402617a325a03ec9cc5e57b9e4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P166.lean",
+   "bytes": 226002,
+   "sha256": "d1f2fb66055027f2f03808a92f45b34a478c50cd2870a0fcbea5807b961200bd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P167.lean",
+   "bytes": 32965,
+   "sha256": "65695132e29eaeb0c36fabb15619498487a34a576d8038624b381698cfe7f200",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P168.lean",
+   "bytes": 676401,
+   "sha256": "fac84dfff26d8fe20598907a5bfafe33d8ead061eef90b7de26d3b4e2a61913a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P169.lean",
+   "bytes": 2874266,
+   "sha256": "c986bb846a8206ffd32f34613bae9014ba247e2b1115b598ec863491d94d866a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P17.lean",
+   "bytes": 128519,
+   "sha256": "b5ed354aa8710cbc10726e34eaabc4c0baf0458e62c3ba511c284c19194c9b24",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P170.lean",
+   "bytes": 489906,
+   "sha256": "5d6131eb874c7eb12852c67415db6d29b112b40e82a6775dd87586e59f6c8b7b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P171.lean",
+   "bytes": 87189,
+   "sha256": "68ee12663ce5bda0851a34661d6dc942a6158ce87b42f9bd5dcf2da8b7c3fd0c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P172.lean",
+   "bytes": 26124,
+   "sha256": "3c9aac24394820dd6c8480cbc48cfe4023c3c10eb3b541ec02bcaba73000330e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P173.lean",
+   "bytes": 1677,
+   "sha256": "4a995c529d8083c9fe5708f4981420e77833925609c26ee7ddc2fe62ea2e6756",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P174.lean",
+   "bytes": 197928,
+   "sha256": "22de18c77fdef9941e1d6200dc83d81c3b750632f01ec97b95be8a79ddcf9194",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P175.lean",
+   "bytes": 1318700,
+   "sha256": "95e3b0a5f75b546b4c948afeabf55e202691421d3a04b6abf6cbdce75f4e23fe",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P176.lean",
+   "bytes": 2756917,
+   "sha256": "75bb8d6d899d4fd033b6a94f718ffc41328e1570ce01254c66900b81701c28f3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P177.lean",
+   "bytes": 438524,
+   "sha256": "e8e928f5bcb71a72db16260c3dd1ae40595a74eb09038c1bf6ff41cb17388e21",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P178.lean",
+   "bytes": 10688,
+   "sha256": "5f34d93a6048e9e55080a600bc506a651f5cdf727e857de318564e2ea9df142c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P179.lean",
+   "bytes": 1497312,
+   "sha256": "9488f586653c18403add35cb4e61abab9487ec74661e15780a423e16b9598b2b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P18.lean",
+   "bytes": 3947,
+   "sha256": "e1d4d61e7f0f7babb12923d321925d1d0d3d2422d2afb26c65725d867a7f864f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P180.lean",
+   "bytes": 2701977,
+   "sha256": "4821e21488948a3c3a52472ceec1f4a9e835d2a23e109a4c27fa8c0c854b5fc8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P181.lean",
+   "bytes": 1149123,
+   "sha256": "35b710f5f714dd73144d8e78345cff58c2bac7799cb02386fd208ba65b869cdb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P182.lean",
+   "bytes": 4160,
+   "sha256": "6734c45ba7187b045823556b5eeaeb2f9c5262a6ef6e18992e6f77d4d55b12d7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P183.lean",
+   "bytes": 2965783,
+   "sha256": "81bf3ef17809d5fe8f77c6d5bd6fcce1f77dadcabaff11490fbb10406b3b1fa2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P184.lean",
+   "bytes": 2599,
+   "sha256": "bc8374e6ab56f5081445d380df5b6c7b67c71c7109896a4a8ff1c9cd8b9ed67a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P185.lean",
+   "bytes": 16570,
+   "sha256": "013c09c9d94a28aa241230c657332a3334d968c898bc597a842f423445086c73",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P186.lean",
+   "bytes": 1033395,
+   "sha256": "047d70661df3a286c0e1c4e973a7cd7ab30635bee0bc16206bc451e68e5c5674",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P187.lean",
+   "bytes": 2199,
+   "sha256": "910a924902ed575f72ed923cbde90f9ecdbc0be27555f2f57c4833bf7d1f3891",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P188.lean",
+   "bytes": 45204,
+   "sha256": "872936a922763553c59bd0509774bf27b2fdb419441b9f4dbf1a7dcb0fc5c88d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P189.lean",
+   "bytes": 2321593,
+   "sha256": "335abe0a05e0aee75f08f53fd4fb5527ccb9a651e59936dfc294699a461193ed",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P19.lean",
+   "bytes": 1914,
+   "sha256": "295cbdf3707a9015819669a526265f544e5e8be888b234c32fc00725b03856c9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P190.lean",
+   "bytes": 1811591,
+   "sha256": "0a15996e5d68eec8938cb0139fa0122408371d8431290199c5276bf0dbe055c0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P191.lean",
+   "bytes": 2534548,
+   "sha256": "07a53da70763f59d60e79c206320f94d8153553e34ab694be3731509db96d015",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P192.lean",
+   "bytes": 3282,
+   "sha256": "85188c7b2524943382520d1c425705a8257d56267d995b5edceb560c0b9c21fc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P193.lean",
+   "bytes": 1929,
+   "sha256": "08d2255df37dc603be8b8195207b4235e98e8403fa5ef4369ca7160ddbd71e9d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P194.lean",
+   "bytes": 7196,
+   "sha256": "6909e13e2ae33f75fcd4bfd473a601c975bae2b36006f3dc727ed2211396f3f2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P195.lean",
+   "bytes": 548037,
+   "sha256": "0dfd4e2a3ee40830cae43af1e546a10177827dc3eb0c050254fa21d73dcdfd15",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P196.lean",
+   "bytes": 2640587,
+   "sha256": "70c17d385201fba0c73f7410dced88f592662d292f7b945beff9ba8800c998ed",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P197.lean",
+   "bytes": 44615,
+   "sha256": "13fb9f1dbc1c3fba8cd2e4ae65211d32b02921503d49abf3752ec13542e79e87",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P198.lean",
+   "bytes": 2761,
+   "sha256": "aa5f2f9fa6cce5d02217d160f4dfc9baaecb38ad0ab7a8f5783c8d14b2af1580",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P199.lean",
+   "bytes": 1495475,
+   "sha256": "919f836fbc0d787208f1a58eb238c573701cc4aae592387b937a93f8b3668cfc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P2.lean",
+   "bytes": 2163,
+   "sha256": "6656fed19f2622e8d8847d11dd4609ac4b858d1024e82636269aa63d3513655c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P20.lean",
+   "bytes": 1912,
+   "sha256": "076f37667603846d702a3b1476024ee5f4fd179076e322872a8278cdd746e6f3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P200.lean",
+   "bytes": 3432,
+   "sha256": "5468516ce94da38ed72d1e4945d098743493b39a529b25344123ab1d68dadee5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P201.lean",
+   "bytes": 57933,
+   "sha256": "ddd9de5a942e42603989ce04c40808b7ee29ff2cb8320ba14544580326ab97a5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P202.lean",
+   "bytes": 290405,
+   "sha256": "fe05be0ab749296e7633de237f84cedffdd69ced9fdfd69d2221b6634aae11ba",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P203.lean",
+   "bytes": 2810181,
+   "sha256": "ccf0f47a78f4634a66793778b1daa3b965d9aff696ebe9943210a05482c9946a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P204.lean",
+   "bytes": 2007,
+   "sha256": "571f45a6df6aba907aeca0d731a977c0869c69d2cae85f823765832d078247b0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P205.lean",
+   "bytes": 2904818,
+   "sha256": "3f0edfb17bc7cd00099574c2ac437d103d499c34026434d7e29f814bc9655785",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P206.lean",
+   "bytes": 1791627,
+   "sha256": "0f55fca27f8eca3b507d2cd0b1de56c679c30f256409c9b4d82bc9ee6595e3c4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P207.lean",
+   "bytes": 2892857,
+   "sha256": "2556fa62b97e5ad7eb4edd1e293ffaf090b6e577db7b33efb92d28237c7719ec",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P208.lean",
+   "bytes": 9064,
+   "sha256": "45fb50771c74f994def0e62ab4451e0765fb5593018db16fcdaaa8517e817dce",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P209.lean",
+   "bytes": 2080522,
+   "sha256": "582ab4effa44659fe20eaa5f4fd91b762608006bdcc7afcb467a5488118f137f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P21.lean",
+   "bytes": 17679,
+   "sha256": "6bcc28eabc30d83dd9b49edd7f132dafa821d00a5d0281c8660908b355033b1b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P210.lean",
+   "bytes": 1523,
+   "sha256": "8ce68e37b78fb0ac84f8f161b6ff78d4ac1024555a09b9636b3de38137e96bdd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P211.lean",
+   "bytes": 20865,
+   "sha256": "6395626f33aa0c5b64f51384f4c637ff04fa08fc42d61dcedee8280ecd8c89f8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P212.lean",
+   "bytes": 78709,
+   "sha256": "2fa0b64da86b8873401a97af62de20c04676e08724c628938b94dc4451677fd0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P213.lean",
+   "bytes": 300977,
+   "sha256": "6d7653cd391156c404dec3bd68475f891ec90d824990bf5c49dc790dfab73d48",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P214.lean",
+   "bytes": 2613754,
+   "sha256": "3e5be49e3665f4042f6e9921b28403ceb8e0e2682a3e792e12f9bdbf1d821e21",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P215.lean",
+   "bytes": 527541,
+   "sha256": "09c29d63cbaf12e9d0b5aa9f1ccc393b871f888859a5059a808c4f93aa76ff07",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P216.lean",
+   "bytes": 1888884,
+   "sha256": "2ca235c680a0fe591928e5239a3f794db7c7c48c3a6292371dcbd12131f21751",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P217.lean",
+   "bytes": 43261,
+   "sha256": "7669b5bbae7d61ceb0dd1e967a2567b3d25a75c39d315e951a715fd7b99ffa00",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P218.lean",
+   "bytes": 2919926,
+   "sha256": "8ce69c5e79f03c8a0ed87d9a1e074600242adc3fc8bf4d88f0e4d3e94d7ff9e6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P219.lean",
+   "bytes": 160237,
+   "sha256": "ddb20f641c9a99c754ed6b36a1eda84d182859f8616c3ba5b6df42d66d631216",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P22.lean",
+   "bytes": 1521,
+   "sha256": "6e0e2f76cb2a3ed3002e09b30646ca262686032e04fbd8287627e3704a509ed5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P220.lean",
+   "bytes": 48278,
+   "sha256": "d6d890c3918fb1d5da125498c7bad80465152eea21718a2eab941dd6bb7ac935",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P221.lean",
+   "bytes": 1533,
+   "sha256": "a2536ee6580c78d80d7eb449cf34bdc3468c6d91f34df1eff18a6550726d2106",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P222.lean",
+   "bytes": 58211,
+   "sha256": "f1f9ca652c16ffb6c80191f1f9b4b45f4858ed6a8562c299b3265e14c081f954",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P223.lean",
+   "bytes": 2309,
+   "sha256": "ecdb6d85fdc69b5c830d64bd5c7f011752030b348822e5d14a594a217dde308c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P224.lean",
+   "bytes": 13847,
+   "sha256": "b5eb121a8d2acf4eff6b58c0dcaf59c761215bf683700c25279211e6a5918b91",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P225.lean",
+   "bytes": 453032,
+   "sha256": "d3f6250154f40063bf268012ae5dbf9add591883dbd4bc1495c898590db88fb2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P226.lean",
+   "bytes": 1563565,
+   "sha256": "0e55249a33c06f43a2679b412031ddcdd24262b9023a9f0d2742f2c8df8d4478",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P227.lean",
+   "bytes": 42492,
+   "sha256": "ee37f66ede52c66805868050ae7435e3b24e08a65c8ddb0c213bebf1aa6ab14f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P228.lean",
+   "bytes": 2245474,
+   "sha256": "3d59782bf8f936764174a202f8175014c179c3c1fe86926b6e396657ed8cbbff",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P229.lean",
+   "bytes": 871165,
+   "sha256": "40bac78d4bb325a6d888de8000e351d9c6ee2f2aabcc1bf83229d75ac1e025aa",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P23.lean",
+   "bytes": 2431,
+   "sha256": "61bac08eb65235efee8903c990f67d47a823e30f9bf7f3c1fec8444b8e85b431",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P230.lean",
+   "bytes": 24681,
+   "sha256": "2dfeb031a8e7985a9da7faad0136e51cb6baf95b8fdf338fcf51309e90b887bf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P231.lean",
+   "bytes": 1710263,
+   "sha256": "68ccf7a1ad7ace180ceed7110b9d0bf9537ba7075913971691faede51531cb5a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P232.lean",
+   "bytes": 10073,
+   "sha256": "552ca59b8e23a5c7ca03bae44365b1939f2bc17600362761d39ee256cb008cd2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P233.lean",
+   "bytes": 1779138,
+   "sha256": "9d375177be6a07fe9404db8905c15c3432e26c024e6724b69c562a965ffc1751",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P234.lean",
+   "bytes": 1334629,
+   "sha256": "7d792dcb43098151ef640e85572439a8d263281cd6f4e70b21cabe0471a4ad49",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P235.lean",
+   "bytes": 1325292,
+   "sha256": "edba585aa7dcc4f888025dfbfda31f20e9f351f735cae758a27dc1ae26c18508",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P236.lean",
+   "bytes": 942931,
+   "sha256": "49f4a56807a5082e84c7363d320f51b379b955a5d74fef9f209f3a9bad7b3047",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P237.lean",
+   "bytes": 116655,
+   "sha256": "adaae824a7fc13e7947aeaa4ea49e8ba824dfcc723a62c12ce3aba8227dfcbe6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P238.lean",
+   "bytes": 2113702,
+   "sha256": "aa724e2ab2b412ee66d938779ee4357fd97f58534a4a51bc59ee1ffca59c0060",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P239.lean",
+   "bytes": 958456,
+   "sha256": "8050fe63ec0d2e5110d067e311d9836a89993cca571ba6d8d0d645658d24523f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P24.lean",
+   "bytes": 2690,
+   "sha256": "9e2d59ea5a327e36abb0e4e0a35ede0587538cce55471e7d6975908dfb316f20",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P240.lean",
+   "bytes": 648668,
+   "sha256": "5eb02008a4d03848ee1b889f6d9b55f9db484ebdaf733b2ea94d6238f32c8131",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P241.lean",
+   "bytes": 1083957,
+   "sha256": "a882163419729b0ff7974ef1dd7a616de87c8f587147dc49abd93d687a26bcb9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P242.lean",
+   "bytes": 2171952,
+   "sha256": "7fb55df5634469d71ad76be64d6b80ad8f1e710b4ace546dd6ffa0386551082d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P243.lean",
+   "bytes": 198883,
+   "sha256": "9af7fb2646eb7d97ad02d4d6ea51cb748af30e10eb997bf7ce1e35afe3d4d1b2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P244.lean",
+   "bytes": 12958,
+   "sha256": "475274697587986a92989b811184fe5d2a5c425f6f6d6e8434556c3d0bc4e84d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P245.lean",
+   "bytes": 2686481,
+   "sha256": "a2c49c1dbca1884dc96dba98367d7f62479bcad24ea3afa15fe03fe0e1e5fabe",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P246.lean",
+   "bytes": 371393,
+   "sha256": "d9259c83b9e338fa4ce8a7d5d8fda7f48012e66235f4d55905021851ab701cd0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P247.lean",
+   "bytes": 42102,
+   "sha256": "effec2d58205d152fc6f1881c5900b4f4dd09a61d0ad5b8572b4e9c344022c72",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P248.lean",
+   "bytes": 67191,
+   "sha256": "858eeb8f851bbd489d83aa4d30e9e96b7fe99c4357dcaad58bd8ed51d58dc254",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P249.lean",
+   "bytes": 17525,
+   "sha256": "e02272af8e9d8d9c5c47c3708109f89f51708cdb5d873ceae9b5bda94368c0c3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P25.lean",
+   "bytes": 378470,
+   "sha256": "b7c83114c8f5252e634a45ec6e59fcf3c36e42c0c09d34f54cd776436dbffabf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P250.lean",
+   "bytes": 260496,
+   "sha256": "228128df05eb2dfd5f88191feea1b7a30a23dcecefcf713df7c667a9feea4520",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P251.lean",
+   "bytes": 14440,
+   "sha256": "50bacd0696e23c74de721d512e411ea032387eb435019c0b534f218b28a087c1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P252.lean",
+   "bytes": 6735,
+   "sha256": "55e712af584ebfe4043ac5b36723d4c47935a25f9b637e1a75c884c83377e818",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P253.lean",
+   "bytes": 2308706,
+   "sha256": "b7b268ed62ea30bcb7129e04a908c3c038cec89be3d74361bc87a309c6e52761",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P254.lean",
+   "bytes": 1354444,
+   "sha256": "c7405892304fa927b5f5a575fae3508b611e14a35378d612ae1c2bd6f84cde51",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P255.lean",
+   "bytes": 2326492,
+   "sha256": "8ed981b3d5977687de7754e1d3fd2d4caddc48d6955cf7afaaae4a92ac22b251",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P256.lean",
+   "bytes": 1653716,
+   "sha256": "8aeeec1d7733a0fe6b1e6bb593dea7434999ee017db45180220c1c6ce018e189",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P257.lean",
+   "bytes": 1649453,
+   "sha256": "bbc39b4f59fab4c231391123e2daad8d2e75ff72effca55e2064c9ea4ec98af9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P258.lean",
+   "bytes": 285723,
+   "sha256": "dcdb2454bee4f6428896107379fc231605d101bc4e8bc3444f969cdf9b512796",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P259.lean",
+   "bytes": 44972,
+   "sha256": "eb68461297531acc417ea64b37555d0daba846ebc0c3b84144d5051f287161e7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P26.lean",
+   "bytes": 100978,
+   "sha256": "1f343d5853126a12ffa8a4162bf3fb0d31d21a2acc9e02c1beb0ef85f0839773",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P260.lean",
+   "bytes": 4593,
+   "sha256": "5b4d7f804b01bb5a93cce2f297732edc6bdf8a1d79e57620a982821971593966",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P261.lean",
+   "bytes": 4822,
+   "sha256": "d61327aeb85f5ba72108fdee8e1a522a93bfef06e498ad7112e6eac4edae6fc6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P262.lean",
+   "bytes": 397512,
+   "sha256": "01ff0423ae17f81faeb4fe31832bb134b40c79acd9d80219c73e1e61c06ded54",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P263.lean",
+   "bytes": 782870,
+   "sha256": "e32e6209f3c27fe3d19c09687f3608242eada768084205798b686a3223cabd34",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P264.lean",
+   "bytes": 1529,
+   "sha256": "d6cf8ed643f8aad7ab205cfea656d859f13c4c0c0439177c359cef30bb9b3fa8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P265.lean",
+   "bytes": 17011,
+   "sha256": "258a5cdd6a44280ef0c748c118ce031a3b344612175f858daa1f305397ab08b1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P266.lean",
+   "bytes": 2049,
+   "sha256": "0b57b466404ecd6d82fa775f24b67149972a547324ab41aa9e4b1bc0667f9d71",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P267.lean",
+   "bytes": 1529,
+   "sha256": "c1481ed0a4e001623a4cd11cabb55758d0bd4bb83ba3d7e1864089177252c546",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P268.lean",
+   "bytes": 1659,
+   "sha256": "2dd0bd1a044b843f5ec3a9ebbf0bc2676d38a443a43fa1951fbe0a288a9b36a9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P269.lean",
+   "bytes": 1653,
+   "sha256": "1ae9f133127f023dede6314373d4e821395b7eb31d8e0333e8460b8ec8df98c4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P27.lean",
+   "bytes": 336037,
+   "sha256": "74dfc023ab704bda5fa01aac4a547557aa094dbf8ae09ec0116ba64b716c3f00",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P270.lean",
+   "bytes": 1523,
+   "sha256": "a8adb6d38bb7adc58864c157c4e4b7fba8f2a76ad82342699f1cee23af6da287",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P271.lean",
+   "bytes": 730002,
+   "sha256": "9f6de98ee7c74e812147b9f99310d4b3f63ba8c312f0e0e9bba99350cc80db0a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P272.lean",
+   "bytes": 109985,
+   "sha256": "432a260e850f107ada7bbda07bdbb36c0909e285edaa79e3aa47c66103a30ccb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P273.lean",
+   "bytes": 717471,
+   "sha256": "079590eb7a289619629cae74691a4beeb8d9787b53c42acb78f50b84fafe686f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P274.lean",
+   "bytes": 30102,
+   "sha256": "1259e30b3d55a6d21a20b655c18ff8c0f48cdd7549307c99008e290deaa6d29f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P275.lean",
+   "bytes": 170932,
+   "sha256": "bcd5dad1996387b4831a4ad5a7c165be6e7a3f6b51f0b559660eb3a61b997c64",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P276.lean",
+   "bytes": 17660,
+   "sha256": "1663b5fafe2190000638aae69f3051f276af23a27c57faedd598803a88a5b389",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P277.lean",
+   "bytes": 55918,
+   "sha256": "d0719a5e4342bf46cd98e091feeebf4e48329ebbcca1e4878c618559c65db359",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P278.lean",
+   "bytes": 2984443,
+   "sha256": "0c8d2dff57f454e510511c200357892838e72bc04f7317445fd8ea1494f66e91",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P279.lean",
+   "bytes": 3396,
+   "sha256": "ffc5572f08df84633f8f493ddaff101098872c8bc18631dcdf36fba0e390d8b4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P28.lean",
+   "bytes": 104103,
+   "sha256": "60060265760dbf12fb2885364971bc6491c75dab24dc3992b63910bfcf192a44",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P280.lean",
+   "bytes": 2304194,
+   "sha256": "c4a634fb64c7755ed9da69dbafc346f5082176c5a6b42014b92007dfc3ae6695",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P281.lean",
+   "bytes": 1721603,
+   "sha256": "d57a12a1d26bf84b885f9e87aa664af85f0a8262f140e0dfe8561dbe598c1e62",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P282.lean",
+   "bytes": 6454,
+   "sha256": "f65b5a8c25fb039b8c605388f62a7fbba8f0089d258ccbfd9608fe16eb77dada",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P283.lean",
+   "bytes": 9647,
+   "sha256": "77b728d5a8a29d7a0b1a11d6592aca3a48ad1f6d3bdfd312d5e9610ff58f2450",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P284.lean",
+   "bytes": 794933,
+   "sha256": "8c79591f865149dfda8533f73ef827ff8bee7ee2f377e9694e580b5081b89f88",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P285.lean",
+   "bytes": 1080441,
+   "sha256": "5d99f33cbd3cd490421bcb6cdbc2cf53bd1ac676117185dd7ce293fde09de42a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P286.lean",
+   "bytes": 2065182,
+   "sha256": "0bbe612865b5fa31481c62c77dc5bf5a66113af675ad3bf433b2069f589774eb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P287.lean",
+   "bytes": 1185141,
+   "sha256": "e708bfb560f2c8f1bd7f3b4ce39d22b4761178488df8cdad4c6f6b6bff499f7e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P288.lean",
+   "bytes": 15103,
+   "sha256": "08424764f245d8e9397f65571e751fc490b74f8e89403cf8bbec5972ae087ca4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P289.lean",
+   "bytes": 8779,
+   "sha256": "fb27a3f3660efd3205aae379042593bd19deed9325e13435966aa87783bad2a4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P29.lean",
+   "bytes": 847154,
+   "sha256": "15387da3fb985ac20913ecbcd48745ec8627ad644148a7776b7bae2cfb097577",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P290.lean",
+   "bytes": 250229,
+   "sha256": "97c1331556fdcf505c5eda9b9539fcddf3e6aaab064133b885027d5a92d1cc50",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P291.lean",
+   "bytes": 1613167,
+   "sha256": "739ad89c82a5cdf6b648d5a0cd752caa3d1479fd49581aabed999967810e4216",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P292.lean",
+   "bytes": 2633848,
+   "sha256": "75fbf2b4827e010d8b8c56a3e5b019c1010b98985054fa88761dff2dd003aa8e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P293.lean",
+   "bytes": 232576,
+   "sha256": "13fb22319e0eb91f7a0973a7454a4a2d9f00958b9360c716e99ea99303157719",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P294.lean",
+   "bytes": 489537,
+   "sha256": "404a4cebc52825c400f110d3ae0416bbed3c0a6e233b1d73872544472beb5085",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P295.lean",
+   "bytes": 13378,
+   "sha256": "401bfe205e221b8c41c4d5788cb7e3e7d9f2ab8587e28553c55ae61f0ef4379d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P296.lean",
+   "bytes": 51815,
+   "sha256": "8d11cab37ea002f042f77cb15a26f9373d8f761149a8e1d9e535ced61b1273d8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P297.lean",
+   "bytes": 2561397,
+   "sha256": "4de0caea8bf2af2f98259d314569a1945a523526a7c8a538d722d81cb7ba4832",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P298.lean",
+   "bytes": 891980,
+   "sha256": "979768915c351329e1190bee309400bccc514c4dd50123ca05c35c32dfa2dcdb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P299.lean",
+   "bytes": 58930,
+   "sha256": "d54dc8177333c5f32968fcce989f7541fc691154ce764470547d7c3e397ebf55",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P3.lean",
+   "bytes": 2459,
+   "sha256": "6d173a81046f0634194b76697cad4f67281054483008cbb67ef90d80da02498b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P30.lean",
+   "bytes": 1064452,
+   "sha256": "386c5115c2bb755ee34a59b9136ff68675b35b49945d7f9eba0bd4e958576f11",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P300.lean",
+   "bytes": 20000,
+   "sha256": "b1f7ef31a672fa13601b3f67ec2725bb3b33103376e6864dd90e06bac074ff97",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P301.lean",
+   "bytes": 34197,
+   "sha256": "64a73a76f52db9287e989d45b8b15d6275578ade1457423349cb10d23857bb31",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P302.lean",
+   "bytes": 491513,
+   "sha256": "be5eb580301cb580a65a6183cc2dd76f7b518c3eb054bfe963eb001912cd80d2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P303.lean",
+   "bytes": 3687,
+   "sha256": "0b13ced8a414737630ee87b2e857eb5ce6657b7768199395050ba77715646fe8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P304.lean",
+   "bytes": 470053,
+   "sha256": "5f3f494b3f7080633a5f5244914d0080ef1538da95deea0bbac370daafbd3f6c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P305.lean",
+   "bytes": 21507,
+   "sha256": "78e7b2db624af6fe0da259ff68fd4d01dc97a1ca38ca311345a1b3866aa06efd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P306.lean",
+   "bytes": 240265,
+   "sha256": "73c88105bf7b88962923e564d5130c03af4d31d14aafbd5beb5d1ec62fca8d36",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P307.lean",
+   "bytes": 14080,
+   "sha256": "f21d1ab907a6ff4735365a296f4a5e201bf9111fc1e4673ab7e2869a0526a7af",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P308.lean",
+   "bytes": 623362,
+   "sha256": "187b53c08765ea90d1fb51ec322c8c187c33c82ab9325acf54da5fbc4a79927b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P309.lean",
+   "bytes": 20936,
+   "sha256": "af2924516e4c637b911c1a535ae2b7cb95add142a23bc7e0720c80cfad3c42c9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P31.lean",
+   "bytes": 67190,
+   "sha256": "fc7fecc0dc99227df8c0e440a97ae61edbc6b7533b3c1d70b6060eabcfcfc3b2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P310.lean",
+   "bytes": 1415,
+   "sha256": "d1cf8e9a5af1c20a94074f98597e32c901d6e3dc68168ed55d436769bfa3a7af",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P311.lean",
+   "bytes": 2784824,
+   "sha256": "8349fc603fd222081eb44c8acd62cad8bd498f336d4ebd670d25edc58a4db386",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P312.lean",
+   "bytes": 607050,
+   "sha256": "99418ac58fe2bd9f3955a43e27c929c2df345194e3c452c7118af59c57239919",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P313.lean",
+   "bytes": 1662493,
+   "sha256": "bcd64a6a6a842dc385754b8bf01103dab50f8a089797cd5c858b89244ce47436",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P314.lean",
+   "bytes": 2075965,
+   "sha256": "7ba89292fa4b2a8de9a11c7170b97e8aca1c345ec52af3dabfe16d78a697a219",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P315.lean",
+   "bytes": 1697726,
+   "sha256": "2ca63a2d4484252f87d7730163204982acf4151ad44aa7575ad9a1586c61f754",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P316.lean",
+   "bytes": 58203,
+   "sha256": "4344c818dfb3990c755429f234ab3ec70bd413617e301b9bc42c39ab4880468b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P317.lean",
+   "bytes": 9322,
+   "sha256": "6a43150a3ad452cf401b31d3ea42012b20371363bdf106c412aa3b490f954a0f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P318.lean",
+   "bytes": 18945,
+   "sha256": "e516698675ca5f3a9522217f34e59a355c5fb6e1ed55ba21a0193f75b763dbda",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P319.lean",
+   "bytes": 2767,
+   "sha256": "e21e4b6970886ee3f58bb993e690c988b3ae1903c6bc2caae1b5a79600f5260f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P32.lean",
+   "bytes": 500580,
+   "sha256": "64360553434f558bae051ec1d743b9a65bddffe53875c9dce2e5e825539bfb80",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P320.lean",
+   "bytes": 15522,
+   "sha256": "cbbf45519c3adbb57b3ec4ebaf898370525b9a1b58d3f0099a25a6e253cc7cbf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P321.lean",
+   "bytes": 4527,
+   "sha256": "931ba5f460806d6cab1b4c0d3fabf7e1a8ff5068496358e5d3e92ef74793020f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P322.lean",
+   "bytes": 2115,
+   "sha256": "49623d3bf763ecb16d16d9c0e2be4c101b16d132f4ac2ba28bedaaf9e7128f4e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P323.lean",
+   "bytes": 1946,
+   "sha256": "3053ece2962f6c8bc424bf5c11aebedcb2c2aad74283087da8cb3cbb8f87e396",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P324.lean",
+   "bytes": 1523,
+   "sha256": "92fa99c157bd99344151f55da85c03c0ab765ec70ab66c2f4e0dd746bceb8444",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P325.lean",
+   "bytes": 1913,
+   "sha256": "4a59eb3640c76b238f6bc8765ee3b6ac8c6beb5d9215f7506d6de7d7731ca7bd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P326.lean",
+   "bytes": 2172527,
+   "sha256": "5d8581524bfc851e2cb229ac44172d7b18f2e5b50183199ce2cb2f3816c0cc59",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P327.lean",
+   "bytes": 1819,
+   "sha256": "b5f5d2d753dff5e276dd7eb498c22aac0aa050b5da3a737ecdd04f8204f57db8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P328.lean",
+   "bytes": 2921983,
+   "sha256": "15f58592771c924dc1a17bb0433c066e8708a29c3e0bcbb3365d686c1158c846",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P329.lean",
+   "bytes": 2061261,
+   "sha256": "640ffd657ff6c637a5921c9901167dd063a4beb3b27ed6176bb40a9bc746bb8b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P33.lean",
+   "bytes": 1988534,
+   "sha256": "ed92d44d423d21250894f6eaedbdbc6ad1d52b279f8a5d8e6953c278c90d5253",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P330.lean",
+   "bytes": 174944,
+   "sha256": "b436ea46757260118f2d2883d2ea67332a7a36a19f4ddf46f3f774d1fa13b8fb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P331.lean",
+   "bytes": 1939,
+   "sha256": "36d6dfacae1ed38e384080e844b3ee6fa8f5b8a67d3feb7ab75e19fae329255b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P332.lean",
+   "bytes": 3240,
+   "sha256": "5541a2e6ca8c3f9581325a077e1bef56e72a0f02e0b83021931bf1ebd1e97cc1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P333.lean",
+   "bytes": 1283716,
+   "sha256": "00f8ebeed976284cdce7d9951dad0dc4646a45971c0d813269ae302717a096ef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P334.lean",
+   "bytes": 1653,
+   "sha256": "98e9724b75e21dcf0aac9be05691d42d5303d313887769eefdc080b970470032",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P335.lean",
+   "bytes": 1999946,
+   "sha256": "c361e3085d8c0b72bf1d51c2fa3d1a5cababb413590cbdac60a6897d44c6bc04",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P336.lean",
+   "bytes": 3963,
+   "sha256": "6ed4aef03877040b18f8c1a564ec68d1da1067ccf31f86b85879a27c33eda438",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P337.lean",
+   "bytes": 17923,
+   "sha256": "a0a1658d729671a1b5b6d61ec0ed58ccfb1fe00bb9e0ba8a2bd60316d9055473",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P338.lean",
+   "bytes": 1200376,
+   "sha256": "2c7288ab09065a353d1bb124a460cb59ba53e8f5c00f76c7b1e6df6b45942cf7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P339.lean",
+   "bytes": 1974480,
+   "sha256": "ccb86fea59d38fd13efaec30c19dded53292a2f0233c3ba2c71c6fbc0b428baa",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P34.lean",
+   "bytes": 1349151,
+   "sha256": "a1ff6ac192625169493b5c9f48e54515d0a036b4fd0df1f825d71f66693a70b8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P340.lean",
+   "bytes": 685462,
+   "sha256": "ba07e68af4422f16b6b1f17d107f5a32d0c66b22dd4d525a19864be7a4e4261a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P341.lean",
+   "bytes": 1896,
+   "sha256": "62c6d56bfce6948b0a9736541fbbe76ca2f62914fed062a69c623bbb6b08767f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P342.lean",
+   "bytes": 1224727,
+   "sha256": "52f01e80ef5b3ebc907ad0caf27040062c46eb5f6cf4acc0df30e682f9520621",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P343.lean",
+   "bytes": 2290723,
+   "sha256": "24fff1df22083b3043379dce8db3250b4fd73aeb701ebf60d25e66da6e23c65d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P344.lean",
+   "bytes": 387751,
+   "sha256": "6e18b5dc906679918d3ad2a2f15f22923ab569691a90e1f214f9833382e0b7f7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P345.lean",
+   "bytes": 6097,
+   "sha256": "63cc7335fca8e10064b299018a18a0567ffeb81105a9f1d26a9e71bda2e24082",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P346.lean",
+   "bytes": 73899,
+   "sha256": "6d0286dbbe04aa420d22d643060e3f96e2a0faa1a9acfaeb2c2118ca440e45b8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P347.lean",
+   "bytes": 1343806,
+   "sha256": "0f45e8ee74b79efe286c7476d4bd33c2ea4f04e9451a800a64ce25dc07fb6016",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P348.lean",
+   "bytes": 3913,
+   "sha256": "81b58e3f343cfd6f8f511c6dc8687d533472d34809b47005afb8cdf048f6ba26",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P349.lean",
+   "bytes": 1786,
+   "sha256": "50d97bb7cb6154605cf008d0d1165e915c4b0af13c8a39d7333a56a1476289fe",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P35.lean",
+   "bytes": 359820,
+   "sha256": "eb21170adbcc4cb84f902672dca274b5289bd239a0569afe2b5cf86b1639aa4b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P350.lean",
+   "bytes": 4159,
+   "sha256": "3faa786b22c8d94480065cb2e298b400dc243af2f871df36d8ccf236d528b9a7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P351.lean",
+   "bytes": 2416734,
+   "sha256": "402005386b96b61469765c244c6b6eb0a57a2fdd258197b82b0c57f957674bbc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P352.lean",
+   "bytes": 1182409,
+   "sha256": "5218378df3f5f896fe1870b75c5a2ee12e335642e03918fab8be3e96e961366e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P353.lean",
+   "bytes": 4417,
+   "sha256": "cc37efe725f423e75db940986ecf353a77c19dd8126b361f2d7a70832e217f33",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P354.lean",
+   "bytes": 4117,
+   "sha256": "d0991db6ec7065558acaf04e40bd82cafabb2376f7bd3a433828ac4a7077a704",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P355.lean",
+   "bytes": 504371,
+   "sha256": "947035f2920df02322606dc6efbd377b7c666ed7f2e65395a3e781034868d6a0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P356.lean",
+   "bytes": 52039,
+   "sha256": "fefd736c9b4db0412f954ec547746b773fa9d78e38d35190b313131a25fb9d44",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P357.lean",
+   "bytes": 1953053,
+   "sha256": "b3b5a67af5deac79cf7cce21e1c95d4716dbc9419748b605f2c37f6280df8dec",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P358.lean",
+   "bytes": 1021453,
+   "sha256": "760b6be8c5367fb76c24f3271ce92cc5b9e296a5a34c461396e93ffbcc2c810a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P359.lean",
+   "bytes": 2950513,
+   "sha256": "3a67f28397688a2ff22555d9e0497556738d2cf65aa0ed7769aeec2cb505c3be",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P36.lean",
+   "bytes": 1047530,
+   "sha256": "567ecc1629b7567ba31e0ab2acabce6e5f4b5019c069cdf72869aadd7d9924fb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P360.lean",
+   "bytes": 626184,
+   "sha256": "5197554465c63ffddbf6b39201ef76a2a53017ecfcf81a2d10620d98b18f2b8b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P361.lean",
+   "bytes": 391924,
+   "sha256": "82f3dd18316db25a7b629115834715c95a52e5d6c626a7e52cfc374aef47a74d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P362.lean",
+   "bytes": 365924,
+   "sha256": "b336f88ade11e76fa6c7525e105501df525daacb436a93d9b92a6c58a3b0e844",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P363.lean",
+   "bytes": 18334,
+   "sha256": "6f802cd44fa34fdf904be9a6c4ebe96d46289a1fc1f42490165d26a97e64aff4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P364.lean",
+   "bytes": 169878,
+   "sha256": "3f3533ea302a9f3e066e34999022d020ea50b198b061d756d3beac4f9dc2d9ef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P365.lean",
+   "bytes": 2538608,
+   "sha256": "93e9d6ad34b52606f9b21720509866d2e1f87968327dc576a3ae509427cb4953",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P366.lean",
+   "bytes": 4125,
+   "sha256": "5acd0fe7493de28855805d4d3d2e10734f27f226bd06c52c9d2beca5756396dd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P367.lean",
+   "bytes": 2759031,
+   "sha256": "ed8f38a8e4a1bcf2f3ba56bbd674079cf0e7d2028ca909a8227ede8acbe5719e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P368.lean",
+   "bytes": 2106,
+   "sha256": "4aa27ac3f1235310fd0c7947526b71521c2bf6893ea34bcf6b441f48433b411c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P369.lean",
+   "bytes": 2569355,
+   "sha256": "1a8886a6c6e26686d309608792d172b7948148cbc14967f9fd5d66394159a606",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P37.lean",
+   "bytes": 561314,
+   "sha256": "5912bc13c700a071b7d86e73803289f4f3c51060a6c8fe3f2c0e29b46e09858f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P370.lean",
+   "bytes": 1467492,
+   "sha256": "1035d7892f5d93f6ad24c63ac63e4e7b5a037577d460985fc6903fea7801cb8f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P371.lean",
+   "bytes": 3352,
+   "sha256": "6b93639012076fc6e56768e49caaab2f1f1a9ad04baa5ca4a2b198de6b562f08",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P372.lean",
+   "bytes": 643224,
+   "sha256": "7852454e89752bd607444042f0b4d470f829681a4eac3ab59e67af4d38609b89",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P373.lean",
+   "bytes": 112320,
+   "sha256": "2e060dd57ddad74b56d30ed4de1965a5d815cf03559433c45a987cd8321fb032",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P374.lean",
+   "bytes": 3318,
+   "sha256": "5c43e3fbf403ed1b4567ad25943fec5729d984801775a18104fa5b8db522e0dc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P375.lean",
+   "bytes": 1654,
+   "sha256": "31bf6e0f37b5974f77974eb38e0ff693b65b852e7edd04d4fa5f07782a3d0d63",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P376.lean",
+   "bytes": 1531778,
+   "sha256": "16678770f84536429860ee433858fe0491b47384fb92e4b46ab1d7a3d266fcb9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P377.lean",
+   "bytes": 3475,
+   "sha256": "78bffbb791c5486d1df354c581afa65ccf394e15703918bbae412187b5afc2d2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P378.lean",
+   "bytes": 2117277,
+   "sha256": "29e5f5f3ec497259c9b5e2b99cff5ce0d8826b2ac21fce8a439b16afa1ee25af",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P379.lean",
+   "bytes": 381646,
+   "sha256": "a2f7b41b28f6ff415d3a7c3d1d24676fa5ab7bfbdfafb6388169ea31eca7627a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P38.lean",
+   "bytes": 2050954,
+   "sha256": "2928cfb4b6ecdbbcfc498d85e215ba30a097fb67f522742e53d50adcf677e72f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P380.lean",
+   "bytes": 2093493,
+   "sha256": "7f5c0ea00464ef6916e2b59ebad17e85c1ba03904f3600fdf342971d6101c8a4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P381.lean",
+   "bytes": 1546192,
+   "sha256": "032f3fbece85cba0e641159ad380f17aec8e6819699ceca8e61269defc52c0a7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P382.lean",
+   "bytes": 5559,
+   "sha256": "d181b9795a48dd41322136f9ee8740baa306a2840df97339cf69c730ce847aec",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P383.lean",
+   "bytes": 3220,
+   "sha256": "94ec9a8746b515ccaa96072f227383726b2e60ba1a81c0ad017d5c16e63293a6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P384.lean",
+   "bytes": 84601,
+   "sha256": "6f29d6678146fa0f51b504ae906af11f755077a3b94bb929c75c00647be8842f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P385.lean",
+   "bytes": 5601,
+   "sha256": "8e934add27792e44d1292968e5bcaa3d08314981cabe777bd8d061124a8436b5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P386.lean",
+   "bytes": 1145764,
+   "sha256": "ac51c8b1b38cfe045b0fddd1b6a42a8a31c48334dfa9ec5ae105591b531091e1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P387.lean",
+   "bytes": 2790761,
+   "sha256": "bd415926ad2cea9ffdbf3ed783c657d5ccbc9d20e5638f55950f8e8fe904f561",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P388.lean",
+   "bytes": 452478,
+   "sha256": "01290e8501247f5cf74dac0f7a60a4e310eba9f018b73366f671a801d7ad5007",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P389.lean",
+   "bytes": 1533,
+   "sha256": "2ffecdbc810a5e4390744840f25ab281d24470330101d36363b371eae9bb915f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P39.lean",
+   "bytes": 2023032,
+   "sha256": "f0a39a79fad366e0751e5eff5f430891aeda51b320e8a99ad27607e46bee31f0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P390.lean",
+   "bytes": 1519942,
+   "sha256": "57f99c8bd5e5644823e2ab5cf4d82919d1937958c5c1a445f188e547e7308a7d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P391.lean",
+   "bytes": 1766022,
+   "sha256": "5b0b675e9d42896f57b9c03e8174410c02691fca29ac1ae4813bf382445e4a32",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P392.lean",
+   "bytes": 1157501,
+   "sha256": "3b546b942d2fab45648e05a259ba74e6eb1e9caeee66853bc52444dccab97179",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P393.lean",
+   "bytes": 41828,
+   "sha256": "6ad00c8956fddccbb5e53f533defbf02f13e12b6f1e741b32d14a2822300a018",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P394.lean",
+   "bytes": 1135922,
+   "sha256": "cdcbc42e6f12af12b4823635b6e99381915379946ed3b15e40456265f126b5b0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P395.lean",
+   "bytes": 2419997,
+   "sha256": "85e7a8d834f4adff73fa8a6416505949f7d5c0895d122fd21da8a776053c8fc2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P396.lean",
+   "bytes": 616701,
+   "sha256": "1e2f7fb8b6ec6f7765b758910f99cefa4c42cd32018dd6646f2bc9a289776148",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P397.lean",
+   "bytes": 1148142,
+   "sha256": "59fffbe62598f91c2365402b3123d2007c9c7812a1e4264f42d37538c992dbf2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P398.lean",
+   "bytes": 2325326,
+   "sha256": "ce9912bc26134d8e4662a27c911c4a57bb87716c3ac885a54bb59b6b3543aaeb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P399.lean",
+   "bytes": 239566,
+   "sha256": "902b4a14b0aa2f0c5d00a4c1b84db623056942aee59b471bf6a4e39df67eb873",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P4.lean",
+   "bytes": 58909,
+   "sha256": "adb72d42e53e8d3e4d04835a285b9e64b7f32a19b57c985f036c6afb279c3bbf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P40.lean",
+   "bytes": 215919,
+   "sha256": "c1134f3f5062ecab65dce68d1ed86e185467e5ea7dbc00ed6e774af66f1c0f18",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P400.lean",
+   "bytes": 1539,
+   "sha256": "6e63e488b4a59e8a56c2d3ec2264db86ab0f6ed890bebf378a68894d04dcd797",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P401.lean",
+   "bytes": 1932755,
+   "sha256": "19a3dd75ed419c2a6e487df13a925fb72c96590e43865ea7f9703b278b1214f1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P402.lean",
+   "bytes": 1998940,
+   "sha256": "d368db69e940696025e8c6d4cfaa6e020bb384cb1f3af18e55328faabddfbbf1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P403.lean",
+   "bytes": 1127863,
+   "sha256": "ddde2c4349705d02b06060c3eb71cddb4843c5cce35834e3d834ab55e7eecc3e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P404.lean",
+   "bytes": 2383096,
+   "sha256": "fb105e6762b60e7b260464047d7a6d3633a58f6dd253ada3910198b7cc2f9383",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P405.lean",
+   "bytes": 132872,
+   "sha256": "5ef956813538f5e74c1ec46eb42603abfbd48519b06c05c762fc2ba3bec5dc92",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P406.lean",
+   "bytes": 347317,
+   "sha256": "ba1aacfae786e730e49ce2090947f7897fb1fe31d252f9df5613dfa24b95fb09",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P407.lean",
+   "bytes": 3361,
+   "sha256": "e2871217ea66fcb80e72cb8629b39c298f61443807e7d2927b85c41b12566639",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P408.lean",
+   "bytes": 1679718,
+   "sha256": "45ce0e4d3b4ec312e68f112f76565692a2d8415757dd35ce1d9e61619bc05a1b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P409.lean",
+   "bytes": 1811730,
+   "sha256": "74bf2142aeb6f4dbc6ef1320d2544a6f37874805e4635c761ed7e453d12f4e44",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P41.lean",
+   "bytes": 15552,
+   "sha256": "663d73d1b03af26f6e438e205e66ee08772c680af099d4b9eca5da0aa86a49a0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P410.lean",
+   "bytes": 1543767,
+   "sha256": "276f8d66b88f4035476b1dbc58e120b49562d305184438b816142f194e64ffba",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P411.lean",
+   "bytes": 2861964,
+   "sha256": "ee4d14429a7e3ead0f12af45ef4c48db41ad9e565b87949764185b90bb9d5717",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P412.lean",
+   "bytes": 65269,
+   "sha256": "436b3b965650af34a3eb1a8f7ae8874f71f1fb8ac260353b5ef968e5839d31c4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P413.lean",
+   "bytes": 207726,
+   "sha256": "3736bad5e607b2ce9233251d723b42ab730b49ef3b7e106d308e38775288eaef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P414.lean",
+   "bytes": 2698596,
+   "sha256": "3d37ce383b398a2769fec13abf2a38b796945b7315df1e758f1d802a55304f9a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P415.lean",
+   "bytes": 979275,
+   "sha256": "503a8fd03f8c1149093a824798650066fc8ca419027d4672b41de7babaa5b7a6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P416.lean",
+   "bytes": 301599,
+   "sha256": "daf8b6bc44e761d3e76db3a5e7df3f5aadd268ce0e267bc0addd06c706fe2b60",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P417.lean",
+   "bytes": 1024180,
+   "sha256": "43a6945870e24134cd5282259cccd35285e19cd3d3ee8521e380269527eb5427",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P418.lean",
+   "bytes": 1476960,
+   "sha256": "4827cc9244296a24b127d47909dd5b41b4cd33a7955e26b45a232473cc4a5d95",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P419.lean",
+   "bytes": 2286770,
+   "sha256": "19550fe69dc03f6aae94d9fd1f3db3a79982192a68692c30bba3c95a78e13c7f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P42.lean",
+   "bytes": 2921205,
+   "sha256": "01982fc81b1ccd4f4f3a84d0dab156bf872a8647e690217babfb9dc91aef68d3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P420.lean",
+   "bytes": 1763,
+   "sha256": "3934d1b49e671dc84f6daa975a9e99639fd54e3e75c15fbe800f52afc43d71f8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P421.lean",
+   "bytes": 1570,
+   "sha256": "6cbdf62a02f4a555635608a5597eda165e31c9bd3790f0d90e0665a246d9d14c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P422.lean",
+   "bytes": 30971,
+   "sha256": "438757a33bdff9eb359c255d16bef7de5f90067bd5c8eb1eadee407be2da2ebd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P423.lean",
+   "bytes": 877613,
+   "sha256": "4421a7e75ba0941e28c3b86522d97429c1bc2a4ebe0fac3e45cee96c47ee8882",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P424.lean",
+   "bytes": 2249764,
+   "sha256": "1dc4eb3ef52da55b215e55b570b57398acd7d4c1b913bc3642b22023c9510105",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P425.lean",
+   "bytes": 2978823,
+   "sha256": "bb0e21ab2be4ad52140dd8457bec2259a1f79a0217c52ddd082337a87b86857e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P426.lean",
+   "bytes": 249061,
+   "sha256": "a0ea2ea9a06a1fc2c32ef7fdd776898b750d6fc00d290429132ac951aa4d2e6f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P427.lean",
+   "bytes": 506431,
+   "sha256": "b377c7ce23d3bb15cf68a37217001be47030be5e4dcc71e8727e71243c3952ec",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P428.lean",
+   "bytes": 1907224,
+   "sha256": "9be9b75213a0a523d49dda3a88fff5dc3d61644dbf5039c0bbd55a3d5708f81a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P429.lean",
+   "bytes": 84350,
+   "sha256": "aa4386eddc4e27cb0f04d6d10ed9831e3f5875e3b9e3b5c7da0c6a0ad8835d2d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P43.lean",
+   "bytes": 334686,
+   "sha256": "f9ad789282f83544167d898274579fb867ad2aafb62bda5d1f26e24d022e20c2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P430.lean",
+   "bytes": 905431,
+   "sha256": "72b92f38982d7d0155d8f5ab7427043d86d1245343bcb425816d432553a99e4c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P431.lean",
+   "bytes": 2766186,
+   "sha256": "16a72e330686dda42274aa17405fc46f9d9dc0cd26571891997277de86786eb5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P432.lean",
+   "bytes": 1910854,
+   "sha256": "1fa3c7af8f020a45eebfaec98fefaecd057aefeaa271c30537cfbc120f11ada4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P433.lean",
+   "bytes": 514200,
+   "sha256": "38c2d128022e56eaeff57cb1ea61f7ae97ba49de7ca2d41fb87f41eecbde8fdb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P434.lean",
+   "bytes": 121707,
+   "sha256": "717aaf125175faddaa2b7efbf3e4dfd6edc08ab772fb9637417b06ed74fdf8fd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P435.lean",
+   "bytes": 163003,
+   "sha256": "540faa4d6e79f88a36d89d585356b9065a73798648bf7ac11402a6f187d48a5f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P436.lean",
+   "bytes": 507642,
+   "sha256": "bc5b3a42155793c9b21f737b2ebdda18c4a8bc3675d1e78d6d4be4ca2a4f316b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P437.lean",
+   "bytes": 2768095,
+   "sha256": "5ce66c295373176e0215100f58dba96c6dfab8ccd1ec1db35af84f4aa90a7dbb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P438.lean",
+   "bytes": 1706298,
+   "sha256": "23040b75bb036151f941ae696ff1ff23e4664e51929b86de0c5acb298b4b57ad",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P439.lean",
+   "bytes": 26372,
+   "sha256": "cf2b254ff748e7d37b6403ae683578aa5e8f18eff7194b87597af020a40b2551",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P44.lean",
+   "bytes": 2888064,
+   "sha256": "702f25db0d5b8281ef07ba95964c0f20792eb71b187792592a3298ec5a3cac37",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P440.lean",
+   "bytes": 10061,
+   "sha256": "e371b8acf13b0a67fa8f6079d85849055d1bd1d16afe3e139a80513171a490d3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P441.lean",
+   "bytes": 2467,
+   "sha256": "1af32c725eb97eeaaa3bf355d7ed9a9a6ef738918abf59689092312fdb2f101a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P442.lean",
+   "bytes": 1533,
+   "sha256": "0254ee53dc1b853fc1bad71b2f0b709b745b5b5b03b905f72d463acbaa9bb81a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P443.lean",
+   "bytes": 2497673,
+   "sha256": "e293fd189dc62e875b99e2615a954458c6d7491e02610e27c63ae31264ce3c68",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P444.lean",
+   "bytes": 1923494,
+   "sha256": "74c250e6b820a052f6bcade596e742db40726cc94075667550b6b70210779ec8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P445.lean",
+   "bytes": 234251,
+   "sha256": "a730179a7285e599d3722f3b490cf75f6bf4e97a7f14b024f95aa0e4058401df",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P446.lean",
+   "bytes": 270506,
+   "sha256": "346fbef6ac55905be7ba7640db55d5be9a2fd42c07e5b3064f6adec6e76821b6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P447.lean",
+   "bytes": 8549,
+   "sha256": "da9b59b02b46163786682047f4a804dcd49c5b007e3584f8f0d61c0085fa3747",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P448.lean",
+   "bytes": 1980427,
+   "sha256": "fc0ea8fe7a2017cff2ae2c77052400904bfd838f6a1f7f2a9a31b83929a4e955",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P449.lean",
+   "bytes": 1076935,
+   "sha256": "019a790f3bcfe33c14999f8643cd0391e9ea13968613cb8b9e4ad7a1793228df",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P45.lean",
+   "bytes": 285007,
+   "sha256": "c53ecf51b9604613ceaa8d9a2fd7c8e9b7bbe41510ed34bf7827281542442425",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P450.lean",
+   "bytes": 122425,
+   "sha256": "08b936c62590d54f333f37595fad92cf578f7232a0950821d184cbf387f42955",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P451.lean",
+   "bytes": 2355613,
+   "sha256": "0417ad7e52755ed3f120b52ddbaa49f5c252488d92b2466d39fd8593decf2de7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P452.lean",
+   "bytes": 1099194,
+   "sha256": "0dfb1d452b32c45a2fd425f36b353aade6eb7bb7098b62c92486d42c8276c3b5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P453.lean",
+   "bytes": 740567,
+   "sha256": "fa71f9478b9d4e454e3aed3fcad4387ec73f83776dc1a11df9e272c912e3dfc7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P454.lean",
+   "bytes": 3671,
+   "sha256": "6889a4187e7cef6ba6c1c2ef3cab0e873c705de99ef035b35c7f83a7af22e787",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P455.lean",
+   "bytes": 1126300,
+   "sha256": "64b9a01a8d8bc58d2041dd233dfe757a528ab513366beec151ac00b946c345ef",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P456.lean",
+   "bytes": 120129,
+   "sha256": "f46a947e1f9e15015a654059be88cb6b1ff2110a88c0d76e956de21e64d8b252",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P457.lean",
+   "bytes": 20063,
+   "sha256": "cf2f8954469ba140c9b8508685f0f2260c488a7e47e7fd108a60198c49364c62",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P458.lean",
+   "bytes": 918837,
+   "sha256": "90332072d194fe601fef141936f3287f1290a7df6a048c5f5f9454d138a180b9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P459.lean",
+   "bytes": 2204948,
+   "sha256": "fc365998792b84452962f1e8af46b5734124e560bd53611ec18dde280fc7fdaa",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P46.lean",
+   "bytes": 561422,
+   "sha256": "39a49ecdef078695c34ac1bf32b72d5e8eee8a7db364b0888c6ff051fa05b436",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P460.lean",
+   "bytes": 47679,
+   "sha256": "8f1e4567d2958db4ae8a5fcef9999c8aaa74c0d05f09dbc5b380f87548e506c7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P461.lean",
+   "bytes": 36047,
+   "sha256": "e8d318e6da84c11219cb9ed13c0391925a7f54aba4c618e50f98680240563b8c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P462.lean",
+   "bytes": 2558,
+   "sha256": "d983757c93f63482ed5fce347dea8d5e4c5cd229945cdc59371ba02da9e08850",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P463.lean",
+   "bytes": 1914,
+   "sha256": "2f56f346251642ed33263852b6d01d16197b0c6fec66e7f99f82674388305501",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P464.lean",
+   "bytes": 2253261,
+   "sha256": "5d64ac654d1e823d66dd212825a671bcb8d12c0c26bb4c672f4e2e32fd33e576",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P465.lean",
+   "bytes": 1677491,
+   "sha256": "2cc51bd5a7593da61960f1b2671446fbf0c57f2190514f12a380ef1b66110bad",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P466.lean",
+   "bytes": 13094,
+   "sha256": "a084aa577d9f2dbd4c99f41795c9ba264002afef48378a26ce3c76952729ec72",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P467.lean",
+   "bytes": 1523,
+   "sha256": "854c5c6d235c0e10fc257f76e4573e646b0381ce1be7408033129b6595750692",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P468.lean",
+   "bytes": 2434,
+   "sha256": "c0f9cc66d3df3378f98facb635d046c5a6ef5f8cce26b228a70d013cf65fe68c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P469.lean",
+   "bytes": 2146502,
+   "sha256": "b36308d4f3249d0b1762f707893c20601921689ed16778d2455a96652e7310ff",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P47.lean",
+   "bytes": 2614409,
+   "sha256": "85b75d31dc0c8512e304f11861614a379dd535918fd63b0e9ccb7368999d6e5e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P470.lean",
+   "bytes": 1529,
+   "sha256": "93bb4164fc4631d71cb0ea108e538393a90937ef759869d1235736d934f140d3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P471.lean",
+   "bytes": 693571,
+   "sha256": "67a8aa81cfae68ba0c989f4475500169b4c894d9eeb51ee05d413082d995c5dc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P472.lean",
+   "bytes": 1675811,
+   "sha256": "d51511fe8bbbf41c667337005dee097a1ca64a0c7d6df4bd3c187ca1f87ecbd1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P473.lean",
+   "bytes": 2256946,
+   "sha256": "033a8cdcab20519407a34ca947088838ad7a88230da4587c613d2de8aab8f0eb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P474.lean",
+   "bytes": 775812,
+   "sha256": "a57beafae2cb066f74c1ed3bb6adf2030143b42e862ac1c01fd1bf26acf59460",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P475.lean",
+   "bytes": 116718,
+   "sha256": "2402007a13594aff4a7e03d152bb3335c3067492676e06276d5c3e74f108390b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P476.lean",
+   "bytes": 1721269,
+   "sha256": "d85d0e7d2bed9404fb3d5e5fb788a3b3156d11948a1e8871b9a0b5ed3eb62d8c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P477.lean",
+   "bytes": 3610,
+   "sha256": "f53c7d8658f44316dfad115e40c280befb49ca97a27f4f1da391ce9eb79fcdd1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P478.lean",
+   "bytes": 1433343,
+   "sha256": "aaf84eb5ab69465b4d8d717c22611e4125df1d012eeab3174cb95e06faa316e3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P479.lean",
+   "bytes": 2299559,
+   "sha256": "8e3b4b8233062f7f03972e33cc0a6dcdf66b68914d9f7aaeccf0fb28b3de0818",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P48.lean",
+   "bytes": 10115,
+   "sha256": "3cf6169a88f4973843ac31ce1c8a7aa9f5eb00ada9016e5954ebb5069eed37e2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P480.lean",
+   "bytes": 1038555,
+   "sha256": "4378e1fac42357a240a8a193844ffe23c8475eb0828039dcc9b17a0dc2d37ffe",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P481.lean",
+   "bytes": 14605,
+   "sha256": "4e28d15245b052f151673c0c9e631b43137b3fd807eb3abc4b618bb6cf8a9eaf",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P482.lean",
+   "bytes": 824064,
+   "sha256": "2d73d8d2044c18cdf9d8ebe1ce9e6ede2d772cce456bfd6ea2a9d172b8059264",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P483.lean",
+   "bytes": 3748,
+   "sha256": "e10af2a86d0f7de629008f35034bb1796a707d13bce5facd0fa11df79495436b",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P484.lean",
+   "bytes": 5271,
+   "sha256": "6ca5421705271900a618e7a08da5872838c27d94e9bc6fe3cd04efea6312b0ed",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P485.lean",
+   "bytes": 2996,
+   "sha256": "07820faf3100037783821b05c51888629cb7adbf03e94727fabb9dc0ead28ba2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P486.lean",
+   "bytes": 1657,
+   "sha256": "d3a1a8380f03eb3692a9c2b41954338d92d67652295dcacf6f73e9ddfbaf8da7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P487.lean",
+   "bytes": 2970277,
+   "sha256": "a02d9063e52325543009c36b4a31a487733646ff3520a8484b24ffe22f262c16",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P488.lean",
+   "bytes": 248969,
+   "sha256": "a68c8275b0417340ec39babc4a3625f4856275c724f9338fbf57e7f1993f9841",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P489.lean",
+   "bytes": 21193,
+   "sha256": "a352a172ba384ba4392ac91bc7a338199647fbfcb6cd6723f50b337ee943e091",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P49.lean",
+   "bytes": 1268560,
+   "sha256": "f77570736d285c020b1fed4c282e02e201ee40969017a8875bb26c72beb9c0d2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P490.lean",
+   "bytes": 401811,
+   "sha256": "62ebd1a22f26737160dd15375a57fec35fd10ed9db946c05cd181fa9c593257e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P491.lean",
+   "bytes": 9416,
+   "sha256": "f6836b9a77fa51a048729e1ef5dde2c1e362ce9f2ccf57e133c484af2eb460ca",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P492.lean",
+   "bytes": 10368,
+   "sha256": "ff9f6c464c4719a5c61cc640170e66e9b20cbbd6863d21c22cbc24e2bbade424",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P493.lean",
+   "bytes": 3584,
+   "sha256": "df1d41c9d0cf35348b12f245cb837978d1edecf0113d47e67ec98c0f51baad99",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P494.lean",
+   "bytes": 4315,
+   "sha256": "604741a5106008bee7caaa19dc85b6926af040afd4ed27dfba306310a91bdab2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P495.lean",
+   "bytes": 6439,
+   "sha256": "8b172e100d7f10a826583eca5740e2053e1d6bdee6ed4a9181808c41990377a4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P496.lean",
+   "bytes": 25942,
+   "sha256": "4a518f8b4730666c10dc1581b218d3842c147e899b9b310b599c09b9dc44ffe4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P497.lean",
+   "bytes": 8566,
+   "sha256": "ccad27718ab4e3d70ba19e7651554e6bddf20476ecdb3f5992d124caeee19d30",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P498.lean",
+   "bytes": 155443,
+   "sha256": "95b628f9d2ed715e43bafe56a537bbd0b4c9d508a4090a3a5a9f1118fd1659b1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P499.lean",
+   "bytes": 2828663,
+   "sha256": "410b7f2d557a4391e90cbdda94d6641c6fe669426987d19fa1771be0c7f330e1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P5.lean",
+   "bytes": 858335,
+   "sha256": "88c907bc6152e379c4571b23e0b4af664fc1d903154f16ce4e98dd6b9e4d7856",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P50.lean",
+   "bytes": 5539,
+   "sha256": "5b258a1b81554789aa7e2e4854c62f781ec5ce54d0cb21b6d0a4de7ac3022c9d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P500.lean",
+   "bytes": 2024619,
+   "sha256": "9244d46b9c9c61b8aa9073e1dd52dd24946dd0aa67f71cf4772bc2a2f6847349",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P501.lean",
+   "bytes": 20753,
+   "sha256": "fa45dcf0c277ccfa0be74fdc5312de8fdbf2dc8736b3781fa07f67a20c449552",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P502.lean",
+   "bytes": 134148,
+   "sha256": "78c64ebfffc4a9cab0f651626f561ef2ce75da2896448a2c7f0fb17091111123",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P503.lean",
+   "bytes": 12846,
+   "sha256": "5d3b7977941486cf0e844b759f33ca4dc77af4767708bb4d89ab87ca7bd10e6e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P504.lean",
+   "bytes": 46223,
+   "sha256": "f4560aa424bbcefc693fc93879d3154efb03ca7f7a3a0c1e6f93504af0d6d117",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P505.lean",
+   "bytes": 10412,
+   "sha256": "fb1d07a7dcfa6113534c1d0fbb72917980b5ebae705c6cdcb904a8f3164a9999",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P506.lean",
+   "bytes": 20149,
+   "sha256": "5a53dba9428fc31d79a9f5cfe7c541fd8dc9e76173d14f9c4076487f6f0101f8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P507.lean",
+   "bytes": 151001,
+   "sha256": "0034ea0df12f517d2f5b060f55fe25113d05c0c7e4d8a183f5d99915d36ca4d9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P508.lean",
+   "bytes": 162418,
+   "sha256": "b7e8ae80770f5377faa08e48f65e9c04e3819c11b666942f2bcbd38a355214ae",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P509.lean",
+   "bytes": 2474351,
+   "sha256": "a3c60a26103ae8f9e88cc8f37419729fdd83e7401eb442a9b420a79bb82138e3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P51.lean",
+   "bytes": 20866,
+   "sha256": "673bb918599322b4f253a4bc69b52d44b8f8a718be3ca2643fba01043be1d6b2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P510.lean",
+   "bytes": 2109606,
+   "sha256": "679d94b571ac8cdc2eb7266801f0042d5fda93509a60630a881104287970499a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P511.lean",
+   "bytes": 383985,
+   "sha256": "e96bf365ebac429252341279ddaa8c2da9b68d59f800a6cb58b8470dec1b78e6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P512.lean",
+   "bytes": 838860,
+   "sha256": "b5063b8cb769c73cff12e29d9a4c8cacc2c1f6946bff277c418b34280e3b39ea",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P513.lean",
+   "bytes": 48380,
+   "sha256": "c4c9ec6f0a1f631bf217c8fbbed30033ad84ed80a87cbbbfd86831162da57786",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P514.lean",
+   "bytes": 354870,
+   "sha256": "ac46f514af6ae797ce15305bfcb38eebdd1555db022679407f4618b5be0dfbd8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P515.lean",
+   "bytes": 2905321,
+   "sha256": "23c6a8e24819ef34ed40f5611da174c06508c3b9e5b261a9f2e66f5cbdf0d24d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P516.lean",
+   "bytes": 36288,
+   "sha256": "9d080cd1381f9c2cb5da49a046f13d884974e7f3689714fada46a87ece504543",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P517.lean",
+   "bytes": 924047,
+   "sha256": "37925629777afa6523e8d8d15e624fa27546e6922922c96891fe448eb3c079ed",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P518.lean",
+   "bytes": 2369087,
+   "sha256": "3d419ef3a41b0a7adae619f68018cc377f30976b8828ea3ef9a2599449805d8c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P519.lean",
+   "bytes": 2275402,
+   "sha256": "3dc6421abc4c822d77fb47aa96ca7652ca590d3c2f936ddd026084a540486b0d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P52.lean",
+   "bytes": 1653831,
+   "sha256": "0a8c15b987cebf92139c988e88903777650d2af98929c0a4d1cbfa24b601be4f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P520.lean",
+   "bytes": 1631137,
+   "sha256": "3080449b918601b45a7b786136625d5cf2a4f30ab50c474b146dba0d75b80157",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P521.lean",
+   "bytes": 1391897,
+   "sha256": "9d508856e5d54e201ff09eb53223b121d5d167252ad588a10d2c0166e9916128",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P522.lean",
+   "bytes": 1754,
+   "sha256": "11949ea28209f9f0571831c73634f63c294589730a14d0b2526c3077e95fdb6a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P523.lean",
+   "bytes": 18037,
+   "sha256": "d370ea024d8b2954d7a5023872bf4430e4e6eb051bc0ca72ddcfbb51b0b5679e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P524.lean",
+   "bytes": 1305515,
+   "sha256": "8a9a98c7345046ae2e00561c71a28552a0d8f038581694b0fe09f680dda3c63d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P525.lean",
+   "bytes": 1022429,
+   "sha256": "6de27a0d4c349b3e87f0b03dd6de6a42827d2b2efd8ad05844a52bfa6d3827a4",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P526.lean",
+   "bytes": 38180,
+   "sha256": "29c179a878a4cec11e6a4db8d4f42812d47b8a03d65235a780ca4045aead196c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P527.lean",
+   "bytes": 18554,
+   "sha256": "1a1ffa1aaf57df7c6995a81084e6f8e68678d5421fbac7f0326a0a131a92bea3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P528.lean",
+   "bytes": 2049806,
+   "sha256": "31b3bd083c36f0b03275180a1c7b390a1f75dc57a9ebc19e161749721a672507",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P529.lean",
+   "bytes": 25559,
+   "sha256": "99839ab7bdc148299d57ad01ba62d7ad45ad91db7c4f9b81a1626d20723dac65",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P53.lean",
+   "bytes": 5347,
+   "sha256": "a5c720edac44abd769b41113fc670cc4981fbc8b6a86d3eb123e9376addd936e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P530.lean",
+   "bytes": 2172,
+   "sha256": "7c9edc138a00b1fe760d5023b589bc8dbd40f476ecd87bb47225037f6207b681",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P531.lean",
+   "bytes": 61348,
+   "sha256": "2ac5a5c74a36e8a3760367c9e5a654ec4ece7ba7cb05249e57f386c307ec319a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P532.lean",
+   "bytes": 938825,
+   "sha256": "b10b2e1f4c5ede63c404567ff0193e565da9ae7ec1e6c9f4212f6bd10a579c6e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P533.lean",
+   "bytes": 1097398,
+   "sha256": "7e143f6b17fd42292b36b1999a5ceb199eec21a04790d865c91a48bcd2343234",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P534.lean",
+   "bytes": 2970127,
+   "sha256": "36718de4db9113a26319fc5f357982c6e1683c99a935ef5812428c58f975e52f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P535.lean",
+   "bytes": 65098,
+   "sha256": "317c46d993cd1f10e26c7a5ad11aa6140b5be2f34d0f8a13246cdc8c23b6cb4c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P536.lean",
+   "bytes": 1807,
+   "sha256": "070c5db790beaf0cd28acc448d3a11f6125735b50ca8e1b14a58680cea4d1017",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P537.lean",
+   "bytes": 1813,
+   "sha256": "ec57f0397239d578ac121c5e3c0621478d2768001545ba496a9d161efd45eb39",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P538.lean",
+   "bytes": 2556,
+   "sha256": "e4e535cd7dbe825ffeb266a8316894b50f8fde872b9c203426a5dc2dd461d0f3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P539.lean",
+   "bytes": 1613822,
+   "sha256": "250ef64e75103bdcb2487b150b901e6bb66ee7326bc2fbc3f9733a7555a1d677",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P54.lean",
+   "bytes": 1256845,
+   "sha256": "32032c3d2fe21c98ad8ed4738aaac2b9c4b9412465f5ab24894b93be56870e10",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P540.lean",
+   "bytes": 1941,
+   "sha256": "557c9e173436117b403e0eca16c283db082236d6f1605c905898d521315fe9b8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P541.lean",
+   "bytes": 3344,
+   "sha256": "6fd2e4f4bda5cd588df0849009e1ee884afffd940392336045b7e18a59ac5dfc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P542.lean",
+   "bytes": 2158,
+   "sha256": "be11ea5fe5bcf73bc859e8857426daf981aede1171166f94ec644cdda977b28e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P543.lean",
+   "bytes": 2437920,
+   "sha256": "ae709ee9abb2ed57daadab16e0f8c38b9032264aeb3bbe44196df45f02463743",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P544.lean",
+   "bytes": 745691,
+   "sha256": "23ebcb2c92aa045dee878a166623a8491fe27317bd1eef35b323a212f3c3a65a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P545.lean",
+   "bytes": 42856,
+   "sha256": "ed89fdd24a7d80a143d0c7ced9abe476fd9ff8c20efbef196960de5845849d40",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P546.lean",
+   "bytes": 1033714,
+   "sha256": "9a38940e63af987d0201d33c96b477fd664884c2c825ec024c5991ee16edd928",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P547.lean",
+   "bytes": 90269,
+   "sha256": "fb95239c97161679b40df72d556d26ad1acde8dd12b0f28ba02456d6e20602cc",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P548.lean",
+   "bytes": 26555,
+   "sha256": "c69cffd3c84d58d15c5ec7124827704127b11d21d95a71e0e5bbe67fb7af6f1f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P549.lean",
+   "bytes": 253673,
+   "sha256": "647f044d27e4e0f0a9a169d51c480f8ab28f8d757bbf478906aef237c806a58e",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P55.lean",
+   "bytes": 914618,
+   "sha256": "c3f3e18cabfcdc896191c67fe163e9cd1e26bc3bddf45d603c205235d08ec6cb",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P550.lean",
+   "bytes": 8033,
+   "sha256": "26ea87283b0c8f27aa97219ffa2443fa880da5025f4bf7345bb68afb277697d7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P551.lean",
+   "bytes": 9518,
+   "sha256": "913413fbc4a32fcb2abf0afde2df96c807fbd85b84b82cdde282264039ce38cd",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P552.lean",
+   "bytes": 1855,
+   "sha256": "6cbefc4f8870ccbc54577a65f29036ef71605d1e46f425cd671afab26a6750d7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P553.lean",
+   "bytes": 2486,
+   "sha256": "a80b68c62b8964c5401923619652857809cccc8f122459b5e177a19aeaa7d5d7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P554.lean",
+   "bytes": 30909,
+   "sha256": "a30823b78966ccc7594fd3e96d52a308f48b3322821baf2cc89455e98ef5103a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P555.lean",
+   "bytes": 7473,
+   "sha256": "83ab9ff713f791e72f1f07548ed654678a69708dd2f3a42947d16459398570b6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P556.lean",
+   "bytes": 275075,
+   "sha256": "73b9ebe94ad1cd219775c57eb889e57a81f0f8fb7845bc49b23549ce5d02c425",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P557.lean",
+   "bytes": 570940,
+   "sha256": "935abaa1943962eede16668b09ab886a922db58e63e93e14dcb4a7b7511226f9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P558.lean",
+   "bytes": 72771,
+   "sha256": "7414f2e8e1842b430ce94b9d419cc49e2a5c1f66449eac5c224983ae50c0dda2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P56.lean",
+   "bytes": 105280,
+   "sha256": "02ef8794e953a17dd03d0bd47ffa52b7545a916893f9d2b550455018a14b972f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P57.lean",
+   "bytes": 1435331,
+   "sha256": "91ee92cbe5ecb21de1ad77259551716e8fee86d090d5022af53953887533b6ae",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P58.lean",
+   "bytes": 2313666,
+   "sha256": "6978429ddb49950f28968ed56c5501945fbeb1813963ce9862fa1e81fa339876",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P59.lean",
+   "bytes": 2073363,
+   "sha256": "8f58807b7d9f5aa79ac35efda0ca9e1e5d90ef128a37a357aa50cf816b1389e2",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P6.lean",
+   "bytes": 2711597,
+   "sha256": "ff8ce6bf181d0526360c0c77bef4a0705d6eafdb580a1f9c5e9b0825d2a5516d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P60.lean",
+   "bytes": 268691,
+   "sha256": "e2aa68d04939351d9a8eb3d744707270db3ec9cf05d7c63c3117528117711151",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P61.lean",
+   "bytes": 2917266,
+   "sha256": "b234dcdc14631c6d7babed530a9c0630e12b21f86e1bb05867f897e539baf5d8",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P62.lean",
+   "bytes": 2093080,
+   "sha256": "97f5f8b8819ec69c525e31b66a04a70517d70f12b7032c2753dc35b8082bb37c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P63.lean",
+   "bytes": 320951,
+   "sha256": "fe73b67b3ac9ce6808921986e202bb3cffa132a66e2f6884190684b7e874d175",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P64.lean",
+   "bytes": 1569,
+   "sha256": "b995d385a3a07da5f205bd58e1953f85189da202f7063f99dbbee97f42f42256",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P65.lean",
+   "bytes": 455384,
+   "sha256": "d5abd8800e4deaae80fbcafe15f4c78e3cb0580bd7e07d42392286b7a57b0ab9",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P66.lean",
+   "bytes": 2788325,
+   "sha256": "9d9847dcc636fa071c5e8e3c7e298368b38bf36311ea64eb6e1b25dde3dd194c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P67.lean",
+   "bytes": 8689,
+   "sha256": "eefeea0d619fe9e28ea254b66fd711236ece6df157c76a2fdaf6164019d9284a",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P68.lean",
+   "bytes": 653659,
+   "sha256": "8dd3b0b0a79834a77ffb2ad74fd4a75106aaed99d77f88f3793aab0b17b42c28",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P69.lean",
+   "bytes": 4302,
+   "sha256": "78d894418256b87da96bad32b4e89ef6c205c2080104adfbf519558f2781904f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P7.lean",
+   "bytes": 353750,
+   "sha256": "8fb25add35cbf14882404bee77045fdfce8912e8cd9b32fe3bc934fc66bf8caa",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P70.lean",
+   "bytes": 12069,
+   "sha256": "049caad8256f91c434d59ca4ef3d6a5c844b3d2bddb66918d3a23867665074d1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P71.lean",
+   "bytes": 25199,
+   "sha256": "69f286089710751a55be794027dd8c23915e582957a0697b8072914206523de6",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P72.lean",
+   "bytes": 12056,
+   "sha256": "37776dc02c57ef5d3ddca22dcd5889d05778eb76b376075fcb6ff8151d866471",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P73.lean",
+   "bytes": 5533,
+   "sha256": "f9e16692f74458d0bca335d1c1483a0f943eaf4e405f0c028cc011f2cd34a8f0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P74.lean",
+   "bytes": 462384,
+   "sha256": "2e20bca43a2983f783b087a14545067b6994adfb1fbec851e55f7aadd9e47689",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P75.lean",
+   "bytes": 40166,
+   "sha256": "731286b21d5f48e3a691dc47cf02590c0c575470b20ebb9ffeb40e3038f94d0f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P76.lean",
+   "bytes": 1521,
+   "sha256": "fb5ba812a07c1b22155365b01e261ff8e8bf22c84eb00531e8d0be0b12415d3d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P77.lean",
+   "bytes": 1911,
+   "sha256": "afb603d96ab1f598007c2522e68907f08216150f79d94dcae18b478d6beb5713",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P78.lean",
+   "bytes": 2889,
+   "sha256": "5b196ea7915d2b55af9bf02db72fbff97989941764485a65183ffe632ce3c9d3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P79.lean",
+   "bytes": 1786,
+   "sha256": "899d714ddd286fd5e6303db2fea741555d354f98963b67f3a2d3f0f08a183a35",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P8.lean",
+   "bytes": 1766618,
+   "sha256": "da8bb7fff9310ca7aea9a250bc119976e30eb29b42547ea2daf13d3afd5a9a38",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P80.lean",
+   "bytes": 36661,
+   "sha256": "e0736c5815baac64460b27f42de20fc051ff6c261db78a205c69cd8681340a82",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P81.lean",
+   "bytes": 6988,
+   "sha256": "1d3bb15db6452dba5ea9a94d106b0c8342b6ead93ec11914a0b516e9516a38b1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P82.lean",
+   "bytes": 223771,
+   "sha256": "821260f3b8cf676b97bb65ee89260d16ff3642c6d7ddbceb730b63ec613e1d54",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P83.lean",
+   "bytes": 1958,
+   "sha256": "fe8bd83936f0ad664734c3f374f98b5290cde01d7a4ca8ff5cd39cf3bc91e0d5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P84.lean",
+   "bytes": 63947,
+   "sha256": "42c805ab87a0ddb807efd1bff75c8913b89646d5e76a829d96fe067f72496b69",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P85.lean",
+   "bytes": 16003,
+   "sha256": "34274edf90a9365072cca6758526c31c5f35b797cd82b18d38901ef7190a2961",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P86.lean",
+   "bytes": 2945694,
+   "sha256": "f9ca8f624decff1700d7b162efa81ec4424cad8c8c1043de6a405bde0f60ad40",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P87.lean",
+   "bytes": 1295363,
+   "sha256": "93ca99a3e54027fc743564c33ad9354b2c1f9f505b12314e7ecf16904177fc78",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P88.lean",
+   "bytes": 266304,
+   "sha256": "b1862c793c213775430539bc94e9eb8a37d9e407fdb27209db6c3d84aee83c90",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P89.lean",
+   "bytes": 989743,
+   "sha256": "a5875086caa7dfa59079705693d4998253f0d8fe981fdd59ac615944c3990ce5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P9.lean",
+   "bytes": 2093611,
+   "sha256": "f276559fd43e63af46b33e3000d504beb986952eb128869dfea7246e3c731f1f",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P90.lean",
+   "bytes": 914981,
+   "sha256": "b23ef664d5fb0129008244bd4f9b7aa2fc33f0184280fab768db07adf47ad9c1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P91.lean",
+   "bytes": 2869905,
+   "sha256": "b07d9355984530c39a9bd8cec2e0491426579bc3dacc113c6b9d264e39590748",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P92.lean",
+   "bytes": 2267733,
+   "sha256": "86122fdd7dc30c455cb35a860648619283bb4417d51c155e18c44473e3462d55",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P93.lean",
+   "bytes": 2978317,
+   "sha256": "4989a0bde06575959ef13d8bc7feb434e38ca41f81a3b2ac0f6e6d50bd632e1d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P94.lean",
+   "bytes": 51077,
+   "sha256": "d1920038b80c488bc98834950b34bf7141c1744ed6a4763b984123664dbbc020",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P95.lean",
+   "bytes": 155850,
+   "sha256": "79d3c41b21f9633ce5402dcfd749aa4cb000c2d4142d9d38cf870937e42ef4a0",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P96.lean",
+   "bytes": 1802294,
+   "sha256": "634931bee4d80d8ba7bc7da28cf0ba8ee1aff86b15b6f8754acd3cb64a4f185d",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P97.lean",
+   "bytes": 146813,
+   "sha256": "f8eaad3d97a0c346ddd1c274186ed0215045b58ed2f603c565c47a67694b55f5",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P98.lean",
+   "bytes": 3809,
+   "sha256": "61b9a85ea4d1d73a286860c4e9449526fa53ec57c9aaf0b356e3d86fb18b9ca1",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P99.lean",
+   "bytes": 1527,
+   "sha256": "a31dc937af093fdd5c43bd12f55fc7840340ab2e19128976fb4b7cefe9a521c7",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root9.lean",
+   "bytes": 16963,
+   "sha256": "32215b19534c5dffe55d7b38fc5e47ad5ff89923cec5fa4323dd498350f0e03c",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 13855,
+   "sha256": "57aa304d26dedf460c099b8cf92e084f96e4803f4617bcdc207c185feec561da",
+   "imports": [
+    "Modules.Nieuwland.Settled",
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1418,
+   "sha256": "0b494ec33de5974588c13623b0761a6d0d1e5bfd90ff3612ff52f175cb0ff3d3",
+   "imports": [
+    "Polyhedra.Platonic.Tetrahedron.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

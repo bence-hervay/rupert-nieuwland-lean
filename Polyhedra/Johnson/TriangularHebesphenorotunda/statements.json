@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.TriangularHebesphenorotunda.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.TriangularHebesphenorotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.TriangularHebesphenorotunda.polyhedron Nieuwland.Johnson.TriangularHebesphenorotunda.system Nieuwland.Johnson.TriangularHebesphenorotunda.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.TriangularHebesphenorotunda.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.TriangularHebesphenorotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.TriangularHebesphenorotunda.system Nieuwland.Johnson.TriangularHebesphenorotunda.layout Nieuwland.Johnson.TriangularHebesphenorotunda.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.TriangularHebesphenorotunda.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.TriangularHebesphenorotunda.polyhedron)).Nonempty"
+  }
+ ]
+}

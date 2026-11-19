@@ -1,0 +1,5 @@
+.lake/
+Polyhedra/**/Certificates/*.lean
+scripts/__pycache__/
+.audit-*.lean
+checks.tsv

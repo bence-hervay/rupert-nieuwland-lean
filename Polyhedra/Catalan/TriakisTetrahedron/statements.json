@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Catalan.TriakisTetrahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Catalan.TriakisTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Catalan.TriakisTetrahedron.polyhedron Nieuwland.Catalan.TriakisTetrahedron.system Nieuwland.Catalan.TriakisTetrahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Catalan.TriakisTetrahedron.system"
+  },
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.TriakisTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Catalan.TriakisTetrahedron.system Nieuwland.Catalan.TriakisTetrahedron.layout Nieuwland.Catalan.TriakisTetrahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Catalan.TriakisTetrahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.TriakisTetrahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.PentagonalOrthocupolarotunda.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.PentagonalOrthocupolarotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.PentagonalOrthocupolarotunda.polyhedron Nieuwland.Johnson.PentagonalOrthocupolarotunda.system Nieuwland.Johnson.PentagonalOrthocupolarotunda.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.PentagonalOrthocupolarotunda.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.PentagonalOrthocupolarotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.PentagonalOrthocupolarotunda.system Nieuwland.Johnson.PentagonalOrthocupolarotunda.layout Nieuwland.Johnson.PentagonalOrthocupolarotunda.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.PentagonalOrthocupolarotunda.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.PentagonalOrthocupolarotunda.polyhedron)).Nonempty"
+  }
+ ]
+}

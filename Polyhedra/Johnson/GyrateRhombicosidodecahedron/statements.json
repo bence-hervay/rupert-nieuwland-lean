@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Johnson.GyrateRhombicosidodecahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.GyrateRhombicosidodecahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Johnson.GyrateRhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyrateRhombicosidodecahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.GyrateRhombicosidodecahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyrateRhombicosidodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.GyrateRhombicosidodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

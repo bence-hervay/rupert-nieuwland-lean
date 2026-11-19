@@ -1,0 +1,66 @@
+{
+ "solid": "johnson/square-gyrobicupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 3927,
+   "sha256": "092e6f563d6627fd3657cdf7af6d9bd36ae7fbb66c577d58664670a9d2d79fed",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 9126,
+   "sha256": "3194719523d2ffd1d7af8b7142622354a36a25acea267da4a463d1daf82bb297",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 4983,
+   "sha256": "b4a6775cd015b20a1dd252cb93e738eb7636c22916e04712744c524b9425bb53",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 761,
+   "sha256": "227e755f14a6083377926c3150d976198f15cbb60cb1a466756a4cc202d65961",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.WeakB0",
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.WeakB1"
+   ]
+  },
+  {
+   "file": "WeakB0.lean",
+   "bytes": 331,
+   "sha256": "a736f747a3986d24dc3099b1767a77ce4da123c10e641221f22b9fbff79519ef",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.WeakData"
+   ]
+  },
+  {
+   "file": "WeakB1.lean",
+   "bytes": 331,
+   "sha256": "3a0817f1be03d0c52fb61cfd20d7940e5ae1a415b178cda5a4be45a3861d63c6",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.WeakData"
+   ]
+  },
+  {
+   "file": "WeakData.lean",
+   "bytes": 3592,
+   "sha256": "75f76d5283b212e3771f9095341ab1aab93172e156fe6bff5127784e39616eb8",
+   "imports": [
+    "Polyhedra.Johnson.SquareGyrobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

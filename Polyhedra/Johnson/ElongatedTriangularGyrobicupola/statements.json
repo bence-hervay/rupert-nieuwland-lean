@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.ElongatedTriangularGyrobicupola.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.ElongatedTriangularGyrobicupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.ElongatedTriangularGyrobicupola.polyhedron Nieuwland.Johnson.ElongatedTriangularGyrobicupola.system Nieuwland.Johnson.ElongatedTriangularGyrobicupola.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.ElongatedTriangularGyrobicupola.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.ElongatedTriangularGyrobicupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.ElongatedTriangularGyrobicupola.system Nieuwland.Johnson.ElongatedTriangularGyrobicupola.layout Nieuwland.Johnson.ElongatedTriangularGyrobicupola.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedTriangularGyrobicupola.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.ElongatedTriangularGyrobicupola.polyhedron)).Nonempty"
+  }
+ ]
+}

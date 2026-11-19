@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.SquareOrthobicupola.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.SquareOrthobicupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.SquareOrthobicupola.polyhedron Nieuwland.Johnson.SquareOrthobicupola.system Nieuwland.Johnson.SquareOrthobicupola.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.SquareOrthobicupola.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.SquareOrthobicupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.SquareOrthobicupola.system Nieuwland.Johnson.SquareOrthobicupola.layout Nieuwland.Johnson.SquareOrthobicupola.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.SquareOrthobicupola.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.SquareOrthobicupola.polyhedron)).Nonempty"
+  }
+ ]
+}

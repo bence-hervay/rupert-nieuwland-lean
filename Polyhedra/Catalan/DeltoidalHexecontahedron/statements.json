@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Catalan.DeltoidalHexecontahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.DeltoidalHexecontahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Catalan.DeltoidalHexecontahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.DeltoidalHexecontahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.DeltoidalHexecontahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Catalan.DeltoidalHexecontahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.DeltoidalHexecontahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

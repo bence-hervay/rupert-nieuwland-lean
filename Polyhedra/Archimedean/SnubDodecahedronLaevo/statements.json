@@ -1,0 +1,22 @@
+{
+ "top": "Polyhedra.Archimedean.SnubDodecahedronLaevo.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Archimedean.SnubDodecahedronLaevo.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Archimedean.SnubDodecahedronLaevo.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.SnubDodecahedronLaevo.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Archimedean.SnubDodecahedronLaevo.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Archimedean.SnubDodecahedronLaevo.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Archimedean.SnubDodecahedronLaevo.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Archimedean.SnubDodecahedronLaevo.theta_isRoot",
+   "type": "Nieuwland.polyEval [-1, 2, 4, -1, -4, 0, 1] Nieuwland.Archimedean.SnubDodecahedronLaevo.theta = 0 \u2227 (1.7155614996973678346812788888899 : \u211d) \u2264 Nieuwland.Archimedean.SnubDodecahedronLaevo.theta \u2227 Nieuwland.Archimedean.SnubDodecahedronLaevo.theta \u2264 (1.71556149969736783468127888889 : \u211d)"
+  }
+ ]
+}

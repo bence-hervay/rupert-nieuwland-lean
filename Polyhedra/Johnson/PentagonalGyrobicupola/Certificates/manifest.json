@@ -1,0 +1,41 @@
+{
+ "solid": "johnson/pentagonal-gyrobicupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 140501,
+   "sha256": "8c51acf0dbebd317f96fae71b31a1ad9f1e2603f6121a8d9b9f8795dd3abdb64",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalGyrobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3677,
+   "sha256": "3e25e294313eb1a19054a64824179c84e81f73a444c18133c99ea0926d2d175e",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalGyrobicupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 6280,
+   "sha256": "ff4b91d979cb8b24b6e69ec3a713a458aa3f767377218b17827d99f5e75eb5cf",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1536,
+   "sha256": "c363e24e3676e25a2f5440ee2b2a415f5150c43fb182bf92eacae322804c238e",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalGyrobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

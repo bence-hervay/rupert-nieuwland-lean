@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Archimedean.Rhombicosidodecahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Archimedean.Rhombicosidodecahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Archimedean.Rhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Rhombicosidodecahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Archimedean.Rhombicosidodecahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Rhombicosidodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Archimedean.Rhombicosidodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

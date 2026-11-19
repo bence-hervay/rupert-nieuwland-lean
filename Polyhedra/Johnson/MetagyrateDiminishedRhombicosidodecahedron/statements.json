@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.MetagyrateDiminishedRhombicosidodecahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.polyhedron Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.system Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.system Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.layout Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.MetagyrateDiminishedRhombicosidodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

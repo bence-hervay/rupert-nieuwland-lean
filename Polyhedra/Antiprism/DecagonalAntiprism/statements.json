@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Antiprism.DecagonalAntiprism.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Antiprism.DecagonalAntiprism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Antiprism.DecagonalAntiprism.polyhedron Nieuwland.Antiprism.DecagonalAntiprism.system Nieuwland.Antiprism.DecagonalAntiprism.layout"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Antiprism.DecagonalAntiprism.system"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Antiprism.DecagonalAntiprism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Antiprism.DecagonalAntiprism.system Nieuwland.Antiprism.DecagonalAntiprism.layout Nieuwland.Antiprism.DecagonalAntiprism.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Antiprism.DecagonalAntiprism.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Antiprism.DecagonalAntiprism.theta_isRoot",
+   "type": "Nieuwland.polyEval [281/256, 59/8, 277/32, -17/2, -211/16, 7, 4, -4, 1] Nieuwland.Antiprism.DecagonalAntiprism.theta = 0 \u2227 (2.0492324906796240899281131768195 : \u211d) \u2264 Nieuwland.Antiprism.DecagonalAntiprism.theta \u2227 Nieuwland.Antiprism.DecagonalAntiprism.theta \u2264 (2.0492324906796240899281131768196 : \u211d)"
+  }
+ ]
+}

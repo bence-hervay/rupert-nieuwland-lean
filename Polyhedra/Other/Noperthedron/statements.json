@@ -1,0 +1,22 @@
+{
+ "top": "Polyhedra.Other.Noperthedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.Noperthedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Other.Noperthedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.Noperthedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Other.Noperthedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Other.Noperthedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.Noperthedron.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.Noperthedron.theta_isRoot",
+   "type": "Nieuwland.polyEval [1, 0, -8, 0, 14, 0, -7, 0, 1] Nieuwland.Other.Noperthedron.theta = 0 \u2227 (1.9890437907365466738453838899611 : \u211d) \u2264 Nieuwland.Other.Noperthedron.theta \u2227 Nieuwland.Other.Noperthedron.theta \u2264 (1.9890437907365466738453838899612 : \u211d)"
+  }
+ ]
+}

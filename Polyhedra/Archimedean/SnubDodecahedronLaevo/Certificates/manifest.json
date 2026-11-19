@@ -1,0 +1,475 @@
+{
+ "solid": "archimedean/snub-dodecahedron-laevo",
+ "pieces": [
+  {
+   "file": "Chunk0.lean",
+   "bytes": 2442,
+   "sha256": "00a30f3852d0e57e7fd819875da7bd654fb9357cd6d395aad7045c6f79d8155c",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk1.lean",
+   "bytes": 3243,
+   "sha256": "ad0b9212ac82691e518b0f2a9a69cab16c81ec13d1e931c23ab7bcc8eaaf620a",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk10.lean",
+   "bytes": 2556783,
+   "sha256": "ab1f22beeed399b163d0aea267a75ebef4d0ba904b33c587b9918963ca71d399",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims26",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk11.lean",
+   "bytes": 1346647,
+   "sha256": "702214d7e7b3ddd6d0458d1aea4feb5b8561f1cc4a79b10008bc591c84d84e1a",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims27",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk12.lean",
+   "bytes": 5154,
+   "sha256": "8e7a9a8937c3a642ba158153b4d8ea8218ee57c0917bd31086e968fe21d6b86e",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk13.lean",
+   "bytes": 3336,
+   "sha256": "5be53b99a987e071b588f06968546cf130d57d1729f8a7a29130e631350b0c49",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk14.lean",
+   "bytes": 5156,
+   "sha256": "ec0ecd328492dd1a8ae974c5d3734479ebfb7d1695349d20670e29e5ec96c589",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk2.lean",
+   "bytes": 3244,
+   "sha256": "7f91013de7e2852002ffb7c7ea4a7d8297147cc270bf9f01c53781fe5d3b94f8",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk3.lean",
+   "bytes": 3127,
+   "sha256": "515616d26f53c7fa70c597bd900573bd920bdf17670a310a7e92cf81eef9f995",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk4.lean",
+   "bytes": 5660,
+   "sha256": "be6e128a4f1c58208dccb6eea7445dac75d64e8dc3032c6c2c4d94703d69be84",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk5.lean",
+   "bytes": 4262,
+   "sha256": "0006cf192aeab161be7fc8c1a84154712b2215136bacdd22d1856cfc52200001",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk6.lean",
+   "bytes": 3355,
+   "sha256": "5de35a111aadf243abbcfba65dd8592f92fcae729991e737343bdbee205cd91b",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk7.lean",
+   "bytes": 4265,
+   "sha256": "3e71e989ca60fee4653fb088278e21fe6f5503a69c5d1dfa85dbf8ecf4d88f66",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk8.lean",
+   "bytes": 4026562,
+   "sha256": "43e1988229150695deaec0a54575d34e39c7e98bfd5451a8fb0660eabef76022",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims0",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims1",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims2",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims3",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims4",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims5",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims6",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims7",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims8",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk9.lean",
+   "bytes": 4075709,
+   "sha256": "2d6d27c85d782047954bc412b547a56300f1d91c5e04712544676ebca1239c9b",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims2",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims3",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims7",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims8",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims9",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims10",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims11",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims12",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims13",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims14",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims15",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims16",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims17",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims18",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims20",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims21",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims22",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims23",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims24",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims25",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims26",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims0.lean",
+   "bytes": 72327,
+   "sha256": "555ed3efac25e0be88fb0399205d47a5ac338886bab1c1d3048121417b761bad",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims1.lean",
+   "bytes": 26811,
+   "sha256": "18407e0994961b61fe49c5e6ac4c55c993ff7c217f8aef986f8759ac5e6684f2",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims10.lean",
+   "bytes": 60262,
+   "sha256": "f385c09a675f1612220a34571f4528571cc22f12f974e50de0d5a4155e7b7371",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims11.lean",
+   "bytes": 105448,
+   "sha256": "a7804c1ef4da2cfbf079779948a470b807842580b47fcd590f957b0acf8f7e4b",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims12.lean",
+   "bytes": 47268,
+   "sha256": "7feda60beeaf5d480559a423790adc37e8397769f50bb071c02b9b575e7cec7c",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims13.lean",
+   "bytes": 40481,
+   "sha256": "8cff585495f22ef028252bf8fc2d3857e97c3d7ca405b9f54d9b7f09be3f01ea",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims14.lean",
+   "bytes": 34826,
+   "sha256": "463c0b4b63c7400ada026ea5a082abbc82328e614c96de392e71818fb6a7351d",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims15.lean",
+   "bytes": 107630,
+   "sha256": "72ac3b5bf915b312138aa67e1a4759d3ffe185192843757cddceb308c076b738",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims16.lean",
+   "bytes": 76479,
+   "sha256": "a92ee5779d246c912790d632d0d2aafa5327fb969f154bc1120c101b146a1792",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims17.lean",
+   "bytes": 95020,
+   "sha256": "546def6b24ee227e49374ce062ef1192ada1a93ff0095b56ddd584dc7fe45782",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims18.lean",
+   "bytes": 132275,
+   "sha256": "8a0c2188f9cc8cbd925887d995a421c322c74caed7a55b037dc59d12e6dd23ae",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19.lean",
+   "bytes": 1315,
+   "sha256": "9218381a82fdd91dbf68bcdd65c37162f5cc2b13003b92955c5ef768327f666a",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19Data",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19Head",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19P0",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19P1",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19Data.lean",
+   "bytes": 116296,
+   "sha256": "54db34f2b2c48b72c06491621ef5f78e26ee0f79a898ecc29de5639311ff2db1",
+   "imports": []
+  },
+  {
+   "file": "Claims19Head.lean",
+   "bytes": 647,
+   "sha256": "10245995c59c81d45021225a3e2d9119854382f232e68eedfe296f428feba521",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19Data",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19P0.lean",
+   "bytes": 631,
+   "sha256": "626631d4456195b0ffdd436686c194f8e94546c9af381136aa4241223b0b672e",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19Data",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19P1.lean",
+   "bytes": 635,
+   "sha256": "dd3dd4c8f8256bf6f5609b1e63a0d99109789a404bb7d04612dcd8f4086b76ea",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Claims19Data",
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims2.lean",
+   "bytes": 128448,
+   "sha256": "e639c2b949427f1f725ffc08f55eb9e02e514c34c4d71a1e16506b2ef252572d",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims20.lean",
+   "bytes": 52715,
+   "sha256": "f7fe45997523af13a8b93b257a8ce7dd1ed20063c5172c043c209f5671cf799c",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims21.lean",
+   "bytes": 40655,
+   "sha256": "7adb3fc30d48d14ab374758285cc59ae22b04f8388efffc0773553f33831c4a6",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims22.lean",
+   "bytes": 87946,
+   "sha256": "239cad0d1d10d61acd5c78cd982920a72ef58fd24dd3240a65d37d47a603265b",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims23.lean",
+   "bytes": 92643,
+   "sha256": "91634fc37035ebeca7ecd3dcb78f1db3ed807cfc5e7df639b9874e159312b641",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims24.lean",
+   "bytes": 107891,
+   "sha256": "08b2397567046d2aaeae6b5b77308a52fb154a0b2e62b3d0aef126a7e06ca38b",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims25.lean",
+   "bytes": 117623,
+   "sha256": "fa96d5945b274d3da2670ccaf650407d26abd579787701b98667da92ba8a2731",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims26.lean",
+   "bytes": 62597,
+   "sha256": "12267e4f4af47d2d0430d4b1d4ea16d88d668f6a49b2407bd18f4c387d4a4847",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims27.lean",
+   "bytes": 28809,
+   "sha256": "efcdc4c35ac09aa531dc9edba12d356f2b231a5d2b8b88b47b8f8888f180565d",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims3.lean",
+   "bytes": 145528,
+   "sha256": "9f9ff44b6cb468d46ad78d718e78554c0396e4693d265c1fc82e33d929dc15a6",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims4.lean",
+   "bytes": 79443,
+   "sha256": "c10e1b6ffeb9f2d31d6e2ce8f433cc4212de350207a93a5c61b2ae35ff61d64e",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims5.lean",
+   "bytes": 111330,
+   "sha256": "4cabf144b00fbf125ebbb95776df95abe8efde2304e669c88b49de99d17dbceb",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims6.lean",
+   "bytes": 14860,
+   "sha256": "066a07538a13234013ec97fa9d237228ff0b7c4deaa5b97bf70f3817860c6a15",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims7.lean",
+   "bytes": 133847,
+   "sha256": "91e45f45b8ee2c79071f9f53c8322809f2ee13bd0a130f40d2c1f161fd582157",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims8.lean",
+   "bytes": 76498,
+   "sha256": "d53b46d25efe62d18027ba7e72ef84ece9d6190365e019d3000c1516fb8b45f5",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims9.lean",
+   "bytes": 116680,
+   "sha256": "4901fadf94f6997ea773af6a7e07ff3078d3c2711d1b7f85fbac8927e9e733b6",
+   "imports": [
+    "Polyhedra.Archimedean.SnubDodecahedronLaevo.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 73980,
+   "sha256": "93a501b78b3b7ec8f24d13e4a36103f392dfaa7b8e70045eb4bf07f52e3e31a1",
+   "imports": [
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  }
+ ]
+}

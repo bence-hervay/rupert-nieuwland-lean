@@ -1,0 +1,22 @@
+{
+ "top": "Polyhedra.Catalan.PentagonalHexecontahedronLaevo.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.PentagonalHexecontahedronLaevo.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Catalan.PentagonalHexecontahedronLaevo.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalHexecontahedronLaevo.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.PentagonalHexecontahedronLaevo.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalHexecontahedronLaevo.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.PentagonalHexecontahedronLaevo.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Catalan.PentagonalHexecontahedronLaevo.theta_isRoot",
+   "type": "Nieuwland.polyEval [1, -2, -1, 0, -2, 2, 1] Nieuwland.Catalan.PentagonalHexecontahedronLaevo.theta = 0 \u2227 (1.1326619649523854202571098116849 : \u211d) \u2264 Nieuwland.Catalan.PentagonalHexecontahedronLaevo.theta \u2227 Nieuwland.Catalan.PentagonalHexecontahedronLaevo.theta \u2264 (1.132661964952385420257109811685 : \u211d)"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+declaration	file	kind	uses	uses_not_drawn
+matAt	Definitions/Optimum.lean	def		
+PoseLayout	Definitions/Optimum.lean	structure		
+Polyhedron.WeakFitAt	Definitions/Optimum.lean	def	Polyhedron.hull, Polyhedron.smul, PoseLayout, matAt, projXY, SO(3)	Polyhedron
+Polyhedron.IsOptimum	Definitions/Optimum.lean	structure	Polyhedron.WeakFitAt, PolynomialSystem.HasUniqueRoot, ν	Polyhedron, Polyhedron.FitsThrough, Polyhedron.smul, PolynomialSystem, PolynomialSystem.Solves, PoseLayout
+PoseLayout.variables	Definitions/Optimum.lean	def	PoseLayout	
+PolynomialSystem.EnclosedBy	Definitions/Optimum.lean	def	PolynomialSystem.Solves, PoseLayout.variables	PolynomialSystem, PoseLayout
+Polyhedron	Definitions/Polyhedra.lean	structure		
+Polyhedron.hull	Definitions/Polyhedra.lean	def	Polyhedron	
+Polyhedron.smul	Definitions/Polyhedra.lean	def	Polyhedron	
+RationalPolynomial	Definitions/Polynomials.lean	abbrev		
+monomial	Definitions/Polynomials.lean	def		
+RationalPolynomial.eval	Definitions/Polynomials.lean	def	RationalPolynomial, monomial	
+RationalPolynomial.varsLt	Definitions/Polynomials.lean	def	RationalPolynomial	
+PolynomialSystem	Definitions/Polynomials.lean	structure	RationalPolynomial	
+PolynomialSystem.Solves	Definitions/Polynomials.lean	def	PolynomialSystem, RationalPolynomial.eval	RationalPolynomial
+PolynomialSystem.boxed	Definitions/Polynomials.lean	def	PolynomialSystem, RationalPolynomial.varsLt	RationalPolynomial
+PolynomialSystem.HasUniqueRoot	Definitions/Polynomials.lean	def	PolynomialSystem.Solves, PolynomialSystem.boxed	PolynomialSystem
+polyEval	Definitions/Polynomials.lean	def		
+realRoot	Definitions/Polynomials.lean	def	polyEval	
+SO(3)	Definitions/Rupertness.lean	notation		
+projXY	Definitions/Rupertness.lean	def		
+Polyhedron.FitsThrough	Definitions/Rupertness.lean	def	Polyhedron.hull, projXY, SO(3)	Polyhedron
+Polyhedron.IsRupert	Definitions/Rupertness.lean	def	Polyhedron.FitsThrough	Polyhedron
+Polyhedron.IsNopert	Definitions/Rupertness.lean	def	Polyhedron.IsRupert	Polyhedron
+Polyhedron.nieuwland	Definitions/Rupertness.lean	def	Polyhedron.FitsThrough, Polyhedron.smul	Polyhedron
+ν	Definitions/Rupertness.lean	notation	Polyhedron.nieuwland	

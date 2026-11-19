@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Archimedean.TruncatedTetrahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Archimedean.TruncatedTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Archimedean.TruncatedTetrahedron.polyhedron Nieuwland.Archimedean.TruncatedTetrahedron.system Nieuwland.Archimedean.TruncatedTetrahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Archimedean.TruncatedTetrahedron.system"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Archimedean.TruncatedTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Archimedean.TruncatedTetrahedron.system Nieuwland.Archimedean.TruncatedTetrahedron.layout Nieuwland.Archimedean.TruncatedTetrahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedTetrahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Archimedean.TruncatedTetrahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

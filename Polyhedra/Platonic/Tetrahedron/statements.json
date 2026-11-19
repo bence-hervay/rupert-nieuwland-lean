@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Platonic.Tetrahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Platonic.Tetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Platonic.Tetrahedron.polyhedron Nieuwland.Platonic.Tetrahedron.system Nieuwland.Platonic.Tetrahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Platonic.Tetrahedron.system"
+  },
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Platonic.Tetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Platonic.Tetrahedron.system Nieuwland.Platonic.Tetrahedron.layout Nieuwland.Platonic.Tetrahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Platonic.Tetrahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Platonic.Tetrahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

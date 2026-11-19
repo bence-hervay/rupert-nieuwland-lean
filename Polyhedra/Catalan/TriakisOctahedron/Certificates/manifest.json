@@ -1,0 +1,254 @@
+{
+ "solid": "catalan/triakis-octahedron",
+ "pieces": [
+  {
+   "file": "Claim0.lean",
+   "bytes": 16626298,
+   "sha256": "b1fce837b3306b5a6d1d1bd95dd76dce6379967ee062c04af1cda12a689afbb1",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim1.lean",
+   "bytes": 16623972,
+   "sha256": "1af153f2e31e2384edc4a7128dfee96be89b529fa3d4658281229347c7e33633",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim2.lean",
+   "bytes": 1270875,
+   "sha256": "d8a06a90b2ce53a0c8b7d8bc7cf756077a70e84f70e95cfa2cdb144730f619f4",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim3.lean",
+   "bytes": 16616114,
+   "sha256": "4f05c4decd9ba552784b077880b2699a076bfa3fbeaab86b3710a059419ae889",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim4.lean",
+   "bytes": 1279329,
+   "sha256": "fe4403834648e8b50474bbce598e5701ded8c8fcc123422da1a4a8ab9dc08e6b",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim5.lean",
+   "bytes": 1278789,
+   "sha256": "e6e75655e9da978e0a59fa8004c7d1478a79e81bac39ab080e2b0f8f0b03a511",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim6.lean",
+   "bytes": 1271198,
+   "sha256": "24bf7c9991230326a4f5f543462659c105465ce3e725ae64bb5118e87b00f103",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Claim7.lean",
+   "bytes": 16632899,
+   "sha256": "2815e65a80c641e4912b3c40418e808014e474e2a87b74d2ab7827bb2c6c35c7",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3852,
+   "sha256": "30468eb491850524b79adaee2b5ffff6be79a35a7530b3c5de55cee1b05d452a",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Root0.lean",
+   "bytes": 137179,
+   "sha256": "ce1ed32a1bfcb6aa81f7a991822227dd8cfead626936b71ced6b36cbbd7aa9ab",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root1.lean",
+   "bytes": 1550,
+   "sha256": "bb3d834fd44788cb433bec06be1ca014ff1e6c4a5924917297366897e5edc23b",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root10.lean",
+   "bytes": 2641,
+   "sha256": "62913c926e1d44ccdfb238c93f44e3093f20dd70bbf5c932269f092d97848911",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root11.lean",
+   "bytes": 2611,
+   "sha256": "6b8453c54c3656cb19b23f5ce7c476569d20f73a03dcd80f12a8fe283a65b8ba",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root2.lean",
+   "bytes": 1550,
+   "sha256": "42a7eff96b8836d23c09beaead0885c1eb8d391ab721bb1c2f2e3312eb2f6e46",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root3.lean",
+   "bytes": 1546,
+   "sha256": "f5cba000343613a51e85589edee3878399f53db468e46d06c757945cb0ad707b",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4.lean",
+   "bytes": 17143,
+   "sha256": "dc4657b643809ee081d1f41e671a056d4503021fb322eef691daf530f3f2cd37",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root5.lean",
+   "bytes": 1744,
+   "sha256": "1e9cc47ec55c5d416ad756fe85d46c956ab702ccf90c4c16d981bf65333e3b45",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root6.lean",
+   "bytes": 1751,
+   "sha256": "d3a53ae46d713d732d514428627b49c539dc5367f86f608aa91a8e2daccceb39",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root7.lean",
+   "bytes": 1749,
+   "sha256": "0ddd6ae014be1e7a45254deb6ead2f29e06f3e9ddda17a67ad3a89890c420719",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8.lean",
+   "bytes": 2296,
+   "sha256": "bd35694d043bfd61263e444644b41a606c9323c2c9926ba3c784d53334fcbd8f",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Root8P0",
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Root8P1",
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Root8P2",
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Root8P3",
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Root8P4",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root8P0.lean",
+   "bytes": 842410,
+   "sha256": "d03bf03996b5b86531ccef4abd1dcc68be16bb12192314dc518a1ce0787d08b4",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P1.lean",
+   "bytes": 2434311,
+   "sha256": "fe21b4bc0f98cecb8ab8b255ddf1f8f8ce307ed84c44d712470d7654012200e2",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P2.lean",
+   "bytes": 1612912,
+   "sha256": "07c6c8d5a333f3fedb376e3556db75f054695399d7263bf8c062b1f60c9d143a",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P3.lean",
+   "bytes": 1490462,
+   "sha256": "cd5021b7b71550e0bcd4f074125f53fc655f2b5c8b98b75da5006f3e8050f886",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P4.lean",
+   "bytes": 1414475,
+   "sha256": "a81647cd777db4d5e18b76bd59c3b79aa26621dcc1637d67a7e13d6080371248",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root9.lean",
+   "bytes": 2635,
+   "sha256": "6dae5807923bddb60e8e919dd46a88c79abbd77f8af9931ff765e298130b58c3",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 21099,
+   "sha256": "572b591397b50eacfe21589ba1be4bc40680752092c5efe85961d28caa87bf2c",
+   "imports": [
+    "Modules.Nieuwland.Settled",
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1439,
+   "sha256": "65059d702fb2bdb0b294c6e7866ad399f3da13ca71abaf1711305e8c0182be83",
+   "imports": [
+    "Polyhedra.Catalan.TriakisOctahedron.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+name = "nieuwland"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Definitions", "Modules"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+weak.linter.mathlibStandardSet = true
+weak.linter.style.header = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.34.1"
+
+# The definitions a reader needs: they import only each other and Mathlib.
+[[lean_lib]]
+name = "Definitions"
+
+# The shared machinery: imports Mathlib and Definitions.
+[[lean_lib]]
+name = "Modules"
+
+# One directory per solid: imports Mathlib, Definitions and Modules, never another solid.
+[[lean_lib]]
+name = "Polyhedra"

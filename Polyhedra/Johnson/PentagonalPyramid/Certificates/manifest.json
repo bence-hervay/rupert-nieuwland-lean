@@ -1,0 +1,42 @@
+{
+ "solid": "johnson/pentagonal-pyramid",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 2512,
+   "sha256": "c2552381f8de84f1db47f89d84260239ca4f131b138087f48125b7de6068347a",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalPyramid.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3049,
+   "sha256": "0c60e417fcb6eb0cadc7f4ee261864dc90bfb720a5446d45f60e0a21459b6ce9",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalPyramid.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 3899,
+   "sha256": "5df4e52f9b693b13cfa99d9a85028157ce518f1e0a0de48d6a3eeaf43fa7bcdc",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1533,
+   "sha256": "0fb9e5dc82b58c4b4493c62bb8b0d9dab5d5215bd50f8d5509c2fe01f08b8dea",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalPyramid.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

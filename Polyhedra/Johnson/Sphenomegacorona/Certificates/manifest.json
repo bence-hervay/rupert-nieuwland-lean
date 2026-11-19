@@ -1,0 +1,162 @@
+{
+ "solid": "johnson/sphenomegacorona",
+ "pieces": [
+  {
+   "file": "Root0.lean",
+   "bytes": 2331719,
+   "sha256": "cb42f9c4e36e02cfe0c7ce21ed8b9c0b8461f892828d302f795fbef0852ff7b4",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root1.lean",
+   "bytes": 1585956,
+   "sha256": "4a2dd141b0386cbab5b84fad0dafef6e699c2e6acfe4a64a470ff65c8f3ce2ad",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root10.lean",
+   "bytes": 1052070,
+   "sha256": "f75191ee5239023e34b01775373144877d036add5539fb6a12086a3fbb507fb4",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root11.lean",
+   "bytes": 343893,
+   "sha256": "3374d00923f071b0e796f89b7e710f66a8f74044341bc8bfe775a0da51f4cec5",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root2.lean",
+   "bytes": 1591304,
+   "sha256": "28b38e6510f09e4874e691eb058badc392dfe6cd641a6d289852c35d1f2d9c78",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root3.lean",
+   "bytes": 418029,
+   "sha256": "e31d82747aa59156f4c89610b84ad5cc9c124e6d37520fb1b200d153c4447d0c",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4.lean",
+   "bytes": 1939,
+   "sha256": "af06994e30ac2ee319e37e3b7067417d200091f77b716140fc0b933ce2d21fbf",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Root4P0",
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Root4P1",
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Root4P2",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root4P0.lean",
+   "bytes": 1219535,
+   "sha256": "eea10eeaba844f1772306c418013215b2d3c7bc927e6d814be84160c94ab54f0",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P1.lean",
+   "bytes": 2855258,
+   "sha256": "5016cdaa3ebf43bee083210b5f09be7cdee5b9d9947aec2377e03739a188658c",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P2.lean",
+   "bytes": 1727435,
+   "sha256": "23d7f2c3d81c52433c8c813c630a7194c00b177b48fc181720c30ab7ae28f1ec",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root5.lean",
+   "bytes": 2599212,
+   "sha256": "a905e00ac38f47bee54a827c170a91bc14da607d726d0ccb11f50abff522315c",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root6.lean",
+   "bytes": 2740142,
+   "sha256": "02d7017b7be14da616b69d940f5856ee50733de33981997eef06b18e97218504",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root7.lean",
+   "bytes": 1340536,
+   "sha256": "b451d34aa1ebf10e151f386b5d1fb1d59d71fc831e78ea030ffcef3b659a4f94",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8.lean",
+   "bytes": 1830343,
+   "sha256": "03abce0d94152f0d0967f277699023eead954de48345d9a7dd839e3f6869bd90",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root9.lean",
+   "bytes": 907476,
+   "sha256": "ee5e593ff49846942ad0f579e1e0a3f336f45449348daa1960ed5b103459e60e",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 119685,
+   "sha256": "fb375d8aeb0d6e9ced5fde7d331d02de467d4250e056a91f4d01bc9fa650f2d6",
+   "imports": [
+    "Modules.Nieuwland.Settled",
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Touch.lean",
+   "bytes": 925501,
+   "sha256": "cccb376a2c6e40c4072ade899849ce3051102154b83c0028193f6e2b7085dfec",
+   "imports": [
+    "Polyhedra.Johnson.Sphenomegacorona.Certificates.Shared",
+    "Modules.Root.Assembly"
+   ]
+  }
+ ]
+}

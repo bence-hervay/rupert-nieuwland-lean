@@ -1,0 +1,1638 @@
+{
+ "solid": "catalan/deltoidal-hexecontahedron",
+ "pieces": [
+  {
+   "file": "Chunk0.lean",
+   "bytes": 2443,
+   "sha256": "a44452f998fbdf7670d19891521c91f6d334f33a956d364af9b9934e72a6d3eb",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk1.lean",
+   "bytes": 3240,
+   "sha256": "70ffe9b373e9dd0fd2919a15960e4d94e19c717219ee12b9008bd05e3069612b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk10.lean",
+   "bytes": 3856291,
+   "sha256": "26a98ce0495a77b855c6cf4a80d30c0298c3bf237b2512a560ad55d988835aa4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims14",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims15",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims16",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims17",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims18",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims19",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims20",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims21",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk11.lean",
+   "bytes": 3616095,
+   "sha256": "31d29a32be7ffb5d963156bf311b08b3f9659f48bf0b5a2a8cd5e897a4a4449d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims18",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims21",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims22",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims23",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims24",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims25",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims26",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims27",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims28",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims29",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims30",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims31",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk12.lean",
+   "bytes": 93581,
+   "sha256": "3f427851e43b0d6be2dc059f66d8c1f4d4b21ac1c3769a26e912b8117455bb0a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk13.lean",
+   "bytes": 1778,
+   "sha256": "f1d84cba8450c787eb01b363253154de1d6af974ca62213d246a6079d8ee824a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk14.lean",
+   "bytes": 1664,
+   "sha256": "162ca338eda8752f55a1eb33973497fbca18923166b3d4bf58abc5896e2c4e51",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk15.lean",
+   "bytes": 1666,
+   "sha256": "615901574fb2b0dd38ab2bcc07c177fbde02a58fc5c94764731cf011de8b36d2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk16.lean",
+   "bytes": 379631,
+   "sha256": "41ab51cb6903b1c6b42b28c21259c221c34d700b2f01210b3274b0981b074503",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims0",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims32",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk17.lean",
+   "bytes": 161155,
+   "sha256": "9e480314e377d6f363212713c8786c5e45f0d0fa7158399260891aa01f5dbbd3",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims32",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk18.lean",
+   "bytes": 356322,
+   "sha256": "30e9d64568252d464760cd2db36c4e575f0e472241b66236e229bf0441192783",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims32",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims33",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims34",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk19.lean",
+   "bytes": 28247,
+   "sha256": "935fff3fc2a47098b64cedad77ff62042a32d99d9eec81cbdc3a70d705bcc2c9",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk2.lean",
+   "bytes": 3240,
+   "sha256": "c975e38bf736692e25ac8fb677ead5e3210ae003519ecf93ce09251a8018c6df",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk20.lean",
+   "bytes": 323788,
+   "sha256": "4bfc9be8e62b3bf44537315def69aac73f041c6a85acf43a21dba4602a3dcd80",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims34",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk21.lean",
+   "bytes": 3381875,
+   "sha256": "348494373acde4f703c26633ebc2c5d4b4b46d046df3d062d5835366e1e484eb",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims34",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims35",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims36",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims37",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims38",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims39",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims40",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims41",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk22.lean",
+   "bytes": 2835,
+   "sha256": "d5702ba33e6c67bef4ac631d28c35b61967981f38c47aff31cb910b814e92fd2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk23.lean",
+   "bytes": 483339,
+   "sha256": "c717c9065f1abeeff7324a273173deb303a39f870414f5f7bb138d2d4729b5e6",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims7",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims16",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims18",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims22",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims28",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims41",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk24.lean",
+   "bytes": 1660,
+   "sha256": "0dc106262ce2432d43ee70f028bdb2a08e224bad4e1e0f4d15c8c29dff9d0b3d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk25.lean",
+   "bytes": 1515489,
+   "sha256": "a71ed6cf8448ac65339f0e94be140b29f3e733b21ea73222072be657578ae168",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims7",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims16",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims18",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims22",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims28",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims44",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims45",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims46",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims47",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims48",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk26.lean",
+   "bytes": 3870614,
+   "sha256": "007a9beba55b8118b2da0579e850e54d19098e7547152b2ef82b993a8f8b58b2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims14",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims22",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims48",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims49",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims50",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims51",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims52",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims53",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims54",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims55",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims56",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims57",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims58",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk27.lean",
+   "bytes": 71018,
+   "sha256": "ff979c41cb74bd7520138b9b3694fe941c8214a2d39db07801a4d62d01779ac4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk28.lean",
+   "bytes": 1773,
+   "sha256": "e21902624516fd2cc6e8363713698a667d632dd247e9804950c3bfb0374a327b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk29.lean",
+   "bytes": 1675588,
+   "sha256": "1e96d92159017b417c49da7cfa847b660efe60a43cd18cf6143903f30ee6f9b2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims51",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims53",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims54",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims58",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims59",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims60",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk3.lean",
+   "bytes": 3239,
+   "sha256": "25682ea12aea39947587496617bb2a74ef9e669c6725f9540e109d82a7c866f1",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk30.lean",
+   "bytes": 2987906,
+   "sha256": "c0b1c968595983a15bb21361fd37d47796f10742320e9a60dac3a3a13d23b7d5",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims60",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims61",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims62",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims63",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims64",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims65",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims66",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims67",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims68",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims69",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims70",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims71",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims72",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims73",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims74",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk31.lean",
+   "bytes": 431578,
+   "sha256": "84e55573789ad436cbbf22813fb1aca21af7f567c0e001c57dd9abbfd7c0149d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims74",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk32.lean",
+   "bytes": 2583400,
+   "sha256": "6f845050d0372cab03ef283a724149cdc40e55615759cd1a527489d60d3cfedd",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims34",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims37",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims74",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims75",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims76",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims77",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk33.lean",
+   "bytes": 2639463,
+   "sha256": "06c794d26f72c4e15992d6cdb92558bb5a964347803487d18f39ca0e930f8871",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims77",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims78",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims79",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk34.lean",
+   "bytes": 436353,
+   "sha256": "66322938fde30061deb8102333f33c12fe60eafee69e6dba79d066876fef6067",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims79",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims80",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk35.lean",
+   "bytes": 452792,
+   "sha256": "940477dedae3891ebe7f5cef77b204b19ef0a62cf63681b699d193d30b274af6",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims80",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims81",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims82",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims83",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims84",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk36.lean",
+   "bytes": 268548,
+   "sha256": "aa6e0833aa36a69cd2192d73a857474972f50d071cbc5d98aeae21bca434e4c3",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims84",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk37.lean",
+   "bytes": 36525,
+   "sha256": "5c67cd8484612fd85c0853f83f55201ba988a7e93dc76bfe3fa68c964568384c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk38.lean",
+   "bytes": 1728200,
+   "sha256": "046486cb62f79dfdda75d38419dbb1b9046a160c43cb594b174f4dafcb35a8a4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims22",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims50",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims86",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims87",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims88",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims89",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims90",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims91",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims92",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk39.lean",
+   "bytes": 1659,
+   "sha256": "c55c0e058d28ab331f3a7c715ef38002b1556480d1a30df5640ae3529de95285",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk4.lean",
+   "bytes": 5879,
+   "sha256": "c08c805fef4c7ead303853752fd347a62ae9855261d070c89d3eea1bd8fa538c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk40.lean",
+   "bytes": 1658,
+   "sha256": "411a7690c2ff9ba5b4639ef7fc7805ceee4f68e1d632ed5cf1d6c5ad9d5ad6ec",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk41.lean",
+   "bytes": 1656,
+   "sha256": "327bee011b175cfc9d749a2dfb81baebf5230fa5a915a8c5b76461c2ee799a1e",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk42.lean",
+   "bytes": 3101624,
+   "sha256": "4e112218f59292fbd6e4b0ef3c1d489b95bf237619bfb3ab5d59892f89ebd94c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims50",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims91",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims92",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk43.lean",
+   "bytes": 2988798,
+   "sha256": "61eac7629387db56ce9c57955e3063193112f8e79b742b3cffc8844b16985c8a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims92",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk44.lean",
+   "bytes": 2167368,
+   "sha256": "d8d9a9c0e6fda3a6cb01d2b0c23a62f5c9361ccd4d6536ff98cd603e665095b8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims92",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims93",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims94",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims95",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk45.lean",
+   "bytes": 1940780,
+   "sha256": "b552a947e484208956da4186201bbb58bf92fa93f06f6d31434dcda04ab8a0eb",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims95",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims96",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims97",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims98",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk46.lean",
+   "bytes": 2575367,
+   "sha256": "27b4255bb54da614fb48af33d237748e66912e30231ea5c379a09654113bb334",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims50",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims91",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims98",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims99",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims100",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims101",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk47.lean",
+   "bytes": 2172990,
+   "sha256": "11d90fdc30db17f4ec8439c2f2766d68cc15f75ca8d38f690697d58521ab4c13",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims42",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims99",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims100",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims101",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims102",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims103",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims104",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims105",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk48.lean",
+   "bytes": 683702,
+   "sha256": "e527d16d8ab6e3cf75707916eeff1cf906d5968fc1c7a12446cab96e596ed531",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims43",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims50",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims85",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims91",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk49.lean",
+   "bytes": 5165,
+   "sha256": "833380159c9486d24d3a191bcbd3c9ac197ae29a2ed337ef579c3e98acc805a9",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk5.lean",
+   "bytes": 4720,
+   "sha256": "96b906a90dbd970bc7eee3019f4e649446519d1da7f0d5534327231ca2c54107",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk50.lean",
+   "bytes": 3351,
+   "sha256": "59b6a69c3106ba48f14b3017e7186c6ff08dc6d2902d5c51df42a0c6ec0008c4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk51.lean",
+   "bytes": 5143,
+   "sha256": "ba6198458ec6fcecbb68484b003dd7530ce07c9ed0d2b37e6ffdf740b90f4174",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk6.lean",
+   "bytes": 3354,
+   "sha256": "f2fef478f73b069591aba65e254e88ec0ad3e094a3f8843cdf7a488c2477b768",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk7.lean",
+   "bytes": 4711,
+   "sha256": "43d7dc011156a9a0834d41497479634d990a1d710c1a2c54c36c217ba9d2a0e9",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk8.lean",
+   "bytes": 3533185,
+   "sha256": "19e2ea33e374998733b26b4f0e205d4d9f459870633498eb328fda50f5c9e32f",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims0",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims2",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims4",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims5",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims6",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims7",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Chunk9.lean",
+   "bytes": 2073410,
+   "sha256": "26efa44cf71a9181bcdbfd190caa570e2800a26b9c43699387ad5c40d154539d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims0",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims1",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims2",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims3",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims7",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims8",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims9",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims10",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims11",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims12",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims13",
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Claims14",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims0.lean",
+   "bytes": 1087993,
+   "sha256": "95e5551af40af0cf823100701eaa78051c7ca3260c0b2d51efaf07350dcc6d77",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims1.lean",
+   "bytes": 1151374,
+   "sha256": "4f64e9d9d3c04fd6539dad8ec072b30c01b2eee2c246d8859768c3ec06914c87",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims10.lean",
+   "bytes": 1062287,
+   "sha256": "9cc7770c12931d2ba38f9740b19b9e6e18c50ba696640fc9973b8b4ebbbe3252",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims100.lean",
+   "bytes": 1083919,
+   "sha256": "50a45c4f0ae16953dc4e2cd28f5815d056fac2cb88a47ce64c42192b4e42bcca",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims101.lean",
+   "bytes": 1077372,
+   "sha256": "9c586c572ee84a170fa15531d991e9bb73a1009172fd955a2e9cc07ba411dbb3",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims102.lean",
+   "bytes": 1067868,
+   "sha256": "e86b05bb100463c28a0b3a468ca00de802136668a67ac4a7bcb9f2ff5b205543",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims103.lean",
+   "bytes": 978468,
+   "sha256": "bb7a777d6d3ca6363e24c621f2957ccd537ad05012b24a08ff098aacbe39ad22",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims104.lean",
+   "bytes": 1116888,
+   "sha256": "e253af9b49d1c4d7239658aeaa0a5beedf758ea8a94f83c568f6f0629241e11a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims105.lean",
+   "bytes": 429127,
+   "sha256": "8ebd0b401087fe6837ce21c88006f4a4ffa0a63a41178b243f52c1009178521a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims11.lean",
+   "bytes": 1028247,
+   "sha256": "feedc0e02688989523029a06d455e38aa9e73ec9e2ab93aad767e8f209378001",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims12.lean",
+   "bytes": 1032085,
+   "sha256": "d07777f9493c18f26eba36c580ca681d16047fc3a9c57d039f679436f9bd630c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims13.lean",
+   "bytes": 1063255,
+   "sha256": "8364dbc28c92aaa9b3c8be75b54a2bc2b135e457fdc8a2affb66a5054845d90b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims14.lean",
+   "bytes": 1127170,
+   "sha256": "a62ad9e916c89e1e5863872835351eeba66a9d53c20db904a543dce634427e52",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims15.lean",
+   "bytes": 1085352,
+   "sha256": "ce025a362d556ff267be495d5da7a633c1ae302e3db9b1204e0b30014444fc7e",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims16.lean",
+   "bytes": 1105717,
+   "sha256": "86eb8644c1dacc748d6ecf5abd2e1a87e35a0f5304b5cb90f3bcf4c34a57ed34",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims17.lean",
+   "bytes": 1095375,
+   "sha256": "0559f759b5780c1b24bcac63400d9c5494034c8876774dd403589783d7c28d9b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims18.lean",
+   "bytes": 1056628,
+   "sha256": "690e5819599c96543f4ade30b31e73802117890bb529c1278b202acd06169713",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims19.lean",
+   "bytes": 1058466,
+   "sha256": "369d66b325fe90020ca5090c1463220085ecd2b0dcb3211c1824dcbc6f5bb7d5",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims2.lean",
+   "bytes": 1057145,
+   "sha256": "250cd43a657bd540ea4673ec5539ee6fa5b4c67ad673baf962457a91e3ac773d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims20.lean",
+   "bytes": 1094771,
+   "sha256": "7718d68394b323ffe13cf2dc8032c1f97d19fcd2971af29b782b8c120a9bf76c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims21.lean",
+   "bytes": 1111524,
+   "sha256": "2e5bdc4685cdb3f5c2a15525c6c941dba8e017214514847ba4e9a76e70cb487e",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims22.lean",
+   "bytes": 1195728,
+   "sha256": "9424aef780aaf1763f1085caaee5d89dff3f0b51fe260100d906c327a5c6ea37",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims23.lean",
+   "bytes": 1144303,
+   "sha256": "e65984585ed9bf37dffba5e05845f3843ff82a5d4347d3e8ba1825188619cc5a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims24.lean",
+   "bytes": 1140699,
+   "sha256": "3bb0af7b09756a732dfa929dfb2fd54c88469ec8f6f082a855dc3a31ea441bdb",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims25.lean",
+   "bytes": 1123650,
+   "sha256": "c5220442c4a4c055b69f5eb5cff46240db2bb6b9a33b5b8aa23a286cf5f14a8b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims26.lean",
+   "bytes": 1087340,
+   "sha256": "7b0a4c0806a3b22532e8942ac4f382fea1a9995b45daa14d64d6e97e5228d889",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims27.lean",
+   "bytes": 1095163,
+   "sha256": "d60f6eb24d0cbd2e19c3cb495d56a6d752cd5daef066f8b87205dd8f2a0dd1a0",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims28.lean",
+   "bytes": 1096392,
+   "sha256": "4e6a21d84525d5ceaa0a6075e67878b7a90f924c87163e10e4cf9c967bd706f8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims29.lean",
+   "bytes": 1155856,
+   "sha256": "cfe76292be363a52d1a91c972bc753c6346b1da0f74478b838dffb778b7539a4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims3.lean",
+   "bytes": 1169825,
+   "sha256": "617c5eb2f6e5baa95bb209d8237bc093dc06ad462efb2fe312b7ae9d6364d2c4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims30.lean",
+   "bytes": 1167840,
+   "sha256": "6a4bfe08efc18c9e8f1f5efeb24719f4eae79a6ceb3e7c24bf172e1fa0e36fc1",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims31.lean",
+   "bytes": 1152488,
+   "sha256": "6683c54995f5304038a529d2f04d41fb2c36b4ba934ececae720aae7316d6fc8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims32.lean",
+   "bytes": 1077574,
+   "sha256": "d8a602ad96b524d5ddae415b57c91a175c7e6dfb4f6dac6af63cfbb5e0566a48",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims33.lean",
+   "bytes": 1037595,
+   "sha256": "6e62ca5c0ae19868c9fa7cb8f6a3b424afeecf2195a58697589ace79200b22fa",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims34.lean",
+   "bytes": 1116007,
+   "sha256": "a0501a47648a01d0809438ab457183e791831f93b860f7313324de5e9693f55f",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims35.lean",
+   "bytes": 1129414,
+   "sha256": "ced80d905c9d19792d4177e344d2af7259e511f317f5f144dedf33637c478cee",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims36.lean",
+   "bytes": 1116215,
+   "sha256": "7f739898a19fd590ca7cd90ddc294a4bbfcc9ca044e6feda07ac2905a3ebf2cd",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims37.lean",
+   "bytes": 1147289,
+   "sha256": "51761914972d360854f2b0f10d6f7776e95daab8089491a8d002ad50b6322488",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims38.lean",
+   "bytes": 1145373,
+   "sha256": "bad88be811414048b83f7dc63b7dafe47a64d859bf6490e35f8c97bc6ba11d96",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims39.lean",
+   "bytes": 1131421,
+   "sha256": "4c2c304574889375e4ac5d0cb4318adc0d3f0c059ee4a30e74c815f44a5ab724",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims4.lean",
+   "bytes": 1109248,
+   "sha256": "cb361c22907a60a8c28d4d095c0803d48f4fb3944dc7fdf2801551ead1dddaa2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims40.lean",
+   "bytes": 1110755,
+   "sha256": "b24c7c6a369660c857cbd769fa7bc8e52287c851769680bb90e095019abcd55b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims41.lean",
+   "bytes": 1152897,
+   "sha256": "36933acf1820d630c0405ce34d120fe91c7e6d2e758b497f7f6b7c6ebab1ad63",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims42.lean",
+   "bytes": 985055,
+   "sha256": "87f7d53a39e05911c9bef1d86791bce941ac9ce1233fe60b22c196ddb723fc21",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims43.lean",
+   "bytes": 1176208,
+   "sha256": "640e6e64ebacdc13ac163cb168c22de68e6f42ed2a67d3b30a8ecaf5481edc68",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims44.lean",
+   "bytes": 1109353,
+   "sha256": "ed1404f2125165e4feb49627ee03a20d7061c4882f1a10e2cbe692c68346f814",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims45.lean",
+   "bytes": 1060086,
+   "sha256": "388ce6867eb2e57abc8b6432c1f002b8939062c713b87985f4b906776eb83431",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims46.lean",
+   "bytes": 1116684,
+   "sha256": "81e490587fce5494713104b8ef603352ad6b6c9c28cceaa2d3d33489cfbc7637",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims47.lean",
+   "bytes": 1117274,
+   "sha256": "d5ee93538c659974807fd0dc3041c606424c316cc92ee9663d5f196555811d87",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims48.lean",
+   "bytes": 1032197,
+   "sha256": "e90ed0286e6021edfaa2282016da5a5af127fb390523b5e021c1c584fb86a411",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims49.lean",
+   "bytes": 1158313,
+   "sha256": "3ebdb4ea5b1639f01ab34b23f30b3a6926b8292c545df0bd0e0cd37a53a5db95",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims5.lean",
+   "bytes": 1115912,
+   "sha256": "d9a6b344f636ded32d52ba421fb9e624ee192584b553efee650652f7804a3437",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims50.lean",
+   "bytes": 1161606,
+   "sha256": "08832c8febbac35b39a7ca47829f820ced02d1586b77700fb436f4ece8135f2c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims51.lean",
+   "bytes": 1129186,
+   "sha256": "8355baf3884d23cc69d0c18d4378e48d69cb17efe4caa6ad38ce510e804f3ce7",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims52.lean",
+   "bytes": 1104808,
+   "sha256": "9e21d4280a3be3d870fbcd93a4358f271c928bc0f8cb4487831d2ca208fef9c4",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims53.lean",
+   "bytes": 1132402,
+   "sha256": "001a33899e1d6ff725abc318a05ed09aebdb2c2df5ab7734e4956eae42fe60d2",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims54.lean",
+   "bytes": 1154357,
+   "sha256": "df590b5a9947d6b1d1955c8f0d8b54166a1f1cd0dbc2f7e658edfe79c7034576",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims55.lean",
+   "bytes": 1023173,
+   "sha256": "1a6c5db4b28d12bb2fc38bef375d6eeed5422f718247472e3dfcb527369848fb",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims56.lean",
+   "bytes": 1116122,
+   "sha256": "01c9a29f9d5e0901d18f4f8ab95e40549836b5683551d93337f122036e4d1ffc",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims57.lean",
+   "bytes": 1147324,
+   "sha256": "b290f55b027456bc7826b5c02b02307cbd544215ad9fcd681cbff069d1d8156c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims58.lean",
+   "bytes": 1122517,
+   "sha256": "8b00a5758c1b9d466d1c7c70f78170ef199635d414d649c05e143f2f0e98e00d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims59.lean",
+   "bytes": 1184596,
+   "sha256": "1477dddb461ffeeb8995257033545105be97cfa6d566e96c90f7e58b86dfc102",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims6.lean",
+   "bytes": 1158255,
+   "sha256": "e9797452ea4a0e6d04b8e3a667354e19f7ce9263727f06261ebb3242983eda6b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims60.lean",
+   "bytes": 1018489,
+   "sha256": "64ee4ef88cb987b3bb9789161f1d3f23672b4b20a1c80d6c0b614241ec3f480d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims61.lean",
+   "bytes": 1151503,
+   "sha256": "ce7155002c39ab812564d10e0010c89da97bb6da7d13b8cbd822aa7ced9e81ab",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims62.lean",
+   "bytes": 1141841,
+   "sha256": "e95038a7ae7a055f56f03e21263c9f8a59cc288c230f9162f5359e6b237d42fe",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims63.lean",
+   "bytes": 1157745,
+   "sha256": "05029e13e6b02359597d04e58948b259747022e33934d721854e4b72f7fc8bb0",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims64.lean",
+   "bytes": 1141984,
+   "sha256": "0081b4c988eb62b07dd0f7f7c5fc75cb130bbbdcbc348d45a7b914f02c1699cd",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims65.lean",
+   "bytes": 1093904,
+   "sha256": "b805c542a35c6cb229c261b0561bb25a8f5f2116284b39b5399fcdbc9a9415e8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims66.lean",
+   "bytes": 1170518,
+   "sha256": "f360c3171f162adac91d953fba99357e3be068d0d4b303beead5461b72d7585d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims67.lean",
+   "bytes": 1112859,
+   "sha256": "aa3225b565d42e5ce27367592008e289ff18079293ddf75a826b4897004f7ba8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims68.lean",
+   "bytes": 1026990,
+   "sha256": "5b24f8bf63e3ccf2db1f514f3d50b2f54ccc38925bd8178823aeea5ec5ec1d5b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims69.lean",
+   "bytes": 1118044,
+   "sha256": "aa72a44efb3358e543ce8d6f1ba6964222458415eb96e70c360e51c8a7d0796d",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims7.lean",
+   "bytes": 1138607,
+   "sha256": "3f2c417828857e7be6f39dc022678b686cb161ba0c4e7e3d2ca81604848ab523",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims70.lean",
+   "bytes": 1163867,
+   "sha256": "06f2d1fea229b4de5cf5fa2c011fdf84b1873cee88ee3db3df1ffb98d9fb1cbd",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims71.lean",
+   "bytes": 1024236,
+   "sha256": "9662c19a83c2efaf8c1acd74f716b360d5587e63c0377993aba0cd9f2aeec71f",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims72.lean",
+   "bytes": 1184129,
+   "sha256": "b282e3e47376e5a2a365499655e415c3f2221346568a1b966db7e4d3728580cc",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims73.lean",
+   "bytes": 1156255,
+   "sha256": "1d5d9659efd8610285c39a8aff42a276e8940bd41286ba26fd28b3a6a5a989ee",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims74.lean",
+   "bytes": 1116855,
+   "sha256": "a4b142ff2cbffa1280abcaa5f2bb43d86b63e356dae94ed5c6a9b23e2eb44bbe",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims75.lean",
+   "bytes": 1188951,
+   "sha256": "62fe4ce0638aca9afa4a63c276005d027d80fb8b4182d5e1b41e63c0b7019376",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims76.lean",
+   "bytes": 1175618,
+   "sha256": "7d0c0aee296daa2dc93f18d03c86690b1cf954a8746159d46e82bcf7eebd0587",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims77.lean",
+   "bytes": 1095030,
+   "sha256": "f35543f3c5e3f5fdc356daacc7868763236272e2e9fbf7428b87a8eb4112250a",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims78.lean",
+   "bytes": 1118993,
+   "sha256": "5dea9ac58fbf8a6579e5c272a22b857c1ae51b372fca11b4916d0b0a75d39b84",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims79.lean",
+   "bytes": 1148896,
+   "sha256": "5326f3f6913779f2d381c9ced53c14ad3b26dc64d550c66f0d95962556b22270",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims8.lean",
+   "bytes": 1019327,
+   "sha256": "c146eb6aa1b16cae6ea790545c9bd7cfbc2b22e26c6b90509a6d5cc00cad6fdf",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims80.lean",
+   "bytes": 954779,
+   "sha256": "c2ccb07fc23d876bf281d1af6052d048c7950f2f5d60aafddeb58d9c978381f8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims81.lean",
+   "bytes": 1073909,
+   "sha256": "b58fffd461276c34b3ee86ec70af240e51f598c6c12008aba0299af7b9e8c0c5",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims82.lean",
+   "bytes": 1078773,
+   "sha256": "c62b60acacea673189447026bb5869c820f5020915a4a1a14c1e19f91d373a67",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims83.lean",
+   "bytes": 1055334,
+   "sha256": "1cb3f4c0b45f45f4705709ce329223cf77444a62627709bce1bd74851a7fe95c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims84.lean",
+   "bytes": 1080595,
+   "sha256": "4a3d5642201cf1762f5eb77643cfc689592ed0a8f357373de6b6af4587687c8e",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims85.lean",
+   "bytes": 1080677,
+   "sha256": "2ccf5995695140893c19d8752484b109f9f35b6e956753dac8fdecbe393e6521",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims86.lean",
+   "bytes": 1093436,
+   "sha256": "431c63a4fe8cec7e188a2e2ddf8d21e069e289b567d48a5e1c5ba9885544287c",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims87.lean",
+   "bytes": 1156462,
+   "sha256": "65868a8116c7a70814ee129cf0cffd15d8a85d181313ab65e7fb9f12743fd2c8",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims88.lean",
+   "bytes": 1107089,
+   "sha256": "cebdb40f24fa4fa6cea75b82990e9ec94829e278a51062a1880f4325d1235396",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims89.lean",
+   "bytes": 1089879,
+   "sha256": "a8550843cb0ed42d3eba120d0f6b913af434e1bada189001037932d90b00b1c5",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims9.lean",
+   "bytes": 1038951,
+   "sha256": "904c8e15bfae8c8673c13ced3fc8f558d2723044fcc57256a1f3112c4bc9cdbe",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims90.lean",
+   "bytes": 924691,
+   "sha256": "79272a102ae0ed3132a09173e609a702bc3671b11be74e084792aebce411d0a6",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims91.lean",
+   "bytes": 1193527,
+   "sha256": "83bf585a74dea83a08f741898cbbb6344bbd0bcf17ce081c4084fb5068acd955",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims92.lean",
+   "bytes": 1123511,
+   "sha256": "8f7804283a00b9607cac90cf615b814319758f099db16655d8e609c5e556641b",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims93.lean",
+   "bytes": 1062429,
+   "sha256": "601636e9c9ffe57e5fff0c239395a791062d4cbe8a1278696a64a3acda32048f",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims94.lean",
+   "bytes": 1057681,
+   "sha256": "06abfb255e6b97d9ee907cdcf346e973d1f85ea404d6c620838c2c8b06e11c44",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims95.lean",
+   "bytes": 1050276,
+   "sha256": "3cc1d13e53855f52e5e81b283b5e5fc4b61df6c4cc1ed901f0401e173ae475db",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims96.lean",
+   "bytes": 1041649,
+   "sha256": "bdab63ccf588645c05a29d2ebe534d2a7e7468ae1e832a3d3291460c884de3e1",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims97.lean",
+   "bytes": 1033028,
+   "sha256": "29226cb78a93fa62e6edec266e5520ec6e9670853a8a371f1d9781cef9544e73",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims98.lean",
+   "bytes": 1073410,
+   "sha256": "908c17227a8c87c018706d699696ab136f399e9b002e4751c66bf75e51d17652",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Claims99.lean",
+   "bytes": 1059682,
+   "sha256": "ba9f95657f8f79fd8e5e1b7385cd7872f64b29508f17302f37137a5291877e2e",
+   "imports": [
+    "Polyhedra.Catalan.DeltoidalHexecontahedron.Certificates.Shared",
+    "Modules.Certificate.Native"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 84014,
+   "sha256": "7ec973bde74adb5da31e627e5f67d7977c55228e6ba59166b3fbb395a0ab9d48",
+   "imports": [
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  }
+ ]
+}

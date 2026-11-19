@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Johnson.ElongatedPentagonalPyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.ElongatedPentagonalPyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.ElongatedPentagonalPyramid.polyhedron Nieuwland.Johnson.ElongatedPentagonalPyramid.system Nieuwland.Johnson.ElongatedPentagonalPyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.ElongatedPentagonalPyramid.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.ElongatedPentagonalPyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.ElongatedPentagonalPyramid.system Nieuwland.Johnson.ElongatedPentagonalPyramid.layout Nieuwland.Johnson.ElongatedPentagonalPyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.ElongatedPentagonalPyramid.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalPyramid.theta_isRoot",
+   "type": "Nieuwland.polyEval [1/80, 0, -1/4, 0, 1] Nieuwland.Johnson.ElongatedPentagonalPyramid.theta = 0 \u2227 (0.2628655560595668030128345424239 : \u211d) \u2264 Nieuwland.Johnson.ElongatedPentagonalPyramid.theta \u2227 Nieuwland.Johnson.ElongatedPentagonalPyramid.theta \u2264 (0.262865556059566803012834542424 : \u211d)"
+  }
+ ]
+}

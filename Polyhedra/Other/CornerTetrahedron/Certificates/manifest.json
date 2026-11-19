@@ -1,0 +1,41 @@
+{
+ "solid": "other/corner-tetrahedron",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 17283,
+   "sha256": "fd05e040bee63853a8f1cb6fed837288d3c2fd21b6fe9addbac0cfd39aab653d",
+   "imports": [
+    "Polyhedra.Other.CornerTetrahedron.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 2049,
+   "sha256": "d1b44407f913117fcd6bfa49170e660a846c7fbff8993eb1d0504d19469730d4",
+   "imports": [
+    "Polyhedra.Other.CornerTetrahedron.Certificates.Shared",
+    "Modules.Nieuwland.Exact"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 1514,
+   "sha256": "399bb3d21e4418899199785bf3725c3b5789082e6cd03d7309a63f884ab320fe",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1402,
+   "sha256": "59c6277a4ba938ae89dc28a8b143268f61557fd345d43dd10cdeef00580fbcc3",
+   "imports": [
+    "Polyhedra.Other.CornerTetrahedron.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

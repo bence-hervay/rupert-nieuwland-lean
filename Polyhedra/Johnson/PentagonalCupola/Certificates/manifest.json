@@ -1,0 +1,41 @@
+{
+ "solid": "johnson/pentagonal-cupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 145538,
+   "sha256": "860528df4bd30924d9f998ae0e25f29ab7acdfd1ee16359807df0f8842754a31",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalCupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3373,
+   "sha256": "c1242e221bd512ffd3f68928257ef9ce9539c9ad5b5e4179d2d6dd9a1bfdd686",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalCupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 4891,
+   "sha256": "79729c0165c791860b66b524db4be62cf8fad916f3d47a804a4ca47785572840",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1524,
+   "sha256": "4accb7ff4ed0139ae7db56262180ce54bf3b6c2af191a3ca3026116a151a9fbc",
+   "imports": [
+    "Polyhedra.Johnson.PentagonalCupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

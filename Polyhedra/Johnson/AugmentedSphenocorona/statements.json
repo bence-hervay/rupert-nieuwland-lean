@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Johnson.AugmentedSphenocorona.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.AugmentedSphenocorona.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.AugmentedSphenocorona.polyhedron Nieuwland.Johnson.AugmentedSphenocorona.system Nieuwland.Johnson.AugmentedSphenocorona.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.AugmentedSphenocorona.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.AugmentedSphenocorona.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.AugmentedSphenocorona.system Nieuwland.Johnson.AugmentedSphenocorona.layout Nieuwland.Johnson.AugmentedSphenocorona.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.AugmentedSphenocorona.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Johnson.AugmentedSphenocorona.theta_isRoot",
+   "type": "Nieuwland.polyEval [21893041/10485760000, 0, -29434883/491520000, 0, 217315519/368640000, 0, -59348687/23040000, 0, 7849427/1280000, 0, -3159839/360000, 0, 694111/90000, 0, -299/75, 0, 1] Nieuwland.Johnson.AugmentedSphenocorona.theta = 0 \u2227 (0.864147468128994113735899747097 : \u211d) \u2264 Nieuwland.Johnson.AugmentedSphenocorona.theta \u2227 Nieuwland.Johnson.AugmentedSphenocorona.theta \u2264 (0.8641474681289941137358997470971 : \u211d)"
+  }
+ ]
+}

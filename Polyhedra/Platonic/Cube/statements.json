@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Platonic.Cube.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Platonic.Cube.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Platonic.Cube.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Cube.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Platonic.Cube.polyhedron Nieuwland.Platonic.Cube.system Nieuwland.Platonic.Cube.layout"
+  },
+  {
+   "name": "Nieuwland.Platonic.Cube.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Platonic.Cube.system"
+  },
+  {
+   "name": "Nieuwland.Platonic.Cube.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Platonic.Cube.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Cube.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Platonic.Cube.system Nieuwland.Platonic.Cube.layout Nieuwland.Platonic.Cube.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Platonic.Cube.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Platonic.Cube.polyhedron)).Nonempty"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "solid": "johnson/square-orthobicupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 2213,
+   "sha256": "0946446e288b70ce3c2cadbfd23bc30e3ff0385387013930e15f0dc605e532a7",
+   "imports": [
+    "Polyhedra.Johnson.SquareOrthobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3302,
+   "sha256": "cc45cf45108ec70cacb23968bdb53cc23ce4bdc933d7dca1d557a6940767dec7",
+   "imports": [
+    "Polyhedra.Johnson.SquareOrthobicupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 4969,
+   "sha256": "b85eeb6469311dfd7d04728f92f44ad2cf41d0f2e7964ab5dfb68fb43d1fbaa2",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1471,
+   "sha256": "9e494d82f5b4e8aba08b6567d778339fb42225613a00243aef30c7136f432da6",
+   "imports": [
+    "Polyhedra.Johnson.SquareOrthobicupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

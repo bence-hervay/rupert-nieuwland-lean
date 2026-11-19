@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Catalan.RhombicDodecahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Catalan.RhombicDodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Catalan.RhombicDodecahedron.polyhedron Nieuwland.Catalan.RhombicDodecahedron.system Nieuwland.Catalan.RhombicDodecahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Catalan.RhombicDodecahedron.system"
+  },
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.RhombicDodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Catalan.RhombicDodecahedron.system Nieuwland.Catalan.RhombicDodecahedron.layout Nieuwland.Catalan.RhombicDodecahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Catalan.RhombicDodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.RhombicDodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

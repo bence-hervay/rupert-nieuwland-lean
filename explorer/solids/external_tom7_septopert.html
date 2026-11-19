@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Septopert (Tom 7), a Nopert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: dark;     /* dark scrollbars and controls */
+  --bg: #000000;
+  --plug: #0080ff;
+  --ink: #ececec;
+  --ink-2: #8f8f8f;
+  --ink-3: #5a5a5a;
+  --rule: #242424;
+  --track: #3a3a3a;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--sans); }
+body { display: grid; grid-template-rows: auto auto 1fr auto; height: 100vh; height: 100dvh; overflow: hidden; overscroll-behavior: none; }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+
+header { position: relative; display: flex; align-items: baseline; gap: 18px; padding: 12px 18px 10px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 15px; font-weight: 600; }
+.back { color: var(--ink-2); text-decoration: none; font-size: 15px; line-height: 1; }
+.back:hover, .back:focus-visible { color: var(--ink); }
+header .nu { font-family: var(--mono); }
+header .grow { flex: 1; }
+.ghost { background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 3px 10px; color: var(--ink); cursor: pointer; }
+.ghost:hover { border-color: var(--ink-3); }
+#spin { background: #000000; }
+
+main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
+.pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+.pane + .pane { border-left: 1px solid var(--rule); }
+#gl { display: block; width: 100%; height: 100%; touch-action: none; }
+#flat { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+#flat.dragging { cursor: grabbing; }
+.corner { position: absolute; font-size: 12px; }
+.tl { left: 14px; top: 12px; } .bl { left: 14px; bottom: 12px; }
+.caption { color: var(--ink-2); pointer-events: none; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.bl.tools { display: flex; gap: 8px; }
+
+footer { display: flex; align-items: center; gap: 28px; padding: 12px 18px 14px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
+.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 10px; row-gap: 2px; }
+.ctl .lab { grid-column: 1 / -1; color: var(--ink-2); }
+.ctl .end { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
+.ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
+.ctl.scale { flex: 2 1 360px; }
+.ctl.small { flex: 1 1 200px; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: none; margin: 0; }
+input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--track); }
+input[type=range]::-moz-range-track { height: 2px; background: var(--track); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); margin-top: -5px; border: 0; }
+input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--ink); border: 0; }
+.scale input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
+.scale input[type=range]::-moz-range-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
+
+/* the pose under the header: each matrix with its name at its left */
+.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
+.posenums { display: flex; gap: 32px; }
+.posenums > div { display: grid; grid-template-columns: auto auto; column-gap: 10px; align-items: start; justify-items: start; }
+.posenums h2 { margin: 0; font-size: 12px; font-weight: 500; color: var(--ink-2); line-height: 1.45; }
+.posenums table { font-family: var(--mono); font-size: 12px; line-height: 1.45; font-variant-numeric: tabular-nums; border-collapse: collapse; }
+.posenums td { box-sizing: content-box; padding: 0 0 0 10px; width: 13ch; text-align: right; white-space: nowrap; }  /* -1.0000000000: the columns align */
+.posenums td:first-child { padding-left: 0; }
+.posenums .row { display: none; }
+.tr { right: 14px; top: 12px; }
+
+/* the algebraic definition: in place of the pose, the views and the slider. The text as it is, never wrapped
+   for the page's width (one line per variable, polynomial and range): the panel scrolls both ways */
+.alg { display: none; min-height: 0; overflow: auto; padding: 14px 18px 28px; }
+#algtext { font: 12px/1.55 var(--mono); color: var(--ink); white-space: pre; width: max-content; margin: 0; }
+body:not(.algopen) .algonly { display: none; }
+body.algopen { grid-template-rows: auto 1fr; }
+body.algopen .posebar, body.algopen main, body.algopen footer { display: none; }
+body.algopen .alg { display: block; }
+#algbtn[aria-pressed="true"] { border-color: var(--ink-3); }
+
+/* a Nopert's page (nopert.js): the solid alone, turning; no pose, no projection, no scale */
+header .kind { color: var(--ink-2); }
+body:not(.nopert) .kind { display: none; }
+body.nopert { grid-template-rows: auto 1fr; }
+body.nopert .posebar, body.nopert .flatpane, body.nopert footer { display: none; }
+body.nopert main { grid-template-columns: 1fr; }
+
+/* phones: no page scroll (a drag in the view moves it); nu under the title, the pose under it, the slider at the bottom */
+@media (max-width: 760px) {
+  body { position: fixed; inset: 0; height: auto; }
+  header { gap: 2px 12px; padding: 10px 14px 8px; }
+  header .nu { order: 3; flex-basis: 100%; font-size: 12px; overflow-wrap: anywhere; }
+  main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  .pane + .pane { border-left: 0; border-top: 1px solid var(--rule); }
+  .tl { left: 10px; top: 8px; } .tr { right: 10px; top: 8px; }
+  footer { flex-direction: column; align-items: stretch; gap: 8px; padding: 8px 14px calc(10px + env(safe-area-inset-bottom)); }
+  .ctl.scale { flex: none; grid-template-columns: auto auto 1fr auto; }
+  .ctl .lab { grid-column: auto; }
+  /* the pose as rows, t as a row */
+  .posebar { padding: 6px 14px 7px; }
+  .posenums { flex-direction: column; gap: 3px; }
+  .posenums > div { grid-template-columns: 2em auto; column-gap: 0; }
+  .posenums h2, .posenums table { font-size: 11px; }
+  .posenums .col { display: none; } .posenums .row { display: grid; }
+  .alg { padding: 10px 14px calc(20px + env(safe-area-inset-bottom)); }
+  #algtext { font-size: 11px; }
+}
+/* phones, upright or turned: the 3D view only (the projection is drawn in it too); the same query in explorer.js */
+@media (max-width: 760px), (pointer: coarse) and (max-height: 520px) {
+  .flatpane { display: none; }
+  main { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+}
+@media (max-height: 520px) and (min-width: 761px) {
+  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; } .ctl .lab { display: none; }
+}
+@media (pointer: coarse) {
+  input[type=range] { height: 30px; }
+  input[type=range]::-webkit-slider-thumb { width: 22px; height: 22px; margin-top: -10px; }
+  input[type=range]::-moz-range-thumb { width: 22px; height: 22px; }
+  .ghost { padding: 6px 12px; }
+}
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body class="nopert">
+<header>
+  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }">←</a>
+  <h1>Septopert (Tom 7)</h1>
+  <span class="nu">ν = <span id="nutext"></span></span>
+  <span class="kind">Nopert</span>
+  <span class="grow"></span>
+  <button class="ghost algonly" id="algcopy">Copy</button>
+  <button class="ghost algonly" id="algsave">Download</button>
+  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden>Algebraic definition</button>
+</header>
+
+<div class="posebar"><div class="posenums" id="posenums" aria-label="The pose"></div></div>
+
+<main>
+  <section class="pane" aria-label="3D view">
+    <canvas id="gl"></canvas>
+    <button class="ghost corner tl" id="spin">pause rotation</button>
+    <div class="corner tr caption" id="info"></div>
+  </section>
+  <section class="pane flatpane" aria-label="Projection">
+    <svg id="flat" role="img" aria-label="The shadows of the hole and the plug along z"></svg>
+  </section>
+</main>
+
+<section class="alg" id="alg" aria-label="The algebraic definition"><pre id="algtext"></pre></section>
+
+<footer>
+  <div class="ctl scale">
+    <span class="lab">scale ℓ</span>
+    <span class="end">1</span>
+    <input type="range" id="scale" min="0" max="1000" value="0" aria-label="Plug scale">
+    <output id="scaleout"></output>
+  </div>
+</footer>
+
+<script id="pose" type="application/json">{"nopert": true, "name": "Septopert (Tom 7)", "solid": "external/tom7/septopert", "nu": 1, "nu_text": "1", "vertices": [[-0.8970624378749302, 0.3124722072056362, 0.3124722072056362], [0.3124722072056362, -0.8970624378749302, 0.3124722072056362], [0.3124722072056362, 0.3124722072056362, -0.8970624378749302], [0.671356064932687, 0.04557405199323382, 0.04557405199323382], [0.04557405199323382, 0.671356064932687, 0.04557405199323382], [0.04557405199323382, 0.04557405199323382, 0.671356064932687], [-0.49038614545549664, -0.49038614545549664, -0.49038614545549664]], "faces": [[3, 1, 2], [1, 0, 6], [6, 0, 2], [2, 1, 6], [5, 0, 1], [5, 1, 3], [3, 2, 4], [2, 0, 4], [5, 3, 4], [4, 0, 5]]}</script>
+<script type="module">
+// ---------- tumble.js: a smooth random tumble (the atlas's tiles and a Nopert's page; put before their scripts) ----------
+// The solid turns about an axis that wanders over the whole sphere. Its angular velocity is
+// ω(τ) = SPEED·v(τ)/√(|v(τ)|² + 1/4), each component of v a sum of two sines of random period (50/3 to 140/3 s) and phase:
+// smooth, so the axis drifts and the pace eases, slowing only where v passes near 0 (never above SPEED; on average
+// about 0.53 rad/s, a turn in 12 s).
+// tumbler(seed, q0, gap).at(τ, frame) is the orientation at time τ in s (an earlier τ than asked before: that one, the
+// pose kept), starting from q0 at τ = 0: whole steps of STEP on a fixed grid, the same whatever the frame rate. ω is
+// taken in `frame` (the view's quaternion; none: the world's), so the solid tumbles alike from wherever it is seen. A
+// gap of over `gap` s (default GAP: a tile off the screen) is skipped, not stepped through. test_tumble.mjs tests it.
+const TUMBLE = { SPEED: 0.57, STEP: 1 / 60, GAP: 60 };
+function tumbler(seed, q0, gap = TUMBLE.GAP) {
+  let s = seed >>> 0;
+  const rnd = () => {                                   // mulberry32
+    s = (s + 0x6D2B79F5) >>> 0;
+    let t = Math.imul(s ^ (s >>> 15), s | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const W = [0, 1, 2].map(() => [0, 1].map(() => [2 * Math.PI * 3 / (50 + 90 * rnd()), 2 * Math.PI * rnd()]));
+  const w = new THREE.Vector3(), d = new THREE.Quaternion(), q = q0.clone().normalize(), out = new THREE.Quaternion();
+  const turn = (t, h, frame) => {                       // the turn by ω(t) over h seconds
+    w.set(...W.map(c => Math.sin(c[0][0] * t + c[0][1]) + Math.sin(c[1][0] * t + c[1][1])));
+    const L = w.length(), a = TUMBLE.SPEED * h * L / Math.sqrt(L * L + 0.25);
+    if (!(a > 0)) return d.identity();
+    w.divideScalar(L);
+    if (frame) w.applyQuaternion(frame);
+    return d.setFromAxisAngle(w, a);
+  };
+  let tg = 0, tl = 0;                                  // the grid's time, the latest time asked
+  return {
+    at(t, frame) {
+      t = tl = Math.max(t, tl);
+      if (t - tg > gap) tg += TUMBLE.STEP * Math.floor((t - tg) / TUMBLE.STEP);
+      while (tg + TUMBLE.STEP <= t) { q.premultiply(turn(tg + TUMBLE.STEP / 2, TUMBLE.STEP, frame)).normalize(); tg += TUMBLE.STEP; }
+      const h = Math.max(0, t - tg);
+      return out.copy(q).premultiply(turn(tg + h / 2, h, frame));
+    },
+  };
+}
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+// A Nopert's page (nopert_data.py's data): the solid alone, in the plug's colour, tumbling smoothly at random about
+// its centre (tumble.js) before a still view, an explorer page's home view (explorer.js: the same starting azimuth and
+// elevation, lights, materials and lines), framed so that it fits whichever way it turns. A drag turns the view by
+// hand and pauses; the button resumes the tumble from there. It is convex, so no BSP: the faces looking away from the
+// eye, the edges between two of them, the faces looking towards it, then the other edges, back to front.
+const D = JSON.parse(document.getElementById('pose').textContent);
+const $ = id => document.getElementById(id);
+$('nutext').textContent = D.nu_text;
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+const V = D.vertices;
+const r0 = Math.max(...V.map(v => Math.hypot(...v)));
+const newell = P => { let x = 0, y = 0, z = 0;
+  for (let k = 0; k < P.length; k++) { const a = P[k], b = P[(k + 1) % P.length];
+    x += (a[1] - b[1]) * (a[2] + b[2]); y += (a[2] - b[2]) * (a[0] + b[0]); z += (a[0] - b[0]) * (a[1] + b[1]); }
+  const L = Math.hypot(x, y, z); return [x / L, y / L, z / L]; };
+const N = D.faces.map(f => newell(f.map(i => V[i])));           // outward: the faces run counter-clockwise outside
+const edges = []; { const seen = new Map();
+  D.faces.forEach((f, k) => f.forEach((a, i) => { const b = f[(i + 1) % f.length], key = Math.min(a, b) + ',' + Math.max(a, b);
+    if (!seen.has(key)) { const e = { a: Math.min(a, b), b: Math.max(a, b), f: [] }; seen.set(key, e); edges.push(e); }
+    seen.get(key).f.push(k); })); }
+
+// colours: the plug's (explorer.js), opaque: the back edges hidden
+const BLUE = [0, 128 / 255, 1];
+const lin = c => { const k = new THREE.Color().setRGB(c[0], c[1], c[2], THREE.SRGBColorSpace); return [k.r, k.g, k.b, c[3]]; };
+const FACE = lin([...BLUE, 1]), EDGE = lin([...BLUE, 1]);
+
+// ---------- 3D: as explorer.js (one mesh in drawing order, lit faces, lines as antialiased quads, no depth test) ----------
+const canvas = $('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, matchMedia('(pointer: coarse)').matches ? 1.5 : 2));   // touch screens: 1.5, lighter
+renderer.setClearColor(0x000000, 1);
+const scene = new THREE.Scene();
+const common = { vertexColors: true, transparent: true, depthTest: false, depthWrite: false, side: THREE.DoubleSide, forceSinglePass: true };
+const LIT = new THREE.MeshStandardMaterial({ ...common, roughness: 0.4, metalness: 0.12, envMapIntensity: 0.3 }), FLAT = new THREE.MeshBasicMaterial(common);
+FLAT.onBeforeCompile = s => {
+  s.vertexShader = s.vertexShader.replace('#include <common>', '#include <common>\nattribute vec2 across;\nvarying vec2 vAcross;')
+    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvAcross = across;');
+  s.fragmentShader = s.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec2 vAcross;')
+    .replace('#include <color_fragment>', `#include <color_fragment>
+    { float d = abs(vAcross.x), h = vAcross.y, f = clamp(min(d + 0.5, h) - max(d - 0.5, -h), 0.0, 1.0);
+      diffuseColor.a *= f <= 0.0031308 ? 12.92 * f : 1.055 * pow(f, 1.0 / 2.4) - 0.055; }`);
+};
+const mesh = new THREE.Mesh(new THREE.BufferGeometry(), [LIT, FLAT]);
+mesh.frustumCulled = false; scene.add(mesh);
+const FOV = 38;
+const camera = new THREE.PerspectiveCamera(FOV, 1, 0.01 * r0, 100 * r0);
+camera.up.set(0, 0, 1); scene.add(camera);
+const controls = new OrbitControls(camera, canvas);
+controls.enablePan = false; controls.zoomSpeed = 4;
+canvas.addEventListener('pointerdown', e => { controls.zoomSpeed = e.pointerType === 'touch' ? 1 : 4; });
+canvas.addEventListener('wheel', () => { controls.zoomSpeed = 4; }, { capture: true });
+for (const [dir, k] of [[[-1, 1.4, 1.2], 2.4], [[1.3, -0.3, 0.9], 1.0], [[0.2, -1.2, -0.4], 0.6],
+                        [[1.2, 1.0, -0.8], 0.5], [[-1.4, -0.7, 0.6], 0.35]]) {
+  const L = new THREE.DirectionalLight(0xffffff, k); L.position.set(...dir); L.target.position.set(0, 0, 0); camera.add(L); camera.add(L.target);
+}
+scene.add(new THREE.AmbientLight(0xffffff, 0.45));
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+
+function ordered(eye) {
+  const away = N.map((n, k) => dot(n, [eye[0] - V[D.faces[k][0]][0], eye[1] - V[D.faces[k][0]][1], eye[2] - V[D.faces[k][0]][2]]) <= 0);
+  const face = k => ({ pts: D.faces[k].map(i => V[i]), n: N[k], c: FACE });
+  const edge = e => ({ a: V[e.a], b: V[e.b], c: EDGE, w: 1 });
+  const back = edges.filter(e => e.f.every(k => away[k]));
+  return [...D.faces.flatMap((_, k) => away[k] ? [face(k)] : []), ...back.map(edge),
+          ...D.faces.flatMap((_, k) => away[k] ? [] : [face(k)]), ...edges.filter(e => !back.includes(e)).map(edge)];
+}
+// drawn in the solid's own frame (the view turned back by its tumble), the mesh turned by it into the world's
+function redraw3d() {
+  const e = camera.matrixWorld.elements, back = mesh.quaternion.clone().invert();
+  const own = (x, y, z) => { const p = new THREE.Vector3(x, y, z).applyQuaternion(back); return [p.x, p.y, p.z]; };
+  const R = own(e[0], e[1], e[2]), U = own(e[4], e[5], e[6]), v = own(-e[8], -e[9], -e[10]), eye = own(e[12], e[13], e[14]);
+  const pr = renderer.getPixelRatio(), k = 2 * Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2) / Math.max(1, canvas.clientHeight * pr);
+  const zNear = 1.5 * camera.near, depth = q => dot([q[0] - eye[0], q[1] - eye[1], q[2] - eye[2]], v);
+  const toNear = (p, q, zp, zq) => { const u = (zNear - zp) / (zq - zp); return p.map((x, i) => x + u * (q[i] - x)); };
+  const pos = [], nor = [], col = [], acr = [], g = new THREE.BufferGeometry();
+  let kind = -1, start = 0;
+  const run = kk => { const n = pos.length / 3; if (kk !== kind) { if (kind >= 0 && n > start) g.addGroup(start, n - start, kind); kind = kk; start = n; } };
+  const put = (q, nm, c, ee = 0, h = 1e3) => { pos.push(q[0] - eye[0], q[1] - eye[1], q[2] - eye[2]); nor.push(nm[0], nm[1], nm[2]); col.push(c[0], c[1], c[2], c[3]); acr.push(ee, h); };
+  const UP = [0, 0, 1];
+  for (const it of ordered(eye)) {
+    if (it.pts) { run(0); const p = it.pts;
+      for (let j = 1; j + 1 < p.length; j++) { put(p[0], it.n, it.c); put(p[j], it.n, it.c); put(p[j + 1], it.n, it.c); } continue; }
+    let a = it.a, b = it.b, za = depth(a), zb = depth(b);
+    if (za < zNear && zb < zNear) continue;
+    if (za < zNear) { a = toNear(a, b, za, zb); za = zNear; } else if (zb < zNear) { b = toNear(b, a, zb, za); zb = zNear; }
+    const sx = q => dot([q[0] - eye[0], q[1] - eye[1], q[2] - eye[2]], R), sy = q => dot([q[0] - eye[0], q[1] - eye[1], q[2] - eye[2]], U);
+    const dx = sx(b) / zb - sx(a) / za, dy = sy(b) / zb - sy(a) / za, L = Math.hypot(dx, dy);
+    if (!L) continue;
+    run(1);
+    const hd = it.w * pr / 2, E = hd + 1, n = [0, 1, 2].map(i => (-dy * R[i] + dx * U[i]) / L);
+    const oa = n.map(x => x * E * k * za), ob = n.map(x => x * E * k * zb);
+    const A1 = a.map((x, i) => x + oa[i]), A2 = a.map((x, i) => x - oa[i]), B1 = b.map((x, i) => x + ob[i]), B2 = b.map((x, i) => x - ob[i]);
+    for (const [q, s] of [[A1, E], [A2, -E], [B2, -E], [A1, E], [B2, -E], [B1, E]]) put(q, UP, it.c, s, hd);
+  }
+  run(-1);
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 4));
+  g.setAttribute('across', new THREE.Float32BufferAttribute(acr, 2));
+  mesh.geometry.dispose(); mesh.geometry = g;
+  const at = camera.position.clone();
+  camera.position.set(0, 0, 0); camera.updateMatrixWorld(true);
+  renderer.render(scene, camera);
+  camera.position.copy(at); camera.updateMatrixWorld(true);
+}
+// framed so that it fits whichever way it turns: the sphere about its centre through its farthest vertex, seen with
+// margins of at least 5%
+let homeDist = 4 * r0;
+function fitFrustum() {
+  const p = canvas.parentElement, a = p.clientWidth / Math.max(1, p.clientHeight), tv = Math.tan(THREE.MathUtils.degToRad(FOV) / 2), th = tv * a;
+  camera.aspect = a; camera.updateProjectionMatrix();
+  const c = 0.9 * Math.min(tv, th);
+  homeDist = r0 * Math.sqrt(1 + 1 / (c * c));
+}
+
+// ---------- the animation: the solid's tumble (tumble.js) on explorer.js's eased clock, before a still view ----------
+const RAMP = 0.8, AZ0 = Math.atan2(-0.56, 0.74), ELEV = 0.39;
+const hs = new URLSearchParams(location.hash.slice(1));
+const AT = +(hs.get('at') || 0);
+const clock = () => performance.now() / 1000 + AT;
+const ease = u => u <= 0 ? 0 : u >= 1 ? 1 : u * u * u * (u * (6 * u - 15) + 10);
+const EI = x => x * x * x * x * (x * (x - 3) + 2.5);
+const m4 = new THREE.Matrix4(), ORIGIN = new THREE.Vector3(), ZUP = new THREE.Vector3(0, 0, 1);
+const orient = (az, el) => new THREE.Quaternion().setFromRotationMatrix(
+  m4.lookAt(new THREE.Vector3(Math.cos(el) * Math.cos(az), Math.cos(el) * Math.sin(az), Math.sin(el)), ORIGIN, ZUP));
+let vc = { t0: 0, tau0: 0, a: 1, b: 1 };
+const tauAt = t => { const x = Math.max(0, (t - vc.t0) / RAMP), y = Math.min(x, 1);
+  return vc.tau0 + RAMP * (vc.a * y + (vc.b - vc.a) * EI(y) + vc.b * (x - y)); };
+const rateTo = (t, b, a = vc.a + (vc.b - vc.a) * ease((t - vc.t0) / RAMP)) => { vc = { t0: t, tau0: tauAt(t), a, b }; };
+let seed = 0x811C9DC5;                                 // the solid's own tumble: a seed from its name (FNV-1a)
+for (const ch of D.name) seed = Math.imul(seed ^ ch.codePointAt(0), 0x01000193);
+const tumble = tumbler(seed, new THREE.Quaternion(), 3600);   // an hour stepped through: #at= up to an hour
+let wheel = 1, dSet = 0, spin = true, free = false;
+function clipAt() { const d = dSet = camera.position.distanceTo(controls.target); camera.near = 0.01 * d; camera.far = d + 40 * r0; camera.updateProjectionMatrix(); }
+// paused, resumed (from the view held by hand, if any: the tumble goes on from there, taken in that view)
+function setSpin(on) {
+  const t = clock(); spin = on; $('spin').textContent = on ? 'pause rotation' : 'resume rotation';
+  if (!on) rateTo(t, 0);
+  else if (free) { free = false; rateTo(t, 1, 0); }
+  else rateTo(t, 1);
+}
+function byHand() { if (free) return; const t = clock(); free = true; rateTo(t, 0, 0); spin = false; $('spin').textContent = 'resume rotation'; }
+// the camera on its line of sight through the centre, at the framing's distance over the wheel's zoom
+function place() {
+  controls.target.set(0, 0, 0);
+  camera.position.set(0, 0, 0).addScaledVector(new THREE.Vector3(0, 0, 1).applyQuaternion(camera.quaternion), homeDist / wheel);
+  clipAt(); camera.updateMatrixWorld(true);
+}
+camera.quaternion.copy(orient(AZ0, ELEV));
+let gdrag = null;
+canvas.addEventListener('pointerdown', e => { gdrag = { x: e.clientX, y: e.clientY }; });
+canvas.addEventListener('pointermove', e => { if (gdrag && Math.hypot(e.clientX - gdrag.x, e.clientY - gdrag.y) >= 4) { gdrag = null; byHand(); } });
+for (const ev of ['pointerup', 'pointercancel']) canvas.addEventListener(ev, () => { gdrag = null; });
+$('spin').addEventListener('click', () => setSpin(!spin));
+
+function tick() {
+  const t = clock();
+  const dNow = camera.position.distanceTo(controls.target);
+  if (dNow !== dSet) { wheel *= dSet / dNow; dSet = dNow; }
+  place();
+  mesh.quaternion.copy(tumble.at(tauAt(t), camera.quaternion));
+  redraw3d();
+  requestAnimationFrame(tick);
+}
+function resize() {
+  const p = canvas.parentElement;
+  if (!p.clientWidth || !p.clientHeight) return;
+  renderer.setSize(p.clientWidth, p.clientHeight, false);
+  fitFrustum();
+}
+resize();
+if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; $('spin').textContent = 'resume rotation'; }
+new ResizeObserver(resize).observe(document.querySelector('main'));
+requestAnimationFrame(tick);
+
+</script>
+</body>
+</html>

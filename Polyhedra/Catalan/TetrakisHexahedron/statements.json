@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Catalan.TetrakisHexahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Catalan.TetrakisHexahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Catalan.TetrakisHexahedron.polyhedron Nieuwland.Catalan.TetrakisHexahedron.system Nieuwland.Catalan.TetrakisHexahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Catalan.TetrakisHexahedron.system"
+  },
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Catalan.TetrakisHexahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Catalan.TetrakisHexahedron.system Nieuwland.Catalan.TetrakisHexahedron.layout Nieuwland.Catalan.TetrakisHexahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Catalan.TetrakisHexahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Catalan.TetrakisHexahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

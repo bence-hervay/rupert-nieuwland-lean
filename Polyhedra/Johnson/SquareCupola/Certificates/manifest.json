@@ -1,0 +1,41 @@
+{
+ "solid": "johnson/square-cupola",
+ "pieces": [
+  {
+   "file": "Diameter.lean",
+   "bytes": 2185,
+   "sha256": "52eb7a5128d98f435f24ef61994f62085c871ffade64aa7ca542c76b254bd4d0",
+   "imports": [
+    "Polyhedra.Johnson.SquareCupola.Certificates.Lift",
+    "Modules.Nieuwland.Diameter"
+   ]
+  },
+  {
+   "file": "Lift.lean",
+   "bytes": 3072,
+   "sha256": "31d6fd8f4c67a5690143d1a5f3008cb175d3ba53d77d6faa9b0d1bdde39825b6",
+   "imports": [
+    "Polyhedra.Johnson.SquareCupola.Certificates.Shared",
+    "Modules.Nieuwland.Embed"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 3897,
+   "sha256": "a02a1ac3cae56d50e3ec436e03d22c54a38a62816ba9cd853663b1813c98b0ea",
+   "imports": [
+    "Modules.Check.Leaf.FullDim",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Weak.lean",
+   "bytes": 1455,
+   "sha256": "cb16c1bb8fe80e2ace42eda8f846767bb98c185877f33c82ff44144c25640791",
+   "imports": [
+    "Polyhedra.Johnson.SquareCupola.Certificates.Lift",
+    "Modules.Nieuwland.Weak"
+   ]
+  }
+ ]
+}

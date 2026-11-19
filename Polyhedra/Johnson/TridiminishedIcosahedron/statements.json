@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.TridiminishedIcosahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.TridiminishedIcosahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.TridiminishedIcosahedron.polyhedron Nieuwland.Johnson.TridiminishedIcosahedron.system Nieuwland.Johnson.TridiminishedIcosahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.TridiminishedIcosahedron.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.TridiminishedIcosahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.TridiminishedIcosahedron.system Nieuwland.Johnson.TridiminishedIcosahedron.layout Nieuwland.Johnson.TridiminishedIcosahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.TridiminishedIcosahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.TridiminishedIcosahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

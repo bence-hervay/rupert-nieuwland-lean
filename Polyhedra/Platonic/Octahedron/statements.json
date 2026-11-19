@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Platonic.Octahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Platonic.Octahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Platonic.Octahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Octahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Platonic.Octahedron.polyhedron Nieuwland.Platonic.Octahedron.system Nieuwland.Platonic.Octahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Platonic.Octahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Platonic.Octahedron.system"
+  },
+  {
+   "name": "Nieuwland.Platonic.Octahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Platonic.Octahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Platonic.Octahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Platonic.Octahedron.system Nieuwland.Platonic.Octahedron.layout Nieuwland.Platonic.Octahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Platonic.Octahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Platonic.Octahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

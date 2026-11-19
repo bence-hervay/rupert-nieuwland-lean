@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Johnson.GyroelongatedTriangularCupola.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.GyroelongatedTriangularCupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.GyroelongatedTriangularCupola.polyhedron Nieuwland.Johnson.GyroelongatedTriangularCupola.system Nieuwland.Johnson.GyroelongatedTriangularCupola.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.GyroelongatedTriangularCupola.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.GyroelongatedTriangularCupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.GyroelongatedTriangularCupola.system Nieuwland.Johnson.GyroelongatedTriangularCupola.layout Nieuwland.Johnson.GyroelongatedTriangularCupola.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.GyroelongatedTriangularCupola.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedTriangularCupola.theta_isRoot",
+   "type": "Nieuwland.polyEval [-54767/20736, 631/36, -1181/48, -38/3, -5/72, -4, 1, 0, 1] Nieuwland.Johnson.GyroelongatedTriangularCupola.theta = 0 \u2227 (1.9607713926898911079562381813641 : \u211d) \u2264 Nieuwland.Johnson.GyroelongatedTriangularCupola.theta \u2227 Nieuwland.Johnson.GyroelongatedTriangularCupola.theta \u2264 (1.9607713926898911079562381813642 : \u211d)"
+  }
+ ]
+}

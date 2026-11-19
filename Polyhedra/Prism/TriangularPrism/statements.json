@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Prism.TriangularPrism.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Prism.TriangularPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Prism.TriangularPrism.polyhedron Nieuwland.Prism.TriangularPrism.system Nieuwland.Prism.TriangularPrism.layout"
+  },
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Prism.TriangularPrism.system"
+  },
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Prism.TriangularPrism.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Prism.TriangularPrism.system Nieuwland.Prism.TriangularPrism.layout Nieuwland.Prism.TriangularPrism.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Prism.TriangularPrism.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Prism.TriangularPrism.polyhedron)).Nonempty"
+  }
+ ]
+}

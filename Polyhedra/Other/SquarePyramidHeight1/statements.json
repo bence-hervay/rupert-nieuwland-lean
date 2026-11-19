@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Other.SquarePyramidHeight1.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.SquarePyramidHeight1.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.SquarePyramidHeight1.polyhedron Nieuwland.Other.SquarePyramidHeight1.system Nieuwland.Other.SquarePyramidHeight1.layout"
+  },
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.SquarePyramidHeight1.system"
+  },
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.SquarePyramidHeight1.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.SquarePyramidHeight1.system Nieuwland.Other.SquarePyramidHeight1.layout Nieuwland.Other.SquarePyramidHeight1.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.SquarePyramidHeight1.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.SquarePyramidHeight1.polyhedron)).Nonempty"
+  }
+ ]
+}

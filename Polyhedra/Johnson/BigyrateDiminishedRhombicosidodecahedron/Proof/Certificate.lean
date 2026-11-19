@@ -1,0 +1,78 @@
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Proof.Points
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Touch
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root0
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root1
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root2
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root3
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root4
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root5
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root6
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root7
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root8
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root9
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root10
+import Polyhedra.Johnson.BigyrateDiminishedRhombicosidodecahedron.Certificates.Root11
+
+set_option linter.style.longLine false
+
+/-!
+# The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the far field of an exact Nieuwland number
+
+The far field of the scaled certificate `gs://main-69696-data/noperts-results/jd2c-2026-11-15/bigyrate-diminished-rhombicosidodecahedron/far.jsonl`, exported by `code/lean-export scaled`: the roots cover the twelve unit chart boxes (`unitsIn`) and every pose of every root is settled at the leaves' largest plug scale `theta` or lies in one of the claim boxes `claimBoxes` (`far_field`). The claims are hypotheses: for every `Θ ≥ theta` at which no pose of a claim box fits, the polyhedron scaled by `Θ` does not fit through itself (`not_fitsThrough_of_claims`), and with the lower bound `Θ ≤ nieuwland` (a weak fit at `Θ`) the Nieuwland number of `Johnson.BigyrateDiminishedRhombicosidodecahedron.polyhedron` is `Θ` (`johnsonBigyrateDiminishedRhombicosidodecahedron_nieuwland_eq_of_claims`).
+-/
+
+namespace Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron
+
+open Check Cert
+
+/-- The roots of the cover. -/
+def roots : List ChartBox :=
+  [Root0.box, Root1.box, Root2.box, Root3.box, Root4.box, Root5.box, Root6.box, Root7.box, Root8.box, Root9.box, Root10.box, Root11.box]
+
+/-- **The far field**: every pose of every root is settled at `theta` or lies in a claim box. -/
+theorem far_field : roots.Forall fun B ↦ ∀ p ∈ B.poses, SettledS points symm theta.re p ∨ ∃ C ∈ claimBoxes, p ∈ C.poses := by
+  simp only [roots, List.Forall]; exact ⟨Root0.settled, Root1.settled, Root2.settled, Root3.settled, Root4.settled, Root5.settled, Root6.settled, Root7.settled, Root8.settled, Root9.settled, Root10.settled, Root11.settled⟩
+
+/-- **The certificate with the claims as hypotheses**: for `Θ ≥ theta` with no fit at `Θ` in the claim boxes, the polyhedron of Lean's points scaled by `Θ` does not fit through it. -/
+theorem not_fitsThrough_of_claims {Θ : ℝ} (hle : theta.re ≤ Θ) (hc : ∀ C ∈ claimBoxes, (Polyhedron.ofPoints points).NoFitRot C.poses (Θ • 1)) : ¬ ((Polyhedron.ofPoints points).smul Θ).FitsThrough (Polyhedron.ofPoints points) :=
+  Polyhedron.not_fitsThrough_smul_of_claims span_ok (roots := roots) (by decide +kernel) (Check.Scale.re_nonneg_of_ok (by decide +kernel)) hle far_field hc
+
+end Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron
+
+namespace Nieuwland.Polyhedra
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the exact Nieuwland number from the far field and the claims.** For `Θ ≥ theta` with no fit at `Θ` in the claim boxes and `Θ ≤ nieuwland`, the Nieuwland number is `Θ`. -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_nieuwland_eq_of_claims {Θ : ℝ} (hle : Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.theta.re ≤ Θ) (hc : ∀ C ∈ Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.claimBoxes, (Polyhedron.ofPoints Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).NoFitRot C.poses (Θ • 1)) (hlo : Θ ≤ Johnson.BigyrateDiminishedRhombicosidodecahedron.polyhedron.nieuwland) : Johnson.BigyrateDiminishedRhombicosidodecahedron.polyhedron.nieuwland = Θ :=
+  Check.Polyhedron.nieuwland_eq_of_claims Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok (roots := Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.roots) (by decide +kernel) (Check.Scale.re_nonneg_of_ok (by decide +kernel)) hle Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.far_field hc Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.eq_smul (by norm_num) hlo
+
+end Nieuwland.Polyhedra
+
+namespace Nieuwland.Polyhedra
+
+open Check
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the Nieuwland number in root form.** It is the largest of the scales of the 4 roots (`Root.RootRec.scale`: the scale coordinate of the only zero of the root's system in its box, `johnsonBigyrateDiminishedRhombicosidodecahedron_scale<i>`): the far field at `theta`, the touch leaves and the weak fits at the roots (`Root.nieuwland_eq_of_certOk`). -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_nieuwland : Johnson.BigyrateDiminishedRhombicosidodecahedron.polyhedron.nieuwland = max ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch1).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points) (max ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch2).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points) (max ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch3).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points) ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch0).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points))) :=
+  Root.nieuwland_eq_of_certOk Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok (roots := Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.roots) (by decide +kernel) (by decide +kernel) Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.far_field Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.eq_smul (by norm_num) rfl Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the scale of root 0.** The unknowns of a root's system are the pose `(s, t, x₁, x₂, x₃)` in its charts, the translation `(y₁, y₂)` of the plug's shadow, the scale `l` (the unknown `7`) and one multiplier per contact; its equations are the contacts' slacks and the stationarity of `l` under them (`Root.Sys.eqs`). The system has exactly one zero `y` in its box (Krawczyk's test), and the root's scale is the scale there. -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_scale0 : ∃ y, ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch0).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).IsZero (Root.basisPar (ZSqrt 5)) y ∧ (Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch0).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points = ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch0).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).env (Root.basisPar (ZSqrt 5)) y 7 :=
+  Root.exists_scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok List.mem_cons_self
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the scale of root 1.** The unknowns of a root's system are the pose `(s, t, x₁, x₂, x₃)` in its charts, the translation `(y₁, y₂)` of the plug's shadow, the scale `l` (the unknown `7`) and one multiplier per contact; its equations are the contacts' slacks and the stationarity of `l` under them (`Root.Sys.eqs`). The system has exactly one zero `y` in its box (Krawczyk's test), and the root's scale is the scale there. -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_scale1 : ∃ y, ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch1).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).IsZero (Root.basisPar (ZSqrt 5)) y ∧ (Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch1).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points = ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch1).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).env (Root.basisPar (ZSqrt 5)) y 7 :=
+  Root.exists_scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok (List.mem_cons_of_mem _ List.mem_cons_self)
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the scale of root 2.** The unknowns of a root's system are the pose `(s, t, x₁, x₂, x₃)` in its charts, the translation `(y₁, y₂)` of the plug's shadow, the scale `l` (the unknown `7`) and one multiplier per contact; its equations are the contacts' slacks and the stationarity of `l` under them (`Root.Sys.eqs`). The system has exactly one zero `y` in its box (Krawczyk's test), and the root's scale is the scale there. -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_scale2 : ∃ y, ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch2).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).IsZero (Root.basisPar (ZSqrt 5)) y ∧ (Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch2).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points = ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch2).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).env (Root.basisPar (ZSqrt 5)) y 7 :=
+  Root.exists_scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ List.mem_cons_self))
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the scale of root 3.** The unknowns of a root's system are the pose `(s, t, x₁, x₂, x₃)` in its charts, the translation `(y₁, y₂)` of the plug's shadow, the scale `l` (the unknown `7`) and one multiplier per contact; its equations are the contacts' slacks and the stationarity of `l` under them (`Root.Sys.eqs`). The system has exactly one zero `y` in its box (Krawczyk's test), and the root's scale is the scale there. -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_scale3 : ∃ y, ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch3).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).IsZero (Root.basisPar (ZSqrt 5)) y ∧ (Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch3).scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points = ((Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch3).kraw Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.points).env (Root.basisPar (ZSqrt 5)) y 7 :=
+  Root.exists_scale Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ List.mem_cons_self)))
+
+/-- **The fixture `johnson/bigyrate-diminished-rhombicosidodecahedron`: the Nieuwland number to 40 decimals.** -/
+theorem johnsonBigyrateDiminishedRhombicosidodecahedron_nieuwland_mem : Johnson.BigyrateDiminishedRhombicosidodecahedron.polyhedron.nieuwland ∈ Set.Icc (((10054940369603552271400900220168017873667 : ℤ) : ℝ) / 10 ^ 40) (((10054940369603552271400900220168017873670 : ℤ) : ℝ) / 10 ^ 40) :=
+  Root.nieuwland_mem_Icc_of_certOk Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.span_ok (roots := Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.roots) (by decide +kernel) (by decide +kernel) Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.far_field Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.eq_smul (by norm_num) rfl Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_ok Nieuwland.Certs.NieuwlandJohnsonBigyrateDiminishedRhombicosidodecahedron.touch_in
+
+end Nieuwland.Polyhedra

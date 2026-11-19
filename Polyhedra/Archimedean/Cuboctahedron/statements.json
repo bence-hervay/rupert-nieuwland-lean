@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Archimedean.Cuboctahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Archimedean.Cuboctahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Archimedean.Cuboctahedron.polyhedron Nieuwland.Archimedean.Cuboctahedron.system Nieuwland.Archimedean.Cuboctahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Archimedean.Cuboctahedron.system"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Archimedean.Cuboctahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Archimedean.Cuboctahedron.system Nieuwland.Archimedean.Cuboctahedron.layout Nieuwland.Archimedean.Cuboctahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Archimedean.Cuboctahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Archimedean.Cuboctahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

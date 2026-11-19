@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.ElongatedSquareCupola.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.ElongatedSquareCupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.ElongatedSquareCupola.polyhedron Nieuwland.Johnson.ElongatedSquareCupola.system Nieuwland.Johnson.ElongatedSquareCupola.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.ElongatedSquareCupola.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.ElongatedSquareCupola.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.ElongatedSquareCupola.system Nieuwland.Johnson.ElongatedSquareCupola.layout Nieuwland.Johnson.ElongatedSquareCupola.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedSquareCupola.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.ElongatedSquareCupola.polyhedron)).Nonempty"
+  }
+ ]
+}

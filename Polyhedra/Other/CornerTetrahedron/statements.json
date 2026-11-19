@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Other.CornerTetrahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.CornerTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.CornerTetrahedron.polyhedron Nieuwland.Other.CornerTetrahedron.system Nieuwland.Other.CornerTetrahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.CornerTetrahedron.system"
+  },
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.CornerTetrahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.CornerTetrahedron.system Nieuwland.Other.CornerTetrahedron.layout Nieuwland.Other.CornerTetrahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.CornerTetrahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.CornerTetrahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

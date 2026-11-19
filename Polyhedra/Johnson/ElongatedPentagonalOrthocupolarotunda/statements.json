@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Johnson.ElongatedPentagonalOrthocupolarotunda.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.polyhedron Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.system Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.system Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.layout Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.theta_isRoot",
+   "type": "Nieuwland.polyEval [1/80, 0, -1/4, 0, 1] Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.theta = 0 \u2227 (0.2628655560595668030128345424239 : \u211d) \u2264 Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.theta \u2227 Nieuwland.Johnson.ElongatedPentagonalOrthocupolarotunda.theta \u2264 (0.262865556059566803012834542424 : \u211d)"
+  }
+ ]
+}

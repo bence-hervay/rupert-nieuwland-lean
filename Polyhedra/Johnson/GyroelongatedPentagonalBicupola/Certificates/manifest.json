@@ -1,0 +1,2570 @@
+{
+ "solid": "johnson/gyroelongated-pentagonal-bicupola",
+ "pieces": [
+  {
+   "file": "Root0.lean",
+   "bytes": 12757,
+   "sha256": "8db1db3b6362f7847d11aa8bb9c88eb2ffb18c3a5bf748536188a706157b2202",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P0",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P1",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P2",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P3",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P4",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P5",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P6",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P7",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P8",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P9",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P10",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P11",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P12",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P13",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P14",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P15",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P16",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P17",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P18",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P19",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P20",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P21",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P22",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P23",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P24",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P25",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P26",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P27",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P28",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P29",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P30",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P31",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P32",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P33",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P34",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P35",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P36",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P37",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P38",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P39",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P40",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P41",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P42",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P43",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P44",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P45",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P46",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P47",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P48",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P49",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P50",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P51",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P52",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P53",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P54",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P55",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P56",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P57",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P58",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P59",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P60",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P61",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root0P62",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root0P0.lean",
+   "bytes": 2080839,
+   "sha256": "371b1f8a446f7b57d008db76697eb6d3848e3a4c156067a61fd1d521efe314c1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P1.lean",
+   "bytes": 1683250,
+   "sha256": "b15f21f7e3d2b3c65900556d6e4e71ae17e8b4c254544c27ee7690282d2edcee",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P10.lean",
+   "bytes": 286034,
+   "sha256": "12bb7aa398506a1f8014ceded0769d831e4d59a71437f2cd6542af7711dfcd49",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P11.lean",
+   "bytes": 1577034,
+   "sha256": "9ea37340805491ad97e0617363e6fc9291c7773280296c6c11c9aed457649014",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P12.lean",
+   "bytes": 2350647,
+   "sha256": "d29e4a20bb3b8d7fd1023f5e35adb2b893717d5a0a523c27c180ed50e48bba5e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P13.lean",
+   "bytes": 1455,
+   "sha256": "25899b1ad1eb931d32e39320c182eff62719e7d45314ae86d0ae6e1ba48bd944",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P14.lean",
+   "bytes": 1144269,
+   "sha256": "6f840dfc6e69d43d7201268472cffc1fc320eff57c8fc3e866e00e2f1aaf87d7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P15.lean",
+   "bytes": 1734,
+   "sha256": "f1d05a44ed6d11290d2afe2682af803fc5214aed270f6aa02d2654e1f9c8bcb0",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P16.lean",
+   "bytes": 2135223,
+   "sha256": "04e5b18f20ba126a245a55e930098a3025db2061e15921bae167d07db277445f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P17.lean",
+   "bytes": 1628168,
+   "sha256": "165f40b6a2cade82418d57888bd8dcff833fd1edea027517ec2244ba904448f4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P18.lean",
+   "bytes": 1454,
+   "sha256": "e583b6c1d1b408d542bcb47702b4b054330dcf3d75e4e95a59322425242fa1c6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P19.lean",
+   "bytes": 2859189,
+   "sha256": "1e129633ba301095a261ae3564b1be0bc1b913aff0df40757ca534a1a6c792e4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P2.lean",
+   "bytes": 1450,
+   "sha256": "5d89411d4d5fcbf71228240b09fc92470b00cdbb46227cef9ffdd784a00c2d6b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P20.lean",
+   "bytes": 2520081,
+   "sha256": "eb18c43a95fe5e837384c1e4588f9976ccbfeb0ae099fde25e3c62cf7b7c261d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P21.lean",
+   "bytes": 1291457,
+   "sha256": "695a57db5c3c8ed1e6ec9d36658744196859fe13a0556c5fa59cbac82c6d5ca7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P22.lean",
+   "bytes": 2026565,
+   "sha256": "6d72e051911cc64f0f5949e3ef58f2f16577276e24ffaace4b234ed92f3f65cf",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P23.lean",
+   "bytes": 1790194,
+   "sha256": "df91ed335cd297794dc59a7253ec16c7cb5a602c1d5d0c223b8f2ae494d1f0a7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P24.lean",
+   "bytes": 1517844,
+   "sha256": "ba967d5e1f8dde1e55ddb69764d16cb63daca1ba6dce0c84d82596c2e5b284aa",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P25.lean",
+   "bytes": 673691,
+   "sha256": "6a31a2967288e96f5a43f7f84cd2ee5d26245376b06136c6d4e80c475a7e92fa",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P26.lean",
+   "bytes": 1142421,
+   "sha256": "645f0beb2e874849c111d05bb1367ab67f923b6caa05dfa095fc4a7bf164f925",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P27.lean",
+   "bytes": 1891588,
+   "sha256": "d73efc9e2df4c73a107d748743d61315e30d9d70f743bc34d1fa9c2d53f60a3a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P28.lean",
+   "bytes": 69737,
+   "sha256": "67a6dcd6266ffa395685db1c4d7e8f7396255f304d402955544287e6152686c6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P29.lean",
+   "bytes": 3706,
+   "sha256": "69318f5306437faf23964e26ae52e98ad1346b54f8c43ebd3e76322fd05920ac",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P3.lean",
+   "bytes": 1674729,
+   "sha256": "3b73410693326429eb69256c4d11f715ea3b27359a2f8059f410c6414056698d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P30.lean",
+   "bytes": 1988923,
+   "sha256": "6b397b6a7864a81fcbd8907dc9c5680fe456fdff6544b65675760ea88f96417f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P31.lean",
+   "bytes": 10086,
+   "sha256": "09fc74c150dba04476de82b18952e7a5fc4d99e1116e0776f236e194c6ca32c6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P32.lean",
+   "bytes": 304386,
+   "sha256": "b6800445e65b757ef289087d83d7e2769cb839f065e703941f8b0e13903d1e0d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P33.lean",
+   "bytes": 1452,
+   "sha256": "f060f8c01c7c84c999e7770996e68fd7874f2807c20a4b59e74cc119949122c5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P34.lean",
+   "bytes": 1700,
+   "sha256": "b82d50b73e2073158b934809f83a4e01c44c2918f033cf473842740205cac444",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P35.lean",
+   "bytes": 1782666,
+   "sha256": "845c1d096dfbbdeb9eb1afd6538b0b5aa6a74ba1d56a71a4fe789d30bc9844d1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P36.lean",
+   "bytes": 1912239,
+   "sha256": "ef0233fb4cabf05499c3c5011689c5569739bcb1cef68bc33348cb89ff338003",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P37.lean",
+   "bytes": 1452,
+   "sha256": "3ff32fb36596a501410861e54f22656b4038af7a22ba20e83a88eb03731618b4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P38.lean",
+   "bytes": 1571591,
+   "sha256": "eccb316be74a3ed4991022ba9502dabdfaca6ae40dd03b880abd90f1f86c98e8",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P39.lean",
+   "bytes": 1567790,
+   "sha256": "6b16596eac58dc010d54b9cb4a58a9dab57373c2076c3d40018cc8c255a2b15a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P4.lean",
+   "bytes": 8091,
+   "sha256": "5f81b47b59c347f817755eedd07e88325e42c96fab118b7c42674bcfff2ee16b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P40.lean",
+   "bytes": 1343732,
+   "sha256": "53e407607cf7be314639fb5696968ae9d8c9d2793f6d40a245bd9baad7396361",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P41.lean",
+   "bytes": 1454,
+   "sha256": "50bda0f13dc491144abd70ec778b73b5962168cdb5ea1ab9161a45adacc02877",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P42.lean",
+   "bytes": 49252,
+   "sha256": "45197cdae37b492e30a710fcbc796a10025c1f9f291f8ccfdfea813438c32457",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P43.lean",
+   "bytes": 2117188,
+   "sha256": "492aef2908e37c5375601d463be93128a59af6e2e6f0ecb0a8c6799a024b07e2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P44.lean",
+   "bytes": 905406,
+   "sha256": "0dbee26794a56462d9c53e60f824336c6a52f107a2b7caf4f83b18965d9a40f5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P45.lean",
+   "bytes": 1986448,
+   "sha256": "92f20a8bfee451635166b343e5dc3a3bd119d60b4ccad7baceed47e7a8687724",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P46.lean",
+   "bytes": 2271106,
+   "sha256": "a7b61025e156826bce0e5ca2c48efe8115927ce4ed92eb5360802c3c1b946b67",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P47.lean",
+   "bytes": 924114,
+   "sha256": "2e75c007451ff0e1a1d3cb9a9fe965a06b1908d5f2cd742cde2b6ff62521c1b2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P48.lean",
+   "bytes": 437826,
+   "sha256": "14659f652ecae048f367a7c9c6e284094c4689e533697066c8562a9affc7aadc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P49.lean",
+   "bytes": 166701,
+   "sha256": "6aaea450a6ed78d657bdcd477ef849094c776187d9974d53d90792e1f13bf726",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P5.lean",
+   "bytes": 1451,
+   "sha256": "ae01df5dd311d4b560a9788bb8cbe8c3232edd85e05edcd3ebae06af4b92200e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P50.lean",
+   "bytes": 948324,
+   "sha256": "6a15fdfa5d84c4a93cc8181da1e7fa5687c3bbbef65cd5fff032c51afaab61b1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P51.lean",
+   "bytes": 1454,
+   "sha256": "27b1f8b5b47a0457191adafb24f698c04f1ce3fc780274e7360d790686e706c5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P52.lean",
+   "bytes": 1517223,
+   "sha256": "2d7d22f0b2001eeb9d011afdbd4a33dc4097e6b74c0e568ad280f9f75f448b5e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P53.lean",
+   "bytes": 2359954,
+   "sha256": "e14a0fca70f2ea83d0b4330454d07ee2c9e5d8e60825aba4f113f995c6502092",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P54.lean",
+   "bytes": 143793,
+   "sha256": "4f2e007ba4517fbfa0f94d2654e99ff80b24b838a4b0daaef75317c5e76bf64b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P55.lean",
+   "bytes": 16757,
+   "sha256": "1ab5e660359492c4dff687ceaf6d56ff79423662f5bd802cb53e308ac800e7bf",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P56.lean",
+   "bytes": 1453,
+   "sha256": "e9e0e05be4b07875b1b439b232091e0a4a358372d52d543f29bbe14e737c3c3b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P57.lean",
+   "bytes": 1683020,
+   "sha256": "a6bb3aaad7cf351bbcec05f1de27939aee3b8920067cfc3454f60e14268cf0f7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P58.lean",
+   "bytes": 1687021,
+   "sha256": "ab726668da8ba8146c66cafb703bde358c408bc7495e85ca9a76fb545492b696",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P59.lean",
+   "bytes": 275364,
+   "sha256": "eb2484d806e1f3a179d0a6951ee0c718d6d00bcfdcee13073a20deeadcb82feb",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P6.lean",
+   "bytes": 2750220,
+   "sha256": "9a05041ae3074794fec2d3233ea1fd9b7878c46eaf88028e8ea551cfc9548445",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P60.lean",
+   "bytes": 2183848,
+   "sha256": "d5f3f0e20181b19d53d05380264b1580848e06184a126b2ab476a5168675d1be",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P61.lean",
+   "bytes": 2170682,
+   "sha256": "95a4ce6a752814dd05fb6a41f73da080d77a4edf825ad106ba2d83926c347de5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P62.lean",
+   "bytes": 405192,
+   "sha256": "439821394764f819b1669b7c94ad6b93ecc1f11acb06506c00bcb49ea002561d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P7.lean",
+   "bytes": 359930,
+   "sha256": "531a3bb894710305a57a695402fa0f671888089af0e27b684907dd1777275354",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P8.lean",
+   "bytes": 180776,
+   "sha256": "3df8b30e872489344a02d5f9d9e189fd5b778fe12941393f76e1b01537d342e6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root0P9.lean",
+   "bytes": 2884973,
+   "sha256": "7658ed525a9e61c9b01112588557d0a67121c8eb554db9a31425b6a72a1ceb3d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root1.lean",
+   "bytes": 325997,
+   "sha256": "fb23ddaff23df4329a6427b0775870d29b0ac051eaed2cb02f6d3aaf6cddcddc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root10.lean",
+   "bytes": 2093777,
+   "sha256": "1457efee541061ebdd5cdbe9e886f5d56e4e5670a9528fdb49fc34a11319b49f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root11.lean",
+   "bytes": 15194,
+   "sha256": "ef1a85a4e088044bf1cb53194f44d23a2a464c36349d62793b996b496efb1030",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root2.lean",
+   "bytes": 293419,
+   "sha256": "73b3c3bf5fbf517ce479de2efbb149640670cd0574f3699dd40f0ffd8f9f92d0",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root3.lean",
+   "bytes": 3905,
+   "sha256": "705eddc367eff2deff93fabcfddde741c33970cfe3ff66c4ee58215f412cc460",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4.lean",
+   "bytes": 10251,
+   "sha256": "c23c0ca3b3a5f71fa99c07328d7ea51144fa5285262fa240a607dbc7e37c200b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P0",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P1",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P2",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P3",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P4",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P5",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P6",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P7",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P8",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P9",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P10",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P11",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P12",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P13",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P14",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P15",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P16",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P17",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P18",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P19",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P20",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P21",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P22",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P23",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P24",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P25",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P26",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P27",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P28",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P29",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P30",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P31",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P32",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P33",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P34",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P35",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P36",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P37",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P38",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P39",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P40",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P41",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P42",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P43",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P44",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P45",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P46",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P47",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root4P48",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root4P0.lean",
+   "bytes": 2102,
+   "sha256": "e1562e9300ad7fff52443f959e23ffaa23c048e2e68081709c971f30f75112b8",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P1.lean",
+   "bytes": 2112222,
+   "sha256": "b00e57575b8aca4bd4f5f19a313219d0a8310c287c2f6725018dfb601301b69c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P10.lean",
+   "bytes": 1454,
+   "sha256": "fb3fde19f49158814fc650508fad5d68ca5af3e3b1cad1fee5ffc86d0355a384",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P11.lean",
+   "bytes": 392024,
+   "sha256": "9b7c1c0199272d0e22b6518c21f173c09cbfa32c8a957a439fc231d75c85ed17",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P12.lean",
+   "bytes": 34299,
+   "sha256": "4549d1f37a566f5d808f3d675093a92853642b353d82610095ff365847225900",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P13.lean",
+   "bytes": 2250884,
+   "sha256": "d2d49eb2179c453c537ba0efae1fd1b741a29154e65a8aef41380aadd36ba394",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P14.lean",
+   "bytes": 829580,
+   "sha256": "bf9dd57905f32de294c73ebbde1175c17aef92efe51619a11905fbd5231f1d3f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P15.lean",
+   "bytes": 1326410,
+   "sha256": "b7864a4aedb8e97108730f3c45ffda7ad21061fd2b24ffa2299a8ec75a4304c2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P16.lean",
+   "bytes": 1893104,
+   "sha256": "7fb004e733d2d4958835ad1051c76a26f1ae98a3eec6d3083d2aa421490e5e60",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P17.lean",
+   "bytes": 2948426,
+   "sha256": "d6633e0c92f59d3b4d020ba9c6f3bebe4b43af1808681bbbcd555d97457dd669",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P18.lean",
+   "bytes": 74560,
+   "sha256": "7b32703a02b7d45511f7960d47277d414a366d3b9fbafc5c1a2d5a8283cfe8c7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P19.lean",
+   "bytes": 103459,
+   "sha256": "c2d545e53e58c9d5ad36913b0406329b591c0e647c93914ace30221ac36d0099",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P2.lean",
+   "bytes": 1932020,
+   "sha256": "93b5d024126f3b9c4d4f7fd055d57ea656e5742f6e9666a4cafac80312c593c5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P20.lean",
+   "bytes": 2173590,
+   "sha256": "c0171bb2df3094b03b652ad57074ef04274a87363af9567a4dc45c3b90018b09",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P21.lean",
+   "bytes": 641440,
+   "sha256": "bd8cc5a834ed92cfead5e163d7c73e5937370f1d7616264730915db8e917d5f4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P22.lean",
+   "bytes": 1668000,
+   "sha256": "a9711cb783db26a775f4b16a091ba3ffe0da4db2ba8ce9bd498cca697470a080",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P23.lean",
+   "bytes": 2158486,
+   "sha256": "596659c579f779332995afb7357600ae33f0c1703efae89a836763b2eeb05841",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P24.lean",
+   "bytes": 570321,
+   "sha256": "699ac1fe25d7c526fc72e6b2d00ff22a2b16310c02da970c4abb7b76e429dc22",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P25.lean",
+   "bytes": 129374,
+   "sha256": "1f1b48a1c0fcb63e1666f4a17825ead4de9cf5ada94991cf3b217e6e59ef1618",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P26.lean",
+   "bytes": 2920869,
+   "sha256": "6395c291bb31f776668e9c0d0cf090712ae01d25bf7fade87210a025c4048e1e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P27.lean",
+   "bytes": 546759,
+   "sha256": "2df6a6dc4ce8bad8d37e401e559d5d1b3d42b9050a61505178e1628494f8a72b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P28.lean",
+   "bytes": 231593,
+   "sha256": "8e0c9570ae979859ebd1c0d0b90514a20b8c2ce865adeb2955b6fcca386700c1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P29.lean",
+   "bytes": 1465119,
+   "sha256": "9ac7dea7691d67938e39fbe0ea992f827588c9d88ccbcf53c2a6300a3d3aedc0",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P3.lean",
+   "bytes": 1590176,
+   "sha256": "c5dd40ab32cf6b3c18c98c5f747eae97dfa3cadc57086b5f54512dc27b8c5880",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P30.lean",
+   "bytes": 2464098,
+   "sha256": "ce07124996d9186ca417a064b866b447b790e923304ca749a6b1f6e29b291c11",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P31.lean",
+   "bytes": 1805846,
+   "sha256": "2160cdee6f839caaea6e61915bc5e490dada806c14a372ac49727f208d641f52",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P32.lean",
+   "bytes": 975808,
+   "sha256": "b233ad58140ec05891ae3aee38856e76a0be89ecd9621c84d3a90d221d76c5b1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P33.lean",
+   "bytes": 2922978,
+   "sha256": "b8885c1dc1ae99a2761738a6d17e10c4188c6662fa484243663baf5ec0cb7a27",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P34.lean",
+   "bytes": 2346745,
+   "sha256": "a0b53b44f48e8ce638141becaeea5cf2cf3616a2d5c35d0488f9bef99ebe0098",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P35.lean",
+   "bytes": 741958,
+   "sha256": "2e10ae6d84e98eb54ec5644eb73cb7315714b32aeae48bead3864ea055520fbd",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P36.lean",
+   "bytes": 1385677,
+   "sha256": "0ac2e6254f75f4133b6a7133ca3ac82c3df0867a7efba2a63e59db0346217bd8",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P37.lean",
+   "bytes": 933255,
+   "sha256": "6ea6aa9145361663ef858aac025050b9530444d030c0504464111771dc7b9925",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P38.lean",
+   "bytes": 1452,
+   "sha256": "0668d4f11032a6723e17fe920b4e110c398e9c50da18aecdb00d090af43c19e5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P39.lean",
+   "bytes": 1811547,
+   "sha256": "abfbce822d9e47e176b23cc9e0d76ec05f05ca42a962faccf89e076c9241dec0",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P4.lean",
+   "bytes": 1454044,
+   "sha256": "7b3dc400a3193c8a144d1ca68fd526891f4be7b583372c99d0beb8a81e0204c2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P40.lean",
+   "bytes": 99535,
+   "sha256": "797fa6fa5b41b9ebb040081664bbb2fa03ad47b3a178cb8d68fa4f598469bc4c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P41.lean",
+   "bytes": 15858,
+   "sha256": "2d9fb968dd5d7d9bd0f067c8ebff0f0f5a55e676f0eae435facb90c1861d2be7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P42.lean",
+   "bytes": 537184,
+   "sha256": "898d8219cfe4e484504b526da1e020d798e39d25fb64f2be414819b26ba29a3a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P43.lean",
+   "bytes": 2785209,
+   "sha256": "badfdf3f787d6ef7d54ec94ca5f930c345c6e0a644cc74956a8eaa65ea7779da",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P44.lean",
+   "bytes": 8194,
+   "sha256": "1a812563b3c3d3b8f75fad57c451a60e8f18dfa398c1db0da159741661cf3fe5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P45.lean",
+   "bytes": 924169,
+   "sha256": "c43d27cf4d688160c72022afa4acdc2f13d2104a6b0873ed424eb90f4b06dd91",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P46.lean",
+   "bytes": 1617252,
+   "sha256": "ff926cbe71810f593cf544527f4f59f4632cf2210906055a157fa2d35677b20e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P47.lean",
+   "bytes": 1492091,
+   "sha256": "e9d4557c6c4c6c81e6b5ecf02b93553e11e4dd5e3ff7c3847289ad4bfcf659d5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P48.lean",
+   "bytes": 1714815,
+   "sha256": "ddcab88377421512f6b2e6044e5eae85beb76e82e36a7fa89bcfc5be2a17359f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P5.lean",
+   "bytes": 2940261,
+   "sha256": "27567d3e03d2ca48a44b1473649d3f4dbd6f22131c52254e057d70b0e0ea5369",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P6.lean",
+   "bytes": 1698,
+   "sha256": "f11ff7176ce9e3516ded91e9a5ff04e2d024a43465108e565535096f72fd83c3",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P7.lean",
+   "bytes": 1451,
+   "sha256": "a593be2dddc1218050423fd6d2e4b59a87e0d85987f27aab5c7fccb0291ebd68",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P8.lean",
+   "bytes": 1227236,
+   "sha256": "6560fc60ce864d4c73d06039932b224be87367def5290a53b0b2453e3f3e51cc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root4P9.lean",
+   "bytes": 1952817,
+   "sha256": "88cc14cf6ad2ae3115fed7742f98c8d0b6ecf0cfe004844ad63e7ebd63782b97",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root5.lean",
+   "bytes": 312458,
+   "sha256": "519ba9ca4e24e4499efc23fb3b532064cece29e7d3b824b7d82db43b4454fa38",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root6.lean",
+   "bytes": 328164,
+   "sha256": "8c739c86d476c53f82de05b5fc45d50dbac27e01b6c2f51be6d3148204e5699f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root7.lean",
+   "bytes": 17849,
+   "sha256": "f58873f061cd588675f1c322b9bd9652ba6abda67bb297875b2d8ff4c1e2f7dc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8.lean",
+   "bytes": 25205,
+   "sha256": "b8d975977e0ab457b7b03fc70ef39dcf3b2c3f639fc9dcbcc96800e376bb404b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P0",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P1",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P2",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P3",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P4",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P5",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P6",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P7",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P8",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P9",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P10",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P11",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P12",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P13",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P14",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P15",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P16",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P17",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P18",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P19",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P20",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P21",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P22",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P23",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P24",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P25",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P26",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P27",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P28",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P29",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P30",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P31",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P32",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P33",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P34",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P35",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P36",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P37",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P38",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P39",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P40",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P41",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P42",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P43",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P44",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P45",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P46",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P47",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P48",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P49",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P50",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P51",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P52",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P53",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P54",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P55",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P56",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P57",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P58",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P59",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P60",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P61",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P62",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P63",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P64",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P65",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P66",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P67",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P68",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P69",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P70",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P71",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P72",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P73",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P74",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P75",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P76",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P77",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P78",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P79",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P80",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P81",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P82",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P83",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P84",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P85",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P86",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P87",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P88",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P89",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P90",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P91",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P92",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P93",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P94",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P95",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P96",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P97",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P98",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P99",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P100",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P101",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P102",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P103",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P104",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P105",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P106",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P107",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P108",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P109",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P110",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P111",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P112",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P113",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P114",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P115",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P116",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P117",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P118",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P119",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P120",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P121",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P122",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P123",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P124",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P125",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P126",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P127",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P128",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P129",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P130",
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Root8P131",
+    "Modules.Check.Chart.CoverData"
+   ]
+  },
+  {
+   "file": "Root8P0.lean",
+   "bytes": 51730,
+   "sha256": "09b3b78e96c9a64ba00e5cc5a6ae6f1b0d7158e60a8e88f9e8fa53707004260e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P1.lean",
+   "bytes": 2661103,
+   "sha256": "8abf1377c62bf42f343dcd300b17e35e40981d924e2b422ab1b6df4379ab4503",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P10.lean",
+   "bytes": 1976628,
+   "sha256": "d025bf2f953d4a68b4ded961ab5e98c027a33f7a2e113b5aea3e2fe4e144e446",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P100.lean",
+   "bytes": 1827320,
+   "sha256": "8b089a9a7c56d20be089b4c47ba6e38372bce2610a4dd1d71d5c2d5c3cd0e9a4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P101.lean",
+   "bytes": 1352230,
+   "sha256": "542cf5eb18a9f43674cb56b7e4d6333aad4dcf4545949d485f2b2d78688ea8e4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P102.lean",
+   "bytes": 2189135,
+   "sha256": "9d51d92554bd1eb8bfc96156228fca8cb25ad5a628b8338628cc600cb266c7ca",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P103.lean",
+   "bytes": 1595116,
+   "sha256": "a4fe888b80385e415945547347055e55b05e32ccaa57107bc5e13847b7957a78",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P104.lean",
+   "bytes": 1121056,
+   "sha256": "c8aacfbed7fd6566a58824b57bbab34a29de5480bfbcaee9571c4373bded13d8",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P105.lean",
+   "bytes": 2902609,
+   "sha256": "106dea133a664ade0c13d6fa3afede7d6394c0c538186e4e50d4738146fa0c98",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P106.lean",
+   "bytes": 499561,
+   "sha256": "e8bc240fddc789a4b9be9455a23349b11ca5faaa3061b4b6daccb8f35ed18039",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P107.lean",
+   "bytes": 156948,
+   "sha256": "6a492bda74b333ef6b982faaa426d72ba21225b867713701a1271e0103f957ed",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P108.lean",
+   "bytes": 502985,
+   "sha256": "7df27fd8bfe5fb6dceb61c6475dee23728f8a2d107e45eb79d9da3a8787444a0",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P109.lean",
+   "bytes": 2594600,
+   "sha256": "17797e702f3bcfe98246cbd7aa0c7ab72b321c54ac49d192332864b728a1e3c5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P11.lean",
+   "bytes": 985267,
+   "sha256": "827a7db05da97c434969179cda82946704a8e9690cc22f1705560ec5626193f5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P110.lean",
+   "bytes": 498698,
+   "sha256": "d8064ca18f3ea23ea78d7016242e5dafaeec70cfb4d1d2c954866e376cdf1149",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P111.lean",
+   "bytes": 764159,
+   "sha256": "140482f96eefbe276be4ce7a1f67a11859e1bd74532028d15e4ba7adb9f73060",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P112.lean",
+   "bytes": 2119557,
+   "sha256": "bcdd86ea5aca6ade32abddf2318ea24194887e73269b1ae7a1a9cdef2418c32d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P113.lean",
+   "bytes": 1400801,
+   "sha256": "6bc95aeafc3e803ad8fb0eb3dd7925f8179b5b4b736fbdac1d791d8c24fda08c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P114.lean",
+   "bytes": 877236,
+   "sha256": "9919dc89dcf6396cee641dfc2ba9044756920819f8b1310b63a173e913ac5142",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P115.lean",
+   "bytes": 2071341,
+   "sha256": "19d199250411abd417ad103ee671bef562ab749d12559872df5e56c462cf461d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P116.lean",
+   "bytes": 622799,
+   "sha256": "c92a361f9a69ab2dbe8e13d8b5c95c0806aa01074a38e06baf70b502e8489432",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P117.lean",
+   "bytes": 317924,
+   "sha256": "87b9706b6d96f44e036b29d54883048fad834a9f8f0a4349480b0571671b8c26",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P118.lean",
+   "bytes": 2621853,
+   "sha256": "7072ace7d5f5bf93e3099a9ab99baf7afc4e6172056148f7637608fc9a43ce40",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P119.lean",
+   "bytes": 546774,
+   "sha256": "a98197d1eafd7aff7d4ce158ef40233ca600e6251c247237476f8808e0679254",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P12.lean",
+   "bytes": 1466455,
+   "sha256": "b1567e3851dbdb55bd2f06caefb4c13043bfbd73b778c55e91ba5dfd92a0013f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P120.lean",
+   "bytes": 1456,
+   "sha256": "043e12db8577c6e39c303b021b11a7aa52e522fbdb3974975348f1aaa3d2713b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P121.lean",
+   "bytes": 2294258,
+   "sha256": "6540d21e20961f405aa11761bd74ed316c9a69cee7873651cc28260c7da5ea4b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P122.lean",
+   "bytes": 1246871,
+   "sha256": "17379f3957255f31cac3fe1009e0ad9963506694eb00318d72fd399b51ed0c3d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P123.lean",
+   "bytes": 2873099,
+   "sha256": "98a87023a0a146e7f622c446d184282428b39e596db184bd33493a1cde94d662",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P124.lean",
+   "bytes": 2510754,
+   "sha256": "2662bd2d14c78dfd7f758e3e8f994ad7d341b9856277b87998747560545b12c6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P125.lean",
+   "bytes": 1456,
+   "sha256": "d4e19e3525d482354a7752c053a238c776f375b93b8de7b1b8ade46fd4598b9f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P126.lean",
+   "bytes": 2541635,
+   "sha256": "db7ed02f7b5ab764d72616bd6f55a0359154a34b40387c84546a13f627375dab",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P127.lean",
+   "bytes": 1248451,
+   "sha256": "d4f97c323fc6844bf96c2a428e90e0cf14380cc9ff64123d24981fb8dc2379fb",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P128.lean",
+   "bytes": 2745574,
+   "sha256": "e8ba1b75a01d510e26f3d64ded459f4d5158e76857e0f0835da3910f2b910970",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P129.lean",
+   "bytes": 1822167,
+   "sha256": "edcc19001470094ee5f6118d30e45c8681abb2d4ad1e35b27beb0a09b321527c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P13.lean",
+   "bytes": 1025240,
+   "sha256": "788956968277c7293cedb9bc8af74d7b2bafd6fe5a239edf6c402958e17400e2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P130.lean",
+   "bytes": 2001281,
+   "sha256": "537b2891b7dab21d3cdc31a326ba657bf33fc23574a7ecd17b643100ab786c75",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P131.lean",
+   "bytes": 1816619,
+   "sha256": "1b00c5f6958a62c011784d6d877467f80a94cbdb76700f70d75d895ba41cccc3",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P14.lean",
+   "bytes": 66937,
+   "sha256": "c830b9fdd34589d548f722e43b989676d943534c8b1901d51e13533e05a56617",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P15.lean",
+   "bytes": 1658638,
+   "sha256": "6c15445b7307338a329c35f35d74da6d18f41890624bbacce8869cae14d42370",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P16.lean",
+   "bytes": 2877491,
+   "sha256": "48344f6518ddb192e6b70de243d1964ee95cd47aa321e01de5a7bbdf6a9851ea",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P17.lean",
+   "bytes": 507405,
+   "sha256": "73354b5c761acbffc9e4b32681fa7092dfe55ec799aeb415a2b1153e832fcd37",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P18.lean",
+   "bytes": 434782,
+   "sha256": "06dc9b36e2769e3ee440800a7747f9c47ae0b26f5166b1dabf1c082638ad2a03",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P19.lean",
+   "bytes": 36377,
+   "sha256": "a296d35f044c4546cc08936d97fa37898e07af19155e0625c9696d90b68a7ef7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P2.lean",
+   "bytes": 791812,
+   "sha256": "fe6197b0967fa66b461287ade03c764469a8b0b15e8d4c249ba11231634e9fb6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P20.lean",
+   "bytes": 1891056,
+   "sha256": "a7f90772570891a9ecbca465e86aa0cfed9075604bbe7a12fc951652e3ac8cb5",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P21.lean",
+   "bytes": 2484757,
+   "sha256": "7f4de56b71151dfe192ba0d0e31e9f112be0152b95e6c2eee372e32c73a898ee",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P22.lean",
+   "bytes": 1858927,
+   "sha256": "cc45e303a11c01674d1644a5706f031b3af9fe3bdf1299081055f01ad06ba43d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P23.lean",
+   "bytes": 255261,
+   "sha256": "f1283995dd05f043854daba6e7986cd8233f764ed4f3622c7c7a35c90eba3340",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P24.lean",
+   "bytes": 1457,
+   "sha256": "12c9121b29402d45ed8c73e171daa13c5cbeb43902ba2ebfa6391be77831bd0f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P25.lean",
+   "bytes": 2070808,
+   "sha256": "15acdaa2d4048027b3cc1dd451b7746b24e65ac95fb7823add1350c9c46d4a86",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P26.lean",
+   "bytes": 947322,
+   "sha256": "15b1e534dddf77e45ba1dd8f283367c2870eea7ed87272f3834d116486f67e07",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P27.lean",
+   "bytes": 1723247,
+   "sha256": "0e2ae26f289e11122d64fd1415da1c2dcfb9d1493071028d9c8a3ec32da8540e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P28.lean",
+   "bytes": 141349,
+   "sha256": "9a49ad280fab27c837159556cca61f2332d873c33d20328c39b4a3955b41bbee",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P29.lean",
+   "bytes": 1696665,
+   "sha256": "5428d9a199e8c4b2dd3324de3b5a37a1410713589da0ef944f32ea11b03cba7a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P3.lean",
+   "bytes": 2907489,
+   "sha256": "8e14fc9c3c14d2ec520c19d6804a55bf3db5ff640eb535e840e8df4ec126da62",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P30.lean",
+   "bytes": 2675322,
+   "sha256": "da98969978d8257a62b05a8cc9a4def87a68c51319029e49e2d4968a71a9ca3a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P31.lean",
+   "bytes": 132973,
+   "sha256": "df8df6728842a5f9c6d3333bf96c632b4b57084c92c259f34cf93f4359b9743f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P32.lean",
+   "bytes": 2931090,
+   "sha256": "d5a393628c7c5727c9182cd134ea648c295d6b7f028ea9b7b9da558273124725",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P33.lean",
+   "bytes": 994089,
+   "sha256": "018142709e014fac533c382f4807a2369c6823c20e36aa726c39ad1d7d58c5b8",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P34.lean",
+   "bytes": 1457,
+   "sha256": "8b9335d011706c1abac07d2623f2a8a11cf36f17033976921d702544f7c6f75d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P35.lean",
+   "bytes": 1510412,
+   "sha256": "088c5992105ab34fdc5bac69117fcff59e159b2c64962aa6a5ff6d1b3ce7306e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P36.lean",
+   "bytes": 2185582,
+   "sha256": "aed2072cf9171bc43e3b4473987957531a04253800a76cdd270d809c5bfa7178",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P37.lean",
+   "bytes": 1686401,
+   "sha256": "516ca65f860d82a3317045e8dd79c7dc40ed8d828af383ff3c3291e9cd16f3a9",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P38.lean",
+   "bytes": 1194551,
+   "sha256": "6d4572d1d8c7bce4d6f93edb5779a499d8a248dca180e7c7fb1316587a0bc4cc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P39.lean",
+   "bytes": 1679758,
+   "sha256": "d0e3e51354211f28386307553197df3e49ae6370be55780ece5577db94cc368b",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P4.lean",
+   "bytes": 668309,
+   "sha256": "0755c4e46830da987c9f216cd6861453f35e0261135b47cfc294e4c509f3f7ee",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P40.lean",
+   "bytes": 2163981,
+   "sha256": "a68f29b0abd961954807311d81eeda6735f5837aa907bd09f16780dfd3ba506a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P41.lean",
+   "bytes": 1513947,
+   "sha256": "861cd04c434daafbb1073acbab1e614cc6f8dfa95bfbcd355b8db80e32266716",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P42.lean",
+   "bytes": 1454,
+   "sha256": "4b45d868228c48f3a4c2605d1e86e6de8f0518b2c583ad04a1db5c184d945010",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P43.lean",
+   "bytes": 1658587,
+   "sha256": "5d3f5f40956d6dbedbd67cbcba04b299ec40dbf35653358a889d6c0725f96f6a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P44.lean",
+   "bytes": 2089881,
+   "sha256": "9fab07ac060320d967d79d1febabff69cb89240b32e579bd8c4b450c0884d7bd",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P45.lean",
+   "bytes": 948936,
+   "sha256": "538718968f62df5dc75e17852624cfeee6c6304d76debfc93fd59f6d02a47ffb",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P46.lean",
+   "bytes": 1454,
+   "sha256": "80c2bc902ab6d1fa2945d380693a334213c773cbea70f3ea8aa37a0fa7401ae7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P47.lean",
+   "bytes": 1096026,
+   "sha256": "9ff0f980595505d7decd84b1a8a1ac87e3073f458df85b0369ae96e0e2564a8f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P48.lean",
+   "bytes": 2794088,
+   "sha256": "9ee19d26666f3580b9b312b0575939361999bdf40af8be36dc0ee66e6320764c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P49.lean",
+   "bytes": 796827,
+   "sha256": "425b24ce6cc0ca547cb604beada8ba42b6a5c07d0fcd5ceaee722abd01982f7f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P5.lean",
+   "bytes": 2181234,
+   "sha256": "5fff4ff0e12ac65a77f4fcf010a99be3e7ac95fa95d24704c52ae0518ae604d2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P50.lean",
+   "bytes": 2912007,
+   "sha256": "ff2c32e361a66de4a6a680d553a329223dc3d8b838fda571c92aab7f37ff210e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P51.lean",
+   "bytes": 2553179,
+   "sha256": "be72cb231d179608ac75a8fe251ceec467af964e0e7b0676fc7674a49e9e37bc",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P52.lean",
+   "bytes": 2539499,
+   "sha256": "9cdaf248f7c4836a5cf36ea759669d4041e3a6a3fd9e845d54d53c0745e65346",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P53.lean",
+   "bytes": 108460,
+   "sha256": "4e8d8e23cf4ed378e7a6ee4168b1fdf998c654263047661978b6d37cd6dc466f",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P54.lean",
+   "bytes": 1243388,
+   "sha256": "13ec923a21816ad64100dda78697d98bf35514eea5cc3786ef8458fc8846fdb6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P55.lean",
+   "bytes": 2590712,
+   "sha256": "68a6bc7bc3b1e73884f37ccb062be6267ba9d199fb8f1ac393901d575d468a4c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P56.lean",
+   "bytes": 2874095,
+   "sha256": "ba574bc9349c7e3e93a008bd04af654c4712e59d833295dda32d99f54f53d5f7",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P57.lean",
+   "bytes": 412385,
+   "sha256": "0a009eb85dcaadbda3bbeb2bc5ed754ac39326c476e68657aab9d94b190757b2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P58.lean",
+   "bytes": 1178281,
+   "sha256": "b630e10a6b6a5da0854db108f9e4cedef7d3bfd9341a35734a5226746075f238",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P59.lean",
+   "bytes": 1860371,
+   "sha256": "78164a3ffdec9c372e1c3e54413cd5060af1234b8609b81a842fca9efd884a04",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P6.lean",
+   "bytes": 476916,
+   "sha256": "6c3d61eee3b61d569df60780fb84418bdf40f21410acb1382d24b533da1a7fed",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P60.lean",
+   "bytes": 1196818,
+   "sha256": "7ce3553c0771bebd0d414bdfe6a26e82b615306b30b6a0988bccb9e84f478e75",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P61.lean",
+   "bytes": 1914903,
+   "sha256": "e39198d2aacba3d3b497070222e0ca68dac342afd5b782c8d6b49c295be7272c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P62.lean",
+   "bytes": 1196013,
+   "sha256": "98ee2d0bd19edeaf5f49bcb3ab1a2a6e66e1a4ad4d188c582647192bded68622",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P63.lean",
+   "bytes": 2024336,
+   "sha256": "1dc7d151aa3d2861e805fff5fd6ac78b9a92074d6d93eeb3e38c0599601a7446",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P64.lean",
+   "bytes": 30749,
+   "sha256": "92afef2da5595bd56d31db8befebda4f2e466164f5cc9fcb73bfff35301f9794",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P65.lean",
+   "bytes": 417886,
+   "sha256": "c36bfe3f2c917328136f8305dde29eb8cbd462806232f211c8e73728798d6774",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P66.lean",
+   "bytes": 2603958,
+   "sha256": "0419601c06ad81a6230c54d03e313e4deb01f8ff9fb22920ebe710c9906f7d14",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P67.lean",
+   "bytes": 2144131,
+   "sha256": "58cd2a493d99d3f24c32464830d5a6ca0b59e12943410009a0cdb83ffd1ce054",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P68.lean",
+   "bytes": 307156,
+   "sha256": "183d34e775857dd1c4aca3aa2d72102d7736e0fe867a4a01a0c0f19c32f35afe",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P69.lean",
+   "bytes": 2973264,
+   "sha256": "239b548f70277afe6ccedf4cb57d7bb1c5d74aae98683efad2585a998e9553c9",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P7.lean",
+   "bytes": 2873508,
+   "sha256": "9fd17a148893b8046b164572ff6a2a6d9f9d767e04d00a5c6c3aaaedd370fd12",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P70.lean",
+   "bytes": 854817,
+   "sha256": "dc7bd68d4f0b95f376cfcb5dd4521a3e402b2533356eb2fc8362cae3fb3659f1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P71.lean",
+   "bytes": 2398437,
+   "sha256": "14dc33d57b12eee1e00b3398289922332a20519d3f152c42e61d2cad6c337c15",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P72.lean",
+   "bytes": 938981,
+   "sha256": "a10a93f8f11b5479d3c7be9be98939bb96c8d0b1012fa37335eb22772d89c7c1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P73.lean",
+   "bytes": 2843627,
+   "sha256": "262655e4da866391d4cfaba343781f273450050b89ea4136a574c249b3b629ae",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P74.lean",
+   "bytes": 1307979,
+   "sha256": "5d6ffdb1a58000e2e6fad5132dc6b0ddba62e3b3c42ef065a064e65d68fe05fe",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P75.lean",
+   "bytes": 2296293,
+   "sha256": "fcf8b6cf83e5f71200285d5742bb759f235f6a6f211da2d493677f4d86fa0241",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P76.lean",
+   "bytes": 934536,
+   "sha256": "fda842a73347f6f787c20f00f478414ea19bee12f501e611ecffcf36ed384eaa",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P77.lean",
+   "bytes": 2002318,
+   "sha256": "e16380f667c3eea148ab3f9bf744cde35f1bab5f1353075761c53c7b21d90025",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P78.lean",
+   "bytes": 1821071,
+   "sha256": "f28aec248ee408b678275c005fc4fcb909050f5278978fb58cdc15a34fa8e253",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P79.lean",
+   "bytes": 1997210,
+   "sha256": "be5c8f04bab63b318824d4dcc40e7200e44d30739cbc29d1089c3f977c93f824",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P8.lean",
+   "bytes": 570570,
+   "sha256": "920cdaa40833a7cacafcf1d93415f9ded77fdd5ea6188b9e5812d3a4d7d76f38",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P80.lean",
+   "bytes": 2617546,
+   "sha256": "8e6f90b61c7f2bc283e0da795cb425bbb4a32870eaa114f05c1335b5109c544e",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P81.lean",
+   "bytes": 1258553,
+   "sha256": "42ffb2f2151a0050301c1baaafe31e25f0dac23785a465011f18d97fbc01c896",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P82.lean",
+   "bytes": 833075,
+   "sha256": "4b3d971b96e44a010c178dde533899452224e92df245f780a04ce56fb4c8deae",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P83.lean",
+   "bytes": 2659062,
+   "sha256": "c5b48f4b27a411b68dc84470ae4737f1a07a50fae5b49673068777eb54287b54",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P84.lean",
+   "bytes": 1606065,
+   "sha256": "fbb8169738267c631b6f55ac7ebe8d4c21bf986e6193a8300be3a2cf931782fe",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P85.lean",
+   "bytes": 85891,
+   "sha256": "195825f22d0bc90f9e2484da35dc48cedc242e1d073a5867863a6f883266714d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P86.lean",
+   "bytes": 1771997,
+   "sha256": "810ada9fb112e2c8d9bf9332a4b46001a4570a09c0af742a714fa5dc07bcf229",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P87.lean",
+   "bytes": 1763472,
+   "sha256": "a80242d0dd498cf20d12218d81c20e5ff3c62dd6895c7c35c47971d414472c38",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P88.lean",
+   "bytes": 2948412,
+   "sha256": "24467bef1f5d6ea746ce083c6eb5c8ecbacf9fe1b034212f55ba19fe47cca0cd",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P89.lean",
+   "bytes": 336901,
+   "sha256": "10f7bddbfbdd9068be53d648d864c33ecbbfb5fa5034f405d60295974fa53f36",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P9.lean",
+   "bytes": 1189444,
+   "sha256": "3fbcefcf165cf51204b5f1f488f10e98ac7bd8ee43f0db9d591b556dcc629e7d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P90.lean",
+   "bytes": 2140545,
+   "sha256": "ddf4cbaa6cdaa9d9ca35933f60ae31a1cd429dfdd74d04b9dcdc7a40a41f7f9a",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P91.lean",
+   "bytes": 2196088,
+   "sha256": "80de9301bf98e28ed8800505072af8e123b2fff74e682a7cf8d8b2398aa38be3",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P92.lean",
+   "bytes": 1320791,
+   "sha256": "fbc99df2c6d7db3fc3960bcbc338584dc3b0264ceaa9c19803615018921299d2",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P93.lean",
+   "bytes": 2233947,
+   "sha256": "7035e13bf217affa93e34b6128d03826a63ad9dd49a380fe56e735bb4e1ae8d6",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P94.lean",
+   "bytes": 2028541,
+   "sha256": "5a62049b108459789e3f9ca8a2e1dfa9a0c616bd140c5f377edbfab8607a7c78",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P95.lean",
+   "bytes": 258946,
+   "sha256": "9a6eefaddfe73105cbbbd13392ea68ca09e26d3c93155e34f045f6145c1d77d1",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P96.lean",
+   "bytes": 289192,
+   "sha256": "aed347fbc91cab6bfa1c482eea3ded733011fd7cdd273dfa16ba1c57bdbb7f9d",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P97.lean",
+   "bytes": 1454,
+   "sha256": "f49e310c359d8ed9791ae1f32e8b6d4c064a715d3af09a87ba8a904ad071323c",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P98.lean",
+   "bytes": 494944,
+   "sha256": "c4cef026f15d4fbd35b7ae1cf58b8ffd5ed8c064e49144e5e7a9935f0556e977",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root8P99.lean",
+   "bytes": 1766103,
+   "sha256": "1d7e19eebb631c6472f4d97b6f634b891353598c10b5bae563439fbeaf9209b4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Root9.lean",
+   "bytes": 2170761,
+   "sha256": "a96dcc9419c3516b9034946a1c7272ed66c5e3d45e142de3893c52d5b6547db3",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Nieuwland.Cover"
+   ]
+  },
+  {
+   "file": "Shared.lean",
+   "bytes": 67115,
+   "sha256": "2e7563e123385a710488dd2c91a23eac71a36aada4bd80336a7c53b89a98641a",
+   "imports": [
+    "Modules.Nieuwland.Settled",
+    "Modules.Certificate.Chunk",
+    "Modules.Check.Number.Theta",
+    "Modules.Check.Leaf.FitCheck"
+   ]
+  },
+  {
+   "file": "Touch.lean",
+   "bytes": 676601,
+   "sha256": "89fa00b0683ccb7226a69baf331b2d22dc73b5b7f22d7f128babeb41af111ef4",
+   "imports": [
+    "Polyhedra.Johnson.GyroelongatedPentagonalBicupola.Certificates.Shared",
+    "Modules.Root.Assembly"
+   ]
+  }
+ ]
+}

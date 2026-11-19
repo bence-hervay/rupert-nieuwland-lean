@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Other.KAlpha11_20.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.KAlpha11_20.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Other.KAlpha11_20.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.KAlpha11_20.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Other.KAlpha11_20.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Other.KAlpha11_20.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.KAlpha11_20.polyhedron)).Nonempty"
+  }
+ ]
+}

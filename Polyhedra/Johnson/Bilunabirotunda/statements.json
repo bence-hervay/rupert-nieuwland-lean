@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.Bilunabirotunda.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.Bilunabirotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.Bilunabirotunda.polyhedron Nieuwland.Johnson.Bilunabirotunda.system Nieuwland.Johnson.Bilunabirotunda.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.Bilunabirotunda.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.Bilunabirotunda.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.Bilunabirotunda.system Nieuwland.Johnson.Bilunabirotunda.layout Nieuwland.Johnson.Bilunabirotunda.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.Bilunabirotunda.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.Bilunabirotunda.polyhedron)).Nonempty"
+  }
+ ]
+}

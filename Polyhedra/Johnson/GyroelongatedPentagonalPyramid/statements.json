@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Johnson.GyroelongatedPentagonalPyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Johnson.GyroelongatedPentagonalPyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Johnson.GyroelongatedPentagonalPyramid.polyhedron Nieuwland.Johnson.GyroelongatedPentagonalPyramid.system Nieuwland.Johnson.GyroelongatedPentagonalPyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Johnson.GyroelongatedPentagonalPyramid.system"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Johnson.GyroelongatedPentagonalPyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Johnson.GyroelongatedPentagonalPyramid.system Nieuwland.Johnson.GyroelongatedPentagonalPyramid.layout Nieuwland.Johnson.GyroelongatedPentagonalPyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Johnson.GyroelongatedPentagonalPyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Johnson.GyroelongatedPentagonalPyramid.polyhedron)).Nonempty"
+  }
+ ]
+}

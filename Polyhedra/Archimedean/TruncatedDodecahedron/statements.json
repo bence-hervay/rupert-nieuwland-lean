@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Archimedean.TruncatedDodecahedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Archimedean.TruncatedDodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Archimedean.TruncatedDodecahedron.polyhedron Nieuwland.Archimedean.TruncatedDodecahedron.system Nieuwland.Archimedean.TruncatedDodecahedron.layout"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Archimedean.TruncatedDodecahedron.system"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Archimedean.TruncatedDodecahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Archimedean.TruncatedDodecahedron.system Nieuwland.Archimedean.TruncatedDodecahedron.layout Nieuwland.Archimedean.TruncatedDodecahedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Archimedean.TruncatedDodecahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Archimedean.TruncatedDodecahedron.polyhedron)).Nonempty"
+  }
+ ]
+}
