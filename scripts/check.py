@@ -7,8 +7,10 @@ certificate's pieces, the compile of all its modules and the audit of its theore
 SOLID: a solid's directory (`Polyhedra/Platonic/Cube`), a family (`Johnson`) or `all`. Solids run
 cheapest first (the compile times in `results.tsv`).
 
-1. Once: Mathlib's compiled cache (`lake exe cache get`), `lake build Definitions Modules`, and
-   the library as compiled code for `native_decide` (`scripts/native.py`, if not built yet).
+1. Once: Mathlib's compiled cache (`lake exe cache get`), `lake build Definitions Modules` and
+   every module of `Definitions/` and `Modules/` by name (a solid's pieces may import a library
+   module that `Modules.lean` does not, such as `Modules.Root.Weighted`), and the library as
+   compiled code for `native_decide` (`scripts/native.py`, if not built yet).
 2. For each solid: its pieces from the release (`scripts/certificates.py fetch`; `--source`:
    from a directory or URL instead), checked against `Certificates/manifest.json`; then
    `scripts/build.py`: the screen of the generated modules, their compile and the audit, which
@@ -36,9 +38,16 @@ def run(cmd):
     subprocess.run(cmd, cwd=ROOT, check=True)
 
 
+def library_modules():
+    """Every module of the library by name: `lake build Definitions Modules` builds what
+    `Definitions.lean` and `Modules.lean` import, and `native.py` wants a Lake build of each."""
+    return [".".join(f.relative_to(ROOT).with_suffix("").parts) for d in ("Definitions", "Modules")
+            for f in sorted((ROOT / d).rglob("*.lean"))]
+
+
 def library(jobs):
     run(["lake", "exe", "cache", "get"])
-    run(["lake", "build", "Definitions", "Modules"])
+    run(["lake", "build", "Definitions", "Modules", *library_modules()])
     if not SO.exists():
         run([sys.executable, "scripts/native.py", "--jobs", str(jobs)])
 

@@ -17,6 +17,9 @@
   --ink-3: #5a5a5a;
   --rule: #242424;
   --track: #3a3a3a;
+  --btn: rgba(26, 28, 32, 0.88);   /* a button's fill: a dark grey, translucent over the 3D view */
+  --btn-hover: rgba(44, 47, 54, 0.95);
+  --btn-rule: #34373d;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
@@ -24,17 +27,24 @@
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--sans); }
 body { display: grid; grid-template-rows: auto auto 1fr auto; height: 100vh; height: 100dvh; overflow: hidden; overscroll-behavior: none; }
 button, input { font: inherit; color: inherit; }
-:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+[hidden] { display: none !important; }   /* above the buttons' display: inline-flex */
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-header { position: relative; display: flex; align-items: baseline; gap: 18px; padding: 12px 18px 10px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
-header h1 { margin: 0; font-size: 15px; font-weight: 600; }
-.back { color: var(--ink-2); text-decoration: none; font-size: 15px; line-height: 1; }
-.back:hover, .back:focus-visible { color: var(--ink); }
-header .nu { font-family: var(--mono); }
+/* the header: a round back button, the name, nu, the algebraic definition's buttons */
+header { position: relative; display: flex; align-items: center; gap: 10px 16px; padding: 12px 18px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 17px; font-weight: 600; }
+header .nu { font-family: var(--mono); font-size: 13px; }
+#algbtn .short { display: none; }
 header .grow { flex: 1; }
-.ghost { background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 3px 10px; color: var(--ink); cursor: pointer; }
-.ghost:hover { border-color: var(--ink-3); }
-#spin { background: #000000; }
+/* buttons: pills with a soft fill; the back button and the rotation button carry an icon */
+.ghost, .back { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px;
+  background: var(--btn); border: 1px solid var(--btn-rule); color: var(--ink); font-size: 14px; font-weight: 500;
+  line-height: 1; text-decoration: none; cursor: pointer; white-space: nowrap; transition: background-color 120ms ease, border-color 120ms ease; }
+.ghost:hover, .back:hover, .back:focus-visible { background: var(--btn-hover); border-color: var(--ink-3); }
+.back { padding: 0 18px 0 12px; }
+.back svg, .ghost svg { width: 18px; height: 18px; flex: none; }
+#spin { padding-left: 14px; }
+#spin .play { display: none; } #spin.paused .play { display: block; } #spin.paused .pause { display: none; }
 
 main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 .pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
@@ -43,29 +53,34 @@ main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 #flat { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 #flat.dragging { cursor: grabbing; }
 .corner { position: absolute; font-size: 12px; }
-.tl { left: 14px; top: 12px; } .bl { left: 14px; bottom: 12px; }
+.ghost.corner { font-size: 14px; }
+.tl { left: 14px; top: 14px; } .bl { left: 14px; bottom: 12px; }
 .caption { color: var(--ink-2); pointer-events: none; }
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
 .bl.tools { display: flex; gap: 8px; }
 
-footer { display: flex; align-items: center; gap: 28px; padding: 12px 18px 14px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
-.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 10px; row-gap: 2px; }
-.ctl .lab { grid-column: 1 / -1; color: var(--ink-2); }
-.ctl .end { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
-.ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
+/* the scale slider: from 1 (left) to nu (right), its value at the right; a thick rounded track, a large handle */
+footer { display: flex; align-items: center; gap: 28px; padding: 14px 18px 16px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
+.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 14px; }
+.ctl .end { font-family: var(--mono); color: var(--ink-2); font-size: 14px; }
+.ctl output { font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
 .ctl.scale { flex: 2 1 360px; }
 .ctl.small { flex: 1 1 200px; }
-input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: none; margin: 0; }
-input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--track); }
-input[type=range]::-moz-range-track { height: 2px; background: var(--track); }
-input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); margin-top: -5px; border: 0; }
-input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--ink); border: 0; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 30px; background: none; margin: 0; cursor: pointer; }
+input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); margin-top: -8px; border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]:focus-visible { outline: none; }
+input[type=range]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px var(--plug); }
+input[type=range]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px var(--plug); }
 .scale input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 .scale input[type=range]::-moz-range-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 
 /* the pose under the header: each matrix with its name at its left */
-.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
-.posenums { display: flex; gap: 32px; }
+/* R1, R2 and t side by side, each block on a new line when it does not fit: never a sideways scroll */
+.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); }
+.posenums { display: flex; flex-wrap: wrap; gap: 6px 32px; }
 .posenums > div { display: grid; grid-template-columns: auto auto; column-gap: 10px; align-items: start; justify-items: start; }
 .posenums h2 { margin: 0; font-size: 12px; font-weight: 500; color: var(--ink-2); line-height: 1.45; }
 .posenums table { font-family: var(--mono); font-size: 12px; line-height: 1.45; font-variant-numeric: tabular-nums; border-collapse: collapse; }
@@ -76,13 +91,17 @@ input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 
 
 /* the algebraic definition: in place of the pose, the views and the slider. The text as it is, never wrapped
    for the page's width (one line per variable, polynomial and range): the panel scrolls both ways */
-.alg { display: none; min-height: 0; overflow: auto; padding: 14px 18px 28px; }
-#algtext { font: 12px/1.55 var(--mono); color: var(--ink); white-space: pre; width: max-content; margin: 0; }
+/* one block per line of the text, a long line wrapping with its continuation indented (Copy and Download give the text
+   unwrapped): no sideways scroll */
+.alg { display: none; min-height: 0; overflow-y: auto; overflow-x: hidden; padding: 14px 18px 28px; }
+#algtext { font: 12px/1.55 var(--mono); color: var(--ink); margin: 0; }
+#algtext > span { display: block; white-space: pre-wrap; overflow-wrap: anywhere; }
+#algtext > span.long { padding-left: 4ch; text-indent: -4ch; }
 body:not(.algopen) .algonly { display: none; }
 body.algopen { grid-template-rows: auto 1fr; }
 body.algopen .posebar, body.algopen main, body.algopen footer { display: none; }
 body.algopen .alg { display: block; }
-#algbtn[aria-pressed="true"] { border-color: var(--ink-3); }
+#algbtn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
 /* a Nopert's page (nopert.js): the solid alone, turning; no pose, no projection, no scale */
 header .kind { color: var(--ink-2); }
@@ -94,14 +113,19 @@ body.nopert main { grid-template-columns: 1fr; }
 /* phones: no page scroll (a drag in the view moves it); nu under the title, the pose under it, the slider at the bottom */
 @media (max-width: 760px) {
   body { position: fixed; inset: 0; height: auto; }
-  header { gap: 2px 12px; padding: 10px 14px 8px; }
+  header { gap: 6px 12px; padding: 10px 14px 8px; }
+  header h1 { font-size: 16px; }
   header .nu { order: 3; flex-basis: 100%; font-size: 12px; overflow-wrap: anywhere; }
+  .back { width: 40px; padding: 0; justify-content: center; } .back span { display: none; }   /* the arrow alone */
+  /* one row: the arrow, the name (wrapping when long), the definition's button with a short label */
+  header h1 { flex: 1 1 0; min-width: 0; line-height: 1.25; }
+  header .grow { display: none; }
+  #algbtn { padding: 0 14px; } #algbtn .long { display: none; } #algbtn .short { display: inline; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
   .pane + .pane { border-left: 0; border-top: 1px solid var(--rule); }
   .tl { left: 10px; top: 8px; } .tr { right: 10px; top: 8px; }
   footer { flex-direction: column; align-items: stretch; gap: 8px; padding: 8px 14px calc(10px + env(safe-area-inset-bottom)); }
-  .ctl.scale { flex: none; grid-template-columns: auto auto 1fr auto; }
-  .ctl .lab { grid-column: auto; }
+  .ctl.scale { flex: none; }
   /* the pose as rows, t as a row */
   .posebar { padding: 6px 14px 7px; }
   .posenums { flex-direction: column; gap: 3px; }
@@ -111,19 +135,20 @@ body.nopert main { grid-template-columns: 1fr; }
   .alg { padding: 10px 14px calc(20px + env(safe-area-inset-bottom)); }
   #algtext { font-size: 11px; }
 }
+@media (max-width: 360px) { .posenums h2, .posenums table { font-size: 10px; } }
 /* phones, upright or turned: the 3D view only (the projection is drawn in it too); the same query in explorer.js */
 @media (max-width: 760px), (pointer: coarse) and (max-height: 520px) {
   .flatpane { display: none; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr; }
 }
 @media (max-height: 520px) and (min-width: 761px) {
-  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; } .ctl .lab { display: none; }
+  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; }
+  .ghost, .back { height: 34px; }
 }
 @media (pointer: coarse) {
-  input[type=range] { height: 30px; }
-  input[type=range]::-webkit-slider-thumb { width: 22px; height: 22px; margin-top: -10px; }
-  input[type=range]::-moz-range-thumb { width: 22px; height: 22px; }
-  .ghost { padding: 6px 12px; }
+  input[type=range] { height: 40px; }
+  input[type=range]::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: -11px; }
+  input[type=range]::-moz-range-thumb { width: 28px; height: 28px; }
 }
 </style>
 <script type="importmap">
@@ -135,14 +160,14 @@ body.nopert main { grid-template-columns: 1fr; }
 </head>
 <body class="rupert">
 <header>
-  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }">←</a>
+  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>All solids</span></a>
   <h1>Gyroelongated Square Dipyramid</h1>
   <span class="nu">ν = <span id="nutext"></span></span>
   <span class="kind">Nopert</span>
   <span class="grow"></span>
   <button class="ghost algonly" id="algcopy">Copy</button>
   <button class="ghost algonly" id="algsave">Download</button>
-  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden>Algebraic definition</button>
+  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden><span class="long">Algebraic definition</span><span class="short">Definition</span></button>
 </header>
 
 <div class="posebar"><div class="posenums" id="posenums" aria-label="The pose"></div></div>
@@ -150,8 +175,7 @@ body.nopert main { grid-template-columns: 1fr; }
 <main>
   <section class="pane" aria-label="3D view">
     <canvas id="gl"></canvas>
-    <button class="ghost corner tl" id="spin">pause rotation</button>
-    <div class="corner tr caption" id="info"></div>
+    <button class="ghost corner tl" id="spin"><svg class="pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg><svg class="play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg><span id="spintext">Pause rotation</span></button>
   </section>
   <section class="pane flatpane" aria-label="Projection">
     <svg id="flat" role="img" aria-label="The shadows of the hole and the plug along z"></svg>
@@ -162,14 +186,13 @@ body.nopert main { grid-template-columns: 1fr; }
 
 <footer>
   <div class="ctl scale">
-    <span class="lab">scale ℓ</span>
     <span class="end">1</span>
     <input type="range" id="scale" min="0" max="1000" value="0" aria-label="Plug scale">
     <output id="scaleout"></output>
   </div>
 </footer>
 
-<script id="pose" type="application/json">{"hole_up": [-1, -1, -1, -1, -1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1], "plug_up": [-1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, 1, 1, 1], "on_wall": [[7], [1, 7], [], [], [], [0, 4], [4], []], "name": "Gyroelongated Square Dipyramid", "solid": "johnson/gyroelongated-square-dipyramid", "vertices": [[0.7071067811865476, 0.0, 0.42044820762685725], [-0.7071067811865476, 0.0, 0.42044820762685725], [0.0, 0.7071067811865476, 0.42044820762685725], [0.0, -0.7071067811865476, 0.42044820762685725], [0.5, 0.5, -0.42044820762685725], [0.5, -0.5, -0.42044820762685725], [-0.5, 0.5, -0.42044820762685725], [-0.5, -0.5, -0.42044820762685725], [0.0, 0.0, 1.1275549888134049], [0.0, 0.0, -1.1275549888134049]], "faces": [[8, 1, 3], [3, 0, 8], [3, 1, 7], [5, 0, 3], [5, 3, 7], [9, 5, 7], [8, 0, 2], [2, 1, 8], [2, 0, 4], [4, 0, 5], [9, 4, 5], [6, 1, 2], [7, 1, 6], [7, 6, 9], [6, 4, 9], [6, 2, 4]], "R1": [[-0.38268343236508984, 0.9238795325112868, 0.0], [0.9215427470221983, 0.38171550412315264, 0.07107910609165106], [0.06566853130727461, 0.02720079628859536, -0.9974706816128541]], "R2": [[0.0, 0.0, 1.0], [0.8445068022893244, 0.5355448262163119, -0.0], [-0.5355448262163119, 0.8445068022893244, 0.0]], "t": [-0.14647058903129956, 0.0], "nu": 1.0124892567464778, "nu_text": "1.012489256746477979301908732652\u2026", "hull": [9, 7, 1, 8, 0, 4], "plug_hull": [3, 7, 1, 6, 2, 4, 0, 5], "contacts": [{"edge": [9, 7], "verts": [7], "hole_vertical": []}, {"edge": [7, 1], "verts": [1], "hole_vertical": []}, {"edge": [7, 1], "verts": [7], "hole_vertical": []}, {"edge": [0, 4], "verts": [0], "hole_vertical": []}, {"edge": [0, 4], "verts": [4], "hole_vertical": []}, {"edge": [4, 9], "verts": [0], "hole_vertical": []}], "travel": [-1.7592552422154633, 1.7592552422154633], "screen_z": -2.89800499053381, "algebraic": "nu = 1.0124892567464779793019087326523320942422673707383533233052014857126788444245311817955869132156066429...\n\nThe gyroelongated square dipyramid: the algebraic definition of its Nieuwland number nu and an optimal pose\n\nThe polynomials below have rational coefficients and exactly one common real root within the ranges\nbelow (proved in Lean: Result.lean). At that root nu is the Nieuwland number of the gyroelongated\nsquare dipyramid, and R1 (the plug's rotation), R2 (the hole's rotation), and t (the translation)\ngive an optimal pose: with them the gyroelongated square dipyramid scaled by nu passes weakly\nthrough itself. Variables, polynomials, and ranges are in the order of the Lean system. The first\nline is nu to 100 decimals, cut, not rounded (Newton's method on these polynomials; Result.lean\nproves nu to within 2^-100).\n\nPolynomial in nu alone (degree 8, irreducible; proved in Lean: it is one of the polynomials below)\n\n0 = 1 + 308*nu^2 + 44*nu^6 + 49*nu^8 - 398*nu^4\n\nVariables (33)\n\nnu       the Nieuwland number\nalpha    the generator of the optimum's field\ns        view parameter s\nt        view parameter t\nq0       quaternion component q0\nq1       quaternion component q1\nq2       quaternion component q2\nq3       quaternion component q3\ntau0     shift tau0\ntau1     shift tau1\nn1       helper: (1 + s^2)*n1^2 = 1\nn3       helper: (1 + s^2 + t^2)*n3^2 = 1\nnq       helper: (q0^2 + q1^2 + q2^2 + q3^2)*nq = 1\nR2_00    the hole's rotation R2, row 0, column 0\nR2_01    the hole's rotation R2, row 0, column 1\nR2_02    the hole's rotation R2, row 0, column 2\nR2_10    the hole's rotation R2, row 1, column 0\nR2_11    the hole's rotation R2, row 1, column 1\nR2_12    the hole's rotation R2, row 1, column 2\nR2_20    the hole's rotation R2, row 2, column 0\nR2_21    the hole's rotation R2, row 2, column 1\nR2_22    the hole's rotation R2, row 2, column 2\nR1_00    the plug's rotation R1, row 0, column 0\nR1_01    the plug's rotation R1, row 0, column 1\nR1_02    the plug's rotation R1, row 0, column 2\nR1_10    the plug's rotation R1, row 1, column 0\nR1_11    the plug's rotation R1, row 1, column 1\nR1_12    the plug's rotation R1, row 1, column 2\nR1_20    the plug's rotation R1, row 2, column 0\nR1_21    the plug's rotation R1, row 2, column 1\nR1_22    the plug's rotation R1, row 2, column 2\nt_0      the translation t, component 0\nt_1      the translation t, component 1\n\nPolynomials (34)\n\n0 = R2_00\n0 = R2_01 + s*n1\n0 = R2_02 - n1\n0 = R2_10 - n1*n3 - s^2*n1*n3\n0 = R2_11 + t*n1*n3\n0 = R2_12 + s*t*n1*n3\n0 = R2_20 - t*n3\n0 = R2_21 - n3\n0 = R2_22 - s*n3\n0 = R1_00 + q3^2*nq*R2_00 + q2^2*nq*R2_00 - 2*q1*q3*nq*R2_02 - 2*q1*q2*nq*R2_01 - q1^2*nq*R2_00 - 2*q0*q3*nq*R2_01 + 2*q0*q2*nq*R2_02 - q0^2*nq*R2_00\n0 = R1_01 + q3^2*nq*R2_01 - 2*q2*q3*nq*R2_02 - q2^2*nq*R2_01 - 2*q1*q2*nq*R2_00 + q1^2*nq*R2_01 + 2*q0*q3*nq*R2_00 - 2*q0*q1*nq*R2_02 - q0^2*nq*R2_01\n0 = R1_02 - q3^2*nq*R2_02 - 2*q2*q3*nq*R2_01 + q2^2*nq*R2_02 - 2*q1*q3*nq*R2_00 + q1^2*nq*R2_02 - 2*q0*q2*nq*R2_00 + 2*q0*q1*nq*R2_01 - q0^2*nq*R2_02\n0 = R1_10 + q3^2*nq*R2_10 + q2^2*nq*R2_10 - 2*q1*q3*nq*R2_12 - 2*q1*q2*nq*R2_11 - q1^2*nq*R2_10 - 2*q0*q3*nq*R2_11 + 2*q0*q2*nq*R2_12 - q0^2*nq*R2_10\n0 = R1_11 + q3^2*nq*R2_11 - 2*q2*q3*nq*R2_12 - q2^2*nq*R2_11 - 2*q1*q2*nq*R2_10 + q1^2*nq*R2_11 + 2*q0*q3*nq*R2_10 - 2*q0*q1*nq*R2_12 - q0^2*nq*R2_11\n0 = R1_12 - q3^2*nq*R2_12 - 2*q2*q3*nq*R2_11 + q2^2*nq*R2_12 - 2*q1*q3*nq*R2_10 + q1^2*nq*R2_12 - 2*q0*q2*nq*R2_10 + 2*q0*q1*nq*R2_11 - q0^2*nq*R2_12\n0 = R1_20 + q3^2*nq*R2_20 + q2^2*nq*R2_20 - 2*q1*q3*nq*R2_22 - 2*q1*q2*nq*R2_21 - q1^2*nq*R2_20 - 2*q0*q3*nq*R2_21 + 2*q0*q2*nq*R2_22 - q0^2*nq*R2_20\n0 = R1_21 + q3^2*nq*R2_21 - 2*q2*q3*nq*R2_22 - q2^2*nq*R2_21 - 2*q1*q2*nq*R2_20 + q1^2*nq*R2_21 + 2*q0*q3*nq*R2_20 - 2*q0*q1*nq*R2_22 - q0^2*nq*R2_21\n0 = R1_22 - q3^2*nq*R2_22 - 2*q2*q3*nq*R2_21 + q2^2*nq*R2_22 - 2*q1*q3*nq*R2_20 + q1^2*nq*R2_22 - 2*q0*q2*nq*R2_20 + 2*q0*q1*nq*R2_21 - q0^2*nq*R2_22\n0 = t_0 - tau0*n1\n0 = t_1 - tau1*n1*n3 + s*t*tau0*n1*n3 - s^2*tau1*n1*n3\n0 = n1^2 + s^2*n1^2 - 1\n0 = n3^2 + t^2*n3^2 + s^2*n3^2 - 1\n0 = q3^2*nq + q2^2*nq + q1^2*nq + q0^2*nq - 1\n0 = s\n0 = t - 429144352372850992210847733586380877/606760828567592523808868461520529792 + 256810259533684697921269567778645401/79283414932832089777692145638682559488*alpha^2 + 35570118756882070243033010584711949/3884887331708772399106915136295445414912*alpha^4 - 51574641320712594081874780966574821/4568627502089516341349732200283443807936512*alpha^6 - 483543490487782808267115058629479/223862747602386300726136877813888746588889088*alpha^8 + 368577884612232456393790778728937/87754197060135429884645656103044388662844522496*alpha^10 - 18968703599466791464806586339/87754197060135429884645656103044388662844522496*alpha^12 - 191583648606924304205298991/702033576481083439077165248824355109302756179968*alpha^14\n0 = q0 - 132528799732935743846213047936150554195742359514251264\n0 = q1 - 83561677571607354779107921112922849326917104794169344 - 7180153520350383394444570559149105029754377795125248*alpha - 1805914624937805815246488112697879980873422483879424*alpha^2 - 89212675501562777128543270868098587855718346463232*alpha^3 - 5190715591541372882638576640201360422438833085952*alpha^4 - 161413874920540051063579553725460135313987865600*alpha^5 + 17833550745060438821930148902409181410121627712*alpha^6 + 689837851991339734452502556787017192185551616*alpha^7 - 1118339762799522294742175634548147162574656*alpha^8 - 61607843679280517283512974579750654314496*alpha^9 - 7560731816371042777831559416624328808072*alpha^10 - 291114278550597585501161153461050766752*alpha^11 + 922148697142385146138053200268621848*alpha^12 + 37263464144728081577836305682500112*alpha^13 + 566278457479961239800367209834219*alpha^14 + 21995991176216910069830137487316*alpha^15\n0 = q2 + 577582281394547371625716793012997846294861672708941824 + 16127718073568784511075093979120132271205473604321280*alpha + 3823494085023309387173987716980110860645594312896000*alpha^2 + 217683006127374040169329366823099334249451377025024*alpha^3 - 3634807544046358096213001613429037839138149508864*alpha^4 + 405442451869587776596169954825177341436483568640*alpha^5 - 11143489713336546298691212861411267970395902272*alpha^6 - 1695716436502068569765282483325173021926628352*alpha^7 + 3542794344258434702632754518352629360508384*alpha^8 + 147445264740538067988537671073384562352640*alpha^9 + 4401781261443697856693761113721046358824*alpha^10 + 715887323919947830977074079879073949312*alpha^11 - 776616470951998598167392962574939124*alpha^12 - 91279160131580999789141660608093232*alpha^13 - 351166582813772911477502953969751*alpha^14 - 54056010286004509799632413774224*alpha^15\n0 = q3 + 343220694960388707017587904572530791304811936285171712 + 15814485826526448193203650230423977007857305047881728*alpha + 3461876591277483377807755022673394982441828461864960*alpha^2 + 223782792623283025515878176707679928466099441949184*alpha^3 + 6712264387546907597030416141214738736132869665792*alpha^4 + 467112237840638828024803796583707811365109528320*alpha^5 - 25608155674465205551281232829621231949685568256*alpha^6 - 1688496867863800603679738002153362566277155264*alpha^7 + 2191023773119396758549580213963885672478592*alpha^8 + 124833877533419372688659672082902847441440*alpha^9 + 10882189354570355134904624837790813448160*alpha^10 + 713991514156808424227071574235687685176*alpha^11 - 1402114010792513486118055943856374672*alpha^12 - 89583139152479746010753016002660300*alpha^13 - 825955131082427050881646589578340*alpha^14 - 53825825663495579150256339776973*alpha^15\n0 = tau0 + 18306728208797404854007349879927554345/511354283501736073271704427125356053184*alpha - 922671657549081180340970905871419576763/11225249231430110280460455584255816079495168*alpha^3 - 41729907316944029536412332940348578439/78576744620010771963223189089790712556466176*alpha^5 + 189173272995542505681540433549212782899/215614587237309558267084430862385715254943186944*alpha^7 + 378250471421843334785777025973873765/5282557387314084177543568556128450023746108080128*alpha^9 - 508243895678930686782079451962761191/1380508330551413998398052582668234939538982911606784*alpha^11 + 137941310489689180138378687676639/4141524991654241995194157748004704818616948734820352*alpha^13 + 290078765440368592849759665951/11044066644411311987184420661345879516311863292854272*alpha^15\n0 = tau1\n0 = 85204163415125528940544 + 830020369952216776704*alpha^2 - 1977486508971624448*alpha^4 - 16518897957789696*alpha^6 + 32075819364736*alpha^8 + 1034578944*alpha^10 - 13705760*alpha^12 + 1408*alpha^14 + alpha^16\n0 = 4141524991654241995194157748004704818616948734820352*nu + 2017862972022409133985268301026195249355109322240*alpha + 592069099775185815790937797022390399757870104576*alpha^3 + 2758562471485351329755637127064342473987313600*alpha^5 - 5947532264938697108196476050363572833254656*alpha^7 - 78748645210049513172526065723665755800*alpha^9 + 2505298094704472649146958455070091072*alpha^11 - 265066447078419410499717310793875*alpha^13 - 183121976702350805143880786548*alpha^15\n0 = 1 + 308*nu^2 + 44*nu^6 + 49*nu^8 - 398*nu^4\n\nRanges (33)\n\n253122314186619494825477183163/250000000000000000000000000000 <= nu <= 1012489256746477979301908732653/1000000000000000000000000000000\n-222263234850652384789659817845613020076504228294733783977190578229061091582160142985557698579059473135126708149780031075983198498642650666416040378747846023/13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096 <= alpha <= -111131617425326192394829908922806510038252114147366891988595289114530545791080071492778849289529736567563354074890015537991599249321325333208020189373923011/6703903964971298549787012499102923063739682910296196688861780721860882015036773488400937149083451713845015929093243025426876941405973284973216824503042048\n0 <= s <= 0\n-3170754959/5000000000 <= t <= -6341509917/10000000000\n132528799732935743846213047936150554195742359514251264 <= q0 <= 132528799732935743846213047936150554195742359514251264\n1162328232013280311176821072646038179673470409846669359536234859/10000000000 <= q1 <= 58116411600664015558841053632301908983673520492333467976811743/500000000\n657035848555838465246993521934035622472497296692068802690846459/10000000000 <= q2 <= 32851792427791923262349676096701781123624864834603440134542323/500000000\n162218215245236116849586693796577688071400896322200859594666939/10000000000 <= q3 <= 8110910762261805842479334689828884403570044816110042979733347/500000000\n-1464705891/10000000000 <= tau0 <= -146470589/1000000000\n0 <= tau1 <= 0\n0 <= n1 <= 1\n0 <= n3 <= 1\n0 <= nq <= 1\n0 <= R2_00 <= 0\n0 <= R2_01 <= 0\n0 <= R2_02 <= 1\n0 <= R2_10 <= 1\n0 <= R2_11 <= 3170754959/5000000000\n0 <= R2_12 <= 0\n-3170754959/5000000000 <= R2_20 <= 0\n0 <= R2_21 <= 1\n0 <= R2_22 <= 0\n-34014129840084458840659586072747603458158865409768079678894330189504731158849576532833284510714872791380286439424/1953125 <= R1_00 <= 37710162265269010099466157490776983380626389046607487642496700926474303991922305325319568976741753441210802148983469/10000000000\n0 <= R1_01 <= 65880113501964814157547622894434737911282985871320841844523525522018402051402706530267014961266214983952191342934759/2000000000\n-89135151261130434212970757793999202643677523419008279977227394043936710515577128541295792731324079380314985001020399/5000000000 <= R1_02 <= 178270302522260868425941515587998405287355046838016559954454787982093222730650897617342776589213311915846835912743169/10000000000\n-45801085564484045435599374263533356584261687400536038836347390299617519825736633940190163888726208685898484748098237/10000000000 <= R1_10 <= 434865339060481578091531220767875528151263539935206826738817875081821403751765209125399883837541329124313653098189693/10000000000\n-32585040230017556400146594716148148696849058203460979677345168761998314882033318827784992449264295828739482184629273/2500000000 <= R1_11 <= 5829917027053525259805860434186894027111642515979234905318594969987963461121203869086503312102117430639381815308923/200000000\n-195371730381539341646389559200797433259164365724758009495386581913090190939718160707961718388431779201658957265313089/10000000000 <= R1_12 <= 225380473250799888450811211553638158561301243723679541261626765124751248579254881102330088565732167010945427573048517/10000000000\n-19705577446972132231301862770116962512929652456633581800017031787344274397631897223255067277944796458887808462343269/1000000000 <= R1_20 <= 224780237803025166277860772872767671013681834046469845975140105673948688607874496532914462622715090258048934880530553/10000000000\n-234591287951397792544910750005218977194727835117590056243963535711231025964550022512251508085562715542372171410085701/10000000000 <= R1_21 <= 246075136673567830982219845026189907540797392218152809331201729670207897612951820553338539640704822267839966436202229/10000000000\n-221218374968811987261008640227154976933711329563344004814882523965634630602974049659195890230771429472242903573202539/5000000000 <= R1_22 <= 4263327308194694551660550874626400126967825954619751384954340657395695349292598529341006352465430261546603120589543/2000000000\n-1464705891/10000000000 <= t_0 <= 0\n0 <= t_1 <= 0\n"}</script>
+<script id="pose" type="application/json">{"hole_up": [-1, -1, -1, -1, -1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1], "plug_up": [-1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, 1, 1, 1], "on_wall": [[7], [1, 7], [], [], [], [0, 4], [4], []], "name": "Gyroelongated Square Dipyramid", "solid": "johnson/gyroelongated-square-dipyramid", "vertices": [[0.7071067811865476, 0.0, 0.42044820762685725], [-0.7071067811865476, 0.0, 0.42044820762685725], [0.0, 0.7071067811865476, 0.42044820762685725], [0.0, -0.7071067811865476, 0.42044820762685725], [0.5, 0.5, -0.42044820762685725], [0.5, -0.5, -0.42044820762685725], [-0.5, 0.5, -0.42044820762685725], [-0.5, -0.5, -0.42044820762685725], [0.0, 0.0, 1.1275549888134049], [0.0, 0.0, -1.1275549888134049]], "faces": [[8, 1, 3], [3, 0, 8], [3, 1, 7], [5, 0, 3], [5, 3, 7], [9, 5, 7], [8, 0, 2], [2, 1, 8], [2, 0, 4], [4, 0, 5], [9, 4, 5], [6, 1, 2], [7, 1, 6], [7, 6, 9], [6, 4, 9], [6, 2, 4]], "R1": [[-0.38268343236508984, 0.9238795325112868, 0.0], [0.9215427470221983, 0.38171550412315264, 0.07107910609165106], [0.06566853130727461, 0.02720079628859536, -0.9974706816128541]], "R2": [[0.0, 0.0, 1.0], [0.8445068022893244, 0.5355448262163119, -0.0], [-0.5355448262163119, 0.8445068022893244, 0.0]], "t": [-0.14647058903129956, 0.0], "nu": 1.0124892567464778, "nu_text": "1.012489256746477979301908732652\u2026", "hull": [9, 7, 1, 8, 0, 4], "plug_hull": [3, 7, 1, 6, 2, 4, 0, 5], "contacts": [{"edge": [9, 7], "verts": [7], "hole_vertical": []}, {"edge": [7, 1], "verts": [1], "hole_vertical": []}, {"edge": [7, 1], "verts": [7], "hole_vertical": []}, {"edge": [0, 4], "verts": [0], "hole_vertical": []}, {"edge": [0, 4], "verts": [4], "hole_vertical": []}, {"edge": [4, 9], "verts": [0], "hole_vertical": []}], "travel": [-1.7592552422154633, 1.7592552422154633], "screen_z": -2.89800499053381, "algebraic": "nu = 1.0124892567464779793019087326523320942422673707383533233052014857126788444245311817955869132156066429...\n\nThe gyroelongated square dipyramid: the algebraic definition of its Nieuwland number nu and an optimal pose\n\nThe polynomials below have rational coefficients and exactly one common real root within the ranges\nbelow (proved in Lean: Result.lean). At that root nu is the Nieuwland number of the gyroelongated\nsquare dipyramid, and R1 (the plug's rotation), R2 (the hole's rotation), and t (the translation)\ngive an optimal pose: with them the gyroelongated square dipyramid scaled by nu passes weakly\nthrough itself. Variables, polynomials, and ranges are in the order of the Lean system. The first\nline is nu to 100 decimals, cut, not rounded (Newton's method on these polynomials; Result.lean\nproves nu to within 2^-100).\n\nPolynomial in nu alone (degree 8, irreducible; proved in Lean: it is one of the polynomials below)\n\n0 = 1 + 308*nu^2 + 44*nu^6 + 49*nu^8 - 398*nu^4\n\nExplicit formula (a root of the polynomial in nu alone by Cardano's and Ferrari's formulas, the polynomial being of degree at most 4 or a composition of such; a cubic with three real roots in its trigonometric form; equal to nu to 150 digits)\n\nnu = sqrt(-2*sqrt(-2358400/(117649*sqrt(688*cos(acos(48257/79507)/3)/147 + 40456/7203)) - 688*cos(acos(48257/79507)/3)/147 + 80912/7203) - 44/49 + 2*sqrt(688*cos(acos(48257/79507)/3)/147 + 40456/7203))/2\n\nVariables (33)\n\nnu       the Nieuwland number\nalpha    the generator of the optimum's field\ns        view parameter s\nt        view parameter t\nq0       quaternion component q0\nq1       quaternion component q1\nq2       quaternion component q2\nq3       quaternion component q3\ntau0     shift tau0\ntau1     shift tau1\nn1       helper: (1 + s^2)*n1^2 = 1\nn3       helper: (1 + s^2 + t^2)*n3^2 = 1\nnq       helper: (q0^2 + q1^2 + q2^2 + q3^2)*nq = 1\nR2_00    the hole's rotation R2, row 0, column 0\nR2_01    the hole's rotation R2, row 0, column 1\nR2_02    the hole's rotation R2, row 0, column 2\nR2_10    the hole's rotation R2, row 1, column 0\nR2_11    the hole's rotation R2, row 1, column 1\nR2_12    the hole's rotation R2, row 1, column 2\nR2_20    the hole's rotation R2, row 2, column 0\nR2_21    the hole's rotation R2, row 2, column 1\nR2_22    the hole's rotation R2, row 2, column 2\nR1_00    the plug's rotation R1, row 0, column 0\nR1_01    the plug's rotation R1, row 0, column 1\nR1_02    the plug's rotation R1, row 0, column 2\nR1_10    the plug's rotation R1, row 1, column 0\nR1_11    the plug's rotation R1, row 1, column 1\nR1_12    the plug's rotation R1, row 1, column 2\nR1_20    the plug's rotation R1, row 2, column 0\nR1_21    the plug's rotation R1, row 2, column 1\nR1_22    the plug's rotation R1, row 2, column 2\nt_0      the translation t, component 0\nt_1      the translation t, component 1\n\nPolynomials (34)\n\n0 = R2_00\n0 = R2_01 + s*n1\n0 = R2_02 - n1\n0 = R2_10 - n1*n3 - s^2*n1*n3\n0 = R2_11 + t*n1*n3\n0 = R2_12 + s*t*n1*n3\n0 = R2_20 - t*n3\n0 = R2_21 - n3\n0 = R2_22 - s*n3\n0 = R1_00 + q3^2*nq*R2_00 + q2^2*nq*R2_00 - 2*q1*q3*nq*R2_02 - 2*q1*q2*nq*R2_01 - q1^2*nq*R2_00 - 2*q0*q3*nq*R2_01 + 2*q0*q2*nq*R2_02 - q0^2*nq*R2_00\n0 = R1_01 + q3^2*nq*R2_01 - 2*q2*q3*nq*R2_02 - q2^2*nq*R2_01 - 2*q1*q2*nq*R2_00 + q1^2*nq*R2_01 + 2*q0*q3*nq*R2_00 - 2*q0*q1*nq*R2_02 - q0^2*nq*R2_01\n0 = R1_02 - q3^2*nq*R2_02 - 2*q2*q3*nq*R2_01 + q2^2*nq*R2_02 - 2*q1*q3*nq*R2_00 + q1^2*nq*R2_02 - 2*q0*q2*nq*R2_00 + 2*q0*q1*nq*R2_01 - q0^2*nq*R2_02\n0 = R1_10 + q3^2*nq*R2_10 + q2^2*nq*R2_10 - 2*q1*q3*nq*R2_12 - 2*q1*q2*nq*R2_11 - q1^2*nq*R2_10 - 2*q0*q3*nq*R2_11 + 2*q0*q2*nq*R2_12 - q0^2*nq*R2_10\n0 = R1_11 + q3^2*nq*R2_11 - 2*q2*q3*nq*R2_12 - q2^2*nq*R2_11 - 2*q1*q2*nq*R2_10 + q1^2*nq*R2_11 + 2*q0*q3*nq*R2_10 - 2*q0*q1*nq*R2_12 - q0^2*nq*R2_11\n0 = R1_12 - q3^2*nq*R2_12 - 2*q2*q3*nq*R2_11 + q2^2*nq*R2_12 - 2*q1*q3*nq*R2_10 + q1^2*nq*R2_12 - 2*q0*q2*nq*R2_10 + 2*q0*q1*nq*R2_11 - q0^2*nq*R2_12\n0 = R1_20 + q3^2*nq*R2_20 + q2^2*nq*R2_20 - 2*q1*q3*nq*R2_22 - 2*q1*q2*nq*R2_21 - q1^2*nq*R2_20 - 2*q0*q3*nq*R2_21 + 2*q0*q2*nq*R2_22 - q0^2*nq*R2_20\n0 = R1_21 + q3^2*nq*R2_21 - 2*q2*q3*nq*R2_22 - q2^2*nq*R2_21 - 2*q1*q2*nq*R2_20 + q1^2*nq*R2_21 + 2*q0*q3*nq*R2_20 - 2*q0*q1*nq*R2_22 - q0^2*nq*R2_21\n0 = R1_22 - q3^2*nq*R2_22 - 2*q2*q3*nq*R2_21 + q2^2*nq*R2_22 - 2*q1*q3*nq*R2_20 + q1^2*nq*R2_22 - 2*q0*q2*nq*R2_20 + 2*q0*q1*nq*R2_21 - q0^2*nq*R2_22\n0 = t_0 - tau0*n1\n0 = t_1 - tau1*n1*n3 + s*t*tau0*n1*n3 - s^2*tau1*n1*n3\n0 = n1^2 + s^2*n1^2 - 1\n0 = n3^2 + t^2*n3^2 + s^2*n3^2 - 1\n0 = q3^2*nq + q2^2*nq + q1^2*nq + q0^2*nq - 1\n0 = s\n0 = t - 429144352372850992210847733586380877/606760828567592523808868461520529792 + 256810259533684697921269567778645401/79283414932832089777692145638682559488*alpha^2 + 35570118756882070243033010584711949/3884887331708772399106915136295445414912*alpha^4 - 51574641320712594081874780966574821/4568627502089516341349732200283443807936512*alpha^6 - 483543490487782808267115058629479/223862747602386300726136877813888746588889088*alpha^8 + 368577884612232456393790778728937/87754197060135429884645656103044388662844522496*alpha^10 - 18968703599466791464806586339/87754197060135429884645656103044388662844522496*alpha^12 - 191583648606924304205298991/702033576481083439077165248824355109302756179968*alpha^14\n0 = q0 - 132528799732935743846213047936150554195742359514251264\n0 = q1 - 83561677571607354779107921112922849326917104794169344 - 7180153520350383394444570559149105029754377795125248*alpha - 1805914624937805815246488112697879980873422483879424*alpha^2 - 89212675501562777128543270868098587855718346463232*alpha^3 - 5190715591541372882638576640201360422438833085952*alpha^4 - 161413874920540051063579553725460135313987865600*alpha^5 + 17833550745060438821930148902409181410121627712*alpha^6 + 689837851991339734452502556787017192185551616*alpha^7 - 1118339762799522294742175634548147162574656*alpha^8 - 61607843679280517283512974579750654314496*alpha^9 - 7560731816371042777831559416624328808072*alpha^10 - 291114278550597585501161153461050766752*alpha^11 + 922148697142385146138053200268621848*alpha^12 + 37263464144728081577836305682500112*alpha^13 + 566278457479961239800367209834219*alpha^14 + 21995991176216910069830137487316*alpha^15\n0 = q2 + 577582281394547371625716793012997846294861672708941824 + 16127718073568784511075093979120132271205473604321280*alpha + 3823494085023309387173987716980110860645594312896000*alpha^2 + 217683006127374040169329366823099334249451377025024*alpha^3 - 3634807544046358096213001613429037839138149508864*alpha^4 + 405442451869587776596169954825177341436483568640*alpha^5 - 11143489713336546298691212861411267970395902272*alpha^6 - 1695716436502068569765282483325173021926628352*alpha^7 + 3542794344258434702632754518352629360508384*alpha^8 + 147445264740538067988537671073384562352640*alpha^9 + 4401781261443697856693761113721046358824*alpha^10 + 715887323919947830977074079879073949312*alpha^11 - 776616470951998598167392962574939124*alpha^12 - 91279160131580999789141660608093232*alpha^13 - 351166582813772911477502953969751*alpha^14 - 54056010286004509799632413774224*alpha^15\n0 = q3 + 343220694960388707017587904572530791304811936285171712 + 15814485826526448193203650230423977007857305047881728*alpha + 3461876591277483377807755022673394982441828461864960*alpha^2 + 223782792623283025515878176707679928466099441949184*alpha^3 + 6712264387546907597030416141214738736132869665792*alpha^4 + 467112237840638828024803796583707811365109528320*alpha^5 - 25608155674465205551281232829621231949685568256*alpha^6 - 1688496867863800603679738002153362566277155264*alpha^7 + 2191023773119396758549580213963885672478592*alpha^8 + 124833877533419372688659672082902847441440*alpha^9 + 10882189354570355134904624837790813448160*alpha^10 + 713991514156808424227071574235687685176*alpha^11 - 1402114010792513486118055943856374672*alpha^12 - 89583139152479746010753016002660300*alpha^13 - 825955131082427050881646589578340*alpha^14 - 53825825663495579150256339776973*alpha^15\n0 = tau0 + 18306728208797404854007349879927554345/511354283501736073271704427125356053184*alpha - 922671657549081180340970905871419576763/11225249231430110280460455584255816079495168*alpha^3 - 41729907316944029536412332940348578439/78576744620010771963223189089790712556466176*alpha^5 + 189173272995542505681540433549212782899/215614587237309558267084430862385715254943186944*alpha^7 + 378250471421843334785777025973873765/5282557387314084177543568556128450023746108080128*alpha^9 - 508243895678930686782079451962761191/1380508330551413998398052582668234939538982911606784*alpha^11 + 137941310489689180138378687676639/4141524991654241995194157748004704818616948734820352*alpha^13 + 290078765440368592849759665951/11044066644411311987184420661345879516311863292854272*alpha^15\n0 = tau1\n0 = 85204163415125528940544 + 830020369952216776704*alpha^2 - 1977486508971624448*alpha^4 - 16518897957789696*alpha^6 + 32075819364736*alpha^8 + 1034578944*alpha^10 - 13705760*alpha^12 + 1408*alpha^14 + alpha^16\n0 = 4141524991654241995194157748004704818616948734820352*nu + 2017862972022409133985268301026195249355109322240*alpha + 592069099775185815790937797022390399757870104576*alpha^3 + 2758562471485351329755637127064342473987313600*alpha^5 - 5947532264938697108196476050363572833254656*alpha^7 - 78748645210049513172526065723665755800*alpha^9 + 2505298094704472649146958455070091072*alpha^11 - 265066447078419410499717310793875*alpha^13 - 183121976702350805143880786548*alpha^15\n0 = 1 + 308*nu^2 + 44*nu^6 + 49*nu^8 - 398*nu^4\n\nRanges (33)\n\n253122314186619494825477183163/250000000000000000000000000000 <= nu <= 1012489256746477979301908732653/1000000000000000000000000000000\n-222263234850652384789659817845613020076504228294733783977190578229061091582160142985557698579059473135126708149780031075983198498642650666416040378747846023/13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096 <= alpha <= -111131617425326192394829908922806510038252114147366891988595289114530545791080071492778849289529736567563354074890015537991599249321325333208020189373923011/6703903964971298549787012499102923063739682910296196688861780721860882015036773488400937149083451713845015929093243025426876941405973284973216824503042048\n0 <= s <= 0\n-3170754959/5000000000 <= t <= -6341509917/10000000000\n132528799732935743846213047936150554195742359514251264 <= q0 <= 132528799732935743846213047936150554195742359514251264\n1162328232013280311176821072646038179673470409846669359536234859/10000000000 <= q1 <= 58116411600664015558841053632301908983673520492333467976811743/500000000\n657035848555838465246993521934035622472497296692068802690846459/10000000000 <= q2 <= 32851792427791923262349676096701781123624864834603440134542323/500000000\n162218215245236116849586693796577688071400896322200859594666939/10000000000 <= q3 <= 8110910762261805842479334689828884403570044816110042979733347/500000000\n-1464705891/10000000000 <= tau0 <= -146470589/1000000000\n0 <= tau1 <= 0\n0 <= n1 <= 1\n0 <= n3 <= 1\n0 <= nq <= 1\n0 <= R2_00 <= 0\n0 <= R2_01 <= 0\n0 <= R2_02 <= 1\n0 <= R2_10 <= 1\n0 <= R2_11 <= 3170754959/5000000000\n0 <= R2_12 <= 0\n-3170754959/5000000000 <= R2_20 <= 0\n0 <= R2_21 <= 1\n0 <= R2_22 <= 0\n-34014129840084458840659586072747603458158865409768079678894330189504731158849576532833284510714872791380286439424/1953125 <= R1_00 <= 37710162265269010099466157490776983380626389046607487642496700926474303991922305325319568976741753441210802148983469/10000000000\n0 <= R1_01 <= 65880113501964814157547622894434737911282985871320841844523525522018402051402706530267014961266214983952191342934759/2000000000\n-89135151261130434212970757793999202643677523419008279977227394043936710515577128541295792731324079380314985001020399/5000000000 <= R1_02 <= 178270302522260868425941515587998405287355046838016559954454787982093222730650897617342776589213311915846835912743169/10000000000\n-45801085564484045435599374263533356584261687400536038836347390299617519825736633940190163888726208685898484748098237/10000000000 <= R1_10 <= 434865339060481578091531220767875528151263539935206826738817875081821403751765209125399883837541329124313653098189693/10000000000\n-32585040230017556400146594716148148696849058203460979677345168761998314882033318827784992449264295828739482184629273/2500000000 <= R1_11 <= 5829917027053525259805860434186894027111642515979234905318594969987963461121203869086503312102117430639381815308923/200000000\n-195371730381539341646389559200797433259164365724758009495386581913090190939718160707961718388431779201658957265313089/10000000000 <= R1_12 <= 225380473250799888450811211553638158561301243723679541261626765124751248579254881102330088565732167010945427573048517/10000000000\n-19705577446972132231301862770116962512929652456633581800017031787344274397631897223255067277944796458887808462343269/1000000000 <= R1_20 <= 224780237803025166277860772872767671013681834046469845975140105673948688607874496532914462622715090258048934880530553/10000000000\n-234591287951397792544910750005218977194727835117590056243963535711231025964550022512251508085562715542372171410085701/10000000000 <= R1_21 <= 246075136673567830982219845026189907540797392218152809331201729670207897612951820553338539640704822267839966436202229/10000000000\n-221218374968811987261008640227154976933711329563344004814882523965634630602974049659195890230771429472242903573202539/5000000000 <= R1_22 <= 4263327308194694551660550874626400126967825954619751384954340657395695349292598529341006352465430261546603120589543/2000000000\n-1464705891/10000000000 <= t_0 <= 0\n0 <= t_1 <= 0\n"}</script>
 <script type="module">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -622,7 +645,7 @@ function glide(M, t, keepWheel) {     // from the view now (moving, or held by h
   pose = blend(A1, B, t); next = B; nextAt = t + BLEND; motion = M; free = false;
 }
 function setSpin(on) {
-  const t = clock(); spin = on; $('spin').textContent = on ? 'pause rotation' : 'resume rotation';
+  const t = clock(); spin = on; spinLabel(on);
   if (!on) rateTo(t, 0);
   else if (free) { rateTo(t, 1, 0); glide(motion, t, true); }
   else rateTo(t, 1);
@@ -630,7 +653,7 @@ function setSpin(on) {
 function byHand() {                   // a drag in 3D: the orbit controls hold the view, the rotation pauses
   if (free) return;
   const t = clock(); free = true; next = null; rateTo(t, 0, 0);
-  spin = false; $('spin').textContent = 'resume rotation';
+  spin = false; spinLabel(false);
 }
 function place(s) {
   camera.quaternion.copy(s.q); controls.target.set(...s.target);
@@ -670,7 +693,6 @@ function fitView() {          // the hole's centre (the origin) in the middle, t
   return { z: 0.45 * Math.min(W / Math.max(...H2.map(p => Math.abs(p[0]))), Ht / Math.max(...H2.map(p => Math.abs(p[1])))), ox: 0, oy: 0 };
 }
 const X = x => svg.clientWidth / 2 + (x - view.ox) * view.z, Y = y => svg.clientHeight / 2 - (y - view.oy) * view.z;
-const fmt = g => Math.abs(g) < 5e-16 * r0 ? '0' : g.toPrecision(4);
 // phones: no 2D view (the template hides it under the same query); its state still follows, for a turn to a wider screen
 const no2d = matchMedia('(max-width: 760px), (pointer: coarse) and (max-height: 520px)');
 function draw2d() {
@@ -685,10 +707,6 @@ function draw2d() {
       : 'stroke-linecap="round"'} opacity="${it.c[3]}">${it.segs.map(seg).join('')}</g>`);
   }
   svg.innerHTML = out.join('');
-}
-function showGap() {          // in the 3D view: the least distance of a plug vertex's shadow inside the hole's outline
-  const minGap = Math.min(...holeEdges.map(E => Math.min(...stat.P2.map(p => gapOf(E, p)))));
-  document.getElementById('info').innerHTML = `gap <span class="num">${fmt(minGap)}</span>`;
 }
 let anim2 = null;            // the 2D view easing to a new frame, with the same timing as the 3D
 const goto2d = to => { anim2 = { from: { ...view }, to, ts: clock() }; };
@@ -774,12 +792,15 @@ canvas.addEventListener('pointerleave', e => { if (!gdrag && e.pointerType === '
 // ---------- controls ----------
 const $ = id => document.getElementById(id);
 $('nutext').textContent = D.nu_text;
+// the rotation button: its text and its icon (pause while turning, play while still)
+function spinLabel(on) { const b = document.getElementById('spin'), s = document.getElementById('spintext');
+  (s || b).textContent = on ? 'Pause rotation' : 'Resume rotation'; b.classList.toggle('paused', !on); }
 // the scale to ten decimals cut, never rounded, so no value shown is above nu: at the top the header's decimals of nu
 // (a lower bound, build.py), below it the double's exact decimal (toFixed(60) is exact for a double >= 1) cut; the
 // top itself, D.nu, is the largest double not above that lower bound
 const cut10 = s => s.slice(0, s.indexOf('.') + 11);
 const setScale = () => { const v = +$('scale').value / 1000; S.l = v >= 1 ? D.nu : 1 + v * (D.nu - 1); $('scaleout').textContent = cut10(S.l === D.nu ? D.nu_text : S.l.toFixed(60)); };
-const restat = () => { rebuildStatic(); if (focus !== null) Object.assign(plan, makePlan(focus)); draw2d(); showGap(); };
+const restat = () => { rebuildStatic(); if (focus !== null) Object.assign(plan, makePlan(focus)); draw2d(); };   // (no gap label: Bence 2026-11-20)
 $('scale').addEventListener('input', () => { setScale(); restat(); });
 $('spin').addEventListener('click', () => setSpin(!spin));
 // the pose to ten decimals (each number's full double on hover); t a column beside the matrices, a row on phones
@@ -791,9 +812,12 @@ $('posenums').innerHTML = mat('R₁', D.R1) + mat('R₂', D.R2) + mat('t', D.t.m
 // with Copy and Download (the file named after the solid)
 const algIsOpen = () => document.body.classList.contains('algopen');
 const algOpen = o => {
-  if (o && !$('algtext').textContent) $('algtext').textContent = D.algebraic;
+  if (o && !$('algtext').firstChild) {         // one block per line, so a long line wraps with an indent (template.html)
+    // the prose is broken at 100 columns already; a longer line (a polynomial, a range) wraps with its continuation indented
+    for (const line of D.algebraic.split('\n')) { const s = document.createElement('span'); s.textContent = line || ' '; if (line.length > 100) s.className = 'long'; $('algtext').append(s); }
+  }
   document.body.classList.toggle('algopen', o); $('algbtn').setAttribute('aria-pressed', o);
-  $('algbtn').textContent = o ? 'Back to the plot' : 'Algebraic definition';
+  $('algbtn').innerHTML = o ? 'Back to the plot' : '<span class="long">Algebraic definition</span><span class="short">Definition</span>';
 };
 const flash = (b, text) => { const was = b.dataset.label ??= b.textContent; b.textContent = text; setTimeout(() => { b.textContent = was; }, 1600); };
 let downloads = null;                                   // claude.ai's save prompt, when the page runs there
@@ -841,10 +865,10 @@ function resize() {
 }
 // a state in the address, e.g. #scale=400&focus=2&spin=0&at=30 (at: the clock, in s)
 if (hs.has('scale')) $('scale').value = hs.get('scale');
-setScale(); rebuildStatic(); showGap(); resize();
+setScale(); rebuildStatic(); resize();
 if (hs.has('focus')) { focus = +hs.get('focus'); plan = makePlan(focus); motion = focusMotion(plan); pose = live(motion); Object.assign(view, focusView(focus)); draw2d(); }
 if (hs.get('alg') === '1' && D.algebraic) algOpen(true);
-if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; $('spin').textContent = 'resume rotation'; }
+if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; spinLabel(false); }
 new ResizeObserver(resize).observe(document.querySelector('main'));
 no2d.addEventListener('change', resize);
 requestAnimationFrame(tick);

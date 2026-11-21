@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Other.OctagonalDipyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.OctagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.OctagonalDipyramid.polyhedron Nieuwland.Other.OctagonalDipyramid.system Nieuwland.Other.OctagonalDipyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.OctagonalDipyramid.system"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.OctagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.OctagonalDipyramid.system Nieuwland.Other.OctagonalDipyramid.layout Nieuwland.Other.OctagonalDipyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.OctagonalDipyramid.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.OctagonalDipyramid.theta_isRoot",
+   "type": "Nieuwland.polyEval [1/8, 0, -1, 0, 1] Nieuwland.Other.OctagonalDipyramid.theta = 0 \u2227 (0.3826834323650897717284599840303 : \u211d) \u2264 Nieuwland.Other.OctagonalDipyramid.theta \u2227 Nieuwland.Other.OctagonalDipyramid.theta \u2264 (0.3826834323650897717284599840304 : \u211d)"
+  }
+ ]
+}

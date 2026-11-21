@@ -1,0 +1,30 @@
+{
+ "top": "Polyhedra.Other.TriangularDipyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.TriangularDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.TriangularDipyramid.polyhedron Nieuwland.Other.TriangularDipyramid.system Nieuwland.Other.TriangularDipyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.TriangularDipyramid.system"
+  },
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.TriangularDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.TriangularDipyramid.system Nieuwland.Other.TriangularDipyramid.layout Nieuwland.Other.TriangularDipyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.TriangularDipyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.TriangularDipyramid.polyhedron)).Nonempty"
+  }
+ ]
+}

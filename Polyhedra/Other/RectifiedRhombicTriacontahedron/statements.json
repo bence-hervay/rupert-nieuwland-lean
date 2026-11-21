@@ -1,0 +1,18 @@
+{
+ "top": "Polyhedra.Other.RectifiedRhombicTriacontahedron.Result",
+ "kind": "Nopert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.RectifiedRhombicTriacontahedron.isNopert",
+   "type": "Nieuwland.Polyhedron.IsNopert Nieuwland.Other.RectifiedRhombicTriacontahedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.RectifiedRhombicTriacontahedron.nieuwland_eq_one",
+   "type": "Nieuwland.Polyhedron.nieuwland Nieuwland.Other.RectifiedRhombicTriacontahedron.polyhedron = 1"
+  },
+  {
+   "name": "Nieuwland.Other.RectifiedRhombicTriacontahedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.RectifiedRhombicTriacontahedron.polyhedron)).Nonempty"
+  }
+ ]
+}

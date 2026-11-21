@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Other.PentagonalDipyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.PentagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.PentagonalDipyramid.polyhedron Nieuwland.Other.PentagonalDipyramid.system Nieuwland.Other.PentagonalDipyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.PentagonalDipyramid.system"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.PentagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.PentagonalDipyramid.system Nieuwland.Other.PentagonalDipyramid.layout Nieuwland.Other.PentagonalDipyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.PentagonalDipyramid.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalDipyramid.theta_isRoot",
+   "type": "Nieuwland.polyEval [5/16, 0, -5/4, 0, 1] Nieuwland.Other.PentagonalDipyramid.theta = 0 \u2227 (0.587785252292473129168705954639 : \u211d) \u2264 Nieuwland.Other.PentagonalDipyramid.theta \u2227 Nieuwland.Other.PentagonalDipyramid.theta \u2264 (0.5877852522924731291687059546391 : \u211d)"
+  }
+ ]
+}

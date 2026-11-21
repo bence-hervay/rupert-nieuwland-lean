@@ -17,6 +17,9 @@
   --ink-3: #5a5a5a;
   --rule: #242424;
   --track: #3a3a3a;
+  --btn: rgba(26, 28, 32, 0.88);   /* a button's fill: a dark grey, translucent over the 3D view */
+  --btn-hover: rgba(44, 47, 54, 0.95);
+  --btn-rule: #34373d;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
@@ -24,17 +27,24 @@
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--sans); }
 body { display: grid; grid-template-rows: auto auto 1fr auto; height: 100vh; height: 100dvh; overflow: hidden; overscroll-behavior: none; }
 button, input { font: inherit; color: inherit; }
-:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+[hidden] { display: none !important; }   /* above the buttons' display: inline-flex */
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-header { position: relative; display: flex; align-items: baseline; gap: 18px; padding: 12px 18px 10px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
-header h1 { margin: 0; font-size: 15px; font-weight: 600; }
-.back { color: var(--ink-2); text-decoration: none; font-size: 15px; line-height: 1; }
-.back:hover, .back:focus-visible { color: var(--ink); }
-header .nu { font-family: var(--mono); }
+/* the header: a round back button, the name, nu, the algebraic definition's buttons */
+header { position: relative; display: flex; align-items: center; gap: 10px 16px; padding: 12px 18px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 17px; font-weight: 600; }
+header .nu { font-family: var(--mono); font-size: 13px; }
+#algbtn .short { display: none; }
 header .grow { flex: 1; }
-.ghost { background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 3px 10px; color: var(--ink); cursor: pointer; }
-.ghost:hover { border-color: var(--ink-3); }
-#spin { background: #000000; }
+/* buttons: pills with a soft fill; the back button and the rotation button carry an icon */
+.ghost, .back { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px;
+  background: var(--btn); border: 1px solid var(--btn-rule); color: var(--ink); font-size: 14px; font-weight: 500;
+  line-height: 1; text-decoration: none; cursor: pointer; white-space: nowrap; transition: background-color 120ms ease, border-color 120ms ease; }
+.ghost:hover, .back:hover, .back:focus-visible { background: var(--btn-hover); border-color: var(--ink-3); }
+.back { padding: 0 18px 0 12px; }
+.back svg, .ghost svg { width: 18px; height: 18px; flex: none; }
+#spin { padding-left: 14px; }
+#spin .play { display: none; } #spin.paused .play { display: block; } #spin.paused .pause { display: none; }
 
 main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 .pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
@@ -43,29 +53,34 @@ main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 #flat { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 #flat.dragging { cursor: grabbing; }
 .corner { position: absolute; font-size: 12px; }
-.tl { left: 14px; top: 12px; } .bl { left: 14px; bottom: 12px; }
+.ghost.corner { font-size: 14px; }
+.tl { left: 14px; top: 14px; } .bl { left: 14px; bottom: 12px; }
 .caption { color: var(--ink-2); pointer-events: none; }
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
 .bl.tools { display: flex; gap: 8px; }
 
-footer { display: flex; align-items: center; gap: 28px; padding: 12px 18px 14px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
-.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 10px; row-gap: 2px; }
-.ctl .lab { grid-column: 1 / -1; color: var(--ink-2); }
-.ctl .end { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
-.ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
+/* the scale slider: from 1 (left) to nu (right), its value at the right; a thick rounded track, a large handle */
+footer { display: flex; align-items: center; gap: 28px; padding: 14px 18px 16px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
+.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 14px; }
+.ctl .end { font-family: var(--mono); color: var(--ink-2); font-size: 14px; }
+.ctl output { font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
 .ctl.scale { flex: 2 1 360px; }
 .ctl.small { flex: 1 1 200px; }
-input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: none; margin: 0; }
-input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--track); }
-input[type=range]::-moz-range-track { height: 2px; background: var(--track); }
-input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); margin-top: -5px; border: 0; }
-input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--ink); border: 0; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 30px; background: none; margin: 0; cursor: pointer; }
+input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); margin-top: -8px; border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]:focus-visible { outline: none; }
+input[type=range]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px var(--plug); }
+input[type=range]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px var(--plug); }
 .scale input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 .scale input[type=range]::-moz-range-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 
 /* the pose under the header: each matrix with its name at its left */
-.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
-.posenums { display: flex; gap: 32px; }
+/* R1, R2 and t side by side, each block on a new line when it does not fit: never a sideways scroll */
+.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); }
+.posenums { display: flex; flex-wrap: wrap; gap: 6px 32px; }
 .posenums > div { display: grid; grid-template-columns: auto auto; column-gap: 10px; align-items: start; justify-items: start; }
 .posenums h2 { margin: 0; font-size: 12px; font-weight: 500; color: var(--ink-2); line-height: 1.45; }
 .posenums table { font-family: var(--mono); font-size: 12px; line-height: 1.45; font-variant-numeric: tabular-nums; border-collapse: collapse; }
@@ -76,13 +91,17 @@ input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 
 
 /* the algebraic definition: in place of the pose, the views and the slider. The text as it is, never wrapped
    for the page's width (one line per variable, polynomial and range): the panel scrolls both ways */
-.alg { display: none; min-height: 0; overflow: auto; padding: 14px 18px 28px; }
-#algtext { font: 12px/1.55 var(--mono); color: var(--ink); white-space: pre; width: max-content; margin: 0; }
+/* one block per line of the text, a long line wrapping with its continuation indented (Copy and Download give the text
+   unwrapped): no sideways scroll */
+.alg { display: none; min-height: 0; overflow-y: auto; overflow-x: hidden; padding: 14px 18px 28px; }
+#algtext { font: 12px/1.55 var(--mono); color: var(--ink); margin: 0; }
+#algtext > span { display: block; white-space: pre-wrap; overflow-wrap: anywhere; }
+#algtext > span.long { padding-left: 4ch; text-indent: -4ch; }
 body:not(.algopen) .algonly { display: none; }
 body.algopen { grid-template-rows: auto 1fr; }
 body.algopen .posebar, body.algopen main, body.algopen footer { display: none; }
 body.algopen .alg { display: block; }
-#algbtn[aria-pressed="true"] { border-color: var(--ink-3); }
+#algbtn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
 /* a Nopert's page (nopert.js): the solid alone, turning; no pose, no projection, no scale */
 header .kind { color: var(--ink-2); }
@@ -94,14 +113,19 @@ body.nopert main { grid-template-columns: 1fr; }
 /* phones: no page scroll (a drag in the view moves it); nu under the title, the pose under it, the slider at the bottom */
 @media (max-width: 760px) {
   body { position: fixed; inset: 0; height: auto; }
-  header { gap: 2px 12px; padding: 10px 14px 8px; }
+  header { gap: 6px 12px; padding: 10px 14px 8px; }
+  header h1 { font-size: 16px; }
   header .nu { order: 3; flex-basis: 100%; font-size: 12px; overflow-wrap: anywhere; }
+  .back { width: 40px; padding: 0; justify-content: center; } .back span { display: none; }   /* the arrow alone */
+  /* one row: the arrow, the name (wrapping when long), the definition's button with a short label */
+  header h1 { flex: 1 1 0; min-width: 0; line-height: 1.25; }
+  header .grow { display: none; }
+  #algbtn { padding: 0 14px; } #algbtn .long { display: none; } #algbtn .short { display: inline; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
   .pane + .pane { border-left: 0; border-top: 1px solid var(--rule); }
   .tl { left: 10px; top: 8px; } .tr { right: 10px; top: 8px; }
   footer { flex-direction: column; align-items: stretch; gap: 8px; padding: 8px 14px calc(10px + env(safe-area-inset-bottom)); }
-  .ctl.scale { flex: none; grid-template-columns: auto auto 1fr auto; }
-  .ctl .lab { grid-column: auto; }
+  .ctl.scale { flex: none; }
   /* the pose as rows, t as a row */
   .posebar { padding: 6px 14px 7px; }
   .posenums { flex-direction: column; gap: 3px; }
@@ -111,19 +135,20 @@ body.nopert main { grid-template-columns: 1fr; }
   .alg { padding: 10px 14px calc(20px + env(safe-area-inset-bottom)); }
   #algtext { font-size: 11px; }
 }
+@media (max-width: 360px) { .posenums h2, .posenums table { font-size: 10px; } }
 /* phones, upright or turned: the 3D view only (the projection is drawn in it too); the same query in explorer.js */
 @media (max-width: 760px), (pointer: coarse) and (max-height: 520px) {
   .flatpane { display: none; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr; }
 }
 @media (max-height: 520px) and (min-width: 761px) {
-  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; } .ctl .lab { display: none; }
+  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; }
+  .ghost, .back { height: 34px; }
 }
 @media (pointer: coarse) {
-  input[type=range] { height: 30px; }
-  input[type=range]::-webkit-slider-thumb { width: 22px; height: 22px; margin-top: -10px; }
-  input[type=range]::-moz-range-thumb { width: 22px; height: 22px; }
-  .ghost { padding: 6px 12px; }
+  input[type=range] { height: 40px; }
+  input[type=range]::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: -11px; }
+  input[type=range]::-moz-range-thumb { width: 28px; height: 28px; }
 }
 </style>
 <script type="importmap">
@@ -135,14 +160,14 @@ body.nopert main { grid-template-columns: 1fr; }
 </head>
 <body class="rupert">
 <header>
-  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }">←</a>
+  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>All solids</span></a>
   <h1>Tetrakis Hexahedron</h1>
   <span class="nu">ν = <span id="nutext"></span></span>
   <span class="kind">Nopert</span>
   <span class="grow"></span>
   <button class="ghost algonly" id="algcopy">Copy</button>
   <button class="ghost algonly" id="algsave">Download</button>
-  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden>Algebraic definition</button>
+  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden><span class="long">Algebraic definition</span><span class="short">Definition</span></button>
 </header>
 
 <div class="posebar"><div class="posenums" id="posenums" aria-label="The pose"></div></div>
@@ -150,8 +175,7 @@ body.nopert main { grid-template-columns: 1fr; }
 <main>
   <section class="pane" aria-label="3D view">
     <canvas id="gl"></canvas>
-    <button class="ghost corner tl" id="spin">pause rotation</button>
-    <div class="corner tr caption" id="info"></div>
+    <button class="ghost corner tl" id="spin"><svg class="pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg><svg class="play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg><span id="spintext">Pause rotation</span></button>
   </section>
   <section class="pane flatpane" aria-label="Projection">
     <svg id="flat" role="img" aria-label="The shadows of the hole and the plug along z"></svg>
@@ -162,14 +186,13 @@ body.nopert main { grid-template-columns: 1fr; }
 
 <footer>
   <div class="ctl scale">
-    <span class="lab">scale ℓ</span>
     <span class="end">1</span>
     <input type="range" id="scale" min="0" max="1000" value="0" aria-label="Plug scale">
     <output id="scaleout"></output>
   </div>
 </footer>
 
-<script id="pose" type="application/json">{"hole_up": [-1, -1, 1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1], "plug_up": [-1, -1, 0, 0, 0, 0, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1], "on_wall": [[3], [], [], [2], [2], [], [], [3]], "name": "Tetrakis Hexahedron", "solid": "catalan/tetrakis-hexahedron", "vertices": [[0.0, 0.0, 1.5], [0.0, 0.0, -1.5], [1.5, 0.0, 0.0], [-1.5, 0.0, 0.0], [0.0, 1.5, 0.0], [0.0, -1.5, 0.0], [1.0, 1.0, 1.0], [1.0, 1.0, -1.0], [1.0, -1.0, 1.0], [1.0, -1.0, -1.0], [-1.0, 1.0, 1.0], [-1.0, 1.0, -1.0], [-1.0, -1.0, 1.0], [-1.0, -1.0, -1.0]], "faces": [[9, 5, 13], [13, 1, 9], [12, 3, 13], [13, 5, 12], [9, 2, 8], [8, 5, 9], [12, 5, 8], [8, 0, 12], [7, 2, 9], [9, 1, 7], [13, 3, 11], [11, 1, 13], [7, 1, 11], [11, 4, 7], [8, 2, 6], [6, 0, 8], [6, 2, 7], [7, 4, 6], [10, 3, 12], [12, 0, 10], [11, 3, 10], [10, 4, 11], [10, 0, 6], [6, 4, 10]], "R1": [[0.7071067811865476, -0.7071067811865476, -3.9155743453032185e-17], [0.7071067811865475, 0.7071067811865475, 0.0], [1.4568134601316754e-17, -1.4568134601316754e-17, 0.9999999999999999]], "R2": [[0.9534612646717678, 0.0, 0.301515533215974], [0.0, 1.0, -0.0], [-0.301515533215974, 0.0, 0.9534612646717678]], "t": [0.0, 0.0], "nu": 1.0112983887721627, "nu_text": "1.011298388772162893628680240698\u2026", "hull": [3, 13, 5, 8, 2, 6, 4, 11], "plug_hull": [10, 3, 12, 5, 8, 2, 6, 4], "contacts": [{"edge": [3, 13], "verts": [10, 11], "hole_vertical": []}, {"edge": [13, 5], "verts": [3], "hole_vertical": []}, {"edge": [5, 8], "verts": [5], "hole_vertical": []}, {"edge": [8, 2], "verts": [8, 9], "hole_vertical": []}, {"edge": [2, 6], "verts": [8, 9], "hole_vertical": []}, {"edge": [6, 4], "verts": [2], "hole_vertical": []}, {"edge": [4, 11], "verts": [4], "hole_vertical": []}, {"edge": [11, 3], "verts": [10, 11], "hole_vertical": []}], "travel": [-2.875373726440295, 2.875373726440295], "screen_z": -4.39232130959854, "algebraic": "nu = 1.0112983887721628936286802406988933283289575350417891123295860695308012321673897003321242619827750831...\n\nThe tetrakis hexahedron: the algebraic definition of its Nieuwland number nu and an optimal pose\n\nThe polynomials below have rational coefficients and exactly one common real root within the ranges\nbelow (proved in Lean: Result.lean). At that root nu is the Nieuwland number of the tetrakis\nhexahedron, and R1 (the plug's rotation), R2 (the hole's rotation), and t (the translation) give an\noptimal pose: with them the tetrakis hexahedron scaled by nu passes weakly through itself.\nVariables, polynomials, and ranges are in the order of the Lean system. The first line is nu to 100\ndecimals, cut, not rounded (Newton's method on these polynomials; Result.lean proves nu to within\n2^-100).\n\nPolynomial in nu alone (degree 8, irreducible; proved in Lean: it is one of the polynomials below)\n\n0 = 5184 + 23545*nu^4 + 4096*nu^8 - 18000*nu^2 - 14848*nu^6\n\nVariables (33)\n\nnu       the Nieuwland number\nalpha    the generator of the optimum's field\ns        view parameter s\nt        view parameter t\nq0       quaternion component q0\nq1       quaternion component q1\nq2       quaternion component q2\nq3       quaternion component q3\ntau0     shift tau0\ntau1     shift tau1\nn1       helper: (1 + s^2)*n1^2 = 1\nn3       helper: (1 + s^2 + t^2)*n3^2 = 1\nnq       helper: (q0^2 + q1^2 + q2^2 + q3^2)*nq = 1\nR2_00    the hole's rotation R2, row 0, column 0\nR2_01    the hole's rotation R2, row 0, column 1\nR2_02    the hole's rotation R2, row 0, column 2\nR2_10    the hole's rotation R2, row 1, column 0\nR2_11    the hole's rotation R2, row 1, column 1\nR2_12    the hole's rotation R2, row 1, column 2\nR2_20    the hole's rotation R2, row 2, column 0\nR2_21    the hole's rotation R2, row 2, column 1\nR2_22    the hole's rotation R2, row 2, column 2\nR1_00    the plug's rotation R1, row 0, column 0\nR1_01    the plug's rotation R1, row 0, column 1\nR1_02    the plug's rotation R1, row 0, column 2\nR1_10    the plug's rotation R1, row 1, column 0\nR1_11    the plug's rotation R1, row 1, column 1\nR1_12    the plug's rotation R1, row 1, column 2\nR1_20    the plug's rotation R1, row 2, column 0\nR1_21    the plug's rotation R1, row 2, column 1\nR1_22    the plug's rotation R1, row 2, column 2\nt_0      the translation t, component 0\nt_1      the translation t, component 1\n\nPolynomials (34)\n\n0 = R2_00 - n1\n0 = R2_01\n0 = R2_02 + s*n1\n0 = R2_10 + s*t*n1*n3\n0 = R2_11 - n1*n3 - s^2*n1*n3\n0 = R2_12 + t*n1*n3\n0 = R2_20 - s*n3\n0 = R2_21 - t*n3\n0 = R2_22 - n3\n0 = R1_00 + q3^2*nq*R2_00 + q2^2*nq*R2_00 - 2*q1*q3*nq*R2_02 - 2*q1*q2*nq*R2_01 - q1^2*nq*R2_00 - 2*q0*q3*nq*R2_01 + 2*q0*q2*nq*R2_02 - q0^2*nq*R2_00\n0 = R1_01 + q3^2*nq*R2_01 - 2*q2*q3*nq*R2_02 - q2^2*nq*R2_01 - 2*q1*q2*nq*R2_00 + q1^2*nq*R2_01 + 2*q0*q3*nq*R2_00 - 2*q0*q1*nq*R2_02 - q0^2*nq*R2_01\n0 = R1_02 - q3^2*nq*R2_02 - 2*q2*q3*nq*R2_01 + q2^2*nq*R2_02 - 2*q1*q3*nq*R2_00 + q1^2*nq*R2_02 - 2*q0*q2*nq*R2_00 + 2*q0*q1*nq*R2_01 - q0^2*nq*R2_02\n0 = R1_10 + q3^2*nq*R2_10 + q2^2*nq*R2_10 - 2*q1*q3*nq*R2_12 - 2*q1*q2*nq*R2_11 - q1^2*nq*R2_10 - 2*q0*q3*nq*R2_11 + 2*q0*q2*nq*R2_12 - q0^2*nq*R2_10\n0 = R1_11 + q3^2*nq*R2_11 - 2*q2*q3*nq*R2_12 - q2^2*nq*R2_11 - 2*q1*q2*nq*R2_10 + q1^2*nq*R2_11 + 2*q0*q3*nq*R2_10 - 2*q0*q1*nq*R2_12 - q0^2*nq*R2_11\n0 = R1_12 - q3^2*nq*R2_12 - 2*q2*q3*nq*R2_11 + q2^2*nq*R2_12 - 2*q1*q3*nq*R2_10 + q1^2*nq*R2_12 - 2*q0*q2*nq*R2_10 + 2*q0*q1*nq*R2_11 - q0^2*nq*R2_12\n0 = R1_20 + q3^2*nq*R2_20 + q2^2*nq*R2_20 - 2*q1*q3*nq*R2_22 - 2*q1*q2*nq*R2_21 - q1^2*nq*R2_20 - 2*q0*q3*nq*R2_21 + 2*q0*q2*nq*R2_22 - q0^2*nq*R2_20\n0 = R1_21 + q3^2*nq*R2_21 - 2*q2*q3*nq*R2_22 - q2^2*nq*R2_21 - 2*q1*q2*nq*R2_20 + q1^2*nq*R2_21 + 2*q0*q3*nq*R2_20 - 2*q0*q1*nq*R2_22 - q0^2*nq*R2_21\n0 = R1_22 - q3^2*nq*R2_22 - 2*q2*q3*nq*R2_21 + q2^2*nq*R2_22 - 2*q1*q3*nq*R2_20 + q1^2*nq*R2_22 - 2*q0*q2*nq*R2_20 + 2*q0*q1*nq*R2_21 - q0^2*nq*R2_22\n0 = t_0 - tau0*n1\n0 = t_1 - tau1*n1*n3 + s*t*tau0*n1*n3 - s^2*tau1*n1*n3\n0 = n1^2 + s^2*n1^2 - 1\n0 = n3^2 + t^2*n3^2 + s^2*n3^2 - 1\n0 = q3^2*nq + q2^2*nq + q1^2*nq + q0^2*nq - 1\n0 = s - 2455/464 + 355153/2138112*alpha^2 - 533/267264*alpha^4 + 25/2138112*alpha^6\n0 = t\n0 = q0 - 2540077056\n0 = q1 - 46781964288 - 10036896768*alpha + 1513139280*alpha^2 + 322510174*alpha^3 - 18771072*alpha^4 - 3972784*alpha^5 + 99024*alpha^6 + 21454*alpha^7\n0 = q2 + 46781964288 - 1513139280*alpha^2 + 18771072*alpha^4 - 99024*alpha^6\n0 = q3 + 2540077056 + 5799771648*alpha - 203949955*alpha^3 + 2569336*alpha^5 - 13915*alpha^7\n0 = tau0\n0 = tau1\n0 = 21233664 - 1152000*alpha^2 + 23545*alpha^4 - 232*alpha^6 + alpha^8\n0 = 8*nu - alpha\n0 = 5184 + 23545*nu^4 + 4096*nu^8 - 18000*nu^2 - 14848*nu^6\n\nRanges (33)\n\n505649194386081446814340120349/500000000000000000000000000000 <= nu <= 1011298388772162893628680240699/1000000000000000000000000000000\n3389823639129394286933681996084651482925336257351214247254409311019116568636127270607019519322383921899948716576931855688405005002640386185019420972006467/418993997810706159361688281193932691483730181893512293053861295116305125939798343025058571817715732115313495568327689089179808837873330310826051531440128 <= alpha <= 108474356452140617181877823874708847453610760235238855912141097952611730196356072659424624618316285500798358930461819382028960160084492357920621471104206945/13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096\n-632465197/2000000000 <= s <= -98822687/312500000\n0 <= t <= 0\n2540077056 <= q0 <= 2540077056\n-324792572176366643/2000000000 <= q1 <= -811981430440916607/5000000000\n-3920593163531133529/10000000000 <= q2 <= -490074145441391691/1250000000\n10521343660679236451/10000000000 <= q3 <= 2630335915169809113/2500000000\n0 <= tau0 <= 0\n0 <= tau1 <= 0\n0 <= n1 <= 1\n0 <= n3 <= 1\n0 <= nq <= 1\n0 <= R2_00 <= 1\n0 <= R2_01 <= 0\n0 <= R2_02 <= 632465197/2000000000\n0 <= R2_10 <= 0\n0 <= R2_11 <= 2750007641/2500000000\n0 <= R2_12 <= 0\n-632465197/2000000000 <= R2_20 <= 0\n0 <= R2_21 <= 0\n0 <= R2_22 <= 1\n-1710952439454690598902738099/1250000000 <= R1_00 <= 71082113480495522537673362781/10000000000\n-58667873502898353065052281929/10000000000 <= R1_01 <= 254675907608071063156016527/2000000000\n-23903953095622011563337610797/10000000000 <= R1_02 <= 23903953101834570894511633209/10000000000\n0 <= R1_10 <= 6019593673624729251253252737/1000000000\n-6233493348976612874903020093/5000000000 <= R1_11 <= 14532584686840103651876029001/2000000000\n-9075004981232320726215509921/10000000000 <= R1_12 <= 1815000996246464145608841179/2000000000\n-4780790620184952529067906237/2000000000 <= R1_20 <= 11951976548265909906254856411/5000000000\n-16902647331079489064270837481/10000000000 <= R1_21 <= 8451323667736215947317423061/5000000000\n-180083061274505699146834469/1000000000 <= R1_22 <= 82968902383387990337426922883/10000000000\n0 <= t_0 <= 0\n0 <= t_1 <= 0\n"}</script>
+<script id="pose" type="application/json">{"hole_up": [-1, -1, 1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1], "plug_up": [-1, -1, 0, 0, 0, 0, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1], "on_wall": [[3], [], [], [2], [2], [], [], [3]], "name": "Tetrakis Hexahedron", "solid": "catalan/tetrakis-hexahedron", "vertices": [[0.0, 0.0, 1.5], [0.0, 0.0, -1.5], [1.5, 0.0, 0.0], [-1.5, 0.0, 0.0], [0.0, 1.5, 0.0], [0.0, -1.5, 0.0], [1.0, 1.0, 1.0], [1.0, 1.0, -1.0], [1.0, -1.0, 1.0], [1.0, -1.0, -1.0], [-1.0, 1.0, 1.0], [-1.0, 1.0, -1.0], [-1.0, -1.0, 1.0], [-1.0, -1.0, -1.0]], "faces": [[9, 5, 13], [13, 1, 9], [12, 3, 13], [13, 5, 12], [9, 2, 8], [8, 5, 9], [12, 5, 8], [8, 0, 12], [7, 2, 9], [9, 1, 7], [13, 3, 11], [11, 1, 13], [7, 1, 11], [11, 4, 7], [8, 2, 6], [6, 0, 8], [6, 2, 7], [7, 4, 6], [10, 3, 12], [12, 0, 10], [11, 3, 10], [10, 4, 11], [10, 0, 6], [6, 4, 10]], "R1": [[0.7071067811865476, -0.7071067811865476, -3.9155743453032185e-17], [0.7071067811865475, 0.7071067811865475, 0.0], [1.4568134601316754e-17, -1.4568134601316754e-17, 0.9999999999999999]], "R2": [[0.9534612646717678, 0.0, 0.301515533215974], [0.0, 1.0, -0.0], [-0.301515533215974, 0.0, 0.9534612646717678]], "t": [0.0, 0.0], "nu": 1.0112983887721627, "nu_text": "1.011298388772162893628680240698\u2026", "hull": [3, 13, 5, 8, 2, 6, 4, 11], "plug_hull": [10, 3, 12, 5, 8, 2, 6, 4], "contacts": [{"edge": [3, 13], "verts": [10, 11], "hole_vertical": []}, {"edge": [13, 5], "verts": [3], "hole_vertical": []}, {"edge": [5, 8], "verts": [5], "hole_vertical": []}, {"edge": [8, 2], "verts": [8, 9], "hole_vertical": []}, {"edge": [2, 6], "verts": [8, 9], "hole_vertical": []}, {"edge": [6, 4], "verts": [2], "hole_vertical": []}, {"edge": [4, 11], "verts": [4], "hole_vertical": []}, {"edge": [11, 3], "verts": [10, 11], "hole_vertical": []}], "travel": [-2.875373726440295, 2.875373726440295], "screen_z": -4.39232130959854, "algebraic": "nu = 1.0112983887721628936286802406988933283289575350417891123295860695308012321673897003321242619827750831...\n\nThe tetrakis hexahedron: the algebraic definition of its Nieuwland number nu and an optimal pose\n\nThe polynomials below have rational coefficients and exactly one common real root within the ranges\nbelow (proved in Lean: Result.lean). At that root nu is the Nieuwland number of the tetrakis\nhexahedron, and R1 (the plug's rotation), R2 (the hole's rotation), and t (the translation) give an\noptimal pose: with them the tetrakis hexahedron scaled by nu passes weakly through itself.\nVariables, polynomials, and ranges are in the order of the Lean system. The first line is nu to 100\ndecimals, cut, not rounded (Newton's method on these polynomials; Result.lean proves nu to within\n2^-100).\n\nPolynomial in nu alone (degree 8, irreducible; proved in Lean: it is one of the polynomials below)\n\n0 = 5184 + 23545*nu^4 + 4096*nu^8 - 18000*nu^2 - 14848*nu^6\n\nExplicit formula (a root of the polynomial in nu alone by Cardano's and Ferrari's formulas, the polynomial being of degree at most 4 or a composition of such; a cubic with three real roots in its trigonometric form; equal to nu to 150 digits)\n\nnu = sqrt(-2*sqrt(-3361/6144 + 2*(81998234281/14843406974976 - 783*sqrt(843099)/134217728)^(1/3) + 2*(783*sqrt(843099)/134217728 + 81998234281/14843406974976)^(1/3)) + 2*sqrt(-3361/3072 - 2*(783*sqrt(843099)/134217728 + 81998234281/14843406974976)^(1/3) - 2*(81998234281/14843406974976 - 783*sqrt(843099)/134217728)^(1/3) + 4581/(32768*sqrt(-3361/6144 + 2*(81998234281/14843406974976 - 783*sqrt(843099)/134217728)^(1/3) + 2*(783*sqrt(843099)/134217728 + 81998234281/14843406974976)^(1/3)))) + 29/8)/2\n\nVariables (33)\n\nnu       the Nieuwland number\nalpha    the generator of the optimum's field\ns        view parameter s\nt        view parameter t\nq0       quaternion component q0\nq1       quaternion component q1\nq2       quaternion component q2\nq3       quaternion component q3\ntau0     shift tau0\ntau1     shift tau1\nn1       helper: (1 + s^2)*n1^2 = 1\nn3       helper: (1 + s^2 + t^2)*n3^2 = 1\nnq       helper: (q0^2 + q1^2 + q2^2 + q3^2)*nq = 1\nR2_00    the hole's rotation R2, row 0, column 0\nR2_01    the hole's rotation R2, row 0, column 1\nR2_02    the hole's rotation R2, row 0, column 2\nR2_10    the hole's rotation R2, row 1, column 0\nR2_11    the hole's rotation R2, row 1, column 1\nR2_12    the hole's rotation R2, row 1, column 2\nR2_20    the hole's rotation R2, row 2, column 0\nR2_21    the hole's rotation R2, row 2, column 1\nR2_22    the hole's rotation R2, row 2, column 2\nR1_00    the plug's rotation R1, row 0, column 0\nR1_01    the plug's rotation R1, row 0, column 1\nR1_02    the plug's rotation R1, row 0, column 2\nR1_10    the plug's rotation R1, row 1, column 0\nR1_11    the plug's rotation R1, row 1, column 1\nR1_12    the plug's rotation R1, row 1, column 2\nR1_20    the plug's rotation R1, row 2, column 0\nR1_21    the plug's rotation R1, row 2, column 1\nR1_22    the plug's rotation R1, row 2, column 2\nt_0      the translation t, component 0\nt_1      the translation t, component 1\n\nPolynomials (34)\n\n0 = R2_00 - n1\n0 = R2_01\n0 = R2_02 + s*n1\n0 = R2_10 + s*t*n1*n3\n0 = R2_11 - n1*n3 - s^2*n1*n3\n0 = R2_12 + t*n1*n3\n0 = R2_20 - s*n3\n0 = R2_21 - t*n3\n0 = R2_22 - n3\n0 = R1_00 + q3^2*nq*R2_00 + q2^2*nq*R2_00 - 2*q1*q3*nq*R2_02 - 2*q1*q2*nq*R2_01 - q1^2*nq*R2_00 - 2*q0*q3*nq*R2_01 + 2*q0*q2*nq*R2_02 - q0^2*nq*R2_00\n0 = R1_01 + q3^2*nq*R2_01 - 2*q2*q3*nq*R2_02 - q2^2*nq*R2_01 - 2*q1*q2*nq*R2_00 + q1^2*nq*R2_01 + 2*q0*q3*nq*R2_00 - 2*q0*q1*nq*R2_02 - q0^2*nq*R2_01\n0 = R1_02 - q3^2*nq*R2_02 - 2*q2*q3*nq*R2_01 + q2^2*nq*R2_02 - 2*q1*q3*nq*R2_00 + q1^2*nq*R2_02 - 2*q0*q2*nq*R2_00 + 2*q0*q1*nq*R2_01 - q0^2*nq*R2_02\n0 = R1_10 + q3^2*nq*R2_10 + q2^2*nq*R2_10 - 2*q1*q3*nq*R2_12 - 2*q1*q2*nq*R2_11 - q1^2*nq*R2_10 - 2*q0*q3*nq*R2_11 + 2*q0*q2*nq*R2_12 - q0^2*nq*R2_10\n0 = R1_11 + q3^2*nq*R2_11 - 2*q2*q3*nq*R2_12 - q2^2*nq*R2_11 - 2*q1*q2*nq*R2_10 + q1^2*nq*R2_11 + 2*q0*q3*nq*R2_10 - 2*q0*q1*nq*R2_12 - q0^2*nq*R2_11\n0 = R1_12 - q3^2*nq*R2_12 - 2*q2*q3*nq*R2_11 + q2^2*nq*R2_12 - 2*q1*q3*nq*R2_10 + q1^2*nq*R2_12 - 2*q0*q2*nq*R2_10 + 2*q0*q1*nq*R2_11 - q0^2*nq*R2_12\n0 = R1_20 + q3^2*nq*R2_20 + q2^2*nq*R2_20 - 2*q1*q3*nq*R2_22 - 2*q1*q2*nq*R2_21 - q1^2*nq*R2_20 - 2*q0*q3*nq*R2_21 + 2*q0*q2*nq*R2_22 - q0^2*nq*R2_20\n0 = R1_21 + q3^2*nq*R2_21 - 2*q2*q3*nq*R2_22 - q2^2*nq*R2_21 - 2*q1*q2*nq*R2_20 + q1^2*nq*R2_21 + 2*q0*q3*nq*R2_20 - 2*q0*q1*nq*R2_22 - q0^2*nq*R2_21\n0 = R1_22 - q3^2*nq*R2_22 - 2*q2*q3*nq*R2_21 + q2^2*nq*R2_22 - 2*q1*q3*nq*R2_20 + q1^2*nq*R2_22 - 2*q0*q2*nq*R2_20 + 2*q0*q1*nq*R2_21 - q0^2*nq*R2_22\n0 = t_0 - tau0*n1\n0 = t_1 - tau1*n1*n3 + s*t*tau0*n1*n3 - s^2*tau1*n1*n3\n0 = n1^2 + s^2*n1^2 - 1\n0 = n3^2 + t^2*n3^2 + s^2*n3^2 - 1\n0 = q3^2*nq + q2^2*nq + q1^2*nq + q0^2*nq - 1\n0 = s - 2455/464 + 355153/2138112*alpha^2 - 533/267264*alpha^4 + 25/2138112*alpha^6\n0 = t\n0 = q0 - 2540077056\n0 = q1 - 46781964288 - 10036896768*alpha + 1513139280*alpha^2 + 322510174*alpha^3 - 18771072*alpha^4 - 3972784*alpha^5 + 99024*alpha^6 + 21454*alpha^7\n0 = q2 + 46781964288 - 1513139280*alpha^2 + 18771072*alpha^4 - 99024*alpha^6\n0 = q3 + 2540077056 + 5799771648*alpha - 203949955*alpha^3 + 2569336*alpha^5 - 13915*alpha^7\n0 = tau0\n0 = tau1\n0 = 21233664 - 1152000*alpha^2 + 23545*alpha^4 - 232*alpha^6 + alpha^8\n0 = 8*nu - alpha\n0 = 5184 + 23545*nu^4 + 4096*nu^8 - 18000*nu^2 - 14848*nu^6\n\nRanges (33)\n\n505649194386081446814340120349/500000000000000000000000000000 <= nu <= 1011298388772162893628680240699/1000000000000000000000000000000\n3389823639129394286933681996084651482925336257351214247254409311019116568636127270607019519322383921899948716576931855688405005002640386185019420972006467/418993997810706159361688281193932691483730181893512293053861295116305125939798343025058571817715732115313495568327689089179808837873330310826051531440128 <= alpha <= 108474356452140617181877823874708847453610760235238855912141097952611730196356072659424624618316285500798358930461819382028960160084492357920621471104206945/13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096\n-632465197/2000000000 <= s <= -98822687/312500000\n0 <= t <= 0\n2540077056 <= q0 <= 2540077056\n-324792572176366643/2000000000 <= q1 <= -811981430440916607/5000000000\n-3920593163531133529/10000000000 <= q2 <= -490074145441391691/1250000000\n10521343660679236451/10000000000 <= q3 <= 2630335915169809113/2500000000\n0 <= tau0 <= 0\n0 <= tau1 <= 0\n0 <= n1 <= 1\n0 <= n3 <= 1\n0 <= nq <= 1\n0 <= R2_00 <= 1\n0 <= R2_01 <= 0\n0 <= R2_02 <= 632465197/2000000000\n0 <= R2_10 <= 0\n0 <= R2_11 <= 2750007641/2500000000\n0 <= R2_12 <= 0\n-632465197/2000000000 <= R2_20 <= 0\n0 <= R2_21 <= 0\n0 <= R2_22 <= 1\n-1710952439454690598902738099/1250000000 <= R1_00 <= 71082113480495522537673362781/10000000000\n-58667873502898353065052281929/10000000000 <= R1_01 <= 254675907608071063156016527/2000000000\n-23903953095622011563337610797/10000000000 <= R1_02 <= 23903953101834570894511633209/10000000000\n0 <= R1_10 <= 6019593673624729251253252737/1000000000\n-6233493348976612874903020093/5000000000 <= R1_11 <= 14532584686840103651876029001/2000000000\n-9075004981232320726215509921/10000000000 <= R1_12 <= 1815000996246464145608841179/2000000000\n-4780790620184952529067906237/2000000000 <= R1_20 <= 11951976548265909906254856411/5000000000\n-16902647331079489064270837481/10000000000 <= R1_21 <= 8451323667736215947317423061/5000000000\n-180083061274505699146834469/1000000000 <= R1_22 <= 82968902383387990337426922883/10000000000\n0 <= t_0 <= 0\n0 <= t_1 <= 0\n"}</script>
 <script type="module">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -622,7 +645,7 @@ function glide(M, t, keepWheel) {     // from the view now (moving, or held by h
   pose = blend(A1, B, t); next = B; nextAt = t + BLEND; motion = M; free = false;
 }
 function setSpin(on) {
-  const t = clock(); spin = on; $('spin').textContent = on ? 'pause rotation' : 'resume rotation';
+  const t = clock(); spin = on; spinLabel(on);
   if (!on) rateTo(t, 0);
   else if (free) { rateTo(t, 1, 0); glide(motion, t, true); }
   else rateTo(t, 1);
@@ -630,7 +653,7 @@ function setSpin(on) {
 function byHand() {                   // a drag in 3D: the orbit controls hold the view, the rotation pauses
   if (free) return;
   const t = clock(); free = true; next = null; rateTo(t, 0, 0);
-  spin = false; $('spin').textContent = 'resume rotation';
+  spin = false; spinLabel(false);
 }
 function place(s) {
   camera.quaternion.copy(s.q); controls.target.set(...s.target);
@@ -670,7 +693,6 @@ function fitView() {          // the hole's centre (the origin) in the middle, t
   return { z: 0.45 * Math.min(W / Math.max(...H2.map(p => Math.abs(p[0]))), Ht / Math.max(...H2.map(p => Math.abs(p[1])))), ox: 0, oy: 0 };
 }
 const X = x => svg.clientWidth / 2 + (x - view.ox) * view.z, Y = y => svg.clientHeight / 2 - (y - view.oy) * view.z;
-const fmt = g => Math.abs(g) < 5e-16 * r0 ? '0' : g.toPrecision(4);
 // phones: no 2D view (the template hides it under the same query); its state still follows, for a turn to a wider screen
 const no2d = matchMedia('(max-width: 760px), (pointer: coarse) and (max-height: 520px)');
 function draw2d() {
@@ -685,10 +707,6 @@ function draw2d() {
       : 'stroke-linecap="round"'} opacity="${it.c[3]}">${it.segs.map(seg).join('')}</g>`);
   }
   svg.innerHTML = out.join('');
-}
-function showGap() {          // in the 3D view: the least distance of a plug vertex's shadow inside the hole's outline
-  const minGap = Math.min(...holeEdges.map(E => Math.min(...stat.P2.map(p => gapOf(E, p)))));
-  document.getElementById('info').innerHTML = `gap <span class="num">${fmt(minGap)}</span>`;
 }
 let anim2 = null;            // the 2D view easing to a new frame, with the same timing as the 3D
 const goto2d = to => { anim2 = { from: { ...view }, to, ts: clock() }; };
@@ -774,12 +792,15 @@ canvas.addEventListener('pointerleave', e => { if (!gdrag && e.pointerType === '
 // ---------- controls ----------
 const $ = id => document.getElementById(id);
 $('nutext').textContent = D.nu_text;
+// the rotation button: its text and its icon (pause while turning, play while still)
+function spinLabel(on) { const b = document.getElementById('spin'), s = document.getElementById('spintext');
+  (s || b).textContent = on ? 'Pause rotation' : 'Resume rotation'; b.classList.toggle('paused', !on); }
 // the scale to ten decimals cut, never rounded, so no value shown is above nu: at the top the header's decimals of nu
 // (a lower bound, build.py), below it the double's exact decimal (toFixed(60) is exact for a double >= 1) cut; the
 // top itself, D.nu, is the largest double not above that lower bound
 const cut10 = s => s.slice(0, s.indexOf('.') + 11);
 const setScale = () => { const v = +$('scale').value / 1000; S.l = v >= 1 ? D.nu : 1 + v * (D.nu - 1); $('scaleout').textContent = cut10(S.l === D.nu ? D.nu_text : S.l.toFixed(60)); };
-const restat = () => { rebuildStatic(); if (focus !== null) Object.assign(plan, makePlan(focus)); draw2d(); showGap(); };
+const restat = () => { rebuildStatic(); if (focus !== null) Object.assign(plan, makePlan(focus)); draw2d(); };   // (no gap label: Bence 2026-11-20)
 $('scale').addEventListener('input', () => { setScale(); restat(); });
 $('spin').addEventListener('click', () => setSpin(!spin));
 // the pose to ten decimals (each number's full double on hover); t a column beside the matrices, a row on phones
@@ -791,9 +812,12 @@ $('posenums').innerHTML = mat('R₁', D.R1) + mat('R₂', D.R2) + mat('t', D.t.m
 // with Copy and Download (the file named after the solid)
 const algIsOpen = () => document.body.classList.contains('algopen');
 const algOpen = o => {
-  if (o && !$('algtext').textContent) $('algtext').textContent = D.algebraic;
+  if (o && !$('algtext').firstChild) {         // one block per line, so a long line wraps with an indent (template.html)
+    // the prose is broken at 100 columns already; a longer line (a polynomial, a range) wraps with its continuation indented
+    for (const line of D.algebraic.split('\n')) { const s = document.createElement('span'); s.textContent = line || ' '; if (line.length > 100) s.className = 'long'; $('algtext').append(s); }
+  }
   document.body.classList.toggle('algopen', o); $('algbtn').setAttribute('aria-pressed', o);
-  $('algbtn').textContent = o ? 'Back to the plot' : 'Algebraic definition';
+  $('algbtn').innerHTML = o ? 'Back to the plot' : '<span class="long">Algebraic definition</span><span class="short">Definition</span>';
 };
 const flash = (b, text) => { const was = b.dataset.label ??= b.textContent; b.textContent = text; setTimeout(() => { b.textContent = was; }, 1600); };
 let downloads = null;                                   // claude.ai's save prompt, when the page runs there
@@ -841,10 +865,10 @@ function resize() {
 }
 // a state in the address, e.g. #scale=400&focus=2&spin=0&at=30 (at: the clock, in s)
 if (hs.has('scale')) $('scale').value = hs.get('scale');
-setScale(); rebuildStatic(); showGap(); resize();
+setScale(); rebuildStatic(); resize();
 if (hs.has('focus')) { focus = +hs.get('focus'); plan = makePlan(focus); motion = focusMotion(plan); pose = live(motion); Object.assign(view, focusView(focus)); draw2d(); }
 if (hs.get('alg') === '1' && D.algebraic) algOpen(true);
-if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; $('spin').textContent = 'resume rotation'; }
+if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; spinLabel(false); }
 new ResizeObserver(resize).observe(document.querySelector('main'));
 no2d.addEventListener('change', resize);
 requestAnimationFrame(tick);

@@ -17,6 +17,9 @@
   --ink-3: #5a5a5a;
   --rule: #242424;
   --track: #3a3a3a;
+  --btn: rgba(26, 28, 32, 0.88);   /* a button's fill: a dark grey, translucent over the 3D view */
+  --btn-hover: rgba(44, 47, 54, 0.95);
+  --btn-rule: #34373d;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
@@ -24,17 +27,24 @@
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--sans); }
 body { display: grid; grid-template-rows: auto auto 1fr auto; height: 100vh; height: 100dvh; overflow: hidden; overscroll-behavior: none; }
 button, input { font: inherit; color: inherit; }
-:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+[hidden] { display: none !important; }   /* above the buttons' display: inline-flex */
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-header { position: relative; display: flex; align-items: baseline; gap: 18px; padding: 12px 18px 10px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
-header h1 { margin: 0; font-size: 15px; font-weight: 600; }
-.back { color: var(--ink-2); text-decoration: none; font-size: 15px; line-height: 1; }
-.back:hover, .back:focus-visible { color: var(--ink); }
-header .nu { font-family: var(--mono); }
+/* the header: a round back button, the name, nu, the algebraic definition's buttons */
+header { position: relative; display: flex; align-items: center; gap: 10px 16px; padding: 12px 18px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 17px; font-weight: 600; }
+header .nu { font-family: var(--mono); font-size: 13px; }
+#algbtn .short { display: none; }
 header .grow { flex: 1; }
-.ghost { background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 3px 10px; color: var(--ink); cursor: pointer; }
-.ghost:hover { border-color: var(--ink-3); }
-#spin { background: #000000; }
+/* buttons: pills with a soft fill; the back button and the rotation button carry an icon */
+.ghost, .back { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px;
+  background: var(--btn); border: 1px solid var(--btn-rule); color: var(--ink); font-size: 14px; font-weight: 500;
+  line-height: 1; text-decoration: none; cursor: pointer; white-space: nowrap; transition: background-color 120ms ease, border-color 120ms ease; }
+.ghost:hover, .back:hover, .back:focus-visible { background: var(--btn-hover); border-color: var(--ink-3); }
+.back { padding: 0 18px 0 12px; }
+.back svg, .ghost svg { width: 18px; height: 18px; flex: none; }
+#spin { padding-left: 14px; }
+#spin .play { display: none; } #spin.paused .play { display: block; } #spin.paused .pause { display: none; }
 
 main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 .pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
@@ -43,29 +53,34 @@ main { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
 #flat { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 #flat.dragging { cursor: grabbing; }
 .corner { position: absolute; font-size: 12px; }
-.tl { left: 14px; top: 12px; } .bl { left: 14px; bottom: 12px; }
+.ghost.corner { font-size: 14px; }
+.tl { left: 14px; top: 14px; } .bl { left: 14px; bottom: 12px; }
 .caption { color: var(--ink-2); pointer-events: none; }
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
 .bl.tools { display: flex; gap: 8px; }
 
-footer { display: flex; align-items: center; gap: 28px; padding: 12px 18px 14px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
-.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 10px; row-gap: 2px; }
-.ctl .lab { grid-column: 1 / -1; color: var(--ink-2); }
-.ctl .end { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
-.ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
+/* the scale slider: from 1 (left) to nu (right), its value at the right; a thick rounded track, a large handle */
+footer { display: flex; align-items: center; gap: 28px; padding: 14px 18px 16px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
+.ctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: 14px; }
+.ctl .end { font-family: var(--mono); color: var(--ink-2); font-size: 14px; }
+.ctl output { font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; min-width: 12ch; flex: none; text-align: right; white-space: nowrap; }
 .ctl.scale { flex: 2 1 360px; }
 .ctl.small { flex: 1 1 200px; }
-input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: none; margin: 0; }
-input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--track); }
-input[type=range]::-moz-range-track { height: 2px; background: var(--track); }
-input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); margin-top: -5px; border: 0; }
-input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--ink); border: 0; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 30px; background: none; margin: 0; cursor: pointer; }
+input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); margin-top: -8px; border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); border: 0; box-shadow: 0 0 0 4px rgba(0, 128, 255, 0.25); }
+input[type=range]:focus-visible { outline: none; }
+input[type=range]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px var(--plug); }
+input[type=range]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px var(--plug); }
 .scale input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 .scale input[type=range]::-moz-range-track { background: linear-gradient(90deg, var(--track), var(--plug)); }
 
 /* the pose under the header: each matrix with its name at its left */
-.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
-.posenums { display: flex; gap: 32px; }
+/* R1, R2 and t side by side, each block on a new line when it does not fit: never a sideways scroll */
+.posebar { padding: 8px 18px 9px; border-bottom: 1px solid var(--rule); }
+.posenums { display: flex; flex-wrap: wrap; gap: 6px 32px; }
 .posenums > div { display: grid; grid-template-columns: auto auto; column-gap: 10px; align-items: start; justify-items: start; }
 .posenums h2 { margin: 0; font-size: 12px; font-weight: 500; color: var(--ink-2); line-height: 1.45; }
 .posenums table { font-family: var(--mono); font-size: 12px; line-height: 1.45; font-variant-numeric: tabular-nums; border-collapse: collapse; }
@@ -76,13 +91,17 @@ input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 
 
 /* the algebraic definition: in place of the pose, the views and the slider. The text as it is, never wrapped
    for the page's width (one line per variable, polynomial and range): the panel scrolls both ways */
-.alg { display: none; min-height: 0; overflow: auto; padding: 14px 18px 28px; }
-#algtext { font: 12px/1.55 var(--mono); color: var(--ink); white-space: pre; width: max-content; margin: 0; }
+/* one block per line of the text, a long line wrapping with its continuation indented (Copy and Download give the text
+   unwrapped): no sideways scroll */
+.alg { display: none; min-height: 0; overflow-y: auto; overflow-x: hidden; padding: 14px 18px 28px; }
+#algtext { font: 12px/1.55 var(--mono); color: var(--ink); margin: 0; }
+#algtext > span { display: block; white-space: pre-wrap; overflow-wrap: anywhere; }
+#algtext > span.long { padding-left: 4ch; text-indent: -4ch; }
 body:not(.algopen) .algonly { display: none; }
 body.algopen { grid-template-rows: auto 1fr; }
 body.algopen .posebar, body.algopen main, body.algopen footer { display: none; }
 body.algopen .alg { display: block; }
-#algbtn[aria-pressed="true"] { border-color: var(--ink-3); }
+#algbtn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
 /* a Nopert's page (nopert.js): the solid alone, turning; no pose, no projection, no scale */
 header .kind { color: var(--ink-2); }
@@ -94,14 +113,19 @@ body.nopert main { grid-template-columns: 1fr; }
 /* phones: no page scroll (a drag in the view moves it); nu under the title, the pose under it, the slider at the bottom */
 @media (max-width: 760px) {
   body { position: fixed; inset: 0; height: auto; }
-  header { gap: 2px 12px; padding: 10px 14px 8px; }
+  header { gap: 6px 12px; padding: 10px 14px 8px; }
+  header h1 { font-size: 16px; }
   header .nu { order: 3; flex-basis: 100%; font-size: 12px; overflow-wrap: anywhere; }
+  .back { width: 40px; padding: 0; justify-content: center; } .back span { display: none; }   /* the arrow alone */
+  /* one row: the arrow, the name (wrapping when long), the definition's button with a short label */
+  header h1 { flex: 1 1 0; min-width: 0; line-height: 1.25; }
+  header .grow { display: none; }
+  #algbtn { padding: 0 14px; } #algbtn .long { display: none; } #algbtn .short { display: inline; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
   .pane + .pane { border-left: 0; border-top: 1px solid var(--rule); }
   .tl { left: 10px; top: 8px; } .tr { right: 10px; top: 8px; }
   footer { flex-direction: column; align-items: stretch; gap: 8px; padding: 8px 14px calc(10px + env(safe-area-inset-bottom)); }
-  .ctl.scale { flex: none; grid-template-columns: auto auto 1fr auto; }
-  .ctl .lab { grid-column: auto; }
+  .ctl.scale { flex: none; }
   /* the pose as rows, t as a row */
   .posebar { padding: 6px 14px 7px; }
   .posenums { flex-direction: column; gap: 3px; }
@@ -111,19 +135,20 @@ body.nopert main { grid-template-columns: 1fr; }
   .alg { padding: 10px 14px calc(20px + env(safe-area-inset-bottom)); }
   #algtext { font-size: 11px; }
 }
+@media (max-width: 360px) { .posenums h2, .posenums table { font-size: 10px; } }
 /* phones, upright or turned: the 3D view only (the projection is drawn in it too); the same query in explorer.js */
 @media (max-width: 760px), (pointer: coarse) and (max-height: 520px) {
   .flatpane { display: none; }
   main { grid-template-columns: 1fr; grid-template-rows: 1fr; }
 }
 @media (max-height: 520px) and (min-width: 761px) {
-  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; } .ctl .lab { display: none; }
+  header { padding: 6px 18px 5px; } .posebar { padding: 4px 18px 5px; } footer { padding: 6px 18px 8px; gap: 18px; }
+  .ghost, .back { height: 34px; }
 }
 @media (pointer: coarse) {
-  input[type=range] { height: 30px; }
-  input[type=range]::-webkit-slider-thumb { width: 22px; height: 22px; margin-top: -10px; }
-  input[type=range]::-moz-range-thumb { width: 22px; height: 22px; }
-  .ghost { padding: 6px 12px; }
+  input[type=range] { height: 40px; }
+  input[type=range]::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: -11px; }
+  input[type=range]::-moz-range-thumb { width: 28px; height: 28px; }
 }
 </style>
 <script type="importmap">
@@ -135,14 +160,14 @@ body.nopert main { grid-template-columns: 1fr; }
 </head>
 <body class="nopert">
 <header>
-  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }">←</a>
+  <a class="back" href="../" aria-label="All solids" onclick="if (history.length > 1) { history.back(); return false; }"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>All solids</span></a>
   <h1>Triakis tetrahedron, α = 27/50</h1>
   <span class="nu">ν = <span id="nutext"></span></span>
   <span class="kind">Nopert</span>
   <span class="grow"></span>
   <button class="ghost algonly" id="algcopy">Copy</button>
   <button class="ghost algonly" id="algsave">Download</button>
-  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden>Algebraic definition</button>
+  <button class="ghost" id="algbtn" aria-pressed="false" aria-controls="alg" hidden><span class="long">Algebraic definition</span><span class="short">Definition</span></button>
 </header>
 
 <div class="posebar"><div class="posenums" id="posenums" aria-label="The pose"></div></div>
@@ -150,8 +175,7 @@ body.nopert main { grid-template-columns: 1fr; }
 <main>
   <section class="pane" aria-label="3D view">
     <canvas id="gl"></canvas>
-    <button class="ghost corner tl" id="spin">pause rotation</button>
-    <div class="corner tr caption" id="info"></div>
+    <button class="ghost corner tl" id="spin"><svg class="pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg><svg class="play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg><span id="spintext">Pause rotation</span></button>
   </section>
   <section class="pane flatpane" aria-label="Projection">
     <svg id="flat" role="img" aria-label="The shadows of the hole and the plug along z"></svg>
@@ -162,7 +186,6 @@ body.nopert main { grid-template-columns: 1fr; }
 
 <footer>
   <div class="ctl scale">
-    <span class="lab">scale ℓ</span>
     <span class="end">1</span>
     <input type="range" id="scale" min="0" max="1000" value="0" aria-label="Plug scale">
     <output id="scaleout"></output>
@@ -222,6 +245,9 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 const D = JSON.parse(document.getElementById('pose').textContent);
 const $ = id => document.getElementById(id);
 $('nutext').textContent = D.nu_text;
+// the rotation button: its text and its icon (pause while turning, play while still)
+function spinLabel(on) { const b = document.getElementById('spin'), s = document.getElementById('spintext');
+  (s || b).textContent = on ? 'Pause rotation' : 'Resume rotation'; b.classList.toggle('paused', !on); }
 const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 const V = D.vertices;
 const r0 = Math.max(...V.map(v => Math.hypot(...v)));
@@ -350,12 +376,12 @@ let wheel = 1, dSet = 0, spin = true, free = false;
 function clipAt() { const d = dSet = camera.position.distanceTo(controls.target); camera.near = 0.01 * d; camera.far = d + 40 * r0; camera.updateProjectionMatrix(); }
 // paused, resumed (from the view held by hand, if any: the tumble goes on from there, taken in that view)
 function setSpin(on) {
-  const t = clock(); spin = on; $('spin').textContent = on ? 'pause rotation' : 'resume rotation';
+  const t = clock(); spin = on; spinLabel(on);
   if (!on) rateTo(t, 0);
   else if (free) { free = false; rateTo(t, 1, 0); }
   else rateTo(t, 1);
 }
-function byHand() { if (free) return; const t = clock(); free = true; rateTo(t, 0, 0); spin = false; $('spin').textContent = 'resume rotation'; }
+function byHand() { if (free) return; const t = clock(); free = true; rateTo(t, 0, 0); spin = false; spinLabel(false); }
 // the camera on its line of sight through the centre, at the framing's distance over the wheel's zoom
 function place() {
   controls.target.set(0, 0, 0);
@@ -385,7 +411,7 @@ function resize() {
   fitFrustum();
 }
 resize();
-if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; $('spin').textContent = 'resume rotation'; }
+if (hs.get('spin') === '0') { vc = { t0: clock(), tau0: clock(), a: 0, b: 0 }; spin = false; spinLabel(false); }
 new ResizeObserver(resize).observe(document.querySelector('main'));
 requestAnimationFrame(tick);
 

@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Other.PentagonalTrapezohedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.PentagonalTrapezohedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.PentagonalTrapezohedron.polyhedron Nieuwland.Other.PentagonalTrapezohedron.system Nieuwland.Other.PentagonalTrapezohedron.layout"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.PentagonalTrapezohedron.system"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.PentagonalTrapezohedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.PentagonalTrapezohedron.system Nieuwland.Other.PentagonalTrapezohedron.layout Nieuwland.Other.PentagonalTrapezohedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.PentagonalTrapezohedron.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.PentagonalTrapezohedron.theta_isRoot",
+   "type": "Nieuwland.polyEval [-4/25, 8/5, -12/5, 0, 1] Nieuwland.Other.PentagonalTrapezohedron.theta = 0 \u2227 (0.7721332917328642654377061459613 : \u211d) \u2264 Nieuwland.Other.PentagonalTrapezohedron.theta \u2227 Nieuwland.Other.PentagonalTrapezohedron.theta \u2264 (0.7721332917328642654377061459614 : \u211d)"
+  }
+ ]
+}

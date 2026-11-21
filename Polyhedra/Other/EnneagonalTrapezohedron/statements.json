@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Other.EnneagonalTrapezohedron.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.EnneagonalTrapezohedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.EnneagonalTrapezohedron.polyhedron Nieuwland.Other.EnneagonalTrapezohedron.system Nieuwland.Other.EnneagonalTrapezohedron.layout"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.EnneagonalTrapezohedron.system"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.EnneagonalTrapezohedron.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.EnneagonalTrapezohedron.system Nieuwland.Other.EnneagonalTrapezohedron.layout Nieuwland.Other.EnneagonalTrapezohedron.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.EnneagonalTrapezohedron.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.EnneagonalTrapezohedron.theta_isRoot",
+   "type": "Nieuwland.polyEval [64/81, 0, -256/9, 0, 1168/9, 0, 1760/9, 0, -280, 0, 64, 0, 1] Nieuwland.Other.EnneagonalTrapezohedron.theta = 0 \u2227 (0.3894107250291187690117025147923 : \u211d) \u2264 Nieuwland.Other.EnneagonalTrapezohedron.theta \u2227 Nieuwland.Other.EnneagonalTrapezohedron.theta \u2264 (0.3894107250291187690117025147924 : \u211d)"
+  }
+ ]
+}

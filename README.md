@@ -2,16 +2,16 @@
 
 *Bence Hervay*
 
-**[Open the Rupertness and Nieuwland explorer](https://bence.io/research/nieuwland-numbers/explorer/)**, or run it from this repository
+**[Open the Rupertness and Nieuwland explorer](https://bence.io/nieuwland-explorer/)**, or run it from this repository
 ([below](#the-explorer-1)). Click a picture to see it in full.
 
-| ![The atlas of the 155 solids](docs/images/explorer-atlas.png) | ![The truncated octahedron passing through itself](docs/images/explorer-passage.png) | ![The algebraic definition of the cube's optimum](docs/images/explorer-algebraic.png) |
+| ![The atlas of the 174 solids](docs/images/explorer-atlas.png) | ![The truncated octahedron passing through itself](docs/images/explorer-passage.png) | ![The algebraic definition of the cube's optimum](docs/images/explorer-algebraic.png) |
 | :-: | :-: | :-: |
 | The atlas: every solid with its ν | The truncated octahedron on its way through itself, the plug (blue) scaled by ℓ between 1 and ν | The cube: the algebraic definition of ν = 3√2/4 and an optimal pose |
 
 ## Background
 
-Proving the **[Non-Rupertness of the Rhombicosidodecahedron](https://bence.io/research/ruperts-problem/article.pdf)**
+Proving the **[Non-Rupertness of the Rhombicosidodecahedron](https://bence.io/ruperts-problem.pdf)**
 ([program and certificate](https://github.com/bence-hervay/nopert-rid)) was one of my largest
 self-motivated research projects, taking **more than 1000 hours over two years**. It needed
 **numerous novel ideas**, and I did it with minimal AI assistance (mostly for coding, and for
@@ -34,21 +34,68 @@ to present some of them visually and interactively!
 
 ## What this repository contains
 
-* **A Lean-verified Rupertness result for 155 solids**, 133 Rupert and 22 Nopert:
+* **A Lean-verified Rupertness result for 174 solids**, 151 Rupert and 23 Nopert:
   * Platonic solids (5)
   * Archimedean solids (13)
   * Catalan solids (13)
   * Johnson solids (92)
   * Prisms (P<sub>n</sub>) (9)
   * Antiprisms (A<sub>n</sub>) (9)
+  * Dipyramids (P<sub>n</sub><sup>*</sup>) (9)
+  * Trapezohedra (A<sub>n</sub><sup>*</sup>) (9)
   * Triakis tetrahedra (T<sub>α</sub>) (9)
-  * Other (5)
+  * Other (6)
 * **A Lean-verified exact Nieuwland number ν** for each of these solids.
 * **A Lean-verified exact optimal pose** (for the Rupert ones) that yields a weak fit after
   scaling by ν.
 
 All Nieuwland numbers and poses are specified algebraically, by polynomial systems over the
 rationals with respective rational bounding boxes that contain exactly one root!
+
+## Highlights
+
+* **The [rhombicosidodecahedron](https://bence.io/nieuwland-explorer/solids/archimedean_rhombicosidodecahedron)**,
+  a Nopert: the solid I proved non-Rupert myself, with minimal AI assistance
+  ([Background](#background)). Here that proof is checked in Lean.
+* **The [Noperthedron](https://bence.io/nieuwland-explorer/solids/external_noperthedron)** of
+  Steininger and Yurkevich, with 90 vertices: the first Nopert ever discovered.
+* **The [Septopert](https://bence.io/nieuwland-explorer/solids/external_tom7_septopert)** of Tom 7:
+  the first Nopert with the fewest possible vertices, seven. Tom 7 also proved that fewer vertices
+  are not enough.
+* **The smallest ν.** The
+  [hexagonal trapezohedron](https://bence.io/nieuwland-explorer/solids/trapezohedron_hexagonal-trapezohedron)
+  A<sub>6</sub><sup>*</sup> (ν = 1.0000006133…) and the
+  [triakis tetrahedron](https://bence.io/nieuwland-explorer/solids/catalan_triakis-tetrahedron)
+  (ν = 1.0000040886…) are Rupert, but only just: ν − 1 is about 6 · 10⁻⁷ and 4 · 10⁻⁶. Next come
+  the gyroelongated square bicupola (ν = 1.0000320427…) and the square trapezohedron
+  A<sub>4</sub><sup>*</sup> (ν = 1.0000685506…).
+* **The highest algebraic degree.** For the
+  [bilunabirotunda](https://bence.io/nieuwland-explorer/solids/johnson_bilunabirotunda)
+  (J<sub>91</sub>, 14 vertices) and the
+  [gyroelongated triangular cupola](https://bence.io/nieuwland-explorer/solids/johnson_gyroelongated-triangular-cupola)
+  (J<sub>22</sub>, 15 vertices), ν is a root of an irreducible polynomial of degree 176. Among the
+  Archimedean solids the truncated dodecahedron's is the highest, 112, while the
+  [rhombicuboctahedron](https://bence.io/nieuwland-explorer/solids/archimedean_rhombicuboctahedron),
+  with only 24 vertices, reaches 52. These polynomials are numerical, not proved: each was found by an
+  integer relation search at the search program's optimum and vanishes at the Lean-proved ν to 2000
+  digits (`nu_polynomial_evidence` in `data.json`). In Lean each ν is the unique root of its system.
+  35 Rupert solids have no polynomial in ν alone yet.
+* **The elongated pentagonal gyrobirotunda**
+  ([J<sub>43</sub>](https://bence.io/nieuwland-explorer/solids/johnson_elongated-pentagonal-gyrobirotunda)),
+  for its shadows at the optimum, ν = 1.0460556844…:
+
+  <img src="docs/images/j43-shadow.png" width="420" alt="The elongated pentagonal gyrobirotunda's shadows at scale ν: the plug's (blue) inside the hole's (orange), touching it">
+* **The hardest proofs.** The
+  [tetrahedron](https://bence.io/nieuwland-explorer/solids/platonic_tetrahedron), with only four
+  vertices, needs 607 MB of Lean in 643 modules, twenty times the cube's 30 MB in 65 modules. The
+  hexagonal trapezohedron A<sub>6</sub><sup>*</sup>, whose ν is the closest to 1, was the hardest
+  of the dipyramids and trapezohedra: its optimum is so flat that finding the certificate needed
+  arithmetic beyond double precision.
+* **The largest proof.** The
+  [metagyrate diminished rhombicosidodecahedron](https://bence.io/nieuwland-explorer/solids/johnson_metagyrate-diminished-rhombicosidodecahedron)
+  (ν = 1.0061553565…) has the most of nearly everything: 2,317 modules with 2,295 `native_decide`
+  checks, 4.4 GB of Lean, and 20.7 hours to compile on a machine with 16 vCPUs. Only the
+  metabigyrate rhombicosidodecahedron, a Nopert, has more Lean: 6.1 GB in 1,564 modules.
 
 ## A cube through a cube
 
@@ -163,7 +210,7 @@ Each solid's `Result.lean` states, in the namespace `Nieuwland.<Family>.<Solid>`
 | `interior_nonempty` | the polyhedron is full-dimensional |
 
 A Nopert's `Result.lean` states `isNopert`, `nieuwland_eq_one : ν polyhedron = 1`, and
-`interior_nonempty`. The 64 solids whose coordinates use an irrational number θ also state
+`interior_nonempty`. The 80 solids whose coordinates use an irrational number θ also state
 `theta_isRoot`: θ is a root of its polynomial, between two rationals at most 2⁻¹⁰⁰ apart.
 
 ### What is trusted in the checking
@@ -201,16 +248,22 @@ The solids are in seven family folders:
 | `Johnson` | 92 | 87 | 5 |
 | `Prism`: P<sub>n</sub>, n = 3, 5, …, 12 | 9 | 9 | 0 |
 | `Antiprism`: A<sub>n</sub>, n = 4, …, 12 | 9 | 9 | 0 |
-| `Other` | 14 | 2 | 12 |
+| `Other` | 33 | 20 | 13 |
 
 * The prisms and antiprisms have regular faces; the square prism is the cube and the triangular
   antiprism the octahedron.
-* `Other` holds the nine triakis tetrahedra T<sub>α</sub> = conv(T ∪ −αT), where T is the vertex
-  set of a regular tetrahedron, for α = 1/2, 11/20, 13/25, 14/25, 27/50, 51/100, 53/100, 57/100,
-  and √3/3 (folders `KAlpha…`). It also holds the corner tetrahedron conv{0, e₁, e₂, e₃} and a
-  square pyramid over [−1, 1]² with apex (0, 0, 1), both Rupert, and three Noperts found by
-  others: the Noperthedron of Steininger and Yurkevich, and Tom 7's Septopert and his candidate
-  #231 (its exact form, Ideal231). Only their vertex coordinates were taken from their authors.
+* `Other` holds their duals, all Rupert: the dipyramids P<sub>n</sub><sup>*</sup>, n = 3, 5, …, 12
+  (folders `…Dipyramid`), and the trapezohedra A<sub>n</sub><sup>*</sup>, n = 4, …, 12 (folders
+  `…Trapezohedron`). The square dipyramid is the octahedron and the triangular trapezohedron the
+  cube.
+* `Other` also holds the nine triakis tetrahedra T<sub>α</sub> = conv(T ∪ −αT), where T is the
+  vertex set of a regular tetrahedron, for α = 1/2, 11/20, 13/25, 14/25, 27/50, 51/100, 53/100,
+  57/100, and √3/3 (folders `KAlpha…`); the corner tetrahedron conv{0, e₁, e₂, e₃} and a square
+  pyramid over [−1, 1]² with apex (0, 0, 1), both Rupert; three Noperts found by others: the
+  Noperthedron of Steininger and Yurkevich, and Tom 7's Septopert and his candidate #231 (its exact
+  form, Ideal231), of which only the vertex coordinates were taken from their authors; and the
+  zomeball, the rectified rhombic triacontahedron (the convex hull of the rhombic
+  triacontahedron's edge midpoints), a Nopert.
 * Chiral solids are stored in their laevo form.
 
 A solid's folder imports only Mathlib, `Definitions`, and `Modules`, never another solid. Each
@@ -278,7 +331,7 @@ up.
 | key | type | meaning |
 | --- | --- | --- |
 | `family`, `name` | string | the family and the solid's name |
-| `n` | integer | prisms and antiprisms: the number of sides of the base |
+| `n` | integer | prisms, antiprisms, dipyramids, and trapezohedra: n of P<sub>n</sub>, A<sub>n</sub>, P<sub>n</sub><sup>*</sup>, A<sub>n</sub><sup>*</sup> |
 | `alpha` | string | triakis tetrahedra: α |
 | `nu` | number | the largest double not above ν |
 | `nu_100_decimals` | string | ν cut to 100 decimals: a lower bound |
@@ -327,10 +380,10 @@ The cube's `data.json`, shortened:
 
 ## The explorer
 
-The explorer shows the 155 solids in an atlas. A Rupert solid's page lets you slide the scale of
+The explorer shows the 174 solids in an atlas. A Rupert solid's page lets you slide the scale of
 the plug from 1 to ν and watch it pass through the hole, in 3D and in shadow, and shows the
 algebraic description, with ν to 100 decimals. A Nopert's page shows the solid. The pictures are
-drawn in floating point; the proofs are in Lean. It is [online](https://bence.io/research/nieuwland-numbers/explorer/), and runs locally from
+drawn in floating point; the proofs are in Lean. It is [online](https://bence.io/nieuwland-explorer/), and runs locally from
 `explorer/` ([below](#the-explorer-1)).
 
 ## How the results were found
@@ -377,9 +430,9 @@ python3 scripts/check.py Polyhedra/Platonic/Cube --jobs 4
 
 `scripts/check.py`:
 
-1. downloads Mathlib's compiled cache (`lake exe cache get`), builds `Definitions` and `Modules`
-   (`lake build`), and compiles the library for `native_decide` (`scripts/native.py`). This is
-   done once;
+1. downloads Mathlib's compiled cache (`lake exe cache get`), builds `Definitions`, `Modules`,
+   and each of their modules by name (`lake build`), and compiles the library for
+   `native_decide` (`scripts/native.py`). This is done once;
 2. downloads the solid's archive from the release `certificates` if its pieces are not there
    yet, unpacks it into a temporary directory, and moves the pieces into `Certificates/` only when
    the archive holds exactly the pieces of `manifest.json`, each with its size and SHA-256
@@ -395,8 +448,10 @@ ok: Polyhedra/Platonic/Cube: 65 modules, 29.6 MB, compiled in 614 s (0 kept); au
 537 constants, axioms: Lean's three and 50 native_decide axioms of the solid's modules
 ```
 
-Every result line is also appended to `checks.tsv`. The release currently holds the archives of
-three solids: the cube, the truncated icosahedron, and T_{1/2}. The others follow.
+Every result line is also appended to `checks.tsv`. The release holds the archives of all 174
+solids. From a fresh clone on a machine with 16 vCPUs, step 1 took about 6 minutes, and the cube,
+the triangular dipyramid, the zomeball, and the square trapezohedron passed in 326, 94, 271, and
+2,868 s.
 
 ### Check more
 
@@ -409,10 +464,10 @@ Solids run cheapest first. `--clean` deletes a passed solid's pieces and compile
 the disk small. `build.py` runs a module only when the machine has a core and the memory that the
 module is predicted to need, so `--jobs` can be the number of cores.
 
-Rough costs, from our builds: about 3,000 core-hours for all 155 solids. Most take minutes to a
-few core-hours (46 under one core-hour, 110 under ten). The largest, the metagyrate diminished
+Rough costs, from our builds: about 3,100 core-hours for all 174 solids. Most take minutes to a
+few core-hours (54 under one core-hour, 124 under ten). The longest, the metagyrate diminished
 rhombicosidodecahedron (2,317 modules, 4.4 GB of Lean), compiled in 20.7 hours on a machine with
-16 vCPUs and 64 GB. Memory: one module, `Proof/Exact.lean` of the gyroelongated triangular
+16 vCPUs and 64 GB; the most Lean, 6.1 GB, is the metabigyrate rhombicosidodecahedron's. Memory: one module, `Proof/Exact.lean` of the gyroelongated triangular
 bicupola, peaked at 95 GB; no other module that we measured needed more than 21 GB.
 `results.tsv` lists each solid's modules and megabytes of Lean.
 

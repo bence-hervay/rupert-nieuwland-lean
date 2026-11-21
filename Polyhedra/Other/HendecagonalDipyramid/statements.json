@@ -1,0 +1,34 @@
+{
+ "top": "Polyhedra.Other.HendecagonalDipyramid.Result",
+ "kind": "Rupert",
+ "statements": [
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.isRupert",
+   "type": "Nieuwland.Polyhedron.IsRupert Nieuwland.Other.HendecagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.isOptimum",
+   "type": "Nieuwland.Polyhedron.IsOptimum Nieuwland.Other.HendecagonalDipyramid.polyhedron Nieuwland.Other.HendecagonalDipyramid.system Nieuwland.Other.HendecagonalDipyramid.layout"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.hasUniqueRoot",
+   "type": "Nieuwland.PolynomialSystem.HasUniqueRoot Nieuwland.Other.HendecagonalDipyramid.system"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.one_lt_nieuwland",
+   "type": "1 < Nieuwland.Polyhedron.nieuwland Nieuwland.Other.HendecagonalDipyramid.polyhedron"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.enclosedBy",
+   "type": "Nieuwland.PolynomialSystem.EnclosedBy Nieuwland.Other.HendecagonalDipyramid.system Nieuwland.Other.HendecagonalDipyramid.layout Nieuwland.Other.HendecagonalDipyramid.enclosure (1 / 2 ^ 100)"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.interior_nonempty",
+   "type": "(interior (Nieuwland.Polyhedron.hull Nieuwland.Other.HendecagonalDipyramid.polyhedron)).Nonempty"
+  },
+  {
+   "name": "Nieuwland.Other.HendecagonalDipyramid.theta_isRoot",
+   "type": "Nieuwland.polyEval [-11/1024, 0, 55/256, 0, -77/64, 0, 11/4, 0, -11/4, 0, 1] Nieuwland.Other.HendecagonalDipyramid.theta = 0 \u2227 (0.2817325568414296977114179153466 : \u211d) \u2264 Nieuwland.Other.HendecagonalDipyramid.theta \u2227 Nieuwland.Other.HendecagonalDipyramid.theta \u2264 (0.2817325568414296977114179153467 : \u211d)"
+  }
+ ]
+}
